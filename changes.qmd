@@ -128,7 +128,7 @@ If evidence primarily affects justification, then similarity of evidence at t an
 
 > *Variant S\**
 >
-> Charlotte reads the book on her Kindle, and believes that *p* at t~0~. The next day, at t, she can't believe she read that *p* and reads the book again. It still says that *p*, but this is bizarre because a new version of the book that says ￢*p* was pushed out to all Kindles. Due to a network failure, Charlotte's Kindle was the only one not to get the push. She now doesn't know that *p*; this case is just like the safety cases and the Harman cases. The next day at t\* a corrected version of the book that says *p* is pushed out to all Kindles, including Charlotte's. Again perplexed, she triple checks, and comes to believe, and know, that *p*.
+> Charlotte reads the book on her Kindle, and believes that *p* at t~0~. The next day, at t, she can't believe she read that *p* and reads the book again. It still says that *p*, but this is bizarre because a new version of the book that says ¬*p* was pushed out to all Kindles. Due to a network failure, Charlotte's Kindle was the only one not to get the push. She now doesn't know that *p*; this case is just like the safety cases and the Harman cases. The next day at t\* a corrected version of the book that says *p* is pushed out to all Kindles, including Charlotte's. Again perplexed, she triple checks, and comes to believe, and know, that *p*.
 
 The ugly conjunction that IRT endorses is something that theories that are sensitive to safety considerations, or evidential availability considerations, also endorse. And the true theory is sensitive to one or other kind of these considerations.
 

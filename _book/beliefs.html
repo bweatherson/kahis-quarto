@@ -61,7 +61,7 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,22 +81,11 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
-</head><body class="nav-sidebar floating slimcontent">\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{#1 }{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[C]{\nouppercase{\textit \leftmark}}
-\fancyhead[R]{\thepage}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\addtolength{\headheight}{1.6pt}
 
 
+</head>
 
-
-
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,7 +109,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Knowledge</a> 
+      <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
@@ -216,14 +205,21 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#sec-beliefsinterests" id="toc-sec-beliefsinterests" class="nav-link active" data-scroll-target="#sec-beliefsinterests"><span class="header-section-number">3.1</span> Beliefs and Interests</a></li>
   <li><a href="#sec-mapslegends" id="toc-sec-mapslegends" class="nav-link" data-scroll-target="#sec-mapslegends"><span class="header-section-number">3.2</span> Maps and Legends</a></li>
   <li><a href="#sec-stubbie" id="toc-sec-stubbie" class="nav-link" data-scroll-target="#sec-stubbie"><span class="header-section-number">3.3</span> Belief and Stubbornness</a></li>
   <li><a href="#sec-given" id="toc-sec-given" class="nav-link" data-scroll-target="#sec-given"><span class="header-section-number">3.4</span> Taking As Given</a></li>
   <li><a href="#sec-block" id="toc-sec-block" class="nav-link" data-scroll-target="#sec-block"><span class="header-section-number">3.5</span> Blocking Belief</a></li>
   <li><a href="#sec-questions" id="toc-sec-questions" class="nav-link" data-scroll-target="#sec-questions"><span class="header-section-number">3.6</span> Questions and Conditional Questions</a></li>
-  <li><a href="#sec-mychanges" id="toc-sec-mychanges" class="nav-link" data-scroll-target="#sec-mychanges"><span class="header-section-number">3.7</span> A Million Dead End Streets</a></li>
+  <li><a href="#sec-mychanges" id="toc-sec-mychanges" class="nav-link" data-scroll-target="#sec-mychanges"><span class="header-section-number">3.7</span> A Million Dead End Streets</a>
+  <ul class="collapse">
+  <li><a href="#sec-mecorrect" id="toc-sec-mecorrect" class="nav-link" data-scroll-target="#sec-mecorrect"><span class="header-section-number">3.7.1</span> Correctness</a></li>
+  <li><a href="#sec-meimpractical" id="toc-sec-meimpractical" class="nav-link" data-scroll-target="#sec-meimpractical"><span class="header-section-number">3.7.2</span> Impractical Propositions</a></li>
+  <li><a href="#sec-threeway" id="toc-sec-threeway" class="nav-link" data-scroll-target="#sec-threeway"><span class="header-section-number">3.7.3</span> Choices with More Than Two Options</a></li>
+  <li><a href="#sec-meties" id="toc-sec-meties" class="nav-link" data-scroll-target="#sec-meties"><span class="header-section-number">3.7.4</span> Hard Times and Close Calls</a></li>
+  <li><a href="#sec-modalupdate" id="toc-sec-modalupdate" class="nav-link" data-scroll-target="#sec-modalupdate"><span class="header-section-number">3.7.5</span> Updates and Modals</a></li>
+  </ul></li>
   <li><a href="#usc" id="toc-usc" class="nav-link" data-scroll-target="#usc"><span class="header-section-number">3.8</span> Ross and Schroeder’s Theory</a></li>
   </ul>
 </nav>
@@ -252,7 +248,7 @@ div.csl-indent {
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-beliefsinterests"><span class="header-section-number">3.1</span> Beliefs and Interests</h2>
 <p>One core premise of this book is that someone knows something iff they properly take it to be settled. Taking something to be settled is what we might call believing it. Or, at least, it’s a philosophically significant precisification of the notion of belief. Since belief and settling will play such an important role in the rest of this book, I’m going to discuss them here before we turn to knowledge.</p>
 <p>The theory in this chapter owes a lot to proposals by Dorit Ganson <span class="citation" data-cites="Ganson2008 Ganson2019">(<a href="references.html#ref-Ganson2008" role="doc-biblioref">2008</a>, <a href="references.html#ref-Ganson2019" role="doc-biblioref">2019</a>)</span>. Like her, I’m going to develop a theory where we first say what it is to have a belief in normal cases, then include an exception clause for what happens in special cases, such as high-stakes or long-odds cases. The details will differ in some respects, but the underlying architecture will be the same.</p>
-<div class="page-columns page-full"><p>And it also owes a lot to work by Jonathan Weisberg <span class="citation" data-cites="Weisberg2013 Weisberg2020">(<a href="references.html#ref-Weisberg2013" role="doc-biblioref">2013</a>, <a href="references.html#ref-Weisberg2020" role="doc-biblioref">2020</a>)</span>. Believing something is a matter of being willing to use that thing as an input to deliberation.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If we assume perfect rationality, it will often be possible to compute what inputs a thinker is using from the the outputs of their deliberation. But it’s a bad idea to assume perfect rationality in the general case, and without that assumption the inputs and outputs to deliberation can be arbitrarily far apart. And when they are, it’s the inputs that matter to what someone believes. Here’s how Julia Staffel puts the idea.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;In earlier work I’d identified beliefs with something that we computed from the outputs of deliberation. This was a mistake; I should have been focussing on the inputs not the outputs. I’ll say much more in <a href="changes.html">section&nbsp;<span>7</span></a> about how my views on this point have changed.</p></li></div></div>
+<div class="page-columns page-full"><p>And it also owes a lot to work by Jonathan Weisberg <span class="citation" data-cites="Weisberg2013 Weisberg2020">(<a href="references.html#ref-Weisberg2013" role="doc-biblioref">2013</a>, <a href="references.html#ref-Weisberg2020" role="doc-biblioref">2020</a>)</span>. Believing something is a matter of being willing to use that thing as an input to deliberation.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If we assume perfect rationality, it will often be possible to compute what inputs a thinker is using from the the outputs of their deliberation. But it’s a bad idea to assume perfect rationality in the general case, and without that assumption the inputs and outputs to deliberation can be arbitrarily far apart. And when they are, it’s the inputs that matter to what someone believes. Here’s how Julia Staffel puts the idea.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;In earlier work I’d identified beliefs with something that we computed from the outputs of deliberation. This was a mistake; I should have been focussing on the inputs not the outputs. I’ll say much more in <a href="changes.html">chapter&nbsp;<span>7</span></a> about how my views on this point have changed.</p></li></div></div>
 <blockquote class="blockquote">
 <p>One of the most important differences between outright beliefs and credences is how they behave in reasoning. If someone relies on an outright belief in <em>p</em> in reasoning, the person takes p for granted, or treats <em>p</em> as true. The possibility that ¬<em>p</em> is ruled out. By contrast, if someone reasons with a high credence in <em>p</em>, they don’t take <em>p</em> for granted. The possibility that p might be false is not ruled out. <span class="citation" data-cites="Staffel2019">(<a href="references.html#ref-Staffel2019" role="doc-biblioref">Staffel 2019, 939</a>)</span></p>
 </blockquote>
@@ -284,7 +280,7 @@ div.csl-indent {
 <p>I think we should say that Stubbie is irrationally stubborn, and part of his irrationality consists in steering by the same map, in holding onto the same beliefs, in situations where this is uncalled for. Stubbie really believes that a simple supply-demand model is predictive even in complicated cases. He’s wrong, and his evidence shows that he is wrong, but our theory of belief had better allow for some false, irrational beliefs.</p>
 <p>Stubbie’s example shows that while one’s beliefs should be interest-relative, they need not be. One should steer by a map suitable to the circumstances. But if one stubbornly steers by the same map come what may, the fact that it would be advisable to steer by different maps at different times does not affect what one believes. Stubbie really is steering himself by the Melways when hiking, and he really believes the simple economic model he uses.</p>
 <p>This shows that one can be a believer, without having those beliefs be sensitive to one’s interests. That suggests that the interest-relativity of belief comes from the norms - how one should believe - not the metaphysics - what belief itself is.</p>
-<div class="page-columns page-full"><p>There is another complicated variant of this example that raises deeper questions about the relationship between belief and interests. Imagine that Stubbie is disposed to keep taking what history books say about Agincourt for granted. But now he is faced with a decision where a lot rides on this practice. Perhaps he is playing a version of the Red-Blue game where the prize is $50,000, not $50. And the shock of having that much at stake causes him to reconsider. So he goes back to thinking it merely probable that the Battle of Agincourt was in 1415. This is not a case of interest-relativity of belief. Rather, it is like the kind of case Jennifer Nagel <span class="citation" data-cites="Nagel2010">(<a href="references.html#ref-Nagel2010" role="doc-biblioref">2010</a>)</span> discusses, when she talks about beliefs being causally sensitive to interests. And this shows we have to be careful to be sure that a case of interest-sensitivity is really a case where belief is constitutively, and not merely causally, sensitive to interests.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;In earlier work I was not careful on exactly this point. I’ll say more about this in <a href="changes.html">section&nbsp;<span>7</span></a>.</p></li></div></div>
+<div class="page-columns page-full"><p>There is another complicated variant of this example that raises deeper questions about the relationship between belief and interests. Imagine that Stubbie is disposed to keep taking what history books say about Agincourt for granted. But now he is faced with a decision where a lot rides on this practice. Perhaps he is playing a version of the Red-Blue game where the prize is $50,000, not $50. And the shock of having that much at stake causes him to reconsider. So he goes back to thinking it merely probable that the Battle of Agincourt was in 1415. This is not a case of interest-relativity of belief. Rather, it is like the kind of case Jennifer Nagel <span class="citation" data-cites="Nagel2010">(<a href="references.html#ref-Nagel2010" role="doc-biblioref">2010</a>)</span> discusses, when she talks about beliefs being causally sensitive to interests. And this shows we have to be careful to be sure that a case of interest-sensitivity is really a case where belief is constitutively, and not merely causally, sensitive to interests.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;In earlier work I was not careful on exactly this point. I’ll say more about this in <a href="changes.html">chapter&nbsp;<span>7</span></a>.</p></li></div></div>
 <p>This version of Stubbie’s case opens up the possibility that no beliefs are really interest-relative. Sometimes a change in circumstances might cause someone to change the map they steer by, but that’s the only way that interests matter. I don’t think this is right, but I’m much less confident of this than I am of most of the other claims in this book.</p>
 <p>There are three significant differences between the way that interests change the beliefs of normal people to how they change Stubbie’s beliefs. First, they are reversible. Someone who switches to a more complicated model, or to thinking that a source provides probability rather than knowledge, can easily switch back. Second, they are predictable. For a reasonably well-functioning thinker, we can say when they will switch maps. It will be when the stakes are high, or the odds are long, or the question pushes on the limitations of their models. Third, they are not emotionally loaded. The natural way to tell this variant of Stubbie’s story involves shock; he feels the change in his attitude. But when you or I play the Red-Blue game, we switch from thinking something is true to thinking it is probable without any significant phenomenology. I think these three differences are enough to justify saying that in the normal case, the change of interests constitutes a change of beliefs, while in Stubbie’s case, the change of interests merely causes a change of beliefs. And if that’s right, the belief itself is interest-relative, in normal cases.</p>
 <p>But whether we accept the argument of the last paragraph or not, it won’t affect what we say about Anisa. She believes the Battle of Agincourt was in 1415. This belief is irrational; she should have switched to thinking it is merely probable that the battle was in 1415. The change in the rational status of her belief is constituted by, and not merely caused by, her change in interests. So interests can be constitutively relevant to rational belief, even when they don’t affect belief.</p>

@@ -8,7 +8,7 @@ The theory in this chapter owes a lot to proposals by Dorit Ganson [-@Ganson2008
 
 And it also owes a lot to work by Jonathan Weisberg [-@Weisberg2013; -@Weisberg2020]. Believing something is a matter of being willing to use that thing as an input to deliberation.[^beliefs-1] If we assume perfect rationality, it will often be possible to compute what inputs a thinker is using from the the outputs of their deliberation. But it's a bad idea to assume perfect rationality in the general case, and without that assumption the inputs and outputs to deliberation can be arbitrarily far apart. And when they are, it's the inputs that matter to what someone believes. Here's how Julia Staffel puts the idea.
 
-[^beliefs-1]: In earlier work I'd identified beliefs with something that we computed from the outputs of deliberation. This was a mistake; I should have been focussing on the inputs not the outputs. I'll say much more in [section @sec-changes] about how my views on this point have changed.
+[^beliefs-1]: In earlier work I'd identified beliefs with something that we computed from the outputs of deliberation. This was a mistake; I should have been focussing on the inputs not the outputs. I'll say much more in [chapter @sec-changes] about how my views on this point have changed.
 
 > One of the most important differences between outright beliefs and credences is how they behave in reasoning. If someone relies on an outright belief in *p* in reasoning, the person takes p for granted, or treats *p* as true. The possibility that ¬*p* is ruled out. By contrast, if someone reasons with a high credence in *p*, they don't take *p* for granted. The possibility that p might be false is not ruled out. [@Staffel2019, 939]
 
@@ -58,7 +58,7 @@ This shows that one can be a believer, without having those beliefs be sensitive
 
 There is another complicated variant of this example that raises deeper questions about the relationship between belief and interests. Imagine that Stubbie is disposed to keep taking what history books say about Agincourt for granted. But now he is faced with a decision where a lot rides on this practice. Perhaps he is playing a version of the Red-Blue game where the prize is \$50,000, not \$50. And the shock of having that much at stake causes him to reconsider. So he goes back to thinking it merely probable that the Battle of Agincourt was in 1415. This is not a case of interest-relativity of belief. Rather, it is like the kind of case Jennifer Nagel [-@Nagel2010] discusses, when she talks about beliefs being causally sensitive to interests. And this shows we have to be careful to be sure that a case of interest-sensitivity is really a case where belief is constitutively, and not merely causally, sensitive to interests.[^beliefs-4]
 
-[^beliefs-4]: In earlier work I was not careful on exactly this point. I'll say more about this in [section @sec-changes].
+[^beliefs-4]: In earlier work I was not careful on exactly this point. I'll say more about this in [chapter @sec-changes].
 
 This version of Stubbie's case opens up the possibility that no beliefs are really interest-relative. Sometimes a change in circumstances might cause someone to change the map they steer by, but that's the only way that interests matter. I don't think this is right, but I'm much less confident of this than I am of most of the other claims in this book.
 
