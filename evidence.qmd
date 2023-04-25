@@ -174,7 +174,7 @@ Two players, Row (or R) and Column (or C) will play a version of the following g
 | *A* |  4, 4  |  0, *x*  |
 | *B* | *x*, 0 | *x*, *x* |
 
-They won't be told what *x* is, but they will get a noisy signal of *x*, drawn from an even distribution over \[*x* - 0.25, *x* + 0.25\]. Call these signals *s~R~* and *s~C~* . Each player must then choose *A*, getting either 4 or 0 depending on the other player's choice, or choose *B*, getting *x* for sure.
+They won't be told what *x* is, but they will get a noisy signal of *x*, drawn from an even distribution over \[*x* - 0.25, *x* + 0.25\]. Call these signals *s~R~* and *s~C~*. Each player must then choose *A*, getting either 4 or 0 depending on the other player's choice, or choose *B*, getting *x* for sure.
 
 Before getting the signal, the players must choose a strategy. A strategy is a function from signals to choices. Since the higher the signal is, the better it is to play *B*, we can equate strategies with 'tipping points', where the player plays *B* if the signal is above the tipping point, and *A* below the tipping point. Strictly speaking, a tipping point will pick out not a strategy but an equivalence class of strategies, which differ in how they act if the signal is the tipping point. But since that happens with probability 0, the strategies in the equivalence class have the same expected return, and so I won't distinguish them.
 
@@ -229,9 +229,7 @@ We can actually rule out slightly more at the first step in this game than in th
 
 At any stage, if for *y* \> 2 we know *T~C~* ≤ y, then *T~R~* = *y* dominates *T~R~* \> *y*. That's because if *s~R~* ≥ *y*, and *T~C~* ≤ *y*, then the probability that Column will play *a* (given Row's signal) is less than 0.5. After all, the signal is just as likely to be above *x* as below it (as long as the signal isn't too close to the extremes). So if *s~R~* is at or above *T~C~*, then it is at least 0.5 likely that *s~C~* = *x* is at or above *T~C~*. So the expected return of playing *A* is at most 2. But the expected return of playing *B* equals the signal, which is greater than 2. So if Row knows *T~C~* ≤ *y*, for *y* \> 2, Row also knows it is better to play *B* if *s~R~* ≥ *y*. And that just means that *T~R~* ≤ *y*.
 
-Assume now that it is common knowledge that *T~R~* ≤ *y*, for some *y* \> 2. And assume that *x* = *s~C~* is just a little less than *y*. In particular, define *z* = *y* - *x*, and assume *z* ∈ (0, 0.25). We want to work out the upper bound on the expected return to Column of playing *a*. (The return of playing *b* is known, it is *x*.) The will be highest when *T~R~* is lowest, so assume *T~R~* ≤ *y*. Then the probability that Row plays *A* is (1 + 2*z*)/2. So the expected return of playing *a* is 2 + 4*z*, i.e., 2 + 4(*y* - *x*). That will be greater than *x* only when
-
-$$x < \frac{2 + 4y}{5}$$
+Assume now that it is common knowledge that *T~R~* ≤ *y*, for some *y* \> 2. And assume that *x* = *s~C~* is just a little less than *y*. In particular, define *z* = *y* - *x*, and assume *z* ∈ (0, 0.25). We want to work out the upper bound on the expected return to Column of playing *a*. (The return of playing *b* is known, it is *x*.) The will be highest when *T~R~* is lowest, so assume *T~R~* ≤ *y*. Then the probability that Row plays *A* is (1 + 2*z*)/2. So the expected return of playing *a* is 2 + 4*z*, i.e., 2 + 4(*y* - *x*). That will be greater than *x* only when *x* < (2 + 4*y*)/5.
 
 So if it is common knowledge that *T~R~* ≤ *y*, then it is best for Column to play *b* unless *x* \< (2 + 4*y*)/5. That is, if it is common knowledge that *T~R~* ≤ *y*, then *T~C~* must be at most (2 + 4*y*)/5.
 

@@ -41,7 +41,7 @@ This choice of focus occasionally means that this book is less connected to the 
 
 Though I am starting with an example, and with an intuition about it, I am not starting with an intuition about what is known in the example. I don't have any clear intuitions about what Anisa knows or doesn't know while playing the Red-Blue game. The intuition that matters here is that her choice of Blue-True is irrational. It's going to be a matter of inference, not intuition, that Anisa lacks knowledge.
 
-And that inference will largely be by process of elimination. In  [section @sec-fourfamilies] I will set out four possible things we can say about Anisa, and argue that one of them must be true. (The argument won't appeal to any principles more controversial than the Law of Excluded Middle.) But all four of them, including the interest-relative view I favour, have fairly counterintuitive consequences. So something counterintuitive is true around here. And this puts a limit on how we can argue. At least one instance of the argument *this is counterintuitive, so it is false* must fail. And that casts doubt over all such arguments. This is a point that critics of interest-relativity haven't sufficiently acknowledged, but it also puts constraints on how one can defend interest-relativity.
+And that inference will largely be by process of elimination. In [section @sec-fourfamilies] I will set out four possible things we can say about Anisa, and argue that one of them must be true. (The argument won't appeal to any principles more controversial than the Law of Excluded Middle.) But all four of them, including the interest-relative view I favour, have fairly counterintuitive consequences. So something counterintuitive is true around here. And this puts a limit on how we can argue. At least one instance of the argument *this is counterintuitive, so it is false* must fail. And that casts doubt over all such arguments. This is a point that critics of interest-relativity haven't sufficiently acknowledged, but it also puts constraints on how one can defend interest-relativity.
 
 When Anisa starts playing the Red-Blue game, her practical situation changes. So you might think I've gone wrong in stressing Anisa's interests, not her practical situation. I've put the focus on interests for two reasons. One is that if Anisa is totally indifferent to money, then there is no rational requirement to play Red-True. We need to posit something about Anisa's interests to even get the data point that the interest-relative theory explains. The second reason, which I'll talk about more in [section @sec-whatinterests], is that sometimes we can lose knowledge due to a change not in our practical situation, but our theoretical interests.
 
@@ -249,7 +249,7 @@ This is not the version of IRT defended in this book. Instead, the version of IR
 [^interests-5]: This simplifies the relationship between rational choice and expected utility maximisation. Later in the book I'll have to be much more careful about this relationship. See chapter [-@sec-ties] for many more details.
 
 $$
-\frac{\Pr(p)}{1 ‑ \Pr(p)} > \frac{L}{G}
+\frac{\Pr(\textit{p})}{1 ‑ \Pr(\textit{p})} > \frac{\textit{L}}{\textit{G}}
 $$
 
 The left hand side expresses the odds that *p* is true. The right hand side expresses how high those odds have to be before the risk is worth taking. If the equation fails to hold, then the risk is not worth taking. And if risk is not worth taking, then the subject doesn't know that *p*.
@@ -258,7 +258,7 @@ Since the numerator of the right hand side is *L*, then one way to destroy knowl
 
 In effect, we've seen such a situation with Anisa. But to make the parallel to Anisa's case even clearer, consider Darja's case. Darja has been reading books about World War One, and yesterday read that Franz Ferdinand was assassinated on St Vitus's Day, June 28, 1914. She is now offered a chance to play a slightly unusual quiz game. She has to answer the question *What was the date of Franz Ferdinand's assassination?* If she gets it right, she wins \$50. If she gets it wrong, she wins nothing. Here's what is strange about the game. She is allowed to Google the answer before answering. So here are the two live options for Darja. In the table, and in what follows, *p* is the proposition that Franz Ferdinand was indeed assassinated on June 28, 1914.
 
-|                     |   $p$    |  ¬ $p$  |
+|                     |   *p*    |  ¬ *p*   |
 |--------------------:|:--------:|:--------:|
 | Say "June 28, 1914" |    50    |    0     |
 |   Google the answer | \$50 ‑ ε | \$50 ‑ ε |

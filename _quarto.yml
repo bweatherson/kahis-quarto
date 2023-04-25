@@ -37,7 +37,7 @@ format:
     reference-location: margin
     margin-header: "&nbsp;"
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
     geometry: "left=1.95in,right=1.95in,top=1.78in,bottom=1.78in"
     mainfont: STIX Two Math
     sansfont: Lato
@@ -59,6 +59,9 @@ format:
         \setlength\lightrulewidth{0ex}
         \addtolength{\headheight}{1.6pt}
   docx:
+    toc: true
+    number-sections: true
+  epub:
     toc: true
     number-sections: true
     
