@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.253">
+<meta name="generator" content="quarto-1.3.302">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,11 +89,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./power.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -101,85 +106,98 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main">
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./background.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></a>
+  <a href="./background.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interests.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a>
+  <a href="./interests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beliefs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a>
+  <a href="./beliefs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./knowledge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a>
+  <a href="./knowledge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inquiry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></a>
+  <a href="./inquiry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ties.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a>
+  <a href="./ties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./changes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></a>
+  <a href="./changes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rationality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></a>
+  <a href="./rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evidence.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a>
+  <a href="./evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./power.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a>
+  <a href="./power.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -191,7 +209,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-power" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></h1>
+<h1 class="title"><span id="sec-power" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></h1>
 </div>
 
 
@@ -215,24 +233,24 @@ div.csl-indent {
 <dl>
 <dt>Means-End Rationality</dt>
 <dd>
-If <em>X</em> should be aiming for end <em>E</em>, and <em>X</em> knows both that action <em>A</em> is the only means to end <em>E</em>, and that <em>A</em> will indeed lead to end <em>E</em>, to then <em>X</em> should intend to perform <em>A</em>.
+<p>If <em>X</em> should be aiming for end <em>E</em>, and <em>X</em> knows both that action <em>A</em> is the only means to end <em>E</em>, and that <em>A</em> will indeed lead to end <em>E</em>, to then <em>X</em> should intend to perform <em>A</em>.</p>
 </dd>
 <dt>Strict Dominance Reasoning</dt>
 <dd>
-If <em>X</em> has to choose between <em>A</em> and <em>B</em>, and there is some partition <em>P</em> of a space of possibilities such that <em>X</em> knows both that precisely one member of <em>P</em> is actual, and that conditional on each member of <em>P</em>, <em>A</em> is better than <em>B</em>, then <em>X</em> should prefer <em>A</em> to <em>B</em>.
+<p>If <em>X</em> has to choose between <em>A</em> and <em>B</em>, and there is some partition <em>P</em> of a space of possibilities such that <em>X</em> knows both that precisely one member of <em>P</em> is actual, and that conditional on each member of <em>P</em>, <em>A</em> is better than <em>B</em>, then <em>X</em> should prefer <em>A</em> to <em>B</em>.</p>
 </dd>
 </dl>
 <div class="page-columns page-full"><p>Given orthodoxy, neither of these can be correct. In each case, <em>X</em> might know that <em>A</em> will lead to a good outcome, but it also be sufficiently probable that <em>A</em> will lead to a disastrous outcome that it is irrational for <em>X</em> to choose <em>A</em>. That’s absurd, and so we should reject orthodoxy. The interest-relative view makes these, and any number of related principles, turn out unrestrictedly true.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Note that it’s not much help to say that the principles are approximately true on the orthodox picture. In game theory we want to be able to iterate principles like this, and approximately true principles can’t be applied iteratively.</p></li></div></div>
 <p>If these are the two reasons for adopting an interest-relative view, the appeal of some kind of contextualist version of an interest-invariant view should be clear. The contextualist can, and does, say that there is something special about the boundary between knowledge and non-knowledge. When one say that someone knows something, one means (more or less) that their evidence for that thing is good enough for one’s own purposes. Any speaker of the language can truly say, “When I use ‘knows’, it means what I need it to mean, neither more nor less.” We could quibble here, but that’s something like a solution to the problem of arbitrariness.</p>
 <p>The problems come with the principles like Means-End Rationality and Strict Dominance Reasoning. These are both false on contextualist views. Contextualists are aware of this fact, and say that they have something nearly as good: a meta-linguistic replacement. Both principles are true if we replace talk about what <em>X</em> knows with talk about what <em>X</em> can truly self-predicate ‘knowledge’ of. It doesn’t matter whether <em>X</em> knows that <em>A</em> will lead to end <em>E</em>, but whether <em>X</em> can say the words <em>I know that performing A will lead to end E</em>. But it’s absurd to think that fundamental principles of rationality should make reference to a particular language, e.g., English, like this. So contextualism cannot get us out of this jam. This is not to say that contextualism is false. Maybe there are other reasons to believe in contextualism. It might be supported by general principles about the way that names behave in attitude ascriptions. Or it might be a consequence of the view that ‘knows’ is polysemous, a view I suggested back in <a href="inquiry.html">chapter&nbsp;<span>5</span></a>. Or it might be supported by reflection on cases where people talk about others with lower evidential needs than their own. I don’t take a stance on these questions here; I’m just arguing that contextualism doesn’t save orthodoxy.</p>
 <p>But all these benefits of the interest-relative view are of no use if the view has even worse defects. And most of this book has involved pushing back against some of the alleged defects of the view. In some case, I’ve avoided possible criticisms by adopting a form of interest-relative epistemology that doesn’t allow the criticisms to take hold. Many existing critiques of interest-relative epistemology focus on forms of the view where being in a ‘high stakes’ situation is relevant to what one knows. Since my version of the view doesn’t have stakes play a direct role, those criticisms don’t have any bite. Other critiques target a part-time version of interest-relative epistemology, where some but not all key notions are interest-relative. I used to endorse such a part-time interest-relative theory, but eventually decided that the criticisms were decisive.</p>
-<p>Still, many criticisms do need replies, and that’s taken up much of the book. So in <a href="beliefs.html">chapter&nbsp;<span>3</span></a> I replied to (successful) criticisms of how I’d formally handled knowledge of propositions that are not relevant to the thinker’s current inquiries. In <a href="inquiry.html">chapter&nbsp;<span>5</span></a> I replied to arguments that started with the observation that it sometimes seems right to double check things that we know. And in <a href="ties.html">chapter&nbsp;<span>6</span></a> I replies to arguments based on versions of interest-relative epistemology (including the version I’d previously endorsed) handled choices between nearly indistinguishable options.</p>
-<p>Many criticisms of interest-relative epistemology do not turn on detailed engagement with how the view handles this or that case, but on the very idea of interests being relevant to epistemology. One way you see this is with arguments that just start from the implausibility of two people who are alike in evidence differing with respect to knowledge. But you also see it in the surprisingly common position in the literature that there is some extra large burden of proof on defenders of interest-relativity. It seems to be a common presupposition that unless there is a super compelling argument that knowledge is interest-relative, we should reject the idea that it is, even if there is no equally compelling argument against the idea. I’m in general very sceptical of burden of proof arguments; it always looks like an attempt to win by bribing the umpires. But there is extra reason to be sceptical here. The reason I so belabored the point in <a href="changes.html">chapter&nbsp;<span>7</span></a> about how many things we know knowledge is sensitive to, was to show that it is really very hard to make any sweeping generalisations about what might matter to knowledge.</p>
+<p>Still, many criticisms do need replies, and much of this book has consisted in replying to them. In <a href="beliefs.html">chapter&nbsp;<span>3</span></a> I replied to (successful) criticisms of how I’d formally handled knowledge of propositions that are not relevant to the thinker’s current inquiries. In <a href="inquiry.html">chapter&nbsp;<span>5</span></a> I replied to arguments that started with the observation that it sometimes seems right to double check things that we know. And in <a href="ties.html">chapter&nbsp;<span>6</span></a> I replied to arguments based on how some versions of interest-relative epistemology (including the version I’d previously endorsed) handled choices between nearly indistinguishable options.</p>
+<p>Many criticisms of interest-relative epistemology do not turn on detailed engagement with how the view handles this or that case, but on the very idea of interests being relevant to epistemology. One way you see this is with arguments that just start from the implausibility of two people who are alike in evidence differing with respect to knowledge. But you also see it in the surprisingly common position in the literature that there is some extra large burden of proof on defenders of interest-relativity. It seems to be a common presupposition that unless there is a super compelling argument that knowledge is interest-relative, we should reject the idea that it is, even if there is no equally compelling argument against the idea. I’m in general very sceptical of burden of proof arguments; it always looks like an attempt to win by bribing the umpires. But there is extra reason to be sceptical here. The reason I so belabored the point in <a href="changes.html">chapter&nbsp;<span>7</span></a> about how many sensitive knowledge is to a variety of environmental factors was to show that it is really very hard to make any sweeping generalisations about what might matter to knowledge.</p>
 <p>We’ve known since 1963 (if not many centuries before) that knowledge depends on more than just the evidential basis of the thing purportedly known. Since then there has been a dizzying array of proposals about what else knowledge might depend on. And on reflection, many of these proposals have been very plausible. This book aims to defend one such proposal, that knowledge depends on interests. In particular, how much evidential support one needs to have knowledge depends on what inquiries one is, and should be, engaged in. Given the tight relationships between knowledge and rational action, adding this to the vast list of things knowledge is sensitive to should not be surprising.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-MandelkernEtAl2017" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-MandelkernEtAl2017" class="csl-entry" role="listitem">
 Mandelkern, Matthew, Ginger Schultheis, and David Boylan. 2017. <span>“Agentive Modals.”</span> <em>Philosophical Review</em> 126 (3): 301–43. <a href="https://doi.org/10.1215/00318108-3878483">https://doi.org/10.1215/00318108-3878483</a>.
 </div>
 </div>
@@ -381,9 +399,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -448,6 +480,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
