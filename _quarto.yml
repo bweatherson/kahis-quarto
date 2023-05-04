@@ -5,10 +5,12 @@ book:
   title: "Knowledge"
   subtitle: "A Human Interest Story"
   author: "Brian Weatherson"
-  date: "4/24/2023"
+  date: now
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
   chapters:
     - index.qmd
-    - background.qmd
+    - history.qmd
     - interests.qmd
     - beliefs.qmd
     - knowledge.qmd
@@ -64,7 +66,7 @@ format:
   epub:
     toc: true
     number-sections: true
-    
+
 editor: visual
 
 
