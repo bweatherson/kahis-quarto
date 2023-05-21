@@ -14,9 +14,40 @@ The argument here will be in two parts. First, I'll focus on practical inquiries
 
 ## Knowledge and Practical Interests {#sec-structure}
 
-A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.[^knowledge-1] We take something as given in that inquiry iff it is encoded in the right way in the decision table. The primary way that we encode a proposition *p* into a decision table is to set up the table so that *p* is true in every column. If we use a table where *p* is encoded in this way, and *p* is not known, we are making a mistake. And in particular, we are making an epistemic mistake.
+A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.[^knowledge-1] Here is a simple example of such a table, representing a situation where there are two choices, and two possible states.
 
-[^knowledge-1]: This section is based on §1.1 of my [-@Weatherson2012].
+|        | *S*~1~  | *S~2~*  |
+|-------:|:-------:|:-------:|
+| *C*~1~ | *v*~11~ | *v*~12~ |
+| *C*~2~ | *v*~22~ | *v*~22~ |
+
+There are (at least) nine ways in which such a table could misrepresent the situation a chooser faces. To put the same point another way, there are nine ways in which such a table could correctly represent the situation an agent faces. One way to think about the project of this book is to say what it means for a table to correctly represent a decision situation in one of these nine respects. I'll structure the following discussion around the possible misrepresentations, and then come back to what it means for a table to correctly represent.
+
+First, the *v* values might be wrong. It might have *v*~11~ > *v*~22~, but in fact it would be better for the chooser if they ended up in the bottom right cell to the top left cell. The theory of well-being [@sep-well-being] is about the conditions when it is, and isn't, appropriate to have *v*~11~ > *v*~22~. That's a big topic, and not one I'm going to have anything to say about here.^[As well as questions about well-being, there are also questions here about what one should do in cases where the outcome is itself a kind of gamble. Imagine that chooser is trying to decide whether to bet on a basketball game, and it is known how much money they will win or lose in the four states. The value to the chooser of those outcomes depends on any number of further things, like the rate of inflation in the near term, and the "position of wealth holders in the social system" [@Keynes1937, 214] some years hence. Just how these uncertainties should be accounted for is a difficult question, especially for any theorist who deviates in any way from orthodox expected utility theory. I would like to have a better theory of how the account of decision making with deliberation costs that I discuss in [chapter @sec-ties] interacts with this question.]
+
+The next four possible misrepresentations concern the rows. The rows are meant to represent the options the chooser has. And the table could go wrong in four ways.
+
+- It could include options that shouldn't be there.
+- It could exclude options that should be there.
+- It could include an option that should be divided into distinct options.
+- It could split up options that should be treated as a single option.
+
+Each of these four things seems possible, but it is a very hard question to say precisely what it means for the table to make one of these four mistakes. The philosophical work on abilities [@sep-abilities] is very rich, and seems relevant to these debates. In some sense it seems right to say that there should be a row on the table for all and only the things the chooser has the ability to bring about, and which are relevant to the outcome. Even saying that though seems to get us into trouble. What should we say about abilities the chooser has, but doesn't know they have, or which they think they might have? What should we say about distinct choices that will in fact lead to the same outcome in all states, but which the chooser does not know will lead to the same outcome? These are all incredibly hard questions, and while I hope to have something to say about them some day, today is not that day.
+
+The last four possible misrepresentations concern the columns. This is where I do have something to say. The columns are meant to represent the ways the world outside the chooser could be, in ways that are relevant to the outcome of the choice. Again, there are four ways the table could misrepresent the situation.
+
+- It could include states that shouldn't be there.
+- It could exclude states that should be there.
+- It could include a state that should be split into distinct states.
+- It could split up states that should be treated as a single state.
+
+The core thesis of this book concerns the second of these. The table misrepresents the problem the decider faces if the decider does not know that one of the listed states obtains. For example, the schematic table above is a good representation of a choice only if the chooser knows that the disjunction *S*~1~ $\vee$ *S*~2~ obtains.
+
+If the chooser does know that *S*~1~ $\vee$ *S*~2~ obtains, that doesn't mean the columns are correct. It could be that one or other of them should be excluded. It could be that one or other of them should be broken up. For example, it could be that there should be one column for *S*~1~ $\wedge$ *p*, and another column for *S*~1~ $\wedge \neg$ *p*. Still, if the 
+
+We take something as given in that inquiry iff it is encoded in the right way in the decision table. The primary way that we encode a proposition *p* into a decision table is to set up the table so that *p* is true in every column. If we use a table where *p* is encoded in this way, and *p* is not known, we are making a mistake. And in particular, we are making an epistemic mistake.
+
+[^knowledge-1]: This section is loosely based on §1.1 of my [-@Weatherson2012].
 
 To see this, let's start with an example. Professor Dec is teaching introductory decision theory to her undergraduate class. She is trying to introduce the notion of a dominant choice. So she introduces the following problem, with two states, *S*~1~ and *S*~2~, and two choices, *C*1 and *C*~2~, as is normal for introductory problems.
 
