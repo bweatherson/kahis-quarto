@@ -12,7 +12,7 @@ I think this argument is basically sound. But both premises are controversial, a
 
 The argument here will be in two parts. First, I'll focus on practical inquiries, i.e., inquiries about what to do, and argue that what is known can be taken as given in all practical inquiries. Then I'll extend the discussion to theoretical inquiries, and hence to inquiries in general. Then with the argument complete, I'll look at two possible objections to the argument - that it has implausible consequences about the role of logical reasoning in extending knowledge, and that it leads to implausible results when a source provides both relevant and irrelevant information.
 
-## Making a Decision {#sec-makdec}
+## Ten Decision Commandments {#sec-makdec}
 
 A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.[^knowledge-1] Here, for instance, is a table for the problem faced by a person, call him Ragnar, choosing how to get to work.
 
@@ -43,7 +43,45 @@ Fifth, the table might have merged multiple options that should be separated. Pe
 
 Sixth, the table might have separated multiple options that should be merged. It's hard to see how [table @tbl-walkbus] could have made this mistake, but if we had separate rows for walking while wearing a red shirt, and walking while wearing a blue shirt, it would be arguable that this is too fine a grain, and the right table would not distinguish these.
 
+The final four questions concern the columns, and they mirror the four questions about the rows. These questions will be central to the narrative of this chapter, and of this whole book.
 
+Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities^[As noted back in [section @sec--given], I'm using 'possibilities' here in the sense described by @Humberstone1981.], and perhaps they should be included.
+
+Eighth, the table might include a state that should not be there. If it is bucketing down as Ragnar is preparing to leave, including a state where it is dry might be a mistake.
+
+Ninth, the table might have merged states that should be separated. Perhaps the column that simply says _Dry_ should have been split into two: one being _Dry and Sunny_, the other being _Dry and Cloudy_.
+
+Tenth, the table might have split states that should be merged. It's unlikely that a two state table will do this, but if we had made the split suggested in the previous paragraph, one could easily argue that it was a mistake, and that Ragnar should have treated these as a single state.
+
+That gives us ten ways that the table could go wrong. It's helpful to have them in a simple list.
+
+1. The values could be wrong.
+2. The probabilities could be wrong.
+3. An option could be improperly excluded.
+4. An option could be improperly included.
+5. The options might be too coarse-grained.
+6. The options might be too fine-grained.
+7. A state could be improperly excluded.
+8. A state could be improperly included.
+9. The states might be too coarse-grained.
+10. The states might be too fine-grained.
+
+For every one of these ten possible mistakes, there is a prior philosophical question about what it means for the table to have made, or not made, that mistake. Every one of those ten questions is, at least to my mind, incredibly philosophically important. Even someone who thought, like Foxwell, that books should only be written for "grave cause" [@Keynes1936Foxwell, 599], should concede that a clear answer to any one of the ten would be sufficient grounds to warrant a scholarly monograph.
+
+This book is primarily concerned with the seventh, though the argument touches to some extent on the eighth as well. It is proper to exclude a possibility from the table if the chooser knows that possibility does not obtain. If that conditional could be turned into a biconditional, we'd have an answer to the eighth question, too, but that is a more delicate question.^[Back in [section @sec-neutrality] I said I was staying neutral on that question, and I'm not changing that position here.] In any case, the conditional will be enough.
+
+Herbert Somerton Foxwell
+
+By J. M. Keynes
+Publication Date: 1936-12-01
+Journal: The economic journal : the quarterly journal of the Royal Economic Society.
+Volume: 46
+Issue: 184
+Page: 589-619
+ISSN: 0013-0133
+Resource: Article
+DOI: 10.2307/2224674
+ 
 
 Third, the table might have left off an option that should be included. Perhaps 
 
