@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.2.253">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,15 +17,14 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -39,7 +38,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,16 +89,11 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./beliefs.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -106,132 +101,115 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main tools-wide">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
-            Facebook
-            </a>
-          </li>
-      </ul>
-    </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./history.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interests.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></span></a>
+  <a href="./interests.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beliefs.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></a>
+  <a href="./beliefs.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./knowledge.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></span></a>
+  <a href="./knowledge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inquiry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span></a>
+  <a href="./inquiry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ties.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></a>
+  <a href="./ties.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></span></a>
+  <a href="./changes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rationality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></span></a>
+  <a href="./rationality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></a>
+  <a href="./evidence.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./power.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></a>
+  <a href="./power.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -240,21 +218,21 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-beliefsinterests" id="toc-sec-beliefsinterests" class="nav-link active" data-scroll-target="#sec-beliefsinterests"><span class="header-section-number">3.1</span> Beliefs and Interests</a></li>
-  <li><a href="#sec-mapslegends" id="toc-sec-mapslegends" class="nav-link" data-scroll-target="#sec-mapslegends"><span class="header-section-number">3.2</span> Maps and Legends</a></li>
-  <li><a href="#sec-stubbie" id="toc-sec-stubbie" class="nav-link" data-scroll-target="#sec-stubbie"><span class="header-section-number">3.3</span> Belief and Stubbornness</a></li>
-  <li><a href="#sec-given" id="toc-sec-given" class="nav-link" data-scroll-target="#sec-given"><span class="header-section-number">3.4</span> Taking As Given</a></li>
-  <li><a href="#sec-block" id="toc-sec-block" class="nav-link" data-scroll-target="#sec-block"><span class="header-section-number">3.5</span> Blocking Belief</a></li>
-  <li><a href="#sec-questions" id="toc-sec-questions" class="nav-link" data-scroll-target="#sec-questions"><span class="header-section-number">3.6</span> Questions and Conditional Questions</a></li>
-  <li><a href="#sec-mychanges" id="toc-sec-mychanges" class="nav-link" data-scroll-target="#sec-mychanges"><span class="header-section-number">3.7</span> A Million Dead End Streets</a>
+  <li><a href="#sec-beliefsinterests" id="toc-sec-beliefsinterests" class="nav-link active" data-scroll-target="#sec-beliefsinterests"><span class="toc-section-number">3.1</span>  Beliefs and Interests</a></li>
+  <li><a href="#sec-mapslegends" id="toc-sec-mapslegends" class="nav-link" data-scroll-target="#sec-mapslegends"><span class="toc-section-number">3.2</span>  Maps and Legends</a></li>
+  <li><a href="#sec-stubbie" id="toc-sec-stubbie" class="nav-link" data-scroll-target="#sec-stubbie"><span class="toc-section-number">3.3</span>  Belief and Stubbornness</a></li>
+  <li><a href="#sec-given" id="toc-sec-given" class="nav-link" data-scroll-target="#sec-given"><span class="toc-section-number">3.4</span>  Taking As Given</a></li>
+  <li><a href="#sec-block" id="toc-sec-block" class="nav-link" data-scroll-target="#sec-block"><span class="toc-section-number">3.5</span>  Blocking Belief</a></li>
+  <li><a href="#sec-questions" id="toc-sec-questions" class="nav-link" data-scroll-target="#sec-questions"><span class="toc-section-number">3.6</span>  Questions and Conditional Questions</a></li>
+  <li><a href="#sec-mychanges" id="toc-sec-mychanges" class="nav-link" data-scroll-target="#sec-mychanges"><span class="toc-section-number">3.7</span>  A Million Dead End Streets</a>
   <ul class="collapse">
-  <li><a href="#sec-mecorrect" id="toc-sec-mecorrect" class="nav-link" data-scroll-target="#sec-mecorrect"><span class="header-section-number">3.7.1</span> Correctness</a></li>
-  <li><a href="#sec-meimpractical" id="toc-sec-meimpractical" class="nav-link" data-scroll-target="#sec-meimpractical"><span class="header-section-number">3.7.2</span> Impractical Propositions</a></li>
-  <li><a href="#sec-threeway" id="toc-sec-threeway" class="nav-link" data-scroll-target="#sec-threeway"><span class="header-section-number">3.7.3</span> Choices with More Than Two Options</a></li>
-  <li><a href="#sec-meties" id="toc-sec-meties" class="nav-link" data-scroll-target="#sec-meties"><span class="header-section-number">3.7.4</span> Hard Times and Close Calls</a></li>
-  <li><a href="#sec-modalupdate" id="toc-sec-modalupdate" class="nav-link" data-scroll-target="#sec-modalupdate"><span class="header-section-number">3.7.5</span> Updates and Modals</a></li>
+  <li><a href="#sec-mecorrect" id="toc-sec-mecorrect" class="nav-link" data-scroll-target="#sec-mecorrect"><span class="toc-section-number">3.7.1</span>  Correctness</a></li>
+  <li><a href="#sec-meimpractical" id="toc-sec-meimpractical" class="nav-link" data-scroll-target="#sec-meimpractical"><span class="toc-section-number">3.7.2</span>  Impractical Propositions</a></li>
+  <li><a href="#sec-threeway" id="toc-sec-threeway" class="nav-link" data-scroll-target="#sec-threeway"><span class="toc-section-number">3.7.3</span>  Choices with More Than Two Options</a></li>
+  <li><a href="#sec-meties" id="toc-sec-meties" class="nav-link" data-scroll-target="#sec-meties"><span class="toc-section-number">3.7.4</span>  Hard Times and Close Calls</a></li>
+  <li><a href="#sec-modalupdate" id="toc-sec-modalupdate" class="nav-link" data-scroll-target="#sec-modalupdate"><span class="toc-section-number">3.7.5</span>  Updates and Modals</a></li>
   </ul></li>
-  <li><a href="#usc" id="toc-usc" class="nav-link" data-scroll-target="#usc"><span class="header-section-number">3.8</span> Ross and Schroeder’s Theory</a></li>
+  <li><a href="#sec-usc" id="toc-sec-usc" class="nav-link" data-scroll-target="#sec-usc"><span class="toc-section-number">3.8</span>  Ross and Schroeder’s Theory</a></li>
   </ul>
 </nav>
     </div>
@@ -263,7 +241,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-belief" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></h1>
+<h1 class="title"><span id="sec-belief" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></h1>
 </div>
 
 
@@ -336,7 +314,9 @@ div.csl-indent {
 <p>Sully’s reasoning isn’t just dominance reasoning. It’s dominance reasoning that relies on a contingent assumption, namely that the Red Sox won the World Series in 2004. When Sully reasons that A can’t do better than B, he’s not drawing any kind of logical or metaphysical point. It’s logically and metaphysically possible that the Red Sox lost in 2004. For that matter, and this is a point <span class="citation" data-cites="Ganson2019">Ganson (<a href="references.html#ref-Ganson2019" role="doc-biblioref">2019</a>)</span> stresses, it’s logically and metaphysically possible that the payouts for A and B are other than what Sully thinks they are.</p>
 <p>And thought he might not make it explicit, at some level Sully surely knows this. If pushed, he’d endorse the conditional “If I’ve misremembered when the curse-busting World Series win was, and the Red Sox didn’t win in 2004, then bet A might do better than bet B”. So while he is disposed to use dominance reasoning in deciding whether to take A or B, this disposition rests on taking some facts about the world for granted.</p>
 <p>Recall the disjunctive way that Sully reasoned. Either the Red Sox will win this year or they won’t. Either way, I won’t do better taking bet A, but I might do better taking bet B. So I’ll take bet B. This reasoning - not just the reasons Sully has but his reasoning - can be appropriately represented by the kind of decision table that is familiar from decision theory or game theory.</p>
+<div id="tbl-redsox" class="anchored">
 <table class="table">
+<caption>Table&nbsp;3.1: Betting on the Red Sox</caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;">&nbsp;</th>
@@ -357,6 +337,7 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
 <div class="page-columns page-full"><p>Focus for now on the columns in this table. Sully takes two possibilities seriously: that the Red Sox win this year, and that they don’t. The ‘possibilities’ here are possibilities in the sense described by Humberstone <span class="citation" data-cites="Humberstone1981">(<a href="references.html#ref-Humberstone1981" role="doc-biblioref">1981</a>)</span>. They have content - in one of them the Red Sox win, in the other they don’t, but they don’t settle all facts. In the right-hand column, there is no fact of the matter about which other team wins the World Series. In neither column is there a fact of the matter about what Sully will have for lunch tomorrow. If you want to think of these in terms of worlds, they are both very large sets of worlds, and within those sets there is a lot of variability.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;Analysing these possibilities as sets of worlds is unhelpful when we want to use a model like this to represent modal or logical uncertainty. But it’s a helpful heuristic in most cases. And there isn’t anything wrong with using a model that breaks down when applied outside its appropriate zone.</p></li></div></div>
 <p>But there is more to the content of each column than what is explicitly represented in the header row. In each column, for example, the Red Sox won in 2004. That’s why Sully can put those monetary payoffs into the cells. And in each column, the terms of the bet are as Sully knows that they are. In sets of worlds terms, the sets that are represented by the columns are exclusive, but far from exhaustive.</p>
 <p>Consider those propositions which are true according to all of the columns in this table. Say a proposition is <em>taken as given</em> in a decision problem when it the decider treats one option as dominating another, and does so in virtue of a table in which that proposition is true in every column. Then here is one principle about belief that seems to be very plausible.</p>
@@ -367,7 +348,7 @@ div.csl-indent {
 </dd>
 </dl>
 <p><strong>Given</strong> is logically weak in one respect, and strong in another. It only requires that S be willing to take <em>p</em> for granted in one possible choice. It doesn’t have to be a likely, or even particularly realistic choice. Sully is unlikely to have strangers offer him these free money bets. But given how representationally sparse decision tables are, for something to be true in all columns of a decision table is a very strong claim. It doesn’t suffice, for instance, for <em>p</em> to be true in some columns and false in none. Each column has to take a stance on <em>p</em>, and endorse it.</p>
-<p>But <strong>Given</strong> cannot be converted to a biconditional. Being disposed to sometimes take <em>p</em> as given is not sufficient for belief. If Anisa had played the Red-Green game rationally, she would have lost any belief about when the Battle of Agincourt was. To explain cases like that, we need to expand our theory of belief.</p>
+<p>I will have much more to say about the relationship between decision tables like <a href="#tbl-redsox">table&nbsp;<span>3.1</span></a> in <a href="knowledge.html#sec-makdec">section&nbsp;<span>4.1</span></a>. First, however, I need to say more about belief. I used to think that <strong>Given</strong>, or something like it, could be strengthened into a biconditional, and from there we could get something like a functionalist analysis of belief. That turns out not quite to be right. Being disposed to sometimes take <em>p</em> as given is not sufficient for belief. If Anisa had played the Red-Green game rationally, she would have lost any belief about when the Battle of Agincourt was. To explain cases like that, we need to expand our theory of belief.</p>
 </section>
 <section id="sec-block" class="level2 page-columns page-full" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="sec-block"><span class="header-section-number">3.5</span> Blocking Belief</h2>
@@ -503,7 +484,7 @@ div.csl-indent {
 </section>
 <section id="sec-meties" class="level3" data-number="3.7.4">
 <h3 data-number="3.7.4" class="anchored" data-anchor-id="sec-meties"><span class="header-section-number">3.7.4</span> Hard Times and Close Calls</h3>
-<p>In my earlier theory, any practical deliberation was modeled as an inquiry into which option had the highest expected utility. This was wrong for a number of reasons, not least that it gives implausible results in cases involving choices between very similar options. I’ll briefly describe one example that illustrates the problem, and the start of how I plan to solve it. But it turns out to be rather tricky to get the details right, and I’ll come back to this in <a href="knowledge.html#sec-andelim">subsection&nbsp;<span>4.3.1</span></a> and again in <a href="ties.html">chapter&nbsp;<span>6</span></a>. The details of the example are new, but it’s a very minor modification of a kind of example that is discussed in Matthew McGrath and Brian Kim <span class="citation" data-cites="McGrathKim2019">(<a href="references.html#ref-McGrathKim2019" role="doc-biblioref">2019</a>)</span> and credited to a talk by John Hawthorne “circa 2007”. Similar examples are also discussed by Alex Zweber <span class="citation" data-cites="Zweber2016">(<a href="references.html#ref-Zweber2016" role="doc-biblioref">2016</a>)</span> and by Charity Anderson and John Hawthorne <span class="citation" data-cites="AndersonHawthorne2019b">(<a href="references.html#ref-AndersonHawthorne2019b" role="doc-biblioref">2019</a>)</span>, and I’m drawing on their insights in describing this one.</p>
+<p>In my earlier theory, any practical deliberation was modeled as an inquiry into which option had the highest expected utility. This was wrong for a number of reasons, not least that it gives implausible results in cases involving choices between very similar options. I’ll briefly describe one example that illustrates the problem, and the start of how I plan to solve it. But it turns out to be rather tricky to get the details right, and I’ll come back to this in <a href="knowledge.html#sec-andelim">subsection&nbsp;<span>4.5.1</span></a> and again in <a href="ties.html">chapter&nbsp;<span>6</span></a>. The details of the example are new, but it’s a very minor modification of a kind of example that is discussed in Matthew McGrath and Brian Kim <span class="citation" data-cites="McGrathKim2019">(<a href="references.html#ref-McGrathKim2019" role="doc-biblioref">2019</a>)</span> and credited to a talk by John Hawthorne “circa 2007”. Similar examples are also discussed by Alex Zweber <span class="citation" data-cites="Zweber2016">(<a href="references.html#ref-Zweber2016" role="doc-biblioref">2016</a>)</span> and by Charity Anderson and John Hawthorne <span class="citation" data-cites="AndersonHawthorne2019b">(<a href="references.html#ref-AndersonHawthorne2019b" role="doc-biblioref">2019</a>)</span>, and I’m drawing on their insights in describing this one.</p>
 <p>David is doing the weekly groceries. He needs a can of chickpeas, so he walks to where the chickpeas are and looks at the shelf. There are two cans, call them <em>c</em>1 and <em>c</em>2, that are equally easy to reach and get from the shelf. Call the actions of taking them <em>t</em>1 and <em>t</em>2. David simply assumes, partially on inductive grounds and partially on grounds of what he knows about supermarkets, that neither can has passed its expiry date. But while it is wildly implausible that either can has, the probability is not zero. Let <em>e<sub>i</sub></em> be that can <em>i</em> has expired, and assume that <em>Pr</em>(<em>e</em><sub>1</sub>) and <em>Pr</em>(<em>e</em><sub>2</sub>) are low and equal. Call this probability <em>e</em>. Let <em>h</em> be the utility of choosing an unexpired can, and <em>l</em> the utility of choosing an expired can, where obviously <em>h</em> &gt; <em>l</em>. Then both <em>t</em>1 and <em>t</em>2 have utility (1-<em>e</em>)<em>h</em>&nbsp;+&nbsp;<em>el</em>. Conditional on ¬<em>e</em>1, the utility of <em>t</em>1 is <em>h</em>, which is greater than (1-<em>e</em>)<em>h</em>&nbsp;+&nbsp;<em>el</em> as long as <em>e</em>&nbsp;&gt;&nbsp;0 and <em>h</em>&nbsp;&gt;&nbsp;<em>l</em>. So unconditionally, <em>t</em>1 and <em>t</em>2 have the same utility, but conditional on ¬<em>e</em>1, they have different utilities. So, according to the theory I used to defend, when David is making this choice, he does not believe, and hence does not know ¬<em>e</em>1. This seems wrong, and there are even worse consequences one can draw my thinking about minor variants of the case.</p>
 <p>The key part of my response to this will be distinguishing between the questions <em>Which can to choose?</em>, and the question <em>Which choice of can has maximal expected utility?</em>. If David is thinking about the latter question, then it turns out he really doesn’t know ¬<em>e</em>1. That’s a somewhat surprising result, and I’ll turn to defending it in <a href="ties.html">chapter&nbsp;<span>6</span></a>. But as long as he is focussing solely on the former question, the argument of the previous paragraph doesn’t go through.</p>
 <p>So the big move here is to move from somewhat quantitative questions, like <em>Which choice maximises expected utility?</em>, to practical questions like <em>What to do?</em>. Once we do that, the problem that Zweber, and Anderson and Hawthorne, raise ceases to be a problem. I don’t intend these brief remarks to be a convincing case that I’ve got a good solution to these problems. Rather, the point is to flag that the theory I’m defending here is distinct from the theory I used to defend, and this gives me some more resources to handle cases like David and the chickpeas.</p>
@@ -535,8 +516,8 @@ div.csl-indent {
 <p>Note though that all I said to get this example going is that <em>p</em> rules out ¬<em>q</em>, and <em>q</em> has probability 1. That means <em>p</em> could have any probability at all, up to probability 1. So it’s possible that conditional on <em>p</em>, some relevant questions get different answers to what they get unconditionally, even though <em>p</em> has probability 1. So belief can’t be a matter of having probability close enough to 1 for practical purposes; sometimes even probability 1 is insufficient.</p>
 </section>
 </section>
-<section id="usc" class="level2 page-columns page-full" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="usc"><span class="header-section-number">3.8</span> Ross and Schroeder’s Theory</h2>
+<section id="sec-usc" class="level2 page-columns page-full" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="sec-usc"><span class="header-section-number">3.8</span> Ross and Schroeder’s Theory</h2>
 <div class="page-columns page-full"><p>Jacob Ross and Mark Schroeder <span class="citation" data-cites="RossSchroeder2014">(<a href="references.html#ref-RossSchroeder2014" role="doc-biblioref">2014</a>)</span> have what looks like, on the surface, a rather different view to mine.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> They say that to believe <em>p</em> is to have a <strong>default reasoning disposition</strong> to use <em>p</em> in reasoning. Here’s how they describe their view.</p><div class="no-row-height column-margin column-container"><li id="fn15"><p><sup>15</sup>&nbsp;This section is based on §3 of my <span class="citation" data-cites="Weatherson2016">(<a href="references.html#ref-Weatherson2016" role="doc-biblioref">2016</a>)</span>.</p></li></div></div>
 <blockquote class="blockquote">
 <p>What we should expect, therefore, is that for some propositions we would have a <em>defeasible</em> or <em>default</em> disposition to treat them as true in our reasoning–a disposition that can be overridden under circumstances where the cost of mistakenly acting as if these propositions are true is particularly salient. And this expectation is confirmed by our experience. We do indeed seem to treat some uncertain propositions as true in our reasoning; we do indeed seem to treat them as true automatically, without first weighing the costs and benefits of so treating them; and yet in contexts such as High where the costs of mistakenly treating them as true is salient, our natural tendency to treat these propositions as true often seems to be overridden, and instead we treat them as merely probable.</p>
@@ -550,7 +531,6 @@ div.csl-indent {
 </ol>
 <p>The view I’m defending here agrees with them about 1 and 2, though my theory manifests those characteristics in a quite different way. But point 3 is a cost of their theory, not a benefit, so it’s good that my theory doesn’t accommodate it. (For the record, the theory I put forward in my <span class="citation" data-cites="Weatherson2005-WEACWD">(<a href="references.html#ref-Weatherson2005-WEACWD" role="doc-biblioref">2005</a>)</span> did not agree with them on point 2, and I changed my view because of their arguments.)</p>
 <p>I agree with 1 because, as I’ve noted a few times above, I think theoretical interests as well as pragmatic interests matter for the relationship between credence and belief. And I agree with 2 because I think that whether someone is disposed to use <em>p</em> as a premise matters to whether they believe <em>p</em>. Let <em>p</em> be some ordinary proposition about the world that a person believes, such as that the Florida Marlins won the 2003 World Series. And let <em>q</em> be a lottery proposition that is just as probable as <em>p</em>. (That is, let <em>q</em> be a lottery proposition such that if the person were to play the Red-Blue game with <em>p</em> as red and <em>q</em> as blue, they would be rationally indifferent between the choices.) Then on my theory the person believes <em>p</em> but not <em>q</em>, and this isn’t due to any features of their credal states. Rather, it is due to their dispositions to use <em>p</em> as a premise in reasoning. (For example, they might use it in figuring out how many World Series were won by National League teams in the 2000s.)</p>
-<p>¬</p>
 <p>Ross and Schroeder argue, and I basically agree, that interest-relative theories of belief that only focus on practical interests have trouble with folks who use odd techniques in reasoning. This is the lesson of their example of <em>Renzi</em>. I’ll run through a somewhat more abstract version of that case, because the details are not particularly important. Start with a standard decision problem. The agent knows that X is better to do if <em>p</em>, and Y is better to do if ¬<em>p</em>. The agent should then go through calculating the relative gains to doing X or Y in the situations they are better, and the probability of <em>p</em>. But the agent imagined doesn’t do that. Rather, the agent divides the possibility space in four, taking the salient possibilities to be <em>p</em> ∧ <em>q</em>, <em>p</em> ∧ ¬<em>q</em>, ¬<em>p</em> ∧ <em>q</em> and ¬<em>p</em> ∧ ¬<em>q</em> and then calculates the expected utility of X and Y accordingly. This is a bad bit of reasoning on the agent’s part. In the cases we are interested in,&nbsp;<em>q</em> is exceedingly likely. Moreover, the expected utility of each act doesn’t change a lot depending on <em>q</em>’s truth value. So it is fairly obvious that we’ll end up making the same decision whether we take the ‘small worlds’ in our decision model to be just the world where <em>p</em>, and the world where ¬<em>p</em>, or the four worlds this agent uses. But the agent does use these four, and the question is what to say about them.</p>
 <p>Ross and Schroeder say that such an agent should not be counted as believing that <em>q</em>. If they are consciously calculating the probability that <em>q</em>, and taking ¬<em>q</em> possibilities into account when calculating expected utilities, they regard <em>q</em> as an open question. And regarding <em>q</em> as open in this way is incompatible with believing it.</p>
 <p>I agree. The agent was trying to work out the expected utility of X and Y by working out the utility of each action in each of four ‘small worlds’, then working out the probability of each of these. Conditional on <em>q</em>, the probability of two of them (<em>p</em> ∧ ¬<em>q</em>, ¬<em>p</em> ∧ ¬<em>q</em>), will be 0. Unconditionally, this probability won’t be 0. So the agent has a different view on some question they have taken an interest in unconditionally to their view conditional on <em>q</em>. So they don’t believe <em>q</em>. The agent shouldn’t care about that question, and conditional on each question they should care about, they have the same attitude unconditionally and conditional on <em>q</em>. But they do care about these probabilistic questions, so they don’t believe <em>q</em>. (And again for the record, the theory I defended at the time Ross and Schroeder wrote their paper did not have the resources to make this reply; I’ve changed my views in light of their arguments.)</p>
@@ -578,107 +558,107 @@ div.csl-indent {
 <p>That leaves 5. It seems on Ross and Schroeder’s view, Stella simply must violate a very basic principle of means-end reasoning. She desires something, she believes that taking the bet will get that thing, and come with no added costs. Yet, she refuses to take the bet. And she’s rational to do so! At this stage, I think I’ve lost what’s meant to be belief-like about their notion of belief. I certainly think attributing this kind of practical incoherence to Stella is much less plausible than attributing a failure of Stability to her.</p>
 <p>Put another way, I don’t think presenting Stability on its own as a desideratum of a theory is exactly playing fair. The salient question isn’t whether we should accept or reject Stability. The salient question is whether giving up Stability is a fair price to pay for saving basic tenets of means-end rationality. And I think that it is. Perhaps there will be some way of understanding cases like Stella’s so that we don’t have to choose between theories of belief that violate Stability constraints, and theories of belief that violate coherence constraints. But I don’t see one on offer, and I’m not sure what such a theory could look like.</p>
 <p>I have one more argument against Stability, but it does rest on somewhat contentious premises. There’s often a difference between the best methodology in an area, and the correct epistemology of that area. When that happens, it’s possible that there is a good methodological rule saying that if such-and-such happens, re-open a certain inquiry. But that rule need not be epistemologically significant. That is, it need not be the case that the happening of such-and-such provides evidence against the conclusion of the inquiry. It just provides a reason that a good researcher will re-open the inquiry. And, as I’ve argued above, an open inquiry is incompatible with belief.</p>
-<p>Here’s one way that might happen. Like other non-conciliationists about disagreement, such as Thomas <span class="citation" data-cites="Kelly2010-KELPDA">(<a href="references.html#ref-Kelly2010-KELPDA" role="doc-biblioref">2010</a>)</span>, I hold that disagreement by peers with the same evidence as you doesn’t provide <em>evidence</em> that you are wrong. But it might provide an excellent reason to re-open an inquiry. We shouldn’t draw conclusions about the methodological significance of disagreement from the epistemology of disagreement. So learning that your peers all disagree with a conclusion might be a reason to re-open inquiry into that conclusion, and hence lose belief in the conclusion, without providing evidence that the conclusion is false. This example rests on a very contentious claim about the epistemology of disagreement. But any gap that opens up between methodology and epistemology will allow such an example to be constructed, and hence provide an independent reason to reject Stability.</p>
+<p>Here’s one way that might happen. Like other non-conciliationists about disagreement, such as Thomas Kelly <span class="citation" data-cites="Kelly2010-KELPDA">(<a href="references.html#ref-Kelly2010-KELPDA" role="doc-biblioref">2010</a>)</span>, I hold that disagreement by peers with the same evidence as you doesn’t provide <em>evidence</em> that you are wrong. But it might provide an excellent reason to re-open an inquiry. We shouldn’t draw conclusions about the methodological significance of disagreement from the epistemology of disagreement. So learning that your peers all disagree with a conclusion might be a reason to re-open inquiry into that conclusion, and hence lose belief in the conclusion, without providing evidence that the conclusion is false. This example rests on a very contentious claim about the epistemology of disagreement. But any gap that opens up between methodology and epistemology will allow such an example to be constructed, and hence provide an independent reason to reject Stability.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-Adamson2019" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Adamson2019" class="csl-entry" role="doc-biblioentry">
 Adamson, Peter. 2019. <em>Medieval Philosophy: A History of Philosophy Without Any Gaps, Volume 4</em>. Oxford: <span>O</span>xford <span>U</span>niversity <span>P</span>ress.
 </div>
-<div id="ref-AndersonHawthorne2019b" class="csl-entry" role="listitem">
+<div id="ref-AndersonHawthorne2019b" class="csl-entry" role="doc-biblioentry">
 Anderson, Charity, and John Hawthorne. 2019. <span>“Pragmatic Encroachment and Closure.”</span> In <em>Pragmatic Encroachment in Epistemology</em>, edited by Brian Kim and Matthew McGrath, 107–15. New York: Routledge.
 </div>
-<div id="ref-Bhatt1999" class="csl-entry" role="listitem">
+<div id="ref-Bhatt1999" class="csl-entry" role="doc-biblioentry">
 Bhatt, Rajesh. 1999. <span>“Covert Modality in Non-Finite Contexts.”</span> PhD thesis, University of Pennsylvania.
 </div>
-<div id="ref-sep-questions" class="csl-entry" role="listitem">
+<div id="ref-sep-questions" class="csl-entry" role="doc-biblioentry">
 Cross, Charles, and Floris Roelofsen. 2018. <span>“Questions.”</span> In <em>The Stanford Encyclopedia of Philosophy</em>, edited by Edward N. Zalta, Spring 2018. <a href="https://plato.stanford.edu/archives/spr2018/entries/questions/" class="uri">https://plato.stanford.edu/archives/spr2018/entries/questions/</a>; Metaphysics Research Lab, Stanford University.
 </div>
-<div id="ref-FantlMcGrath2009" class="csl-entry" role="listitem">
+<div id="ref-FantlMcGrath2009" class="csl-entry" role="doc-biblioentry">
 Fantl, Jeremy, and Matthew McGrath. 2009. <em>Knowledge in an Uncertain World</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Ganson2008" class="csl-entry" role="listitem">
+<div id="ref-Ganson2008" class="csl-entry" role="doc-biblioentry">
 Ganson, Dorit. 2008. <span>“Evidentialism and Pragmatic Constraints on Outright Belief.”</span> <em>Philosophical Studies</em> 139 (3): 441–58. <a href="https://doi.org/10.1007/s11098-007-9133-9">https://doi.org/10.1007/s11098-007-9133-9</a>.
 </div>
-<div id="ref-Ganson2019" class="csl-entry" role="listitem">
+<div id="ref-Ganson2019" class="csl-entry" role="doc-biblioentry">
 ———. 2019. <span>“Great Expectations: Belief and the Case for Pragmatic Encroachment.”</span> In <em>Pragmatic Encroachment in Epistemology</em>, edited by Brian Kim and Matthew McGrath. New York: Routledge.
 </div>
-<div id="ref-Gillies2010" class="csl-entry" role="listitem">
+<div id="ref-Gillies2010" class="csl-entry" role="doc-biblioentry">
 Gillies, Anthony S. 2010. <span>“Iffiness.”</span> <em>Semantics and Pragmatics</em> 3 (4): 1–42. <a href="https://doi.org/10.3765/sp.3.4">https://doi.org/10.3765/sp.3.4</a>.
 </div>
-<div id="ref-HawthorneEtAl2015" class="csl-entry" role="listitem">
+<div id="ref-HawthorneEtAl2015" class="csl-entry" role="doc-biblioentry">
 Hawthorne, John, Daniel Rothschild, and Levi Spectre. 2016. <span>“Belief Is Weak.”</span> <em>Philosophical Studies</em> 173: 1393–1404. <a href="https://doi.org/10.1007/s11098-015-0553-7">https://doi.org/10.1007/s11098-015-0553-7</a>.
 </div>
-<div id="ref-Humberstone1981" class="csl-entry" role="listitem">
+<div id="ref-Humberstone1981" class="csl-entry" role="doc-biblioentry">
 Humberstone, I. L. 1981. <span>“From Worlds to Possibilities.”</span> <em>Journal of Philosophical Logic</em> 10 (3): 313–39. <a href="https://doi.org/10.1007/BF00293423">https://doi.org/10.1007/BF00293423</a>.
 </div>
-<div id="ref-Kelly2010-KELPDA" class="csl-entry" role="listitem">
+<div id="ref-Kelly2010-KELPDA" class="csl-entry" role="doc-biblioentry">
 Kelly, Thomas. 2010. <span>“Peer Disagreement and Higher Order Evidence.”</span> In <em>Disagreement</em>, edited by Ted Warfield and Richard Feldman, 111–74. Oxford: Oxford University Press.
 </div>
-<div id="ref-Kratzer2012" class="csl-entry" role="listitem">
+<div id="ref-Kratzer2012" class="csl-entry" role="doc-biblioentry">
 Kratzer, Angelika. 2012. <em>Modals and Conditionals</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Lewis1976b" class="csl-entry" role="listitem">
+<div id="ref-Lewis1976b" class="csl-entry" role="doc-biblioentry">
 Lewis, David. 1976. <span>“Probabilities of Conditionals and Conditional Probabilities.”</span> <em>Philosophical Review</em> 85 (3): 297–315. <a href="https://doi.org/10.2307/2184045">https://doi.org/10.2307/2184045</a>.
 </div>
-<div id="ref-Lewis1986h" class="csl-entry" role="listitem">
+<div id="ref-Lewis1986h" class="csl-entry" role="doc-biblioentry">
 ———. 1986. <span>“Probabilities of Conditionals and Conditional Probabilities <span>II</span>.”</span> <em>Philosophical Review</em> 95 (4): 581–89. <a href="https://doi.org/10.2307/2185051">https://doi.org/10.2307/2185051</a>.
 </div>
-<div id="ref-Lewis1988" class="csl-entry" role="listitem">
+<div id="ref-Lewis1988" class="csl-entry" role="doc-biblioentry">
 ———. 1988. <span>“Desire as Belief.”</span> <em>Mind</em> 97 (387): 323–32. <a href="https://doi.org/10.1093/mind/xcvii.387.323">https://doi.org/10.1093/mind/xcvii.387.323</a>.
 </div>
-<div id="ref-Lewis1996" class="csl-entry" role="listitem">
+<div id="ref-Lewis1996" class="csl-entry" role="doc-biblioentry">
 ———. 1996. <span>“Desire as Belief <span>II</span>.”</span> <em>Mind</em> 105 (418): 303–13. <a href="https://doi.org/10.1093/mind/105.418.303">https://doi.org/10.1093/mind/105.418.303</a>.
 </div>
-<div id="ref-McGrathKim2019" class="csl-entry" role="listitem">
+<div id="ref-McGrathKim2019" class="csl-entry" role="doc-biblioentry">
 McGrath, Matthew, and Brian Kim. 2019. <span>“Introduction.”</span> In <em>Pragmatic Encroachment in Epistemology</em>, edited by Brian Kim and Matthew McGrath, 1–9. New York: Routledge.
 </div>
-<div id="ref-Nagel2010" class="csl-entry" role="listitem">
+<div id="ref-Nagel2010" class="csl-entry" role="doc-biblioentry">
 Nagel, Jennifer. 2010. <span>“Epistemic Anxiety and Adaptive Invariantism.”</span> <em>Philosophical Perspectives</em> 24 (1): 407–35. <a href="https://doi.org/10.1111/j.1520-8583.2010.00198.x">https://doi.org/10.1111/j.1520-8583.2010.00198.x</a>.
 </div>
-<div id="ref-Pasnau2017" class="csl-entry" role="listitem">
+<div id="ref-Pasnau2017" class="csl-entry" role="doc-biblioentry">
 Pasnau, Robert. 2017. <em>After Certainty: A History of Our Epistemic Ideals and Illusions</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-RamseyGeneralProp" class="csl-entry" role="listitem">
+<div id="ref-RamseyGeneralProp" class="csl-entry" role="doc-biblioentry">
 Ramsey, Frank. 1990. <span>“General Propositions and Causality.”</span> In <em>Philosophical Papers</em>, edited by D. H. Mellor, 145–63. Cambridge: Cambridge University Press.
 </div>
-<div id="ref-Roberts2012" class="csl-entry" role="listitem">
+<div id="ref-Roberts2012" class="csl-entry" role="doc-biblioentry">
 Roberts, Craige. 2012. <span>“Information Structure in Discourse: Towards an Integrated Formal Theory of Pragmatics.”</span> <em>Semantics and Pragmatics</em> 5 (6): 1–69. <a href="https://doi.org/10.3765/sp.5.6">https://doi.org/10.3765/sp.5.6</a>.
 </div>
-<div id="ref-RossSchroeder2014" class="csl-entry" role="listitem">
+<div id="ref-RossSchroeder2014" class="csl-entry" role="doc-biblioentry">
 Ross, Jacob, and Mark Schroeder. 2014. <span>“Belief, Credence, and Pragmatic Encroachment.”</span> <em>Philosophy and Phenomenological Research</em> 88 (2): 259–88. <a href="https://doi.org/10.1111/j.1933-1592.2011.00552.x">https://doi.org/10.1111/j.1933-1592.2011.00552.x</a>.
 </div>
-<div id="ref-Schroeder2009" class="csl-entry" role="listitem">
+<div id="ref-Schroeder2009" class="csl-entry" role="doc-biblioentry">
 Schroeder, Mark. 2009. <span>“Means-End Coherence, Stringency, and Subjective Reasons.”</span> <em>Philosophical Studies</em> 143 (2): 223–48. <a href="https://doi.org/10.1007/s11098-008-9200-x">https://doi.org/10.1007/s11098-008-9200-x</a>.
 </div>
-<div id="ref-Staffel2019" class="csl-entry" role="listitem">
+<div id="ref-Staffel2019" class="csl-entry" role="doc-biblioentry">
 Staffel, Julia. 2019. <span>“How Do Beliefs Simplify Reasoning?”</span> <em>No<span>û</span>s</em> 53 (4): 937–62. <a href="https://doi.org/10.1111/nous.12254">https://doi.org/10.1111/nous.12254</a>.
 </div>
-<div id="ref-Stanley2011" class="csl-entry" role="listitem">
+<div id="ref-Stanley2011" class="csl-entry" role="doc-biblioentry">
 Stanley, Jason. 2011. <em>Know How</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Weatherson2005-WEACWD" class="csl-entry" role="listitem">
+<div id="ref-Weatherson2005-WEACWD" class="csl-entry" role="doc-biblioentry">
 Weatherson, Brian. 2005. <span>“<span>Can We Do Without Pragmatic Encroachment?</span>”</span> <em>Philosophical Perspectives</em> 19 (1): 417–43. <a href="https://doi.org/10.1111/j.1520-8583.2005.00068.x">https://doi.org/10.1111/j.1520-8583.2005.00068.x</a>.
 </div>
-<div id="ref-Weatherson2016" class="csl-entry" role="listitem">
+<div id="ref-Weatherson2016" class="csl-entry" role="doc-biblioentry">
 ———. 2016. <span>“Games, Beliefs and Credences.”</span> <em>Philosophy and Phenomenological Research</em> 92 (2): 209–36. <a href="https://doi.org/10.1111/phpr.12088">https://doi.org/10.1111/phpr.12088</a>.
 </div>
-<div id="ref-Weisberg2013" class="csl-entry" role="listitem">
+<div id="ref-Weisberg2013" class="csl-entry" role="doc-biblioentry">
 Weisberg, Jonathan. 2013. <span>“Knowledge in Action.”</span> <em>Philosophers’ Imprint</em> 13 (22): 1–23. <a href="https://doi.org/2027/spo.3521354.0013.022">https://doi.org/2027/spo.3521354.0013.022</a>.
 </div>
-<div id="ref-Weisberg2020" class="csl-entry" role="listitem">
+<div id="ref-Weisberg2020" class="csl-entry" role="doc-biblioentry">
 ———. 2020. <span>“Belief in Psyontology.”</span> <em>Philosophers’ Imprint</em>, xx–.
 </div>
-<div id="ref-Williamson2022" class="csl-entry" role="listitem">
+<div id="ref-Williamson2022" class="csl-entry" role="doc-biblioentry">
 Williamson, Timothy. 2022. <span>“Knowledge, Credence, and the Strength of Belief.”</span> In <em>Expansive Epistemology: Norms, Action, and the Social World</em>, edited by Amy Flowerree and Baron Reed, xx–. London: Routledge.
 </div>
-<div id="ref-Yalcin2018" class="csl-entry" role="listitem">
+<div id="ref-Yalcin2018" class="csl-entry" role="doc-biblioentry">
 Yalcin, Seth. 2018. <span>“Belief as Question-Sensitive.”</span> <em>Philosophy and Phenomenological Research</em> 97 (1): 23–47. <a href="https://doi.org/10.1111/phpr.12330">https://doi.org/10.1111/phpr.12330</a>.
 </div>
-<div id="ref-Yalcin2021" class="csl-entry" role="listitem">
+<div id="ref-Yalcin2021" class="csl-entry" role="doc-biblioentry">
 ———. 2021. <span>“Fragmented but Rational.”</span> In <em>The Fragmented Mind</em>, edited by Christina Borgoni, Dirk Kindermann, and Andrea Onofori, 156–79. Oxford: Oxford University Press.
 </div>
-<div id="ref-Zweber2016" class="csl-entry" role="listitem">
+<div id="ref-Zweber2016" class="csl-entry" role="doc-biblioentry">
 Zweber, Adam. 2016. <span>“Fallibilism, Closure, and Pragmatic Encroachment.”</span> <em>Philosophical Studies</em> 173 (10): 2745–57. <a href="https://doi.org/10.1007/s11098-016-0631-5">https://doi.org/10.1007/s11098-016-0631-5</a>.
 </div>
 </div>
@@ -828,23 +808,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -909,92 +875,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

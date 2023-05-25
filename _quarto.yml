@@ -38,6 +38,7 @@ format:
     toc-depth: 3
     reference-location: margin
     margin-header: "&nbsp;"
+    mainfont: "Gentium Plus"
   pdf:
     documentclass: scrbook
     geometry: "left=1.95in,right=1.95in,top=1.78in,bottom=1.78in"
