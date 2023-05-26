@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.253">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -81,7 +81,11 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@500&display=swap');
+</style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -90,11 +94,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./evidence.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -102,115 +111,132 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
-            <i class="bi bi-bi-journal pe-1"></i>
-          Download ePub
-          </a>
-        </li>
-    </ul>
-    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></a>
+  <a href="./history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interests.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a>
+  <a href="./interests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beliefs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a>
+  <a href="./beliefs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./knowledge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a>
+  <a href="./knowledge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inquiry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></a>
+  <a href="./inquiry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ties.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a>
+  <a href="./ties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./changes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></a>
+  <a href="./changes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rationality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></a>
+  <a href="./rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evidence.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a>
+  <a href="./evidence.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./power.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a>
+  <a href="./power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -219,19 +245,19 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-evpuzzle" id="toc-sec-evpuzzle" class="nav-link active" data-scroll-target="#sec-evpuzzle"><span class="toc-section-number">9.1</span>  A Puzzle About Evidence</a></li>
-  <li><a href="#sec-simplesolution" id="toc-sec-simplesolution" class="nav-link" data-scroll-target="#sec-simplesolution"><span class="toc-section-number">9.2</span>  A Simple, but Incomplete, Solution</a></li>
-  <li><a href="#sec-radicalinterpretation" id="toc-sec-radicalinterpretation" class="nav-link" data-scroll-target="#sec-radicalinterpretation"><span class="toc-section-number">9.3</span>  The Radical Interpreter</a></li>
-  <li><a href="#sec-globalgame" id="toc-sec-globalgame" class="nav-link" data-scroll-target="#sec-globalgame"><span class="toc-section-number">9.4</span>  Risk-Dominant Equilibria</a>
+  <li><a href="#sec-evpuzzle" id="toc-sec-evpuzzle" class="nav-link active" data-scroll-target="#sec-evpuzzle"><span class="header-section-number">9.1</span> A Puzzle About Evidence</a></li>
+  <li><a href="#sec-simplesolution" id="toc-sec-simplesolution" class="nav-link" data-scroll-target="#sec-simplesolution"><span class="header-section-number">9.2</span> A Simple, but Incomplete, Solution</a></li>
+  <li><a href="#sec-radicalinterpretation" id="toc-sec-radicalinterpretation" class="nav-link" data-scroll-target="#sec-radicalinterpretation"><span class="header-section-number">9.3</span> The Radical Interpreter</a></li>
+  <li><a href="#sec-globalgame" id="toc-sec-globalgame" class="nav-link" data-scroll-target="#sec-globalgame"><span class="header-section-number">9.4</span> Risk-Dominant Equilibria</a>
   <ul class="collapse">
-  <li><a href="#sec-cvdproof" id="toc-sec-cvdproof" class="nav-link" data-scroll-target="#sec-cvdproof"><span class="toc-section-number">9.4.1</span>  The Dominance Argument for Risk-Dominant Equilibria</a></li>
-  <li><a href="#sec-perfectri" id="toc-sec-perfectri" class="nav-link" data-scroll-target="#sec-perfectri"><span class="toc-section-number">9.4.2</span>  Making One Signal Precise</a></li>
+  <li><a href="#sec-cvdproof" id="toc-sec-cvdproof" class="nav-link" data-scroll-target="#sec-cvdproof"><span class="header-section-number">9.4.1</span> The Dominance Argument for Risk-Dominant Equilibria</a></li>
+  <li><a href="#sec-perfectri" id="toc-sec-perfectri" class="nav-link" data-scroll-target="#sec-perfectri"><span class="header-section-number">9.4.2</span> Making One Signal Precise</a></li>
   </ul></li>
-  <li><a href="#sec-evsolution" id="toc-sec-evsolution" class="nav-link" data-scroll-target="#sec-evsolution"><span class="toc-section-number">9.5</span>  Objections and Replies</a></li>
-  <li><a href="#sec-cutelim" id="toc-sec-cutelim" class="nav-link" data-scroll-target="#sec-cutelim"><span class="toc-section-number">9.6</span>  Evidence, Knowledge and Cut-Elimination</a></li>
-  <li><a href="#sec-basic" id="toc-sec-basic" class="nav-link" data-scroll-target="#sec-basic"><span class="toc-section-number">9.7</span>  Basic Knowledge and Non-Inferential Knowledge</a></li>
-  <li><a href="#sec-neta" id="toc-sec-neta" class="nav-link" data-scroll-target="#sec-neta"><span class="toc-section-number">9.8</span>  Holism and Defeaters</a></li>
-  <li><a href="#sec-weakness" id="toc-sec-weakness" class="nav-link" data-scroll-target="#sec-weakness"><span class="toc-section-number">9.9</span>  Epistemic Weakness</a></li>
+  <li><a href="#sec-evsolution" id="toc-sec-evsolution" class="nav-link" data-scroll-target="#sec-evsolution"><span class="header-section-number">9.5</span> Objections and Replies</a></li>
+  <li><a href="#sec-cutelim" id="toc-sec-cutelim" class="nav-link" data-scroll-target="#sec-cutelim"><span class="header-section-number">9.6</span> Evidence, Knowledge and Cut-Elimination</a></li>
+  <li><a href="#sec-basic" id="toc-sec-basic" class="nav-link" data-scroll-target="#sec-basic"><span class="header-section-number">9.7</span> Basic Knowledge and Non-Inferential Knowledge</a></li>
+  <li><a href="#sec-neta" id="toc-sec-neta" class="nav-link" data-scroll-target="#sec-neta"><span class="header-section-number">9.8</span> Holism and Defeaters</a></li>
+  <li><a href="#sec-weakness" id="toc-sec-weakness" class="nav-link" data-scroll-target="#sec-weakness"><span class="header-section-number">9.9</span> Epistemic Weakness</a></li>
   </ul>
 </nav>
     </div>
@@ -240,7 +266,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-evidence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></h1>
+<h1 class="title"><span id="sec-evidence" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></h1>
 </div>
 
 
@@ -283,8 +309,8 @@ div.csl-indent {
 </section>
 <section id="sec-simplesolution" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="sec-simplesolution"><span class="header-section-number">9.2</span> A Simple, but Incomplete, Solution</h2>
-<p>Let’s take a step back and look at the puzzle more abstractly. We have a person who has some option <em>O</em>, and it really matters whether or not the expected value of <em>O</em>, i.e.,&nbsp;<em>V</em>(<em>O</em>), is at least <em>x</em>. (I am assuming that Parveen is in the business of maximising expected utility here; I don’t think the considerations from <a href="ties.html">chapter&nbsp;<span>6</span></a> that tell against expected utility maximisation in close call situations are relevant.) It is uncontroversial that her evidence includes some background <em>K</em>, and controversial whether it includes some contested proposition <em>p</em>. It is also uncontroversial that <em>V</em>(<em>O</em> | <em>p</em>) ≥ <em>x</em>, and we’re assuming that for any proposition <em>q</em> that is in her evidence,&nbsp;<em>V</em>(<em>O</em> | <em>q</em>)&nbsp;=&nbsp;<em>V</em>(<em>O</em>). That is, we’re assuming the relevant values are conditional on evidence. We can capture that last assumption with one big assumption that probably isn’t true, but is a harmless idealisation for the purposes of this chapter. Say there is a prior value function <em>V</em><sup>-</sup>, with a similar metaphysical status to the mythical, mystical prior probability function. Then for any choice <em>C</em>,&nbsp;<em>V</em>(<em>C</em>)&nbsp;=&nbsp;<em>V</em><sup>-</sup>(<em>C</em> | <em>E</em>), where <em>E</em> is the evidence Parveen has.</p>
-<p>Now I can offer a simple, but incomplete, solution. Let <em>p</em> be the proposition that she might or might not know, and the question of whether <em>V</em>(<em>O</em>) ≥ <em>x</em> be the only salient question to which <em>p</em> is relevant. Then she knows <em>p</em> only if [<em>V</em><sup>-</sup>(<em>O</em>|<em>K</em>)&nbsp;+&nbsp;<em>V</em><sup>-</sup>(<em>O</em>|<em>K</em>&nbsp;∧&nbsp;<em>p</em>)]&nbsp;≥&nbsp;<em>x</em>. That is, we work out the value of <em>O</em> with and without the evidence <em>p</em>, and if the average is greater than <em>x</em>, good enough!</p>
+<p>Let’s take a step back and look at the puzzle more abstractly. We have a person who has some option <em>o</em>, and it really matters whether or not the expected value of <em>o</em>, i.e.,&nbsp;<em>v</em>(<em>o</em>), is at least <em>x</em>. (I am assuming that Parveen is in the business of maximising expected utility here; I don’t think the considerations from <a href="ties.html">chapter&nbsp;<span>6</span></a> that tell against expected utility maximisation in close call situations are relevant.) It is uncontroversial that her evidence includes some background <em>K</em>, and controversial whether it includes some contested proposition <em>p</em>. It is also uncontroversial that <em>v</em>(<em>o</em>&nbsp;|&nbsp;<em>p</em>) ≥ <em>x</em>, and we’re assuming that for any proposition <em>q</em> that is in her evidence,&nbsp;<em>v</em>(<em>o</em>&nbsp;|&nbsp;<em>q</em>)&nbsp;=&nbsp;<em>v</em>(<em>o</em>). That is, we’re assuming the relevant values are conditional on evidence. We can capture that last assumption with one big assumption that probably isn’t true, but is a harmless idealisation for the purposes of this chapter. Say there is a prior value function <em>v</em><sup>-</sup>, with a similar metaphysical status to the mythical, mystical prior probability function. Then for any choice <em>c</em>,&nbsp;<em>v</em>(<em>c</em>)&nbsp;=&nbsp;<em>v</em><sup>-</sup>(<em>c</em>&nbsp;|&nbsp;<em>E</em>), where <em>E</em> is the evidence Parveen has.</p>
+<p>Now I can offer a simple, but incomplete, solution. Let <em>p</em> be the proposition that she might or might not know, and the question of whether <em>v</em>(<em>o</em>) ≥ <em>x</em> be the only salient question to which <em>p</em> is relevant. Then she knows <em>p</em> only if [<em>v</em><sup>-</sup>(<em>o</em>|<em>K</em>)&nbsp;+&nbsp;<em>v</em><sup>-</sup>(<em>o</em>|<em>K</em>&nbsp;∧&nbsp;<em>p</em>)]/2&nbsp;≥&nbsp;<em>x</em>. That is, we work out the value of <em>o</em> with and without the evidence <em>p</em>, and if the average is greater than <em>x</em>, good enough!</p>
 <p>That solves the problem of Parveen and Rahul. Parveen’s evidence may or may not include that Rahul is in the restaurant. If it does, then Blue-True has a value of $50. If it does not, then Blue-True’s value is somewhat lower. Even if the evidence includes that someone who looks a lot like Rahul is in the restaurant, the value of Blue-True might only be $45. Averaging them out, the value is less than $50. But she’d only play Blue-True if it was worthwhile it play it instead of Red-True, which is worth $50. So she shouldn’t play Blue-True.</p>
 <p>Great! Well, great except for two monumental problems.</p>
 <p>The first problem is that what I’ve said here really only helps with very simple cases, where there is a single decision problem that a single contested proposition is relevant to. There has to be some way to generalise the case to less constrained situations.</p>
@@ -484,11 +510,7 @@ div.csl-indent {
 <p>If <em>s<sub>R</sub></em>&nbsp;∈&nbsp;<span class="math inline">\([\)</span>-0.75,&nbsp;4.75<span class="math inline">\(]\)</span>, then it is equally likely that <em>x</em> is above <em>sR</em> as it is below it. Indeed, the posterior distribution of <em>x</em> is flat over <span class="math inline">\([\)</span><em>s<sub>R</sub></em>&nbsp;-&nbsp;0.25,&nbsp;<em>s<sub>R</sub></em>&nbsp;+&nbsp;0.25<span class="math inline">\(]\)</span>. From this it follows that the expected return of playing <em>B</em> after seeing signal <em>sR</em> is just <em>sR</em>.</p>
 <p>Now comes the important step. For arbitrary <em>y</em>&nbsp;&gt;&nbsp;2, assume we know that <em>T<sub>C</sub></em>&nbsp;≤&nbsp;<em>y</em>. Now consider the expected return of playing <em>A</em> given various values for <em>s<sub>R</sub></em>&nbsp;&gt;&nbsp;2. Given that the lower <em>T<sub>C</sub></em> is, the higher the expected return is of playing <em>A</em>, we’ll just work on the simple case where <em>T<sub>C</sub></em>&nbsp;=&nbsp;<em>y</em>, realizing that this is an upper bound on the expected return of <em>A</em> given <em>T<sub>C</sub></em>&nbsp;≤&nbsp;y. The expected return of <em>A</em> is 4 times the probability that Column will play <em>a</em>, i.e., 4 times the probability that <em>s<sub>C</sub></em>&nbsp;&lt;&nbsp;<em>T<sub>C</sub></em>. Given all the symmetries that have been built into the puzzle, we know that the probability that <em>s<sub>C</sub></em>&nbsp;&lt;&nbsp;<em>s<sub>R</sub></em> is 0.5. So the expected return of playing <em>A</em> is at most 2 if <em>s<sub>R</sub></em> ≥ <em>y</em>. But the expected return of playing <em>B</em> is, as we showed in the last paragraph, <em>s<sub>R</sub></em>, which is greater than 2. So it is better to play <em>B</em> than <em>A</em> if <em>s<sub>R</sub></em>&nbsp;≥&nbsp;<em>y</em>. And the difference is substantial, so even if <em>s<sub>R</sub></em> is epsilon less than that <em>y</em>, it will still be better to play <em>B</em>. (This is rather hand-wavy, but I’ll go over the more rigorous version presently.)</p>
 <p>So for any <em>y</em>&nbsp;&gt;&nbsp;2 if <em>T<sub>C</sub></em>&nbsp;≤&nbsp;<em>y</em> we can prove that <em>T<sub>R</sub></em> should be lower still, because given that assumption it is better to play <em>B</em> even if the signal is just less than <em>y</em>. Repeating this reasoning over and over again pushes us to it being better to play <em>B</em> than <em>A</em> as long as <em>s<sub>R</sub></em>&nbsp;&gt;&nbsp;2. And the same kind of reasoning from the opposite end pushes us to it being better to play <em>A</em> than <em>B</em> as long as <em>s<sub>R</sub></em>&nbsp;&lt;&nbsp;2. So we get <em>s<sub>R</sub></em>&nbsp;=&nbsp;2 as the uniquely rational solution to the game.</p>
-<p>Let’s make that a touch more rigorous. Assume that <em>T<sub>C</sub></em>&nbsp;=&nbsp;y, and <em>s<sub>R</sub></em> is slightly less than <em>y</em>. In particular, we’ll assume that <em>z</em>&nbsp;=&nbsp;y&nbsp;-&nbsp;<em>s<sub>R</sub></em> is in (0, 0.5). Then the probability that <em>s<sub>C</sub></em>&nbsp;&lt;&nbsp;<em>y</em> is 0.5&nbsp;+&nbsp;2<em>z</em>&nbsp;‑&nbsp;2<em>z</em><sup>2</sup>. So the expected return of playing <em>A</em> is 2&nbsp;+&nbsp;8<em>z</em>&nbsp;‑&nbsp;8<em>z</em><sup>2</sup>. And the expected return of playing <em>B</em> is, again, <em>sR</em>. These will be equal when the following is true. (The working out is a tedious but trivial application of the quadratic formula, plus some rearranging.)</p>
-<p><span class="math display">\[
-s_R&nbsp;=&nbsp;y&nbsp;+&nbsp;\frac{\sqrt{145-32y}-9}{16}
-\]</span></p>
-<p>So if we know that <em>T<sub>C</sub></em>&nbsp;≥&nbsp;<em>y</em>, we know that <em>T<sub>R</sub></em>&nbsp;≥&nbsp;<em>y</em>&nbsp;+&nbsp;<span class="math inline">\(\frac{\sqrt{145-32y}-9}{16}\)</span>, which will be less than <em>y</em> if <em>y</em>&nbsp;&gt;&nbsp;2. And then by symmetry, we know that <em>T<sub>C</sub></em> must be at most as large as that as well. And then we can use that fact to derive a further upper bound on <em>T<sub>R</sub></em> and hence on <em>T<sub>C</sub></em>, and so on. And this will continue until we push both down to 2. It does require quite a number of steps of iterated deletion. Here is the upper bound on the threshold after <em>n</em> rounds of deletion of dominated strategies. (These numbers are precise for the first two rounds, then just to three significant figures after that.)</p>
+<p>Let’s make that a touch more rigorous. Assume that <em>T<sub>C</sub></em>&nbsp;=&nbsp;y, and <em>s<sub>R</sub></em> is slightly less than <em>y</em>. In particular, we’ll assume that <em>z</em>&nbsp;=&nbsp;y&nbsp;-&nbsp;<em>s<sub>R</sub></em> is in (0, 0.5). Then the probability that <em>s<sub>C</sub></em>&nbsp;&lt;&nbsp;<em>y</em> is 0.5&nbsp;+&nbsp;2<em>z</em>&nbsp;‑&nbsp;2<em>z</em><sup>2</sup>. So the expected return of playing <em>A</em> is 2&nbsp;+&nbsp;8<em>z</em>&nbsp;‑&nbsp;8<em>z</em><sup>2</sup>. And the expected return of playing <em>B</em> is, again, <em>sR</em>. These will be equal <span class="math inline">\(\frac{\sqrt{145-32y}-9}{16}\)</span>. (The working out is a tedious but trivial application of the quadratic formula, plus some rearranging.) So if we know that <em>T<sub>C</sub></em>&nbsp;≥&nbsp;<em>y</em>, we know that <em>T<sub>R</sub></em>&nbsp;≥&nbsp;<em>y</em>&nbsp;+&nbsp;<span class="math inline">\(\frac{\sqrt{145-32y}-9}{16}\)</span>, which will be less than <em>y</em> if <em>y</em>&nbsp;&gt;&nbsp;2. And then by symmetry, we know that <em>T<sub>C</sub></em> must be at most as large as that as well. And then we can use that fact to derive a further upper bound on <em>T<sub>R</sub></em> and hence on <em>T<sub>C</sub></em>, and so on. And this will continue until we push both down to 2. It does require quite a number of steps of iterated deletion. Here is the upper bound on the threshold after <em>n</em> rounds of deletion of dominated strategies. (These numbers are precise for the first two rounds, then just to three significant figures after that.)</p>
 <table class="table">
 <thead>
 <tr class="header">
@@ -673,62 +695,62 @@ A = B = Tweety can fly</p>
 <p>Of course, this difference between my version of IRT and Fantl and McGrath’s is tiny compared to how much our theories have in common. And indeed, it’s tiny compared to how much my theory simply borrows from theirs. But it’s helpful I think to highlight the differences to understand the choice points within versions of IRT.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-Bird2004" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Bird2004" class="csl-entry" role="listitem">
 Bird, Alexander. 2004. <span>“Is Evidence Non-Inferential?”</span> <em>Philosophical Quarterly</em> 54 (215): 252–65. <a href="https://doi.org/10.1111/j.0031-8094.2004.00350.x">https://doi.org/10.1111/j.0031-8094.2004.00350.x</a>.
 </div>
-<div id="ref-CarlssonVanDamme1993" class="csl-entry" role="doc-biblioentry">
+<div id="ref-CarlssonVanDamme1993" class="csl-entry" role="listitem">
 Carlsson, Hans, and Eric van Damme. 1993. <span>“Global Games and Equilibrium Selection.”</span> <em>Econometrica</em> 61 (5): 989–1018. <a href="https://doi.org/10.2307/2951491">https://doi.org/10.2307/2951491</a>.
 </div>
-<div id="ref-Dogramaci2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Dogramaci2015" class="csl-entry" role="listitem">
 Dogramaci, Sinan. 2015. <span>“Forget and Forgive: A Practical Approach to Forgotten Evidence.”</span> <em>Ergo</em> 2 (26): 645–77. <a href="https://doi.org/10.3998/ergo.12405314.0002.026">https://doi.org/10.3998/ergo.12405314.0002.026</a>.
 </div>
-<div id="ref-FantlMcGrath2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-FantlMcGrath2009" class="csl-entry" role="listitem">
 Fantl, Jeremy, and Matthew McGrath. 2009. <em>Knowledge in an Uncertain World</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Goldman2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Goldman2009" class="csl-entry" role="listitem">
 Goldman, Alvin. 2009. <span>“Williamson on Knowledge and Evidence.”</span> In <em><span class="nocase">Williamson on Knowledge</span></em>, 73–91. Oxford.
 </div>
-<div id="ref-Harman1986" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Harman1986" class="csl-entry" role="listitem">
 Harman, Gilbert. 1986. <em>Change in View</em>. Cambridge, MA: Bradford.
 </div>
-<div id="ref-Harper1986" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Harper1986" class="csl-entry" role="listitem">
 Harper, William. 1986. <span>“Mixed Strategies and Ratifiability in Causal Decision Theory.”</span> <em>Erkenntnis</em> 24 (1): 25–36. <a href="https://doi.org/10.1007/BF00183199">https://doi.org/10.1007/BF00183199</a>.
 </div>
-<div id="ref-Maher1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Maher1996" class="csl-entry" role="listitem">
 Maher, Patrick. 1996. <span>“Subjective and Objective Confirmation.”</span> <em>Philosophy of Science</em> 63 (2): 149–74. <a href="https://doi.org/10.1086/289906">https://doi.org/10.1086/289906</a>.
 </div>
-<div id="ref-Nair2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Nair2019" class="csl-entry" role="listitem">
 Nair, Shyam. 2019. <span>“Must Good Reasoning Satisfy Cumulative Transitivity?”</span> <em>Philosophy and Phenomenological Research</em> 98 (1): 123–46. <a href="https://doi.org/10.1111/phpr.12431">https://doi.org/10.1111/phpr.12431</a>.
 </div>
-<div id="ref-Neta2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Neta2007" class="csl-entry" role="listitem">
 Neta, Ram. 2007. <span>“Anti-Intellectualism and the Knowledge-Action Principle.”</span> <em>Philosophy and Phenomenological Research</em> 75 (1): 180–87. <a href="https://doi.org/10.1111/j.1933-1592.2007.00069.x">https://doi.org/10.1111/j.1933-1592.2007.00069.x</a>.
 </div>
-<div id="ref-Pearce1983" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Pearce1983" class="csl-entry" role="listitem">
 Pearce, David G. 1983. <span>“A Problem with Single Valued Solution Concepts.”</span> 1983. <a href="https://sites.google.com/a/nyu.edu/davidpearce/">https://sites.google.com/a/nyu.edu/davidpearce/</a>.
 </div>
-<div id="ref-Pryor2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Pryor2004" class="csl-entry" role="listitem">
 Pryor, James. 2004. <span>“What’s Wrong with Moore’s Argument?”</span> <em>Philosophical Issues</em> 14 (1): 349–78. <a href="https://doi.org/10.1111/j.1533-6077.2004.00034.x">https://doi.org/10.1111/j.1533-6077.2004.00034.x</a>.
 </div>
-<div id="ref-Rousseau1913" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Rousseau1913" class="csl-entry" role="listitem">
 Rousseau, Jean-Jacques. 1913. <em>Social Contract &amp; Discourses</em>. Translated by G. D. H. Cole. New York: J. M. Dent &amp; Sons.
 </div>
-<div id="ref-Schwitzgebel2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Schwitzgebel2008" class="csl-entry" role="listitem">
 Schwitzgebel, Eric. 2008. <span>“The Unreliability of Naive Introspection.”</span> <em>Philosophical Review</em> 117 (2): 245–73. <a href="https://doi.org/10.1215/00318108-2007-037">https://doi.org/10.1215/00318108-2007-037</a>.
 </div>
-<div id="ref-Weatherson2011-WEADIR" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weatherson2011-WEADIR" class="csl-entry" role="listitem">
 Weatherson, Brian. 2011. <span>“Defending Interest-Relative Invariantism.”</span> <em>Logos &amp; Episteme</em> 2 (4): 591–609. <a href="https://doi.org/10.5840/logos-episteme2011248">https://doi.org/10.5840/logos-episteme2011248</a>.
 </div>
-<div id="ref-Weatherson2018-WEAIEA-2" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weatherson2018-WEAIEA-2" class="csl-entry" role="listitem">
 ———. 2018. <span>“Interests, Evidence and Games.”</span> <em>Episteme</em> 15 (3): 329–44.
 </div>
-<div id="ref-Weisberg2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weisberg2010" class="csl-entry" role="listitem">
 Weisberg, Jonathan. 2010. <span>“Bootstrapping in General.”</span> <em>Philosophy and Phenomenological Research</em> 81 (3): 525–48. <a href="https://doi.org/10.1111/j.1933-1592.2010.00448.x">https://doi.org/10.1111/j.1933-1592.2010.00448.x</a>.
 </div>
-<div id="ref-Williamson2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Williamson2000" class="csl-entry" role="listitem">
 Williamson, Timothy. 2000. <em><span class="nocase">Knowledge and its Limits</span></em>. Oxford University Press.
 </div>
-<div id="ref-Williamson2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Williamson2007" class="csl-entry" role="listitem">
 ———. 2007. <span>“How Probable Is an Infinite Sequence of Heads?”</span> <em>Analysis</em> 67 (295): 173–80. <a href="https://doi.org/10.1111/j.1467-8284.2007.00671.x">https://doi.org/10.1111/j.1467-8284.2007.00671.x</a>.
 </div>
 </div>
@@ -878,9 +900,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -945,6 +981,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
