@@ -53,7 +53,7 @@ The final four questions concern the columns, and they mirror the four questions
 
 Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities[^knowledge-4], and perhaps they should be included.
 
-[^knowledge-4]: As noted back in [section @sec--given], I'm using 'possibilities' here in the sense described by @Humberstone1981.
+[^knowledge-4]: As noted back in [section @sec-given], I'm using 'possibilities' here in the sense described by @Humberstone1981.
 
 Eighth, the table might include a state that should not be there. If it is bucketing down as Ragnar is preparing to leave, including a state where it is dry might be a mistake.
 
