@@ -32,10 +32,11 @@ format:
   html:
     theme: 
       light: 
-        - flatly
+        - solar
         - html-fonts.scss
+        - solar-defaults.scss
       dark:
-        - darkly
+        - solar
         - html-fonts.scss
     linestretch: 1.7
     toc: true
