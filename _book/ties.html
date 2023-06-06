@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.2.253">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,15 +17,14 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -39,7 +38,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -81,9 +81,7 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@500&display=swap');
-</style>
+<link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
 
 
 </head>
@@ -92,16 +90,11 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ties.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -109,132 +102,115 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main tools-wide">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
-            Facebook
-            </a>
-          </li>
-      </ul>
-    </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./history.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interests.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></span></a>
+  <a href="./interests.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beliefs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></a>
+  <a href="./beliefs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./knowledge.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></span></a>
+  <a href="./knowledge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inquiry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span></a>
+  <a href="./inquiry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ties.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></a>
+  <a href="./ties.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></span></a>
+  <a href="./changes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rationality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></span></a>
+  <a href="./rationality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></a>
+  <a href="./evidence.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./power.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></a>
+  <a href="./power.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -243,13 +219,13 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-frankielee" id="toc-sec-frankielee" class="nav-link active" data-scroll-target="#sec-frankielee"><span class="header-section-number">6.1</span> An Example</a></li>
-  <li><a href="#sec-tiesresponse" id="toc-sec-tiesresponse" class="nav-link" data-scroll-target="#sec-tiesresponse"><span class="header-section-number">6.2</span> Responding to the Challenge, Quickly</a></li>
-  <li><a href="#sec-backearth" id="toc-sec-backearth" class="nav-link" data-scroll-target="#sec-backearth"><span class="header-section-number">6.3</span> Back to Earth</a></li>
-  <li><a href="#sec-supermarketquestions" id="toc-sec-supermarketquestions" class="nav-link" data-scroll-target="#sec-supermarketquestions"><span class="header-section-number">6.4</span> I Have Questions</a></li>
-  <li><a href="#sec-satisfied" id="toc-sec-satisfied" class="nav-link" data-scroll-target="#sec-satisfied"><span class="header-section-number">6.5</span> You’ll Never Be Satisfied (If You Try to Maximise)</a></li>
-  <li><a href="#sec-deliberationcosts" id="toc-sec-deliberationcosts" class="nav-link" data-scroll-target="#sec-deliberationcosts"><span class="header-section-number">6.6</span> Deliberation Costs and Infinite Regresses</a></li>
-  <li><a href="#sec-ignorancebliss" id="toc-sec-ignorancebliss" class="nav-link" data-scroll-target="#sec-ignorancebliss"><span class="header-section-number">6.7</span> Ignorance is Bliss</a></li>
+  <li><a href="#sec-frankielee" id="toc-sec-frankielee" class="nav-link active" data-scroll-target="#sec-frankielee"><span class="toc-section-number">6.1</span>  An Example</a></li>
+  <li><a href="#sec-tiesresponse" id="toc-sec-tiesresponse" class="nav-link" data-scroll-target="#sec-tiesresponse"><span class="toc-section-number">6.2</span>  Responding to the Challenge, Quickly</a></li>
+  <li><a href="#sec-backearth" id="toc-sec-backearth" class="nav-link" data-scroll-target="#sec-backearth"><span class="toc-section-number">6.3</span>  Back to Earth</a></li>
+  <li><a href="#sec-supermarketquestions" id="toc-sec-supermarketquestions" class="nav-link" data-scroll-target="#sec-supermarketquestions"><span class="toc-section-number">6.4</span>  I Have Questions</a></li>
+  <li><a href="#sec-satisfied" id="toc-sec-satisfied" class="nav-link" data-scroll-target="#sec-satisfied"><span class="toc-section-number">6.5</span>  You’ll Never Be Satisfied (If You Try to Maximise)</a></li>
+  <li><a href="#sec-deliberationcosts" id="toc-sec-deliberationcosts" class="nav-link" data-scroll-target="#sec-deliberationcosts"><span class="toc-section-number">6.6</span>  Deliberation Costs and Infinite Regresses</a></li>
+  <li><a href="#sec-ignorancebliss" id="toc-sec-ignorancebliss" class="nav-link" data-scroll-target="#sec-ignorancebliss"><span class="toc-section-number">6.7</span>  Ignorance is Bliss</a></li>
   </ul>
 </nav>
     </div>
@@ -258,7 +234,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-ties" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></h1>
+<h1 class="title"><span id="sec-ties" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></h1>
 </div>
 
 
@@ -294,7 +270,7 @@ div.csl-indent {
 &nbsp;&nbsp;Just above the potted plain &nbsp;<br>
 &nbsp;&nbsp;Saying “Take your pick, Frankie boy, &nbsp;<br>
 &nbsp;&nbsp;My loss will be your gain.” &nbsp;<br>
-&nbsp;&nbsp; “The Ballad of Frankie Lee and Judas Priest”, 1968.<br>
+&nbsp;&nbsp;&nbsp;“The Ballad of Frankie Lee and Judas Priest”, 1968.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lyrics from Dylan <span class="citation" data-cites="Dylan2016">(<a href="references.html#ref-Dylan2016" role="doc-biblioref">2016, 225</a>)</span></p>
 <p>On a common reading of this, Judas Priest isn’t just asking Frankie Lee how much money he wants to take, but which individual notes. Let’s simplify, and say that it is common ground that Frankie Lee should only take $10, so the choice he has is which of the individual notes he will take. This will be enough to set up the puzzle.</p>
 <p>Assume something else that isn’t in the text, but which isn’t an implausible addition to the story. The world Frankie Lee and Judas Priest live in is not completely free of counterfeit notes. And it would be bad for Frankie Lee to take a counterfeit note. It won’t matter just how common these notes are, or how bad it would be. But our puzzle will be most vivid if each of these are relatively small quantities. So there aren’t that many counterfeit notes in circulation, and the (expected) disutility to Frankie Lee of having one of them is not great. There is some chance that he will get in trouble, but the chance isn’t high, and the trouble isn’t any worse than he’s suffered before. Still, other things exactly equal, Frankie Lee would prefer a genuine note to a counterfeit one.</p>
@@ -433,116 +409,116 @@ div.csl-indent {
 <p>In the next chapter, I’ll look at problems that can be addressed without taking this many detours into decision theory.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-AndersonHawthorne2019a" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-AndersonHawthorne2019a" class="csl-entry" role="doc-biblioentry">
 Anderson, Charity, and John Hawthorne. 2019. <span>“Knowledge, Practical Adequacy, and Stakes.”</span> <em>Oxford Studies in Epistemology</em> 6: 234–57.
 </div>
-<div id="ref-BuchakRisk" class="csl-entry" role="listitem">
+<div id="ref-BuchakRisk" class="csl-entry" role="doc-biblioentry">
 Buchak, Lara. 2013. <em>Risk and Rationality</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Caplin2011" class="csl-entry" role="listitem">
+<div id="ref-Caplin2011" class="csl-entry" role="doc-biblioentry">
 Caplin, Andrew, Mark Dean, and Daniel Martin. 2011. <span>“Search and Satisficing.”</span> <em>American Economic Review</em> 101 (7): 2899–2922. <a href="https://doi.org/10.1257/aer.101.7.2899">https://doi.org/10.1257/aer.101.7.2899</a>.
 </div>
-<div id="ref-Chakravarti2017" class="csl-entry" role="listitem">
+<div id="ref-Chakravarti2017" class="csl-entry" role="doc-biblioentry">
 Chakravarti, Ashok. 2017. <span>“Imperfect Information and Opportunism.”</span> <em>Journal of Economic Issues</em> 51 (4): 1114–36. <a href="https://doi.org/10.1080/00213624.2017.1391594">https://doi.org/10.1080/00213624.2017.1391594</a>.
 </div>
-<div id="ref-ChernevEtAl2015" class="csl-entry" role="listitem">
+<div id="ref-ChernevEtAl2015" class="csl-entry" role="doc-biblioentry">
 Chernev, Alexander, Ulf Böckenholt, and Joseph Goodman. 2015. <span>“Choice Overload: A Conceptual Review and Meta-Analysis.”</span> <em>Journal of Consumer Psychology</em> 25 (2): 333–58. <a href="https://doi.org/10.1016/j.jcps.2014.08.002">https://doi.org/10.1016/j.jcps.2014.08.002</a>.
 </div>
-<div id="ref-Cherniak1986" class="csl-entry" role="listitem">
+<div id="ref-Cherniak1986" class="csl-entry" role="doc-biblioentry">
 Cherniak, Christopher. 1986. <em>Minimal Rationality</em>. Cambridge, MA: MIT Press.
 </div>
-<div id="ref-Christensen2007" class="csl-entry" role="listitem">
+<div id="ref-Christensen2007" class="csl-entry" role="doc-biblioentry">
 Christensen, David. 2007. <span>“Does Murphy’s Law Apply in Epistemology? Self-Doubt and Rational Ideals.”</span> <em>Oxford Studies in Epistemology</em> 2: 3–31.
 </div>
-<div id="ref-Conlisk1996" class="csl-entry" role="listitem">
+<div id="ref-Conlisk1996" class="csl-entry" role="doc-biblioentry">
 Conlisk, John. 1996. <span>“Why Bounded Rationality?”</span> <em>Journal of Economic Literature</em> 34 (2): 669–700.
 </div>
-<div id="ref-DiabEtAl2008" class="csl-entry" role="listitem">
+<div id="ref-DiabEtAl2008" class="csl-entry" role="doc-biblioentry">
 Diab, Dalia L., Michael A. Gillespie, and Scott Highhouse. 2008. <span>“Are Maximizers Really Unhappy? The Measurement of Maximizing Tendency.”</span> <em>Judgment and Decision Making</em> 3 (5): 364–70. <a href="http://journal.sjdm.org/8320/jdm8320.pdf">http://journal.sjdm.org/8320/jdm8320.pdf</a>.
 </div>
-<div id="ref-Dylan2016" class="csl-entry" role="listitem">
+<div id="ref-Dylan2016" class="csl-entry" role="doc-biblioentry">
 Dylan, Bob. 2016. <em>The Lyrics: 1961-2012</em>. New York: Simon &amp; Schuster.
 </div>
-<div id="ref-Elster1979" class="csl-entry" role="listitem">
+<div id="ref-Elster1979" class="csl-entry" role="doc-biblioentry">
 Elster, Jon. 1979. <em>Ulysses and the Sirens: Studies in Rationality and Irrationality</em>. Cambridge: Cambridge University Press.
 </div>
-<div id="ref-GigerenzerSelton2001" class="csl-entry" role="listitem">
+<div id="ref-GigerenzerSelton2001" class="csl-entry" role="doc-biblioentry">
 Gigerenzer, Gerd, and Reinhard Selten. 2001. <em>Bounded Rationality: The Adaptive Toolbox</em>. Cambridge, MA: MIT Press.
 </div>
-<div id="ref-Harman1973" class="csl-entry" role="listitem">
+<div id="ref-Harman1973" class="csl-entry" role="doc-biblioentry">
 Harman, Gilbert. 1973. <em>Thought</em>. Princeton: Princeton University Press.
 </div>
-<div id="ref-IyengarEtAl2006" class="csl-entry" role="listitem">
+<div id="ref-IyengarEtAl2006" class="csl-entry" role="doc-biblioentry">
 Iyengar, Sheena S., Rachael E. Wells, and Barry Schwartz. 2006. <span>“Doing Better but Feeling Worse: Looking for the <span>‘Best’</span> Job Undermines Satisfaction.”</span> <em>Psychological Science</em> 17 (2): 143–50. <a href="https://doi.org/10.1111/j.1467-9280.2006.01677.x">https://doi.org/10.1111/j.1467-9280.2006.01677.x</a>.
 </div>
-<div id="ref-Joyce2018" class="csl-entry" role="listitem">
+<div id="ref-Joyce2018" class="csl-entry" role="doc-biblioentry">
 Joyce, James. n.d. <span>“Deliberation and Stability in Newcomb Problems and Pseudo-Newcomb Problems.”</span> In, 138–59.
 </div>
-<div id="ref-Joyce1999" class="csl-entry" role="listitem">
+<div id="ref-Joyce1999" class="csl-entry" role="doc-biblioentry">
 Joyce, James M. 1999. <em>The Foundations of Causal Decision Theory</em>. Cambridge: Cambridge University Press.
 </div>
-<div id="ref-Kimball2015" class="csl-entry" role="listitem">
+<div id="ref-Kimball2015" class="csl-entry" role="doc-biblioentry">
 Kimball, Miles. 2015. <span>“Cognitive Economics.”</span> <em>The Japanese Economic Review</em> 66 (2): 167–81. <a href="https://doi.org/10.1111/jere.12070">https://doi.org/10.1111/jere.12070</a>.
 </div>
-<div id="ref-Knight1921" class="csl-entry" role="listitem">
+<div id="ref-Knight1921" class="csl-entry" role="doc-biblioentry">
 Knight, Frank. 1921. <em>Risk, Uncertainty and Profit</em>. Chicago: University of Chicago Press.
 </div>
-<div id="ref-ManganEtAl2010" class="csl-entry" role="listitem">
+<div id="ref-ManganEtAl2010" class="csl-entry" role="doc-biblioentry">
 Mangan, Jean, Amanda Hughes, and Kim Slack. 2010. <span>“Student Finance, Information and Decision Making.”</span> <em>Higher Education</em> 60 (5): 459–72. <a href="https://doi.org/10.1007/s10734-010-9309-7">https://doi.org/10.1007/s10734-010-9309-7</a>.
 </div>
-<div id="ref-Manski2017" class="csl-entry" role="listitem">
+<div id="ref-Manski2017" class="csl-entry" role="doc-biblioentry">
 Manski, Charles F. 2017. <span>“Optimize, Satisfice, or Choose Without Deliberation? A Simple Minimax-Regret Assessment.”</span> <em>Theory and Decision</em> 83 (2): 155–73. <a href="https://doi.org/10.1007/s11238-017-9592-1">https://doi.org/10.1007/s11238-017-9592-1</a>.
 </div>
-<div id="ref-NewmanEtAl2018" class="csl-entry" role="listitem">
+<div id="ref-NewmanEtAl2018" class="csl-entry" role="doc-biblioentry">
 Newman, David B., Joanna Schug, Masaki Yuki, Junko Yamada, and John B. Nezlek. 2018. <span>“The Negative Consequences of Maximizing in Friendship Selection.”</span> <em>Journal of Personality and Social Psychology</em> 114 (5): 804–24. <a href="https://doi.org/10.1037/pspp0000141">https://doi.org/10.1037/pspp0000141</a>.
 </div>
-<div id="ref-Odell2002" class="csl-entry" role="listitem">
+<div id="ref-Odell2002" class="csl-entry" role="doc-biblioentry">
 Odell, John S. 2002. <span>“Bounded Rationality and World Political Economy.”</span> In <em>Governing the World’s Money</em>, edited by David M. Andrews, C. Randall Henning, and Louis W. Pauly, 168–93. Ithaca: Cornell University Press.
 </div>
-<div id="ref-OgakiTanaka2017" class="csl-entry" role="listitem">
+<div id="ref-OgakiTanaka2017" class="csl-entry" role="doc-biblioentry">
 Ogaki, Masao, and Saori C. Tanaka. 2017. <em>Behavioral Economics: Toward a New Economics by Integration with Traditional Economics</em>. Singapore: Springer.
 </div>
-<div id="ref-Papi2013" class="csl-entry" role="listitem">
+<div id="ref-Papi2013" class="csl-entry" role="doc-biblioentry">
 Papi, Mario. 2013. <span>“Satisficing and Maximizing Consumers in a Monopolistic Screening Model.”</span> <em>Mathematical Social Sciences</em> 66 (3): 385–89. <a href="https://doi.org/10.1016/j.mathsocsci.2013.08.005">https://doi.org/10.1016/j.mathsocsci.2013.08.005</a>.
 </div>
-<div id="ref-Pingle2006" class="csl-entry" role="listitem">
+<div id="ref-Pingle2006" class="csl-entry" role="doc-biblioentry">
 Pingle, Mark. 2006. <span>“Deliberation Cost as a Foundation for Behavioral Economics.”</span> In <em>In Handbook of Contemporary Behavioral Economics: Foundations and Developments</em>, edited by Morris Altman, 340–55. New York: Routledge.
 </div>
-<div id="ref-Quiggin1982" class="csl-entry" role="listitem">
+<div id="ref-Quiggin1982" class="csl-entry" role="doc-biblioentry">
 Quiggin, John. 1982. <span>“A Theory of Anticipated Utility.”</span> <em>Journal of Economic Behavior &amp; Organization</em> 3 (4): 323–43. <a href="https://doi.org/10.1016/0167-2681(82)90008-7">https://doi.org/10.1016/0167-2681(82)90008-7</a>.
 </div>
-<div id="ref-Reutskaja2011" class="csl-entry" role="listitem">
+<div id="ref-Reutskaja2011" class="csl-entry" role="doc-biblioentry">
 Reutskaja, Elena, Rosemarie Nagel, Colin F. Camerer, and Antonio Rangel. 2011. <span>“Search Dynamics in Consumer Choice Under Time Pressure: An Eye-Tracking Study.”</span> <em>American Economic Review</em> 101 (2): 900–926. <a href="https://doi.org/10.1257/aer.101.2.900">https://doi.org/10.1257/aer.101.2.900</a>.
 </div>
-<div id="ref-Russell1997" class="csl-entry" role="listitem">
+<div id="ref-Russell1997" class="csl-entry" role="doc-biblioentry">
 Russell, Stuart J. 1997. <span>“Rationality and Intelligence.”</span> <em>Artificial Intelligence</em> 94 (1-2): 57–77. <a href="https://doi.org/10.1016/S0004-3702(97)00026-X">https://doi.org/10.1016/S0004-3702(97)00026-X</a>.
 </div>
-<div id="ref-Savage1967" class="csl-entry" role="listitem">
+<div id="ref-Savage1967" class="csl-entry" role="doc-biblioentry">
 Savage, Leonard. 1967. <span>“Difficulties in the Theory of Personal Probability.”</span> <em>Philosophy of Science</em> 34 (4): 305–10. <a href="https://doi.org/10.1086/288168">https://doi.org/10.1086/288168</a>.
 </div>
-<div id="ref-ScheibehenneEtAl2010" class="csl-entry" role="listitem">
+<div id="ref-ScheibehenneEtAl2010" class="csl-entry" role="doc-biblioentry">
 Scheibehenne, Benjamin, Rainer Greifeneder, and Peter M. Todd. 2010. <span>“Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload.”</span> <em>Journal of Consumer Research</em> 37 (3): 409–25. <a href="https://doi.org/10.1086/651235">https://doi.org/10.1086/651235</a>.
 </div>
-<div id="ref-Schwartz2004" class="csl-entry" role="listitem">
+<div id="ref-Schwartz2004" class="csl-entry" role="doc-biblioentry">
 Schwartz, Barry. 2004. <em>The Paradox of Choice: Why More Is Less</em>. New York: Harper Collins.
 </div>
-<div id="ref-SchwartzEtAl2002" class="csl-entry" role="listitem">
+<div id="ref-SchwartzEtAl2002" class="csl-entry" role="doc-biblioentry">
 Schwartz, Barry, Andrew Ward, John Monterosso, Sonja Lyubomirsky, Katherin White, and Darrin R. Lehman. 2002. <span>“Maximizing Versus Satisficing: Happiness Is a Matter of Choice.”</span> <em>Journal of Personality and Social Psychology</em> 83 (5): 1178–97. <a href="https://doi.org/10.1037/0022-3514.83.5.1178">https://doi.org/10.1037/0022-3514.83.5.1178</a>.
 </div>
-<div id="ref-SperberEtAl2010" class="csl-entry" role="listitem">
+<div id="ref-SperberEtAl2010" class="csl-entry" role="doc-biblioentry">
 Sperber, Dan, Fabrice Clément, Christophe Heintz, Olivier Mascaro, Hugo Mercier, Gloria Origgi, and Deirdre Wilson. 2010. <span>“Epistemic Vigilance.”</span> <em>Mind and Language</em> 25 (4): 359–93. <a href="https://doi.org/10.1111/j.1468-0017.2010.01394.x">https://doi.org/10.1111/j.1468-0017.2010.01394.x</a>.
 </div>
-<div id="ref-Tucker2016" class="csl-entry" role="listitem">
+<div id="ref-Tucker2016" class="csl-entry" role="doc-biblioentry">
 Tucker, Chris. 2016. <span>“Satisficing and Motivated Submaximization (in the Philosophy of Religion).”</span> <em>Philosophy and Phenomenological Research</em> 93 (1): 127–43. <a href="https://doi.org/10.1111/phpr.12191">https://doi.org/10.1111/phpr.12191</a>.
 </div>
-<div id="ref-Williamson2000" class="csl-entry" role="listitem">
+<div id="ref-Williamson2000" class="csl-entry" role="doc-biblioentry">
 Williamson, Timothy. 2000. <em><span class="nocase">Knowledge and its Limits</span></em>. Oxford University Press.
 </div>
-<div id="ref-Wittgenstein1953" class="csl-entry" role="listitem">
+<div id="ref-Wittgenstein1953" class="csl-entry" role="doc-biblioentry">
 Wittgenstein, Ludwig. 1953. <em>Philosophical Investigations</em>. London: Macmillan.
 </div>
-<div id="ref-Zweber2016" class="csl-entry" role="listitem">
+<div id="ref-Zweber2016" class="csl-entry" role="doc-biblioentry">
 Zweber, Adam. 2016. <span>“Fallibilism, Closure, and Pragmatic Encroachment.”</span> <em>Philosophical Studies</em> 173 (10): 2745–57. <a href="https://doi.org/10.1007/s11098-016-0631-5">https://doi.org/10.1007/s11098-016-0631-5</a>.
 </div>
 </div>
@@ -692,23 +668,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -773,92 +735,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

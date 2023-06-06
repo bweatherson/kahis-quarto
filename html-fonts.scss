@@ -1,10 +1,30 @@
+/*-- scss:defaults --*/
+$bold-font-weight:      600 !default;
+$table-border-color:    #fdf6e3 !default;
+
 /*-- scss:rules --*/
 h1, h2, h3, h4, .subtitle, .sidebar-title, .quarto-title-meta-heading {
-  font-family: Alegreya Sans;
+  font-family: sofia-pro;
 }
 
 .toc-title{
-  font-family: Lato;
+  font-family: baskerville;
 }
 
+td {
+  border-top: none;
+  border-bottom: none;
+}
 
+th {
+  font-weight: normal;
+  border: none;
+}
+
+tr, .header {
+  border: none;
+}
+
+caption {
+  font-size: smaller;
+}

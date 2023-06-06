@@ -18,8 +18,9 @@ A practical inquiry can often be represented by the kind of decision table that 
 
 [^knowledge-1]: This section is loosely based on §1.1 of my [-@Weatherson2012].
 
-|      | Rain | Dry |
+|      |      |     |
 |-----:|:----:|:---:|
+|      | Rain | Dry |
 | Walk |  0   |  5  |
 |  Bus |  3   |  4  |
 
@@ -142,12 +143,15 @@ That's my primary argument for KAE. In general, it is reasonable to do as many r
 
 If knowledge structures decision tables, then there is a simple argument that Anisa loses knowledge when playing the red-blue game. The following would be a bad table for Anisa to use when deciding what to do.
 
-|            | 2+2=4 | 2+2 ≠ 4 |
+|            |       |         |
 |-----------:|:-----:|:-------:|
+|            | 2+2=4 | 2+2 ≠ 4 |
 |   Red-True | \$50  |    0    |
 |  Red-False |   0   |  \$50   |
 |  Blue-True | \$50  |  \$50   |
 | Blue-False |   0   |    0    |
+
+: What the Red-Blue game looks like if Anisa assumes that the Battle of Agincourt was in 1415. {#tbl-assume-agincourt}
 
 If she used that table, then it would look like Blue-True is the weakly dominant option. And that would mean that Blue-True is at least a rational choice, and perhaps the rational choice. Since Blue-True is not a rational choice, this table must be wrong. But if Anisa knows that the Battle of Agincourt was in 1415, and knowledge structures decision tables, then everything on this table is correct. So Anisa does not know that the Battle of Agincourt was in 1415.
 

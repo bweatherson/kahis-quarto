@@ -46,10 +46,8 @@ format:
     fontsize: 1.2em
     include-in-header:
       - text: |
-          <style>
-          @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@500&display=swap');
-          </style>
-    mainfont: "Alegreya"
+          <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
+    mainfont: "baskerville, sans-serif"
   pdf:
     documentclass: scrbook
     geometry: "left=1.95in,right=1.95in,top=1.78in,bottom=1.78in"
@@ -80,5 +78,4 @@ format:
     number-sections: true
 
 editor: visual
-
 
