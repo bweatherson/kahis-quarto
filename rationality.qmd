@@ -259,7 +259,7 @@ Now one might think, indeed I do think, that such triples do not exist at all. B
 -   *S*'s credence in *C* ∧ *D* is less than *t*.
 -   *S* knows that she has all these states, and reflectively endorses them.
 
-The best arguments for the existence of triples〈*S*, *A*, *B*〉are non-constructive existence proofs. David Christensen [-@Christensen2005] for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don't really prove what the Lockean needs. They don't show that triples satisfying the constraints we associated with〈*S*, *A*, *B*〉are just as common as triples satisfying the constraints we associated with〈*S*, *C*, *D*〉, for any *t*. But if the Lockean were correct, they should be exactly as common.
+The best arguments for the existence of triples〈*S*, *A*, *B*〉are non-constructive existence proofs. David Christensen [-@Christensen2005] for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don't really prove what the Lockean needs. They don't show that triples satisfying the constraints we associated with〈*S*, *A*, *B*〉are just as common as triples satisfying the constraints we associated with〈*S*, *C*, *D*〉 for any *t*. But if the Lockean were correct, they should be exactly as common.
 
 ## Solving the Challenges {#sec-solving}
 
