@@ -38,6 +38,7 @@ format:
       dark:
         - solar
         - html-fonts.scss
+        - dark-table.scss
     linestretch: 1.5
     toc: true
     toc-depth: 3

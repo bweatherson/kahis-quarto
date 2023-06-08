@@ -101,11 +101,11 @@ But to do that, I need to delve into somewhat more contested areas of game theor
 
 At an almost maximal level of abstraction, a two player, two option each game looks like this.
 
-|     |                  |                  |
-|----:|:----------------:|:----------------:|
-|     |       *a*        |       *b*        |
-| *A* | *r*~11~, *c*~11~ | *r*~12~, *c*~12~ |
-| *B* | *r*~21~, *c*~21~ | *r*~22~, *c*~22~ |
+|             |                  |                  |
+|------------:|:----------------:|:----------------:|
+|             |       *a*        |       *b*        |
+|         *A* | *r*~11~, *c*~11~ | *r*~12~, *c*~12~ |
+|         *B* | *r*~21~, *c*~21~ | *r*~22~, *c*~22~ |
 
 : A generic 2 by 2 by 2 game. {#tbl-generic-game}
 
@@ -144,13 +144,13 @@ At first glance it might seem like *Aa* is the right choice; it produces the bes
 
 Embed this game in what they call a *global game*. We'll start the game with each player knowing just that they will play a game with the following payout table, with *x* to be selected at random from a flat distribution over \[-1, 5\].
 
-|     |        |          |
-|----:|:------:|:--------:|
-|     |  *a*   |   *b*    |
-| *A* |  4, 4  |  0, *x*  |
-| *B* | *x*, 0 | *x*, *x* |
+|       |        |          |
+|------:|:------:|:--------:|
+|       |  *a*   |   *b*    |
+|   *A* |  4, 4  |  0, *x*  |
+|   *B* | *x*, 0 | *x*, *x* |
 
-: The 'global game', which is Stag Hunt with an unknown parameter. {#tbl-global-game}
+: The global game. {#tbl-global-game}
 
 Before they play the game, each player will get a noisy signal about the value of *x*. There will be signals *s~R~* and *s~C~* chosen (independently) from a flat distribution over \[*x* - 0.25, *x* + 0.25\], and shown to Row and Column respectively. So each player will know the value of *x* to within ¼, and know that the other player knows it to within ¼ as well. This is a margin of error model, and in those models there is very little that is common knowledge. That, Carlsson and van Damme argue, makes a huge difference.
 
@@ -302,9 +302,9 @@ If what I said was right, then this is a counterexample to *Cut*. Γ ⊨ *A* i
 
 I don't know if there are instances of *F* and *G* where this particular pattern obtains. That is, I don't know if there are instances of *F* and *G* where given a perfect correlation holding within *d* miles, we can rationally infer it holds within *d* + 1 miles, but not *d* + 2 miles. It seems likely to me that something like this could be right, but it's hard to say for sure.
 
-What I really need for the argument is independent of how we think spatial distance relates to rational inductive inference. All that's needed is is that there is some similarity metric such that inductive inference is rational across short jumps in that similarity metric, but not across long jumps. One kind of similarity is physical distance from a salient point. That's not the only kind of similarity, and rarely the most important kind. 
+What I really need for the argument is independent of how we think spatial distance relates to rational inductive inference. All that's needed is is that there is some similarity metric such that inductive inference is rational across short jumps in that similarity metric, but not across long jumps. One kind of similarity is physical distance from a salient point. That's not the only kind of similarity, and rarely the most important kind.
 
-As long as there is some  'inductive margin of inference', the argument works. What I mean by an inductive margin of inference is that given that all the *F* that differ from a salient point (along this metric) by amount *d* are *G*, it is rational to infer that all the *F* that differ from that salient point by amount *d* + *m* are *G*, but not that all the *F* that differ from that salient point by amount *d* + 2*m* are *G*. And it seems very plausible to me that there are some metrics, and values of *F*, *G*, *d*, *m* such that that's true.
+As long as there is some 'inductive margin of inference', the argument works. What I mean by an inductive margin of inference is that given that all the *F* that differ from a salient point (along this metric) by amount *d* are *G*, it is rational to infer that all the *F* that differ from that salient point by amount *d* + *m* are *G*, but not that all the *F* that differ from that salient point by amount *d* + 2*m* are *G*. And it seems very plausible to me that there are some metrics, and values of *F*, *G*, *d*, *m* such that that's true.
 
 For example, given what I know about Miami's weather, I can infer that it won't snow there for the next few hundred Christmases. Indeed, I know that. But I can't know that it won't snow there for the next few million Christmases. There is some point, and I don't know what it is, where my inductive knowledge about Miami's snowfall (or lack thereof) gives out.
 

@@ -144,13 +144,13 @@ This way of thinking lends itself to an epistemological interpretation of one of
 
 This game is reminiscent of some puzzles that have been much discussed in the decision theory literature, namely asymmetric Death in Damascus puzzles [@Richter1984] . Here Column wants herself and Row to make the 'same' choice, i.e., *A*~1~ and *S*~1~ or *A*~2~ and *S*~2~. She gets 1 if they do, 0 otherwise. And Row wants them to make different choices, and gets 10 if they do. Row also dislikes playing *A*~2~, and this costs her 1 whatever else happens. It isn't too hard to prove that the only Nash equilibrium for this game is that Row plays a mixed strategy playing both *A*~1~ and *A*~2~ with probability ½, while Column plays the mixed strategy that gives *S*~1~ probability 0.55, and *S*~2~ with probability 0.45.
 
-Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a **metaphysical** interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath's *Games of Strategy*.
+Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a *metaphysical* interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath's *Games of Strategy*.
 
 > When players choose to act unsystematically, they pick from among their pure strategies in some random way ...We call a random mixture between these two pure strategies a mixed strategy. [@DixitSkeath2004 186]
 
 Dixit and Skeath are saying that it is definitive of a mixed strategy that players use some kind of randomisation device to pick their plays on any particular run of a game. That is, the probabilities in a mixed strategy must be in the world; they must go into the players' choice of play. That's one way, the paradigm way really, that we can think of mixed strategies metaphysically.
 
-But the understanding of game theory as interactive epistemology naturally suggests an **epistemological** interpretation of mixed strategies.
+But the understanding of game theory as interactive epistemology naturally suggests an *epistemological* interpretation of mixed strategies.
 
 > One could easily ... \[model players\] ... turning the choice over to a randomizing device, but while it might be harmless to permit this, players satisfying the cognitive idealizations that game theory and decision theory make could have no motive for playing a mixed strategy. So how are we to understand Nash equilibrium in model theoretic terms as a solution concept? We should follow the suggestion of Bayesian game theorists, interpreting mixed strategy profiles as representations, not of players' choices, but of their beliefs. [@Stalnaker1994 57-8]
 
