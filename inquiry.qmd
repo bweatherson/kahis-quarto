@@ -96,7 +96,7 @@ Now as a matter of fact, we haven't had as much uptake of this meta-rule in poli
 
 ### Evidence Gathering {#sec-evgather}
 
-In [section @sec-sec-cutelim] I'm going to argue that having *p* as part of one's evidence might license inductive inferences that are not licensed by a smaller evidence set that doesn't include *p*, even if one knows *p* on the basis of that smaller set. If that's right, evidence gathering could be epistemically useful even if one already knows the evidence to be gathered.
+In [section @sec-cutelim] I'm going to argue that having *p* as part of one's evidence might license inductive inferences that are not licensed by a smaller evidence set that doesn't include *p*, even if one knows *p* on the basis of that smaller set. If that's right, evidence gathering could be epistemically useful even if one already knows the evidence to be gathered.
 
 ### Possible Responses {#sec-friedmaninquiry}
 
