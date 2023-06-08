@@ -38,7 +38,7 @@ format:
       dark:
         - solar
         - html-fonts.scss
-    linestretch: 1.7
+    linestretch: 1.5
     toc: true
     toc-depth: 3
     reference-location: margin

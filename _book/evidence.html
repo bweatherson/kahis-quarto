@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.253">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -83,6 +83,7 @@ div.csl-indent {
 }</script>
 <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -91,11 +92,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./evidence.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -103,115 +109,132 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
-            <i class="bi bi-bi-journal pe-1"></i>
-          Download ePub
-          </a>
-        </li>
-    </ul>
-    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Knowledge.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></a>
+  <a href="./history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interests.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a>
+  <a href="./interests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beliefs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></a>
+  <a href="./beliefs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./knowledge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a>
+  <a href="./knowledge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inquiry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></a>
+  <a href="./inquiry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ties.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></a>
+  <a href="./ties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ties</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./changes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></a>
+  <a href="./changes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Changes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rationality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></a>
+  <a href="./rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Rationality</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evidence.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></a>
+  <a href="./evidence.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./power.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a>
+  <a href="./power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -220,19 +243,19 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-evpuzzle" id="toc-sec-evpuzzle" class="nav-link active" data-scroll-target="#sec-evpuzzle"><span class="toc-section-number">9.1</span>  A Puzzle About Evidence</a></li>
-  <li><a href="#sec-simplesolution" id="toc-sec-simplesolution" class="nav-link" data-scroll-target="#sec-simplesolution"><span class="toc-section-number">9.2</span>  A Simple, but Incomplete, Solution</a></li>
-  <li><a href="#sec-radicalinterpretation" id="toc-sec-radicalinterpretation" class="nav-link" data-scroll-target="#sec-radicalinterpretation"><span class="toc-section-number">9.3</span>  The Radical Interpreter</a></li>
-  <li><a href="#sec-globalgame" id="toc-sec-globalgame" class="nav-link" data-scroll-target="#sec-globalgame"><span class="toc-section-number">9.4</span>  Risk-Dominant Equilibria</a>
+  <li><a href="#sec-evpuzzle" id="toc-sec-evpuzzle" class="nav-link active" data-scroll-target="#sec-evpuzzle"><span class="header-section-number">9.1</span> A Puzzle About Evidence</a></li>
+  <li><a href="#sec-simplesolution" id="toc-sec-simplesolution" class="nav-link" data-scroll-target="#sec-simplesolution"><span class="header-section-number">9.2</span> A Simple, but Incomplete, Solution</a></li>
+  <li><a href="#sec-radicalinterpretation" id="toc-sec-radicalinterpretation" class="nav-link" data-scroll-target="#sec-radicalinterpretation"><span class="header-section-number">9.3</span> The Radical Interpreter</a></li>
+  <li><a href="#sec-globalgame" id="toc-sec-globalgame" class="nav-link" data-scroll-target="#sec-globalgame"><span class="header-section-number">9.4</span> Risk-Dominant Equilibria</a>
   <ul class="collapse">
-  <li><a href="#sec-cvdproof" id="toc-sec-cvdproof" class="nav-link" data-scroll-target="#sec-cvdproof"><span class="toc-section-number">9.4.1</span>  The Dominance Argument for Risk-Dominant Equilibria</a></li>
-  <li><a href="#sec-perfectri" id="toc-sec-perfectri" class="nav-link" data-scroll-target="#sec-perfectri"><span class="toc-section-number">9.4.2</span>  Making One Signal Precise</a></li>
+  <li><a href="#sec-cvdproof" id="toc-sec-cvdproof" class="nav-link" data-scroll-target="#sec-cvdproof"><span class="header-section-number">9.4.1</span> The Dominance Argument for Risk-Dominant Equilibria</a></li>
+  <li><a href="#sec-perfectri" id="toc-sec-perfectri" class="nav-link" data-scroll-target="#sec-perfectri"><span class="header-section-number">9.4.2</span> Making One Signal Precise</a></li>
   </ul></li>
-  <li><a href="#sec-evsolution" id="toc-sec-evsolution" class="nav-link" data-scroll-target="#sec-evsolution"><span class="toc-section-number">9.5</span>  Objections and Replies</a></li>
-  <li><a href="#sec-cutelim" id="toc-sec-cutelim" class="nav-link" data-scroll-target="#sec-cutelim"><span class="toc-section-number">9.6</span>  Evidence, Knowledge and Cut-Elimination</a></li>
-  <li><a href="#sec-basic" id="toc-sec-basic" class="nav-link" data-scroll-target="#sec-basic"><span class="toc-section-number">9.7</span>  Basic Knowledge and Non-Inferential Knowledge</a></li>
-  <li><a href="#sec-neta" id="toc-sec-neta" class="nav-link" data-scroll-target="#sec-neta"><span class="toc-section-number">9.8</span>  Holism and Defeaters</a></li>
-  <li><a href="#sec-weakness" id="toc-sec-weakness" class="nav-link" data-scroll-target="#sec-weakness"><span class="toc-section-number">9.9</span>  Epistemic Weakness</a></li>
+  <li><a href="#sec-evsolution" id="toc-sec-evsolution" class="nav-link" data-scroll-target="#sec-evsolution"><span class="header-section-number">9.5</span> Objections and Replies</a></li>
+  <li><a href="#sec-cutelim" id="toc-sec-cutelim" class="nav-link" data-scroll-target="#sec-cutelim"><span class="header-section-number">9.6</span> Evidence, Knowledge and Cut-Elimination</a></li>
+  <li><a href="#sec-basic" id="toc-sec-basic" class="nav-link" data-scroll-target="#sec-basic"><span class="header-section-number">9.7</span> Basic Knowledge and Non-Inferential Knowledge</a></li>
+  <li><a href="#sec-neta" id="toc-sec-neta" class="nav-link" data-scroll-target="#sec-neta"><span class="header-section-number">9.8</span> Holism and Defeaters</a></li>
+  <li><a href="#sec-weakness" id="toc-sec-weakness" class="nav-link" data-scroll-target="#sec-weakness"><span class="header-section-number">9.9</span> Epistemic Weakness</a></li>
   </ul>
 </nav>
     </div>
@@ -241,7 +264,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-evidence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></h1>
+<h1 class="title"><span id="sec-evidence" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span></h1>
 </div>
 
 
@@ -393,7 +416,7 @@ div.csl-indent {
 <li><em>r</em><sub>21</sub>&nbsp;+&nbsp;<em>r</em><sub>22</sub>&nbsp;&gt;&nbsp;<em>r</em><sub>11</sub>&nbsp;+&nbsp;<em>r</em><sub>12</sub></li>
 <li><em>c</em><sub>12</sub>&nbsp;+&nbsp;<em>c</em><sub>22</sub>&nbsp;≥&nbsp;<em>c</em><sub>11</sub>&nbsp;+&nbsp;<em>c</em><sub>21</sub></li>
 </ul>
-<p>The first four clauses say that the game has two (strict) Nash equilibria: <em>Aa</em> and <em>Bb</em>. The fifth and sixth clauses say that the <em>Aa</em> equilibria is <strong>Pareto-optimal</strong>: neither player prefers <em>Aa</em> to <em>Bb</em>. In fact it says something a bit stronger: one of the players strictly prefers the <em>Aa</em> equilibria, and the other player does not prefer <em>Bb</em>. The seventh and eighth clauses say that the <em>Bb</em> equilibria is <strong>risk-optimal</strong>.</p>
+<p>The first four clauses say that the game has two (strict) Nash equilibria: <em>Aa</em> and <em>Bb</em>. The fifth and sixth clauses say that the <em>Aa</em> equilibria is <em>Pareto-optimal</em>: neither player prefers <em>Aa</em> to <em>Bb</em>. In fact it says something a bit stronger: one of the players strictly prefers the <em>Aa</em> equilibria, and the other player does not prefer <em>Bb</em>. The seventh and eighth clauses say that the <em>Bb</em> equilibria is <em>risk-optimal</em>.</p>
 <p>I’m going to set out an argument presented by Hans Carlsson and Eric van Damme <span class="citation" data-cites="CarlssonVanDamme1993">(<a href="references.html#ref-CarlssonVanDamme1993" role="doc-biblioref">1993</a>)</span> for the idea that in these games, rational players will end up at <em>Bb</em>. The game that Human and The Radical Interpreter are playing fits these eight conditions, and The Radical Interpreter is perfectly rational, so this will imply that in that game, The Radical Interpreter will say that <em>p</em>&nbsp;∉&nbsp;<em>E</em>, which is what we aimed to show. Now I don’t think their argument works in full generality. In particular, I don’t think it works when it is common knowledge that both players are rational, and both players know precisely the values of each of the eight payoffs. But I think it does work in the special case where one player has imperfect access to what the payouts are. And that, it turns out, is the special case that matters to us. But let’s start with their argument.</p>
 <p>Games satisfying these eight inequalities are sometimes called <em>Stag Hunt</em> games. There is some flexibility, and some vagueness, in which of the eight inequalities need to be strict, but that level of detail isn’t important here. The name comes from a thought experiment in Rousseau’s <em>Discourse on Inequality</em>.</p>
 <blockquote class="blockquote">
@@ -552,9 +575,9 @@ div.csl-indent {
 <p>In the previous section I noted that my theory of evidence is committed to denying Williamson’s E=K thesis. This is the thesis that says one’s evidence is all and only what one knows. What I say is consistent with, and arguably committed to, one half of that thesis. Nothing I’ve said here provides a reason to reject the implication that if <em>p</em> is part of one’s evidence, then one knows <em>p</em>. Indeed, the story I’m telling would have to be complicated even further if that fails. But I am committed to denying the other direction. On my view, there can be cases where someone knows <em>p</em>, but <em>p</em> is not part of their evidence.</p>
 <p>My main reason for this comes from the kind of cases that Shyam Nair <span class="citation" data-cites="Nair2019">(<a href="references.html#ref-Nair2019" role="doc-biblioref">2019</a>)</span> describes as failures of ‘cut-elimination’. I’ll quickly set out what Nair calls cut-elimination, and why it fails, and then look at how it raises problems for E=K.</p>
 <p>Start by assuming that we have an operator ⊨ such that Γ&nbsp;⊨&nbsp;<em>A</em> means that <em>A</em> can be rationally inferred from Γ. I’m following Nair (and many others) in using a symbol usually associated with logical entailment here, though this is potentially misleading. A big plotline in what follows will be that ⊨, so understood, behaves very differently from familiar notions of entailment.</p>
-<p>For the purposes of this section, I’m staying somewhat neutral on what it means to be able to rationally infer <em>A</em> from Γ. In particular, I want everything that follows to be consistent with the interpretation that an inference is rational only if it produces knowledge. I don’t think that’s true; I think folks with misleading evidence can rationally form false beliefs, and I think the traveller in Dharmottara’s example rationally believes there is a fire. But there is a dialectical reason for staying neutral here. I’m arguing against one important part of the ‘knowledge first’ program, and I don’t want to do so by assuming the falsity of other parts of it. So for this section (only), I’ll write in a way that is consistent with saying rational belief requires knowledge.</p>
+<p>For the purposes of this section, I’m staying somewhat neutral on what it means to be able to rationally infer <em>A</em> from Γ. In particular, I want everything that follows to be consistent with the interpretation that an inference is rational only if it produces knowledge. I don’t think that’s true; I think folks with misleading evidence can rationally form false beliefs, and I think the traveler in Dharmottara’s example rationally believes there is a fire. But there is a dialectical reason for staying neutral here. I’m arguing against one important part of the ‘knowledge first’ program, and I don’t want to do so by assuming the falsity of other parts of it. So for this section (only), I’ll write in a way that is consistent with saying rational belief requires knowledge.</p>
 <p>So one way to interpret Γ&nbsp;⊨&nbsp;<em>A</em> is that <em>A</em> can be known on the basis of Γ. What can be known on the basis of what is a function of, among other things, who is doing the knowing, what their background evidence is, what their capacities are, and so on. Strictly speaking, that suggests we should have some subscripts on ⊨ for who is the knower, what their background evidence is, and so on. In the interests of readability, I’m going to leave all those implicit. In the next section it will be important to come back and look at whether the force of some of these arguments is diminished if we are careful about this relativisation.</p>
-<p>So that’s our important notation. The principle <strong>Cut</strong> that Nair focusses on is that if 1 and 2 are true, so is 3.</p>
+<p>So that’s our important notation. The principle <em>Cut</em> that Nair focuses on is that if 1 and 2 are true, so is 3.</p>
 <ol type="1">
 <li>Γ&nbsp;⊨&nbsp;A</li>
 <li>{A}&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;B</li>
@@ -564,14 +587,14 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>I heard from a friend that Jack went up the hill. This friend is trustworthy, so I’m happy to infer that Jack did indeed go up the hill. I heard from another friend that Jack and Jill did the same thing. This friend is also trustworthy, so I’m happy to infer that Jill did the same thing as Jack, i.e., go up the hill.</p>
 </blockquote>
-<p>Normally we wouldn’t spell out the ‘happy to infer’ steps, but I’ve included them in here to make the reasoning a bit more explicit. But note that what I didn’t need to make explicit, even in this laborious reconstruction. That Jack went up the hill goes from a conclusion of the first little argument, to a premise in a later argument. The later argument says that we can conclude from the fact that Jack went up the hill, and that a friend said Jack and Jill did the same thing, that Jill went up the hill. And what matters for our purposes is that there doesn’t seem to be a gap between the rationality of inferring that Jack went up the hill, and the rationality of using that as a premise in later reasoning. The idea that there is no gap here just is the idea that the principle <strong>Cut</strong> is true.</p>
-<p>But while <strong>Cut</strong> seems intuitive in cases like this, Nair argues that it can’t be right in general. (And so we have a duty, one he takes up, to explain why cases like Jack and Jill seem like good reasoning.) For my purposes, it is helpful to divide the putative counterexamples to <strong>Cut</strong> into two categories. I’ll call them <em>monotonic</em> and <em>non-monotonic</em> counterexamples. The categorisation turns on whether Γ&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>A</em> is true. I’ll call cases where it is true monotonic instances of <strong>Cut</strong>, and cases where it is false non-monotonic instances.</p>
-<p>That <strong>Cut</strong> fails in non-monotonic cases is fairly obvious. We can see this with an example that was hackneyed a generation ago.</p>
+<p>Normally we wouldn’t spell out the ‘happy to infer’ steps, but I’ve included them in here to make the reasoning a bit more explicit. But note that what I didn’t need to make explicit, even in this laborious reconstruction. That Jack went up the hill goes from a conclusion of the first little argument, to a premise in a later argument. The later argument says that we can conclude from the fact that Jack went up the hill, and that a friend said Jack and Jill did the same thing, that Jill went up the hill. And what matters for our purposes is that there doesn’t seem to be a gap between the rationality of inferring that Jack went up the hill, and the rationality of using that as a premise in later reasoning. The idea that there is no gap here just is the idea that the principle <em>Cut</em> is true.</p>
+<p>But while <em>Cut</em> seems intuitive in cases like this, Nair argues that it can’t be right in general. (And so we have a duty, one he takes up, to explain why cases like Jack and Jill seem like good reasoning.) For my purposes, it is helpful to divide the putative counterexamples to <em>Cut</em> into two categories. I’ll call them <em>monotonic</em> and <em>non-monotonic</em> counterexamples. The categorisation turns on whether Γ&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>A</em> is true. I’ll call cases where it is true monotonic instances of <em>Cut</em>, and cases where it is false non-monotonic instances.</p>
+<p>That <em>Cut</em> fails in non-monotonic cases is fairly obvious. We can see this with an example that was hackneyed a generation ago.</p>
 <blockquote class="blockquote">
 <p>Γ = {Tweety is a bird}<br>
 Δ = {Tweety is a penguin}<br>
 A = B = Tweety can fly</p>
-<p>From Tweety is a bird we can rationally infer that Tweety flies. And given that Tweety is a flying penguin, we can infer that she flies. But given that Tweety is a penguin and a bird, we cannot infer this. So principles 1 and 2 in <strong>Cut</strong> are true, but 3 is false. And the same pattern will recur any time Δ provides a defeater for the link between Γ and <em>A</em>.</p>
+<p>From Tweety is a bird we can rationally infer that Tweety flies. And given that Tweety is a flying penguin, we can infer that she flies. But given that Tweety is a penguin and a bird, we cannot infer this. So principles 1 and 2 in <em>Cut</em> are true, but 3 is false. And the same pattern will recur any time Δ provides a defeater for the link between Γ and <em>A</em>.</p>
 </blockquote>
 <p>These cases will matter in what follows, but they are rather different from the monotonic examples.The monotonic example I’ll set out (in the next three paragraphs) is very similar to one used in an argument against E=K by Alvin Goldman <span class="citation" data-cites="Goldman2009">(<a href="references.html#ref-Goldman2009" role="doc-biblioref">2009</a>)</span>. In many ways the argument against E=K I’m going to give is just a notational variant on Goldman’s, but I think the notation I’m using helps bring out the argument’s strength.</p>
 <p>Here’s the crucial background assumption for the example. (I’ll come back to how plausible this is after setting the example up.) The nature of <em>F</em> around here varies, but it varies very very slowly. If we find a pattern in common to all the <em>F</em> within distance <em>d</em> of here, we can rationally infer that the pattern extends another mile. That’s just boring induction. But we can’t infer that it extends to infinity. This is to say, we’re doing work that’s more like working out the diet of local wildlife than working out the mass of an electron. If you know the mass of electrons around here, and what pigeons around here eat, there are some inferences you can make. You can come to know what the mass of electrons will be in the next town over, and what pigeons eat in the next town over. But there is a difference between the cases. You can also infer from this evidence what the mass of electrons will be on the other side of the world. But you can’t make very confident inferences about what pigeons eat on the other side of the world; they may have adapted their diet to local conditions. In our case <em>F</em> and <em>G</em> concern things more like pigeon diets than electron masses. Now here is the counterexample.</p>
@@ -580,14 +603,14 @@ A = B = Tweety can fly</p>
 <em>A</em> = Every <em>F</em> between 3 and 4 miles of here is <em>G</em>.<br>
 <em>B</em> = Every <em>F</em> between 4 and 5 miles of here is <em>G</em>.</p>
 </blockquote>
-<p>If what I said was right, then this is a counterexample to <strong>Cut</strong>. Γ&nbsp;⊨&nbsp;<em>A</em> is true because it says given evidence about all the <em>F</em> within 3 miles of here, we can infer that all the <em>F</em> within 4 miles are like them. And {<em>A</em>}&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>B</em> is true because because it says given evidence about all the <em>F</em> within 4 miles of here, we can infer that all the <em>F</em> within 5 miles are like them. But Γ&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>A</em> is false, because it purports to say that given evidence about the <em>F</em> within 3 miles of here, we can infer that all the <em>F</em> within 5 miles are alike. And that’s an inductive bridge too far.</p>
+<p>If what I said was right, then this is a counterexample to <em>Cut</em>. Γ&nbsp;⊨&nbsp;<em>A</em> is true because it says given evidence about all the <em>F</em> within 3 miles of here, we can infer that all the <em>F</em> within 4 miles are like them. And {<em>A</em>}&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>B</em> is true because because it says given evidence about all the <em>F</em> within 4 miles of here, we can infer that all the <em>F</em> within 5 miles are like them. But Γ&nbsp;∪&nbsp;Δ&nbsp;⊨&nbsp;<em>A</em> is false, because it purports to say that given evidence about the <em>F</em> within 3 miles of here, we can infer that all the <em>F</em> within 5 miles are alike. And that’s an inductive bridge too far.</p>
 <p>I don’t know if there are instances of <em>F</em> and <em>G</em> where this particular pattern obtains. That is, I don’t know if there are instances of <em>F</em> and <em>G</em> where given a perfect correlation holding within <em>d</em> miles, we can rationally infer it holds within <em>d</em>&nbsp;+&nbsp;1 miles, but not <em>d</em>&nbsp;+&nbsp;2 miles. It seems likely to me that something like this could be right, but it’s hard to say for sure.</p>
 <p>But note that what I really need for the argument is independent of how we think spatial distance relates to rational inductive inference. What I really need is that there is some similarity metric such that inductive inference is rational across short jumps in that similarity metric, but not across long jumps. One kind of similarity is physical distance from a salient point. But that’s not the only kind, and rarely the most important kind.</p>
 <p>What is really needed to get this argument going is that there is some similarity metric with an ‘inductive margin of inference’. What I mean by an inductive margin of inference is that given that all the <em>F</em> that differ from a salient point (along this metric) by amount <em>d</em> are <em>G</em>, it is rational to infer that all the <em>F</em> that differ from that salient point by amount <em>d</em>&nbsp;+&nbsp;<em>m</em> are <em>G</em>, but not that all the <em>F</em> that differ from that salient point by amount <em>d</em>&nbsp;+&nbsp;2<em>m</em> are <em>G</em>. And it seems very plausible to me that there are some metrics, and values of <em>F</em>, <em>G</em>, <em>d</em>, <em>m</em> such that that’s true.</p>
 <p>For example, given what I know about Miami’s weather, I can infer that it won’t snow there for the next few hundred Christmases. Indeed, I know that. But I can’t know that it won’t snow there for the next few million Christmases. There is some point, and I don’t know what it is, where my inductive knowledge about Miami’s snowfall (or lack thereof) gives out.</p>
 <p>While it is plausible that such cases are possible, any particular case fitting this pattern is weird. Here’s what is weird about them. It will be easier to go back to the case where the metric is physical distance to set this out, but the weirdness will extend to all cases. Imagine we investigate the area within 3 miles of here thoroughly, and find that all the <em>F</em> are <em>G</em>s. We infer, and now know, that all the <em>F</em> within 4 miles of here are <em>G</em>s. We keep investigating, and keep observing, and after a while we’ve observed all the <em>F</em> within 4 miles. And they are all <em>G</em>, as we knew they would be. But now we are in a position to infer that all the <em>F</em> within 5 miles are <em>G</em>. Observing something that we knew to be true gives us a reason to do something, i.e., make a further inference, that we couldn’t do before. That’s weird, and I’m going to come back in the next section to how it relates to the story I told about knowledge in <a href="knowledge.html">chapter&nbsp;<span>4</span></a>.</p>
 <p>But for now I want to note that it undermines the E=K principle. There is a difference between knowing <em>A</em> and being able to use <em>A</em> to support further inductive inferences. It is very natural to call that the difference between knowing <em>A</em> and having <em>A</em> as evidence.</p>
-<p>The reasoning that I’ve been criticising violates a principle Jonathan Weisberg calls <strong>No Feedback</strong> <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">Weisberg 2010, 533–34</a>)</span>. This principle says that if a conclusion is derived from some premises, plus some intermediary conclusions, then it is only justified if it could, at least in principle, be derived from those premises alone. A natural way to read this is that we have some evidence, and things that we know on the basis of that evidence have a different functional role from the evidence. They can’t do what the evidence itself can do, even if known. This looks like a problem for E=K, as Weisberg himself notes <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">2010, 536</a>)</span>.</p>
+<p>The reasoning that I’ve been criticising violates a principle Jonathan Weisberg calls <em>No Feedback</em> <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">Weisberg 2010, 533–34</a>)</span>. This principle says that if a conclusion is derived from some premises, plus some intermediary conclusions, then it is only justified if it could, at least in principle, be derived from those premises alone. A natural way to read this is that we have some evidence, and things that we know on the basis of that evidence have a different functional role from the evidence. They can’t do what the evidence itself can do, even if known. This looks like a problem for E=K, as Weisberg himself notes <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">2010, 536</a>)</span>.</p>
 <p>The non-monotonic cases where cut elimination fails are also tricky for the E=K theorist, but ultimately not as problematic. Here’s how to bring out the problem, and also ultimately how to solve it.</p>
 <p>On day 1, Ankita gets as evidence that Tweety is a flying bird, while Bojan gets as evidence that Tweety is a bird, and infers that Tweety flies. At this stage he knows, as Ankita does, that Tweety flies; this was a perfectly good inference. On day 2, they both get as evidence that Tweety is a penguin. Now Ankita knows something special: Tweety is a flying penguin. But Bojan doesn’t know this. He can no longer infer that Tweety flies, so doesn’t know that Tweety is a flying penguin. And the mystery is to explain what’s happened.</p>
 <p>The theorist who rejects E=K has an easy explanation. Ankita and Bojan had different evidence on day 1, though they knew the same things. Then when more evidence was added into their evidence set, they could do different things. That’s the full mystery solved.</p>
@@ -654,62 +677,62 @@ A = B = Tweety can fly</p>
 <p>Of course, this difference between my version of IRT and Fantl and McGrath’s is tiny compared to how much our theories have in common. And indeed, it’s tiny compared to how much my theory simply borrows from theirs. But it’s helpful I think to highlight the differences to understand the choice points within versions of IRT.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-Bird2004" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Bird2004" class="csl-entry" role="listitem">
 Bird, Alexander. 2004. <span>“Is Evidence Non-Inferential?”</span> <em>Philosophical Quarterly</em> 54 (215): 252–65. <a href="https://doi.org/10.1111/j.0031-8094.2004.00350.x">https://doi.org/10.1111/j.0031-8094.2004.00350.x</a>.
 </div>
-<div id="ref-CarlssonVanDamme1993" class="csl-entry" role="doc-biblioentry">
+<div id="ref-CarlssonVanDamme1993" class="csl-entry" role="listitem">
 Carlsson, Hans, and Eric van Damme. 1993. <span>“Global Games and Equilibrium Selection.”</span> <em>Econometrica</em> 61 (5): 989–1018. <a href="https://doi.org/10.2307/2951491">https://doi.org/10.2307/2951491</a>.
 </div>
-<div id="ref-Dogramaci2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Dogramaci2015" class="csl-entry" role="listitem">
 Dogramaci, Sinan. 2015. <span>“Forget and Forgive: A Practical Approach to Forgotten Evidence.”</span> <em>Ergo</em> 2 (26): 645–77. <a href="https://doi.org/10.3998/ergo.12405314.0002.026">https://doi.org/10.3998/ergo.12405314.0002.026</a>.
 </div>
-<div id="ref-FantlMcGrath2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-FantlMcGrath2009" class="csl-entry" role="listitem">
 Fantl, Jeremy, and Matthew McGrath. 2009. <em>Knowledge in an Uncertain World</em>. Oxford: Oxford University Press.
 </div>
-<div id="ref-Goldman2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Goldman2009" class="csl-entry" role="listitem">
 Goldman, Alvin. 2009. <span>“Williamson on Knowledge and Evidence.”</span> In <em><span class="nocase">Williamson on Knowledge</span></em>, 73–91. Oxford.
 </div>
-<div id="ref-Harman1986" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Harman1986" class="csl-entry" role="listitem">
 Harman, Gilbert. 1986. <em>Change in View</em>. Cambridge, MA: <span>MIT</span> Press.
 </div>
-<div id="ref-Harper1986" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Harper1986" class="csl-entry" role="listitem">
 Harper, William. 1986. <span>“Mixed Strategies and Ratifiability in Causal Decision Theory.”</span> <em>Erkenntnis</em> 24 (1): 25–36. <a href="https://doi.org/10.1007/BF00183199">https://doi.org/10.1007/BF00183199</a>.
 </div>
-<div id="ref-Maher1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Maher1996" class="csl-entry" role="listitem">
 Maher, Patrick. 1996. <span>“Subjective and Objective Confirmation.”</span> <em>Philosophy of Science</em> 63 (2): 149–74. <a href="https://doi.org/10.1086/289906">https://doi.org/10.1086/289906</a>.
 </div>
-<div id="ref-Nair2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Nair2019" class="csl-entry" role="listitem">
 Nair, Shyam. 2019. <span>“Must Good Reasoning Satisfy Cumulative Transitivity?”</span> <em>Philosophy and Phenomenological Research</em> 98 (1): 123–46. <a href="https://doi.org/10.1111/phpr.12431">https://doi.org/10.1111/phpr.12431</a>.
 </div>
-<div id="ref-Neta2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Neta2007" class="csl-entry" role="listitem">
 Neta, Ram. 2007. <span>“Anti-Intellectualism and the Knowledge-Action Principle.”</span> <em>Philosophy and Phenomenological Research</em> 75 (1): 180–87. <a href="https://doi.org/10.1111/j.1933-1592.2007.00069.x">https://doi.org/10.1111/j.1933-1592.2007.00069.x</a>.
 </div>
-<div id="ref-Pearce1983" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Pearce1983" class="csl-entry" role="listitem">
 Pearce, David G. 1983. <span>“A Problem with Single Valued Solution Concepts.”</span> 1983. <a href="https://sites.google.com/a/nyu.edu/davidpearce/">https://sites.google.com/a/nyu.edu/davidpearce/</a>.
 </div>
-<div id="ref-Pryor2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Pryor2004" class="csl-entry" role="listitem">
 Pryor, James. 2004. <span>“What’s Wrong with Moore’s Argument?”</span> <em>Philosophical Issues</em> 14 (1): 349–78. <a href="https://doi.org/10.1111/j.1533-6077.2004.00034.x">https://doi.org/10.1111/j.1533-6077.2004.00034.x</a>.
 </div>
-<div id="ref-Rousseau1913" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Rousseau1913" class="csl-entry" role="listitem">
 Rousseau, Jean-Jacques. 1913. <em>Social Contract &amp; Discourses</em>. Translated by G. D. H. Cole. New York: J. M. Dent &amp; Sons.
 </div>
-<div id="ref-Schwitzgebel2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Schwitzgebel2008" class="csl-entry" role="listitem">
 Schwitzgebel, Eric. 2008. <span>“The Unreliability of Naive Introspection.”</span> <em>Philosophical Review</em> 117 (2): 245–73. <a href="https://doi.org/10.1215/00318108-2007-037">https://doi.org/10.1215/00318108-2007-037</a>.
 </div>
-<div id="ref-Weatherson2011-WEADIR" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weatherson2011-WEADIR" class="csl-entry" role="listitem">
 Weatherson, Brian. 2011. <span>“Defending Interest-Relative Invariantism.”</span> <em>Logos &amp; Episteme</em> 2 (4): 591–609. <a href="https://doi.org/10.5840/logos-episteme2011248">https://doi.org/10.5840/logos-episteme2011248</a>.
 </div>
-<div id="ref-Weatherson2018-WEAIEA-2" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weatherson2018-WEAIEA-2" class="csl-entry" role="listitem">
 ———. 2018. <span>“Interests, Evidence and Games.”</span> <em>Episteme</em> 15 (3): 329–44.
 </div>
-<div id="ref-Weisberg2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Weisberg2010" class="csl-entry" role="listitem">
 Weisberg, Jonathan. 2010. <span>“Bootstrapping in General.”</span> <em>Philosophy and Phenomenological Research</em> 81 (3): 525–48. <a href="https://doi.org/10.1111/j.1933-1592.2010.00448.x">https://doi.org/10.1111/j.1933-1592.2010.00448.x</a>.
 </div>
-<div id="ref-Williamson2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Williamson2000" class="csl-entry" role="listitem">
 Williamson, Timothy. 2000. <em><span class="nocase">Knowledge and its Limits</span></em>. Oxford University Press.
 </div>
-<div id="ref-Williamson2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Williamson2007" class="csl-entry" role="listitem">
 ———. 2007. <span>“How Probable Is an Infinite Sequence of Heads?”</span> <em>Analysis</em> 67 (295): 173–80. <a href="https://doi.org/10.1111/j.1467-8284.2007.00671.x">https://doi.org/10.1111/j.1467-8284.2007.00671.x</a>.
 </div>
 </div>
@@ -859,9 +882,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -926,6 +963,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
