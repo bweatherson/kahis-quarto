@@ -6,7 +6,7 @@ This chapter is about rational belief. My version of IRT allows a new kind of ga
 
 In [chapter @sec-belief] I suggested that the following two conditions were individually necessary for belief that *p*, and suggested they might be jointly sufficient.[^rationality-1]
 
-[^rationality-1]: This section is based on §§3.1 of my [-@Weatherson2012]. 
+[^rationality-1]: This section is based on §§3.1 of my [-@Weatherson2012].
 
 1.  In some possible decision problem, *p* is taken for granted.
 2.  For every question the agent is interested in, the agent answers the question the same way (i.e., giving the same answer for the same reasons) whether the question is asked unconditionally or conditional on *p*.
