@@ -16,20 +16,27 @@ The argument here will be in two parts. First, I'll focus on practical inquiries
 
 A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.[^knowledge-1] Here, for instance, is a table for the problem faced by a person, call him Ragnar, choosing how to get to work.
 
-|        | Rain    | Dry     |
-|-------:|:-------:|:-------:|
-| Walk   | 0       | 5       |
-| Bus    | 3       | 4       |
+[^knowledge-1]: This section is loosely based on §1.1 of my [-@Weatherson2012].
+
+|      |      |     |
+|-----:|:----:|:---:|
+|      | Rain | Dry |
+| Walk |  0   |  5  |
+|  Bus |  3   |  4  |
 
 : Ragnar's trip to work {#tbl-walkbus}
 
 If we tell the students that the probability of rain is 0.4, we expect them to figure out that the expected utility of walking is 3, and the expected utility of taking the bus is 3.6, so it is better to take the bus. And that's a little surprising, since it probably won't rain, and if it doesn't, it is better to walk. But walking is risky, and in this case expected utility theory say that it isn't a risk worth taking.
 
-[Table @tbl-walkbus] can serve two related philosophical purposes, which we can helpfully distinguish using terminology from Peter Railton [-@Railton1984]. The table can provide a *criterion of rightness* for Ragnar's actions. It is rational for him to take the bus because of the calculation that I mentioned in the previous paragraph. The table can do more than that though. In simple cases like this one, it can provide a *deliberation procedure*. Ragnar can, in theory and in simple cases, use a table like this to decide what to do. There are limits to when tables can be used in this way, and as I'll argue in [chapter @sec-ties], those limits end up suggesting limits to how often the tables even provide criteria of rightness. In simple cases though, the table isn't just something the theorist can use to understand Ragnar, it is something Ragnar himself can use to deliberate. This is especially true in cases where one of the options is dominated, either strictly or weakly, by another.^[An option is strictly dominated by another if it does worse than that option in every state. It is weakly dominated by another if it does worse than that option in some states, and never does better than it.] I've appealed to the fact that the tables can be deliberation procedures, and not just criteria of rightness, already, in the discussion of Sully and Mack in [section @sec-given]. There the focus was on how tables like these related to belief; here I want to relate them to knowledge.
+[Table @tbl-walkbus] can serve two related philosophical purposes, which we can helpfully distinguish using terminology from Peter Railton [-@Railton1984]. The table can provide a *criterion of rightness* for Ragnar's actions. It is rational for him to take the bus because of the calculation that I mentioned in the previous paragraph. The table can do more than that though. In simple cases like this one, it can provide a *deliberation procedure*. Ragnar can, in theory and in simple cases, use a table like this to decide what to do. There are limits to when tables can be used in this way, and as I'll argue in [chapter @sec-ties], those limits end up suggesting limits to how often the tables even provide criteria of rightness. In simple cases though, the table isn't just something the theorist can use to understand Ragnar, it is something Ragnar himself can use to deliberate. This is especially true in cases where one of the options is dominated, either strictly or weakly, by another.[^knowledge-2] I've appealed to the fact that the tables can be deliberation procedures, and not just criteria of rightness, already, in the discussion of Sully and Mack in [section @sec-given]. There the focus was on how tables like these related to belief; here I want to relate them to knowledge.
+
+[^knowledge-2]: An option is strictly dominated by another if it does worse than that option in every state. It is weakly dominated by another if it does worse than that option in some states, and never does better than it.
 
 There are (at least) ten ways in which [table @tbl-walkbus] could misrepresent Ragnar's situation. To put the same point another way, there are (at least) tend ways in which it could correctly represent his situation. One way to think about the core project of this book is to say what it means for a table to correctly represent a decision situation in one of these ten respects. It is a little easier to think about the misrepresentations, so I'll start with them.
 
-First, the numbers in the table might be wrong. The table says that, conditional on catching the bus, Ragnar is better off it is dry than if it rains. Maybe that isn't true. The theory of well-being [@sep-well-being] is about, among other things, when the numbers in the cells of tables like this are correct. That's a big topic, and not one I'm going to have anything to say about here.^[As well as questions about well-being, there are also questions here about what one should do in cases where the outcome is itself a kind of gamble. Imagine that chooser is trying to decide whether to bet on a basketball game, and it is known how much money they will win or lose in the four states. The value to the chooser of those outcomes depends on any number of further things, like the rate of inflation in the near term, and the "position of wealth holders in the social system" [@Keynes1937, 214] some years hence. Just how these uncertainties should be accounted for is a difficult question, especially for any theorist who deviates in any way from orthodox expected utility theory. I would like to have a better theory of how the account of decision making with deliberation costs that I discuss in [chapter @sec-ties] interacts with this question.]
+First, the numbers in the table might be wrong. The table says that, conditional on catching the bus, Ragnar is better off it is dry than if it rains. Maybe that isn't true. The theory of well-being [@sep-well-being] is about, among other things, when the numbers in the cells of tables like this are correct. That's a big topic, and not one I'm going to have anything to say about here.[^knowledge-3]
+
+[^knowledge-3]: As well as questions about well-being, there are also questions here about what one should do in cases where the outcome is itself a kind of gamble. Imagine that chooser is trying to decide whether to bet on a basketball game, and it is known how much money they will win or lose in the four states. The value to the chooser of those outcomes depends on any number of further things, like the rate of inflation in the near term, and the "position of wealth holders in the social system" [@Keynes1937, 214] some years hence. Just how these uncertainties should be accounted for is a difficult question, especially for any theorist who deviates in any way from orthodox expected utility theory. I would like to have a better theory of how the account of decision making with deliberation costs that I discuss in [chapter @sec-ties] interacts with this question.
 
 Second, the probabilities might be wrong. Maybe it isn't the case that the probability of rain is 0.4, and in fact it is 0.2. There is an enormous question here about what it even means for one to misrepresent the probabilities. Is the correct representation one that tracks objective chances, or Ragnar's evidence, or Ragnar's beliefs, or something else, or some combination of these? One upside of focussing on dominance arguments is that these questions can be temporarily set aside.
 
@@ -45,142 +52,106 @@ Sixth, the table might have separated multiple options that should be merged. It
 
 The final four questions concern the columns, and they mirror the four questions about the rows. These questions will be central to the narrative of this chapter, and of this whole book.
 
-Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities^[As noted back in [section @sec--given], I'm using 'possibilities' here in the sense described by @Humberstone1981.], and perhaps they should be included.
+Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities[^knowledge-4], and perhaps they should be included.
+
+[^knowledge-4]: As noted back in [section @sec-given], I'm using 'possibilities' here in the sense described by @Humberstone1981.
 
 Eighth, the table might include a state that should not be there. If it is bucketing down as Ragnar is preparing to leave, including a state where it is dry might be a mistake.
 
-Ninth, the table might have merged states that should be separated. Perhaps the column that simply says _Dry_ should have been split into two: one being _Dry and Sunny_, the other being _Dry and Cloudy_.
+Ninth, the table might have merged states that should be separated. Perhaps the column that simply says *Dry* should have been split into two: one being *Dry and Sunny*, the other being *Dry and Cloudy*.
 
 Tenth, the table might have split states that should be merged. It's unlikely that a two state table will do this, but if we had made the split suggested in the previous paragraph, one could easily argue that it was a mistake, and that Ragnar should have treated these as a single state.
 
 That gives us ten ways that the table could go wrong. It's helpful to have them in a simple list.
 
-1. The values could be wrong.
-2. The probabilities could be wrong.
-3. An option could be improperly excluded.
-4. An option could be improperly included.
-5. The options might be too coarse-grained.
-6. The options might be too fine-grained.
-7. A state could be improperly excluded.
-8. A state could be improperly included.
-9. The states might be too coarse-grained.
+1.  The values could be wrong.
+2.  The probabilities could be wrong.
+3.  An option could be improperly excluded.
+4.  An option could be improperly included.
+5.  The options might be too coarse-grained.
+6.  The options might be too fine-grained.
+7.  A state could be improperly excluded.
+8.  A state could be improperly included.
+9.  The states might be too coarse-grained.
 10. The states might be too fine-grained.
 
 For every one of these ten possible mistakes, there is a prior philosophical question about what it means for the table to have made, or not made, that mistake. Every one of those ten questions is, at least to my mind, incredibly philosophically important. Even someone who thought, like Foxwell, that books should only be written for "grave cause" [@Keynes1936Foxwell, 599], should concede that a clear answer to any one of the ten would be sufficient grounds to warrant a scholarly monograph.
 
-This book is primarily concerned with the seventh, though the argument touches to some extent on the eighth as well. It is proper to exclude a possibility from the table if the chooser knows that possibility does not obtain. If that conditional could be turned into a biconditional, we'd have an answer to the eighth question, too, but that is a more delicate question.^[Back in [section @sec-neutrality] I said I was staying neutral on that question, and I'm not changing that position here.] In any case, the conditional will be enough.
+This book is primarily concerned with the seventh, though the argument touches to some extent on the eighth as well. It is proper to exclude a possibility from the table if the chooser knows that possibility does not obtain. If that conditional could be turned into a biconditional, we'd have an answer to the eighth question, too, but that is a more delicate question.[^knowledge-5] In any case, the conditional will be enough.
 
-Herbert Somerton Foxwell
+[^knowledge-5]: Back in [section @sec-neutrality] I said I was staying neutral on that question, and I'm not changing that position here.
 
-By J. M. Keynes
-Publication Date: 1936-12-01
-Journal: The economic journal : the quarterly journal of the Royal Economic Society.
-Volume: 46
-Issue: 184
-Page: 589-619
-ISSN: 0013-0133
-Resource: Article
-DOI: 10.2307/2224674
- 
+## Knowing Where the Ice Cream Goes {#sec-icecream}
 
-Third, the table might have left off an option that should be included. Perhaps 
+The aim of this section is to argue for the following principle.
 
-The next four possible misrepresentations concern the rows. The rows are meant to represent the options the chooser has. And the table could go wrong in four ways.
+Knowledge Allows Exclusion (KAE)
 
-- It could include options that shouldn't be there.
-- It could exclude options that should be there.
-- It could include an option that should be divided into distinct options.
-- It could split up options that should be treated as a single option.
+:   If a chooser knows that a possibility does not obtain, then it is permissible to use a decision table where that possibility is excluded, i.e., is incompatible with the possibilities in each of the columns.
 
-Each of these four things seems possible, but it is a very hard question to say precisely what it means for the table to make one of these four mistakes. The philosophical work on abilities [@sep-abilities] is very rich, and seems relevant to these debates. In some sense it seems right to say that there should be a row on the table for all and only the things the chooser has the ability to bring about, and which are relevant to the outcome. Even saying that though seems to get us into trouble. What should we say about abilities the chooser has, but doesn't know they have, or which they think they might have? What should we say about distinct choices that will in fact lead to the same outcome in all states, but which the chooser does not know will lead to the same outcome? These are all incredibly hard questions, and while I hope to have something to say about them some day, today is not that day.
+Knowledge Allows Exclusion is Jessica Brown's principle K Suff applied to practical decision making using tables. That's a fairly central case for K Suff, so if KAE is true, then it seems plausible that K Suff will be true too. I'll come back to the more general case for K Suff in later sections, though; here the focus is KAE. I'm going to build up to KAE in stages; first I'm going to talk about ice cream.
 
-The last four possible misrepresentations concern the columns. This is where I do have something to say. The columns are meant to represent the ways the world outside the chooser could be, in ways that are relevant to the outcome of the choice. Again, there are four ways the table could misrepresent the situation.
+The contemporary theory of duopoly starts with Harold Hotelling's paper "Stability in Competition" [-@Hotelling1929]. Hotelling describes how a duopoly that does not maximise consumer welfare can be stable if the two parties have the ability to differentiate their product along one dimension. Surprisingly, the equilibrium is that they do not in fact take advantage of this ability. Having the ability, however, means that neither party has the incentive they would normally have to reduce prices to the point where consumer surplus is maximised. Hotelling is interested in possible equilibria, and he doesn't focus on how the parties might calculate the equilibria. (The impression one gets from the paper is that it will involve a good chunk of trial-and-error.) It turns out that in some duopoly situations, not much is needed to get to the equilibrium; just iterated deletion of dominated strategies.
 
-- It could include states that shouldn't be there.
-- It could exclude states that should be there.
-- It could include a state that should be split into distinct states.
-- It could split up states that should be treated as a single state.
+Here is the standard way Hotelling's model is introduced in textbooks.[^knowledge-6] Imagine that two ice cream trucks have to choose (simultaneously) where they will be located on a beach. The beach has seven locations, numbered 1 to 7. The distance between location *m* and location *n* is \|*m* - *n*\|. Assume for simplicity that the price of ice cream is fixed, the trucks just compete on location. There are two beach-goers at each of locations 1 to 7, so 14 in total. Each beach-goer will buy an ice cream from the nearest truck. If two trucks are equidistant from a location, the two people there will head off in either direction, one buying from each truck. Question: Where should the two trucks go, assuming that it is common knowledge that each truck owner is rational, and simply wants to maximise their own sales?
 
-The core thesis of this book concerns the second of these. The table misrepresents the problem the decider faces if the decider does not know that one of the listed states obtains. For example, the schematic table above is a good representation of a choice only if the chooser knows that the disjunction *S*~1~ $\vee$ *S*~2~ obtains.
+[^knowledge-6]: This particular example isn't in Hotelling, but it is in so many textbooks that I haven't been able to find out where it was first introduced. It differs from his examples in that the parties do not have the capacity to compete on price.
 
-If the chooser does know that *S*~1~ $\vee$ *S*~2~ obtains, that doesn't mean the columns are correct. It could be that one or other of them should be excluded. It could be that one or other of them should be broken up. For example, it could be that there should be one column for *S*~1~ $\wedge$ *p*, and another column for *S*~1~ $\wedge \neg$ *p*. Still, if the 
+This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. Here is the table for how many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we're in, the choice of the second truck determines which column of the table we're in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck.
 
-We take something as given in that inquiry iff it is encoded in the right way in the decision table. The primary way that we encode a proposition *p* into a decision table is to set up the table so that *p* is true in every column. If we use a table where *p* is encoded in this way, and *p* is not known, we are making a mistake. And in particular, we are making an epistemic mistake.
+|       |       |       |       |       |       |
+|------:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|       | **1** | **2** | **3** | **4** | **5** |
+| **1** |  5,5  |  2,8  |  3,7  |  4,6  |  5,5  |
+| **2** |  8,2  |  5,5  |  4,6  |  5,5  |  6,4  |
+| **3** |  7,3  |  6,4  |  5,5  |  6,4  |  7,3  |
+| **4** |  6,4  |  5,5  |  4,6  |  5,5  |  8,2  |
+| **5** |  5,5  |  4,6  |  3,7  |  2,8  |  5,5  |
 
-[^knowledge-1]: This section is loosely based on §1.1 of my [-@Weatherson2012].
+: Payouts in the Hotelling game {#tbl-hotelling}
 
-To see this, let's start with an example. Professor Dec is teaching introductory decision theory to her undergraduate class. She is trying to introduce the notion of a dominant choice. So she introduces the following problem, with two states, *S*~1~ and *S*~2~, and two choices, *C*1 and *C*~2~, as is normal for introductory problems.
+Assume that it is common knowledge, in the sense of @Lewis1969a, that this is the payout table, and that each player will not make choices that are strictly dominated. That is, for each *n*, the proposition we get by having *n* iterations of *each player knows* in front of *this is the game table, and each player is rational*, is true. Then the theorist, and each player, can reason as follows.
 
-|        | *S*~1~  | *S~2~* |
-|-------:|:-------:|:------:|
-| *C*~1~ | -\$200  | \$1000 |
-| *C*~2~ | -\$100  | \$1500 |
+Row's option 1 is strictly dominated by option 2; option 2 gets 1 more sale in three possible states, and 3 more sales in the other two, so it should be excluded. The same goes for option 5, which is strictly dominated by option 4. And, since the game is symmetric, the same goes for Column's options 1 and 5. By the common knowledge assumption, this means we can delete those rows, and columns, from the table. The result is the following table.
 
-She's hoping that the students will see that *C*~1~ and *C*~2~ are bets, but *C*~2~ is clearly the better bet. If *S*~1~ is actual, then both bets lose, but *C*~2~ loses less money. If *S*~2~ is actual, then both bets win, but *C*~2~ wins more. So *C*~2~ is better. That analysis is clearly wrong if the state is causally dependent on the choice, and controversial if the states are evidentially dependent on the choices. But Professor Dec has not given any reason for the students to think that the states are dependent on the choices in either way, and in fact the students don't worry about that kind of dependence.
+|       |       |       |       |
+|-------|:-----:|:-----:|:-----:|
+|       | **2** | **3** | **4** |
+| **2** |  5,5  |  4,6  |  5,5  |
+| **3** |  6,4  |  5,5  |  6,4  |
+| **4** |  5,5  |  4,6  |  5,5  |
 
-That doesn't mean, however, that the students all adopt the analysis that Professor Dec wants them to. One student, Stu, is particularly unwilling to accept that *C*~2~ is better than *C*~1~. He thinks, on the basis of his experience, that when more than \$1000 is on the line, people aren't as reliable about paying out on bets. So while *C*~1~is guaranteed to deliver \$1000 if *S*~2~, if the agent bets on *C*~2~, she might face some difficulty in collecting on her money.
+: The Hotelling game after one iteration {#tbl-hotelling-iterated}
 
-Given the context, i.e., that they are in an undergraduate decision theory class, it seems that Stu has misunderstood the question that Professor Dec intended to ask. But it is not easy to specify just exactly what Stu's mistake is. It isn't that he thinks Professor Dec has misdescribed the situation. It isn't that he thinks the agent won't collect \$1500 if she chooses *C*~2~ and is in *S*~2~. He just thinks that she *might* not be able to collect it, so the expected payout might really be a little less than \$1500.
+And for both players, option 3 dominates the other two options, so it will be chosen. Moreover, the reasoning here generalises. If there are 7 options to start with, we need to do two rounds of deleting dominated options to get the players to the middle of the beach. If there are 9 options to start with, we need to do three rounds of deletion. In general, if there are 2*k*+1 options, we get the players to the middle of the beach after *k* rounds of deletion. Since common knowledge licences all these iterations, the players will always end up in the middle of the beach if there are an odd number of options.
 
-But Stu is not the only problem that Professor Dec has. She also has trouble convincing Dom of the argument. He thinks there should be a third state added to the table, *S*~3~. In *S*~3~, there is a vengeful God who is about to end the world, and take everyone who chose *C*1 to heaven, while sending everyone who chose *C*~2~ to hell. Since heaven is better than hell, *C*~2~ does not dominate *C*1; it is worse in *S*~3~. Dom does not think this is particularly likely, but he thinks it is possible, and decision theory should represent possibilities like this. If decision theory is to be useful, we must say something about why we can leave states like *S*~3~ off the decision table.
+At this point you might be worried for two reasons. Practically, this seems like it proves too much. Contra the conclusion of Hotelling's paper, it's not true that shoes, churches, and cider mills are as homogenous as this argument would suggest. Theoretically, there are plenty of reasons to be worried about common knowledge as Lewis understood it. Harvey Lederman [-@Lederman2018] shows that assuming common knowledge, in Lewis's sense, of dominance avoidance leads to paradoxes. Let's see whether we can get by with less.
 
-So in order to teach decision theory, Professor Dec has to answer two questions.
+Assume that it is not common knowledge, but merely mutual knowledge that the payout table is as in [Table @tbl-hotelling], and the players do not take dominated options. That is, each player knows both those things. And that's all we'll assume. Since knowledge is factive, we can still rule out the extreme options, i.e., 1 and 5. And given that each player knows the other will not take dominated options, each player knows that it is only options 2 through 4 that are relevant. So given just the mutual knowledge assumption, we can show that from each player's perspective, they are playing the game depicted in [Table @tbl-hotelling-iterated]. And in that game, option 3 is strictly dominant. So this assumption is enough to get us back to the middle of the beach. Note, however, that this reasoning does not generalise. Given merely mutual knowledge of non-dominance, we can show that neither player will take options 1 or 2, or the second-last or last options, but we can't show any more than that. So in the 7 option game, we can only show that they will both end up somewhere between options 3 and 5. And in the games with much larger numbers of options, we can't show much at all. That seems both empirically and theoretically more plausible.
 
-1.  What makes it legitimate to write something on the decision table, such as the '\$1500' we write in the bottom right cell of Dec's table?
-2.  What makes it legitimate to leave something off a decision table, such as leaving Dom's state *S*~3~ off the table?
+The argument of the last paragraph is meant to serve two distinct, but related, philosophical purposes.[^knowledge-7] It is meant to show that we theorists can deduce what the players will in fact do, given their evidence, and the assumptions about rationality. And it is meant to show that it would be rational for the players themselves to get to that conclusion via just that reasoning. It is important, in general, to distinguish between what is entailed by some assumptions, and what can be reasonably inferred from those assumptions [@Stalnaker1975, @Harman1986]. In this case, though, I want to claim that the reasoning I've set out in that paragraph plays both roles. As theorists, we can tell that the players will not player either the extreme, or the next to extreme, option, and no more. And the players themselves should not go to any of those 4 spots, but we can't tell more than that without knowing more about the players.
 
-When I've talked about decision tables so far, the focus has been on what tables thinkers actually use. Here the focus is switching to what tables they should use. And the claim is going to be that what they should use is determined by what they know.
+[^knowledge-7]: I'm indebted here to conversations with Eric Swanson.
 
-To get to that conclusion, start with a much simpler problem. Mireille is out of town on a holiday, and she faces the following decision choice concerning what to do with a token in her hand.
+But wait a minute! Without KAE, the last two paragraphs consist of one fallacious step after another. The player knows that the other player will not play an extreme option. And they know that if the extreme options are excluded, option 2 is strictly dominated. Without KAE, it doesn't follow that they can simply delete the extreme options. To delete an option just is to exclude it from the table. Without KAE, the fact that the player knows an option doesn't obtain isn't a sufficient reason to make this deletion. Since it is, in practice, a sufficient reason, it follows that KAE is true. Or, at least, that a restricted version of KAE applied to this case is true. Since the case seems arbitrary, it follows that KAE is true in general.
 
-|     **Choice**      | **Outcome** |
-|:-------------------:|:-----------:|
-| Put token on table  | Win \$1000  |
-| Put token in pocket | Win nothing |
+That's my primary argument for KAE. In general, it is reasonable to do as many rounds of deletion of dominated strategies as we have iterations of mutual knowledge of rationality and the structure of the game table. That is, it is reasonable for the theorist to do exactly as many rounds of deletion as there are iterations of mutual knowledge of rationality among the players. Without KAE, that match up isn't guaranteed, so KAE must be true.
 
-This looks easy, especially if we've taken Professor Dec's class. Putting the token on the table dominates putting the token in her pocket. It returns \$1000, versus no gain. So she should put the token on the table.
+## Other Answers {#sec-other-answers}
 
-I've left Mireille's story fairly schematic; let's fill in some of the details. Mireille is on holiday at a casino. It's a fair casino in the sense that the probabilities of the outcomes of each of the games is just what you'd expect. And Mireille knows this. The table she's standing at is a roulette table. The token is a chip from the casino worth \$1000.
-
-Putting the token on the table means placing a bet. As it turns out, it means placing a bet on the roulette wheel landing on 28. If that bet wins she gets her token back and another token of the same value. There are many other bets she could make, but Mireille has decided not to make all but one of them. Since her birthday is the 28^th^, she is tempted to put a bet on 28; that's the only bet she is considering. If she makes this bet, the objective chance of her winning is 1 in 38, and she knows this. As a matter of fact she will win, but she doesn't know this. (This is why the description in the table I presented above is truthful, though frightfully misleading.) As you can see, the odds on this bet are terrible. She should have a chance of winning around ½ to justify placing this bet. (It's a very unfair casino in this sense, but what can you expect at a vacation resort?) So the above table, which makes it look like placing the bet is the dominant, and hence rational, option, is misleading.
-
-Just how is the table misleading though? It isn't because what is says is false. If Mireille puts the token on the table she wins \$1000; and if she doesn't, she stays where she is. It isn't, or isn't just, that Mireille doesn't believe the table reflects what will happen if she places the bet. As it turns out, Mireille is smart, so she doesn't form beliefs about chance events like roulette wheels. But even if she did, that wouldn't change how misleading the table is. The table suggests that it is rational for Mireille to put the token on the table. In fact, that is irrational. And it would still be irrational if Mireille believes, irrationally, that the wheel will land on 28.
-
-A better suggestion is that the table is misleading because Mireille doesn't know that it accurately depicts the choice she faced. If she did know that these were the outcomes to putting the token on the table versus in her pocket, it would be rational for her to put it on the table. If we take it as understood in a presentation of a decision problem that the agent knows that the table accurately depicts the outcomes of various choices in different states, then we can tell a plausible story about the miscommunication between Professor Dec and her students. Stu was assuming that if the agent wins \$1500, she might not be able to easily collect. That is, he was assuming that the agent does not know that she'll get \$1500 if she chooses *C*~2~ and is in state *S*~2~. Professor Dec, if she's anything like other decision theory professors, will have assumed that the agent did know exactly that. And the miscommunication between Professor Dec and Dom also concerns knowledge. When Dec wrote that table up, she was saying that the agent knew that *S*~1~ or *S*~2~ obtained. And when she says it is best to take dominating options, she means that it is best to take options that one knows to have better outcomes. So here are the answers to Stu and Dom's challenges.
-
--   It is legitimate to write something on the decision table, such as the '\$1500' we write in the bottom right cell of Dec's table, iff the decision maker knows it to be true.
--   It is legitimate to leave something off a decision table, such as leaving Dom's state *S*~3~ off the table, iff the decision maker knows it not to obtain.
-
-Perhaps those answers are not correct, but what we can clearly see by reflecting on these cases is that the standard presentation of a decision problem presupposes not just that the table states what will happen, but the agent stands in some special doxastic relationship to the information explicitly on the table (such as that the chooser in Professor Dec's example will get \$1500 if *C*~2~ and *S*~2~) and implied by where the table ends (such as that *S*~3~ will not happen).
-
-I think that special doxastic relationship is knowledge. But I don't need to argue for that here. All I need to argue is that if the person making the decision knows that *p*, she stands in the special relationship.
-
-But could the 'special doxastic relationship' be stronger than knowledge? Could it be, for example, that the relationship is certainty, or some kind of iterated knowledge? Plausibly in some game-theoretic settings it is stronger - it involves not just knowing that the table is accurate, but knowing that the other player knows the table is accurate. In some cases, the standard treatment of games will require positing even more iterations of knowledge. For convenience, it is sometimes explicitly stated that iterations continue indefinitely, so each party knows the table is correct, and knows each party knows this, and knows each party knows that, and knows each party knows *that*, and so on. An early example of this in philosophy is in the work by David Lewis [-@Lewis1969a] on convention. But it is usually acknowledged (again in a tradition extending back at least to Lewis) that only the first few iterations are actually needed in any problem, and it seems a mistake to attribute more iterations than are actually used in deriving solutions to any particular game.
-
-The reason that would be a mistake is that we want game theory, and decision theory, to be applicable to real-life situations. There is very little that we know, and know that we know, and know we know we know, and so on indefinitely [@Williamson2000, Ch. 4]. There is, perhaps, even less that we are certain of. If we only could say that a person is making a particular decision when they stand in these very strong relationships to the parameters of the decision table, then people will almost never be making the kinds of decision we study in decision theory. Since decision theory and game theory are not meant to be that impractical, the 'special doxastic relationship' cannot be that strong. It could be that in some games, the special relationship will involve a few iterations of knowledge, but in decision problems, where the epistemic states of others are irrelevant, even that is unnecessary, and simple knowledge seems sufficient.
-
-It might be argued here that we shouldn't expect to apply decision theory directly to real-life problems, but only to idealised versions of them, so it would be acceptable to, for instance, require that the things we put in the table are, say, things that have probability exactly 1. In real life, virtually nothing has probability 1. In an idealisation, many things do. But to argue this way seems to involve using 'idealisation' in an unnatural sense. There is a sense in which, whenever we treat something with non-maximal probability as simply given in a decision problem that we're ignoring, or abstracting away from, some complication. But we aren't idealising. On the contrary, we're modelling the agent as if they were irrationally certain in some things which are merely very very probable.
-
-So it's better to say that any application of decision theory to a real-life problem will involve ignoring certain (counterfactual) logical or metaphysical possibilities in which the decision table is not actually true. But not any old abstraction will do. We can't ignore just anything, at least not if we want a good model. Which abstractions are acceptable? The response I've offered to Dom's challenge suggests an answer to this: we can abstract away from any possibility in which something the agent actually knows is false. I don't have a knock-down argument that this is the best of all possible abstractions, but nor do I know of any alternative answer to the question which abstractions are acceptable which is nearly as plausible.
-
-We might be tempted to say that we can abstract away from anything such that the difference between its probability and 1 doesn't make a difference to the ultimate answer to the decision problem. More carefully, the idea would be that we can have the decision table represent that *p* iff *p* is true and treating the probability of *p* as 1 rather than its actual value doesn't change what the agent should do. I think this is the most plausible story one could tell about decision tables if one didn't like the knowledge first story that I tell. But I also don't think it works, in part because of cases like the following.[^knowledge-2]
-
-[^knowledge-2]: The cases I'll discuss in sections [-@sec-lockecoin] and [-@sec-lockegames] also raise problems for this proposal. And the proposal is very similar to the theory I'll call IRT-CP in [chapter @sec-ties], a theory that has trouble dealing with situations involving close calls.
-
-Luc is lucky; he's in a casino where they are offering better than fair odds on roulette. Although the chance of winning any bet is 1 in 38, if Luc bets \$10, and his bet wins, he will win \$400. (That's the only bet on offer.) Luc, like Mireille, is considering betting on 28. As it turns out, 28 won't come up, although since this is a fair roulette wheel, Luc doesn't know this. Luc, like most agents, has a declining marginal utility for money. He currently has \$1,000, and for any amount of money \$x, Luc gets utility *x*^0.5^ out of having \$x. So Luc's current utility (from money) is, roughly, 31.622. If he bets and loses, his utility will be, roughly, 31.464. And if he bets and wins, his utility will be, roughly, 37.417. So he stands to gain about 5.794, and to lose about 0.159. So he stands to gain about 36.5 as much as he stands to lose. Since the odds of winning are less than 1 in 36.5, his expected utility goes down if he takes the bet, so he shouldn't take it. Of course, if the probability of losing was 1, and not merely 37 in 38, he shouldn't take the bet too. Does that mean it is acceptable, in presenting Luc's decision problem, to leave off the table any possibility of him winning, since he won't win, and setting the probability of losing to 1 rather than 37 in 38 doesn't change the decision he should make? I doubt it; this would misrepresent Luc's situation in an important way. In particular, it would misrepresent how sensitive Luc's choice is to his utility function, and to the size of the stakes. If Luc's utility function had been that he gets utility *x*^0.75^ from wealth *x*, then it would have been wise for Luc to take the bet. Even with his actual utility function, if the bet had been \$1\~ against \$40, rather than ~\$10~ against \~\$400, he would have been wise to take the bet. Leaving off the possibility of winning hides these facts, and badly misrepresents Luc's situation.
-
-I've argued that the states we can 'leave off' a decision table are the states that the agent knows not to obtain. The argument is largely by elimination. If we can only leave off things that have probability 1, then decision theory would be useless; but it isn't. If we say we can leave off things if setting their probability at 1 is an acceptable idealisation, we need a theory of acceptable idealisations. If this is to be a rival to my theory, the idealisation had better not be it's acceptable to treat anything known as having probability 1. But the most natural alternative idealisation badly misrepresents Luc's case. If we say that what can be left off is not what's known not to obtain, but what is, say, justifiably truly believed not to obtain, we need an argument for why people would naturally use such an unnatural standard. This doesn't even purport to be a conclusive argument, but these considerations point me towards thinking that knowledge determines what we can leave off.
-
-I also cheated a little in making this argument. When I described Mireille in the casino, I made a few explicit comments about her information states. And every time, I said that she knew various propositions. It seemed plausible at the time that this is enough to think those propositions should be incorporated into the table we use to represent her decision. That's some evidence against the idea that more than knowledge, perhaps iterated knowledge or certainty, is needed before we add propositions to the decision table.
+\[Say why alternatives to KAE fail\]
 
 If knowledge structures decision tables, then there is a simple argument that Anisa loses knowledge when playing the red-blue game. The following would be a bad table for Anisa to use when deciding what to do.
 
-|            | 2+2=4 | 2+2 ≠ 4 |
+|            |       |         |
 |-----------:|:-----:|:-------:|
+|            | 2+2=4 | 2+2 ≠ 4 |
 |   Red-True | \$50  |    0    |
 |  Red-False |   0   |  \$50   |
 |  Blue-True | \$50  |  \$50   |
 | Blue-False |   0   |    0    |
+
+: What the Red-Blue game looks like if Anisa assumes that the Battle of Agincourt was in 1415. {#tbl-assume-agincourt}
 
 If she used that table, then it would look like Blue-True is the weakly dominant option. And that would mean that Blue-True is at least a rational choice, and perhaps the rational choice. Since Blue-True is not a rational choice, this table must be wrong. But if Anisa knows that the Battle of Agincourt was in 1415, and knowledge structures decision tables, then everything on this table is correct. So Anisa does not know that the Battle of Agincourt was in 1415.
 
@@ -247,17 +218,17 @@ Other examples of morally problematic inquiry suggest that there is no simple co
 
 Still, Casey can be criticised for inquiring in this way, even if the criticism does not imply that the inquiry produced no knowledge. And that suggests that there are possible criticisms of inquiries that satisfy the four bullet points listed earlier.
 
-Another source of trouble comes from holistic constraints on reasoning. What I have in mind here are rules that allow for a natural resolution of the puzzles of "transmission failure" that Crispin Wright [-@Wright2002] discusses. Start with one of Wright's examples. Ada is walking by a park with a football pitch. It clearly isn't just a practice; the players are in uniforms and occupying familiar positions on the pitch, there is a referee and a crowd, and so on. One of the players kicks the ball into the net, the referee points to the centre of the ground, and half the players and crowd celebrate. And Ada reasons as follows.
+Another source of trouble comes from holistic constraints on reasoning. What I have in mind here are rules that allow for a natural resolution of the puzzles of "transmission failure" that Crispin Wright [-@Wright2002] discusses. Start with one of Wright's examples. Ada is walking by a park with a football pitch. It clearly isn't just a practice; the players are in uniforms and occupying familiar positions on the pitch, there is a referee and a crowd, and so on. One of the players kicks the ball into the net, the referee points to the centre of the ground, and half the players and crowd celebrate. After this happens, Ada reasons as follows.
 
 1.  The ball was kicked into the net, and no foul or violation was called.
 2.  So, a goal was scored.
 3.  So, a football match is being played, as opposed to, e.g., an ersatz match for the purposes of filming a movie.
 
-As Wright points out, there is something wrong with the step from 2 to 3 here. And, as he also points out, it isn't trivial to say just what it is that's wrong. After all, 2 entails 3, and Ada knows that 2 entails 3. But it seems wrong to make just this *inference*.
+As Wright points out, there is something wrong with the step from 2 to 3 here. As he also points out, it isn't trivial to say just what it is that's wrong. After all, 2 entails 3, and Ada knows that 2 entails 3. But it seems wrong to make just this *inference*.
 
-Here's one natural suggestion about what's wrong.[^knowledge-3] It's too simple to be the full story, but it's a start. The transition Ada makes from 1 to 2 presupposes 3. And 1 is her only evidence for 2. When those two conditions are met, it is wrong to infer from 2 to 3. More generally, there is something wrong with inferring a conclusion from an intermediate step in reasoning if that conclusion must be presupposed in order to even reach that intermediate step.
+Here's one natural suggestion about what's wrong.[^knowledge-8] It's too simple to be the full story, but it's a start. The transition Ada makes from 1 to 2 presupposes 3. And 1 is her only evidence for 2. When those two conditions are met, it is wrong to infer from 2 to 3. More generally, there is something wrong with inferring a conclusion from an intermediate step in reasoning if that conclusion must be presupposed in order to even reach that intermediate step.
 
-[^knowledge-3]: This is far from an original suggestion. See Weisberg [-@Weisberg2010] for discussion of it, and of related proposals, and for more discussion of the literature on Wright's examples.
+[^knowledge-8]: This is far from an original suggestion. See Weisberg [-@Weisberg2010] for discussion of it, and of related proposals, and for more discussion of the literature on Wright's examples.
 
 This is too rough as it stands to be a full theory of what is going on in cases like Ada's. But the details aren't important at this point. What is important is that there might be some kind of holistic constraint on reasoning. In some sense, Ada goes wrong in taking 2 for granted when she infers 3. But this doesn't intuitively undermine her claim to know 2.
 
@@ -305,41 +276,41 @@ It is not trivial to prove that my version of IRT satisfies these closure condit
 
 ### Single Premise Closure {#sec-andelim}
 
-But it turns out that even showing this is not completely trivial. Imagine yet another version of the red-blue game.[^knowledge-4] In this game, both of the sentences are claims about history that are well supported without being certain. And both of them are supported in the very same way. It turns out to be a little distracting to use concrete examples in this case, so just call the claims A and B. And imagine that the player read both of these claims in the same reliable but not infallible history book, and she knows the book is reliable but not infallible, and she aims to maximise her expected returns. Then all four of the following things are true about the game.
+But it turns out that even showing this is not completely trivial. Imagine yet another version of the red-blue game.[^knowledge-9] In this game, both of the sentences are claims about history that are well supported without being certain. And both of them are supported in the very same way. It turns out to be a little distracting to use concrete examples in this case, so just call the claims A and B. Imagine that the player read both of these claims in the same reliable but not infallible history book, and she knows the book is reliable but not infallible, and she aims to maximise her expected returns. Then all four of the following things are true about the game.
 
-[^knowledge-4]: This game will resemble the examples that Zweber [-@Zweber2016] and Anderson and Hawthorne [-@AndersonHawthorne2019b] use to raise doubts about whether pragmatic theories like mine really do endorse single premise closure.
+[^knowledge-9]: This game will resemble the examples that Zweber [-@Zweber2016] and Anderson and Hawthorne [-@AndersonHawthorne2019b] use to raise doubts about whether pragmatic theories like mine really do endorse single premise closure.
 
 1.  Unconditionally, the player is indifferent between playing red-true and playing blue-true.
 2.  Conditional on *A*, the player prefers red-true to blue-true, because red-true will certainly return \$50 while blue-true is not completely certain to win the money.
 3.  Conditional on *B*, the player prefers blue-true to red-true, because blue-true will certainly return \$50 while red-true is not completely certain to win the money.
-4.  Conditional on *A* ∧ *B*, the player is back to being indifferent between playing red-true and playing blue-true.
+4.  Conditional on *A* ∧ *B*, the player is back to being indifferent between playing red-true and playing blue-true.
 
 From 1, 2 and 3, it follows in my version of IRT that the player does not know either *A* or *B*. After all, conditionalising on either one of them changes her answer to a relevant question. The question being, *Which option maximises my expected returns?*, where this is understood as a mention-all question.
 
-But look what happens at point 4. Conditionalising on *A* ∧ *B* does not change the answer to that question. So, assuming there is no other reason that the player does not know *A* ∧ *B*, arguably she does know *A* ∧ *B*. And that would be absurd; how could she know a conjunction without knowing either conjunct?
+But look what happens at point 4. Conditionalising on *A* ∧ *B* does not change the answer to that question. So, assuming there is no other reason that the player does not know *A* ∧ *B*, arguably she does know *A* ∧ *B*. And that would be absurd; how could she know a conjunction without knowing either conjunct?
 
-Here is how I used to answer this question. Define a technical notion of interest. Say that a person is interested in a conditional question *If p, Q?* if they are interested, in the ordinary sense, in both the true-false question *p?* and they are interested in the question *Q?*. And if conditionalising on a proposition changes (or should change) their answer to any question they are interested in in this technical sense, then they don't know that proposition. This solves the problem because conditionalising on *A* ∧ *B* does change their answer to the question *If A, which option maximises expected returns?* on its mention-some reading. So even though 4 is correct, this does pose a problem for closure.
+Here is how I used to answer this question. Define a technical notion of interest. Say that a person is interested in a conditional question *If p, Q?* if they are interested, in the ordinary sense, in both the true-false question *p?* and they are interested in the question *Q?*. And if conditionalising on a proposition changes (or should change) their answer to any question they are interested in in this technical sense, then they don't know that proposition. This solves the problem because conditionalising on *A* ∧ *B* does change their answer to the question *If A, which option maximises expected returns?* on its mention-some reading. So even though 4 is correct, this does pose a problem for closure.
 
-But this is not an entirely satisfactory solution for two reasons. One is that it seems extremely artificial to say that someone is interested in these conditional questions that they have never even formulated. Another is that it is hard to motivate why we should care that conditionalisation changes (or should change) one's answers to these artificial questions.
+This was not a great solution for two reasons. One is that it seems extremely artificial to say that someone is interested in these conditional questions that they have never even formulated. Another is that it is hard to motivate why we should care that conditionalisation changes (or should change) one's answers to these artificial questions.
 
-There was something right about the answer I used to give. It is that we should not just look at whether conditionalisation changes the answers a person gives to questions they are interested in. We should also look at whether it changes things 'under the hood'; whether it changes how they get to that answer. The idea of my old theory was that looking at these artificial questions was a way to indirectly look under the hood. But it is not clear why we should look for these indirect approaches, rather than just looking at what is going on in the player's mind.
+There was something right about the answer I used to give. It is that we should not just look at whether conditionalisation changes the answers a person gives to questions they are interested in. We should also look at whether it changes things 'under the hood'; whether it changes how they get to that answer. The idea of my old theory was that looking at these artificial questions was a way to indirectly look under the hood. What I got wrong was trying to find some other question whose answer changed when and only when what was under the hood changed. I should have just looked under the hood.
 
 So let's look again at the two questions that are relevant. And this time, don't think about what answer the player gives, but about how they get to that answer.
 
 5.  Which option maximises expected returns?
-6.  If *A* ∧ *B* which option maximises expected returns?
+6.  If *A* ∧ *B,* which option maximises expected returns?
 
 On the most natural way to understand what the player does, there will be a step in her answer to 5 that has no parallel in her answer to 6.
 
 She will note, and rely on, the fact that she has equally good evidence for *A* as for *B*. That is why each option is equally good by her lights. The equality of evidence really matters. If she had read that *A* in three books, but only one of those books added that *B*, then the two options would not have the same expected returns. She should check that nothing like this is going on; that the evidence really is equally balanced.
 
-But nothing like this happens in answering 6. In that case, *A* ∧ *B* is stipulated to be given. So there is no question about how good the evidence for either is. When answering a question about what to do if a condition obtains, we don't ask how good the evidence for the condition is. We just assume that it holds. So in answering 6, there is no step that acknowledges the equality of the evidence for both *A* and *B*.
+But nothing like this happens in answering 6. In that case, *A* ∧ *B* is stipulated to be given. So there is no question about how good the evidence for either is. When answering a question about what to do if a condition obtains, we don't ask how good the evidence for the condition is. We just assume that it holds. So in answering 6, there is no step that acknowledges the equality of the evidence for both *A* and *B*.
 
-So in fact the player does not answer the two questions the same way. She ends up with the same conclusion, but she gets there by a different means. And that is enough, I say, to make it a different answer. If she knew *A* ∧ *B* she could follow exactly the same steps in answering 5 and 6, but she cannot.
+So in fact the player does not answer the two questions the same way. She ends up with the same conclusion, but she gets there by a different means. And that is enough, I say, to make it a different answer. If she knew *A* ∧ *B* she could follow exactly the same steps in answering 5 and 6, but she cannot.
 
 What should we say if she does follow the same steps? If this is irrational, nothing changes, since what matters for knowledge is which questions should be answered the same way, not which questions are answered the same way. (It does matter for belief, but that is not the current topic.) So I will assume that it is possible for the player to rationally answer both questions the same way. (I will have much more to say about why this is a coherent assumption in [chapter @sec-ties].)
 
-The way she should answer 6 is to take *A* ∧ *B* as given. And hence she will take either option, red-true or blue-true, as being equivalent to just taking \$50. And she knows that is the best she can do in the game. So in answering question 6, she will take it as given that both of these options are maximally good.
+The way she should answer 6 is to take *A* ∧ *B* as given. And hence she will take either option, red-true or blue-true, as being equivalent to just taking \$50. And she knows that is the best she can do in the game. So in answering question 6, she will take it as given that both of these options are maximally good.
 
 By hypothesis, she is answering question 5 and question 6 the same way. So she will take it to be part of the setup of question 5 that both options return a sure \$50 After all, that is part of the setup of question 6. But if she takes that as given, then conditionalising on either *A* or *B* does not change her expected returns. So now claims 2 and 3 are wrong; conditionalising on either conjunct won't make a difference because she treats each conjunct as given.
 
@@ -355,7 +326,7 @@ And-Introduction Closure
 
 :   If one knows some propositions, and one competently infers their conjunction from those propositions, while retaining one's knowledge of all those propositions, then one knows the conjunction.
 
-Start with the standard assumption that a conclusion is entailed by some premises iff it is entailed by their conjunction. (It would take us way too far afield to investigate what happens if we dropped that assumption.) Given that assumption, in principle the only inferential rule one needs with multiple premises is And-Introduction. In practice, people do not generally reason via conjunctions in this way. Someone who knows *A* ∨ *B*, and who knows ¬*A*, does not first infer (*A* ∨ *B*) ∧ ¬*A*, and then infer *B* from that. They just infer *B*. But I think it's a harmless enough idealisation to model them as first inferring the conjunction whenever they use multiple premises. So I will assume that if I can show that IRT does not cause problems for And-Introduction Closure, and I've already argued that it does not cause problems for Single Premise Closure, then it does not cause problems for Multiple Premise Closure.
+Start with the standard assumption that a conclusion is entailed by some premises iff it is entailed by their conjunction. (It would take us way too far afield to investigate what happens if we dropped that assumption.) Given that assumption, in principle the only inferential rule one needs with multiple premises is And-Introduction. In practice, people do not generally reason via conjunctions in this way. Someone who knows *A* ∨ *B*, and who knows ¬*A*, does not first infer (*A* ∨ *B*) ∧ ¬*A*, and then infer *B* from that. They just infer *B*. But I think it's a harmless enough idealisation to model them as first inferring the conjunction whenever they use multiple premises. So I will assume that if I can show that IRT does not cause problems for And-Introduction Closure, and I've already argued that it does not cause problems for Single Premise Closure, then it does not cause problems for Multiple Premise Closure.
 
 Here is the quick argument that IRT does not cause problems for And-Introduction Closure.
 
@@ -368,16 +339,16 @@ Premise 1 is just a restatement of my version of IRT. And premise 3 should be un
 
 The conclusion is not that Multiple Premise Closure holds. Maybe you think it fails for some independent reason, distinct from IRT. I don't think the other reasons that have been offered in the literature are compelling. But I am not building the failure of these reasons into IRT. So the main assumption behind the argument is that if adding the 'take for granted' clause to our theory of knowledge does not lead to closure violations, then nothing else in the theory does. And the argument for that is basically that there isn't much more to the theory. So I think the argument is sound.
 
-But it might look like the argument must be wrong. After all, it is easy to cook up cases where it looks like IRT leads to a closure failure. Here is one such example. It is another version of the red-blue game. In this version, the red sentence is, once again, *Two plus two equals four*. And the blue sentence is a conjunction *A and B*, where both *A* and *B* express historical facts that the player has excellent, but not perfect, evidence for.[^knowledge-5] Now the following four claims all seem true.
+But it might look like the argument must be wrong. After all, it is easy to cook up cases where it looks like IRT leads to a closure failure. Here is one such example. It is another version of the red-blue game. In this version, the red sentence is, once again, *Two plus two equals four*. And the blue sentence is a conjunction *A and B*, where both *A* and *B* express historical facts that the player has excellent, but not perfect, evidence for.[^knowledge-10] Now the following four claims all seem true.
 
-[^knowledge-5]: If you want to make this more concrete, pick a random history book off the shelf and choose two claims that are both reasonably specific - so there could easily be a mistake about the details - and not something that was independently warranted.
+[^knowledge-10]: If you want to make this more concrete, pick a random history book off the shelf and choose two claims that are both reasonably specific - so there could easily be a mistake about the details - and not something that was independently warranted.
 
 1.  Unconditionally, the only rational play is Red-True.
 2.  Conditional on *A*, the only rational play is Red-True. Even given *A*, playing Blue-True requires betting that *B* is true, and that's a pointless risk to run when playing Red-True only requires that two and two make four.
 3.  Conditional on *B*, the only rational play is Red-True. Even given *B*, playing Blue-True requires betting that *A* is true, and that's a pointless risk to run when playing Red-True only requires that two and two make four.
-4.  Conditional on *A* ∧ *B*, Blue-True is rationally permissible, and arguably rationally mandatory, since it weakly dominates Red-True.
+4.  Conditional on *A* ∧ *B*, Blue-True is rationally permissible, and arguably rationally mandatory, since it weakly dominates Red-True.
 
-So conditionalising on either one of *A* or *B* doesn't change anything, but conditionalising on *A* ∧ *B* does change how the player answers a question. So it looks like in this case the player might know *A*, know *B*, and for all I've said be fully aware that these two things entail *A* ∧ *B*, but not know *A* ∧ *B*. So what's happened? How is this not a counterexample to premise 2?
+So conditionalising on either one of *A* or *B* doesn't change anything, but conditionalising on *A* ∧ *B* does change how the player answers a question. So it looks like in this case the player might know *A*, know *B*, and for all I've said be fully aware that these two things entail *A* ∧ *B*, but not know *A* ∧ *B*. So what's happened? How is this not a counterexample to premise 2?
 
 The key thing to note is that when the player is choosing what to do, the following things are all true about them.
 
@@ -385,11 +356,11 @@ The key thing to note is that when the player is choosing what to do, the follow
 -   Similarly, they can take *B* for granted.
 -   But they cannot both take *A* for granted and take *B* for granted. If both those things are taken for granted, then they can rationally infer that Blue-True will have a maximal payout, and hence that it is a rational play. And they cannot infer that.
 
-It is cases like this one that required the clarification that I made at the end of [section @sec-theoreticalknowledge]. The player here cannot take both of *A* and *B* for granted. And so they don't know both those things. So this is not a case where they know *A*, know *B*, and don't know *A* ∧ *B*. Since they cannot take both *A* and *B* for granted, they do not know both of those things.
+It is cases like this one that required the clarification that I made at the end of [section @sec-theoreticalknowledge]. The player here cannot take both of *A* and *B* for granted. And so they don't know both those things. So this is not a case where they know *A*, know *B*, and don't know *A* ∧ *B*. Since they cannot take both *A* and *B* for granted, they do not know both of those things.
 
-The picture I'm presenting here is similar to the picture Thomas Kroedel [-@Kroedel2012] offers as a solution to the lottery paradox.[^knowledge-6] He argues that we can solve the lottery paradox if we take justification to be a kind of permissibility, not a kind of obligation. And just as we can have individual permissions that don't combine into a collective permission, we can have individually justified beliefs that are such that we can't justifiably believe each of them. This isn't exactly how I'd put it. For one thing, I'm talking about knowledge not justification. For another, it's not that knowledge is a species of permission, as much as it behaves like permission in certain contexts, and those are just the contexts where counterexamples to And-Introduction Closure arise. But these are minor points of difference; I'm agreeing in large part with his picture.
+The picture I'm presenting here is similar to the picture Thomas Kroedel [-@Kroedel2012] offers as a solution to the lottery paradox.[^knowledge-11] He argues that we can solve the lottery paradox if we take justification to be a kind of permissibility, not a kind of obligation. And just as we can have individual permissions that don't combine into a collective permission, we can have individually justified beliefs that are such that we can't justifiably believe each of them. This isn't exactly how I'd put it. For one thing, I'm talking about knowledge not justification. For another, it's not that knowledge is a species of permission, as much as it behaves like permission in certain contexts, and those are just the contexts where counterexamples to And-Introduction Closure arise. But these are minor points of difference; I'm agreeing in large part with his picture.
 
-[^knowledge-6]: Different writers take different things to be *the* lottery paradox. In all cases, they concern what kind of non-probabilistic attitude an ideal agent would take towards the proposition that a particular ticket in a large, fair, lottery will lose. It seems unintuitive to say that they will not believe this, since the ticket might win. And this will lead to an inconsistency, since they will believe of every ticket that it will not win, but also believe that a ticket will win. But if you say it is not belief, you seem to either get scepticism, or the view that the ideal agent can believe *p*, and not believe *q*, even though they think *q* is more probable than *p*. Which of the four problems I just mentioned is most salient to a writer tends to depend on their background commitments, but most people defend views on which at least one of the problems is genuinely problematic.
+[^knowledge-11]: Different writers take different things to be *the* lottery paradox. In all cases, they concern what kind of non-probabilistic attitude an ideal agent would take towards the proposition that a particular ticket in a large, fair, lottery will lose. It seems unintuitive to say that they will not believe this, since the ticket might win. And this will lead to an inconsistency, since they will believe of every ticket that it will not win, but also believe that a ticket will win. But if you say it is not belief, you seem to either get scepticism, or the view that the ideal agent can believe *p*, and not believe *q*, even though they think *q* is more probable than *p*. Which of the four problems I just mentioned is most salient to a writer tends to depend on their background commitments, but most people defend views on which at least one of the problems is genuinely problematic.
 
 And thinking of things the way Kroedel suggests helps say something positive about what is going on in this game. So far I've said something negative - the player does not know both that *A* and that *B*. And that's enough to show that the case is not a counterexample to And-Introduction Closure. A counterexample would, after all, have to be a case where the player knows both *A* and *B*. But saying what's not the case is not a helpful way to say what is the case. To say something more positive, it helps to think about other cases where permissions do not agglomerate. To that end, I'll talk through one case involving professional norms.
 

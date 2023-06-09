@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-
 /.quarto/
-
 /.luarc.json
+.DS_Store

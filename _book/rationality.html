@@ -81,6 +81,7 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
 
 
 </head>
@@ -349,108 +350,112 @@ div.csl-indent {
 <h2 data-number="8.3" class="anchored" data-anchor-id="sec-lockegames"><span class="header-section-number">8.3</span> Playing Games</h2>
 <div class="page-columns page-full"><p>Some people might be nervous about resting too much weight on infinitary examples like the coin sequence. So I’ll show how the same puzzle arises in a simple, and finite, game.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> The game itself is a nice illustration of how a number of distinct solution concepts in game theory come apart. (Indeed, the use I’ll make of it isn’t a million miles from the use that Kohlberg and Mertens <span class="citation" data-cites="KohlbergMertens1986">(<a href="references.html#ref-KohlbergMertens1986" role="doc-biblioref">1986</a>)</span> make of it.) To set the problem up, I need to say a few words about how I think of game theory. This won’t be at all original - most of what I say is taken from important works by Robert Stalnaker <span class="citation" data-cites="Stalnaker1994 Stalnaker1996 Stalnaker1998 Stalnaker1999">(<a href="references.html#ref-Stalnaker1994" role="doc-biblioref">1994</a>, <a href="references.html#ref-Stalnaker1996" role="doc-biblioref">1996</a>, <a href="references.html#ref-Stalnaker1998" role="doc-biblioref">1998</a>, <a href="references.html#ref-Stalnaker1999" role="doc-biblioref">1999</a>)</span>. But the underlying philosophical points are important, and it is easy to get confused about them. (At least, I used to get these points all wrong, and that’s got to be evidence they are easy to get confused about, right?) So I’ll set the basic points slowly, and then circle back to the puzzle for the Lockeans.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;This section is based on material from §1 of my <span class="citation" data-cites="Weatherson2016">(<a href="references.html#ref-Weatherson2016" role="doc-biblioref">2016</a>)</span>.</p></li><li id="fn4"><p><sup>4</sup>&nbsp;I’m grateful to the participants in a game theory seminar at Arché in 2011, especially Josh Dever and Levi Spectre, for very helpful discussions that helped me see through my previous confusions.</p></li></div></div>
 <p>Start with a simple decision problem, where the agent has a choice between two acts <em>A</em><sub>1</sub>and <em>A</em><sub>2</sub>, and there are two possible states of the world, <em>S</em><sub>1</sub> and <em>S</em><sub>2</sub>, and the agent knows the payouts for each act-state pair are given by the following table.</p>
+<div id="tbl-underspecified" class="anchored">
 <table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;"><em>S</em><sub>1</sub></th>
-<th style="text-align: center;"><em>S</em><sub>2</sub></th>
-</tr>
-</thead>
+<caption>Table&nbsp;8.1: An underspecified decision problem.</caption>
 <tbody>
 <tr class="odd">
+<td></td>
+<td style="text-align: center;"><em>S</em><sub>1</sub></td>
+<td style="text-align: center;"><em>S</em><sub>2</sub></td>
+</tr>
+<tr class="even">
 <td><em>A</em><sub>1</sub></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><em>A</em><sub>2</sub></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>What to do? I hope you share the intuition that it is radically underdetermined by the information I’ve given you so far. If <em>S</em><sub>2</sub> is much more probable than <em>S</em><sub>1</sub>, then <em>A</em><sub>2</sub> should be chosen; otherwise <em>A</em><sub>1</sub> should be chosen. But I haven’t said anything about the relative probability of those two states. Now compare that to a simple game. Row has two choices, which I’ll call <em>A</em><sub>1</sub> and <em>A</em><sub>2</sub>. Column also has two choices, which I’ll call <em>S</em><sub>1</sub> and <em>S</em><sub>2</sub>. It is common knowledge that each player is rational, and that the payouts for the pairs of choices are given in the following table. (As always, Row’s payouts are given first.)</p>
+<div id="tbl-simple-game" class="anchored">
 <table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;"><em>S</em><sub>1</sub></th>
-<th style="text-align: center;"><em>S</em><sub>2</sub></th>
-</tr>
-</thead>
+<caption>Table&nbsp;8.2: A simple game.</caption>
 <tbody>
 <tr class="odd">
+<td></td>
+<td style="text-align: center;"><em>S</em><sub>1</sub></td>
+<td style="text-align: center;"><em>S</em><sub>2</sub></td>
+</tr>
+<tr class="even">
 <td><em>A</em><sub>1</sub></td>
 <td style="text-align: center;">4, 0</td>
 <td style="text-align: center;">0, 1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><em>A</em><sub>2</sub></td>
 <td style="text-align: center;">1, 0</td>
 <td style="text-align: center;">1, 1</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>What should Row do? This one is easy. Column gets 1 for sure if she plays <em>S</em><sub>2</sub>, and 0 for sure if she plays <em>S</em><sub>1</sub>. So she’ll play <em>S</em><sub>2</sub>. And given that she’s playing <em>S</em><sub>2</sub>, it is best for Row to play <em>A</em><sub>2</sub>.</p>
 <p>You probably noticed that the game is just a version of the decision problem from a couple of paragraphs ago. The relevant states of the world are choices of Column. But that’s fine; the layout of that decision problem was neutral on what constituted the states <em>S</em><sub>1</sub> and <em>S</em><sub>2</sub>. Note that the game can be solved without explicitly saying anything about probabilities. What is added to the (unsolvable) decision-theoretic problem is not information about probabilities, but information about Column’s payouts, and the fact that Column is rational. Those facts imply something about Column’s play, namely that she would play <em>S</em><sub>2</sub>. And that settles what Row should do.</p>
 <div class="page-columns page-full"><p>There’s something quite general about this example. What’s distinctive about game theory isn’t that it involves any special kinds of decision making. Once we get the probabilities of each move by the other player, what’s left is (mostly) expected utility maximisation.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> The distinctive thing about game theory is that the probabilities aren’t specified in the setup of the game; rather, they are solved for. Apart from special cases, such as where one option strictly dominates another, not much can be said about a decision problem with unspecified probabilities. But a lot can be said about games where the setup of the game doesn’t specify the probabilities, because it is possible to solve for the probabilities given the information that is provided.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;The qualification is because weak dominance reasoning cannot be construed as orthodox expected utility maximisation. We saw that in the coins case, and it will become important again here. It is possible to model weak dominance reasoning using non-standard probabilities, as in Brandenburger <span class="citation" data-cites="Brandenburger2008">(<a href="references.html#ref-Brandenburger2008" role="doc-biblioref">2008</a>)</span>, but that introduces new complications.</p></li></div></div>
 <p>This way of thinking about games makes the description of game theory as ‘interactive epistemology’ <span class="citation" data-cites="Aumann1999">(<a href="references.html#ref-Aumann1999" role="doc-biblioref">Aumann 1999</a>)</span> rather apt. The theorist’s work is to solve for what a rational agent should think other rational agents in the game should do. From this perspective, it isn’t surprising that game theory will make heavy use of equilibrium concepts. In solving a game, we must deploy a theory of rationality, and attribute that theory to rational actors in the game itself. In effect, we are treating rationality as something of an unknown, but one that occurs in every equation we have to work with. Not surprisingly, there are going to be multiple solutions to the puzzles we face.</p>
 <p>This way of thinking lends itself to an epistemological interpretation of one of the most puzzling concepts in game theory, the mixed strategy. The most important solution concept in modern game theory is the Nash equilibrium. A set of moves is a Nash equilibrium if no player can improve their outcome by deviating from the equilibrium, conditional on no other player deviating. In many simple games, the only Nash equilibria involve mixed strategies. Here’s one simple example.</p>
+<div id="tbl-death-damascus" class="anchored">
 <table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;"><em>S</em><sub>1</sub></th>
-<th style="text-align: center;"><em>S</em><sub>2</sub></th>
-</tr>
-</thead>
+<caption>Table&nbsp;8.3: Death in Damascus as a game.</caption>
 <tbody>
 <tr class="odd">
+<td></td>
+<td style="text-align: center;"><em>S</em><sub>1</sub></td>
+<td style="text-align: center;"><em>S</em><sub>2</sub></td>
+</tr>
+<tr class="even">
 <td><em>A</em><sub>1</sub></td>
 <td style="text-align: center;">0, 1</td>
 <td style="text-align: center;">10, 0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><em>A</em><sub>2</sub></td>
 <td style="text-align: center;">9, 0</td>
 <td style="text-align: center;">-1, 1</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>This game is reminiscent of some puzzles that have been much discussed in the decision theory literature, namely asymmetric Death in Damascus puzzles <span class="citation" data-cites="Richter1984">(<a href="references.html#ref-Richter1984" role="doc-biblioref">Richter 1984</a>)</span> . Here Column wants herself and Row to make the ‘same’ choice, i.e., <em>A</em><sub>1</sub> and <em>S</em><sub>1</sub> or <em>A</em><sub>2</sub> and <em>S</em><sub>2</sub>. She gets 1 if they do, 0 otherwise. And Row wants them to make different choices, and gets 10 if they do. Row also dislikes playing <em>A</em><sub>2</sub>, and this costs her 1 whatever else happens. It isn’t too hard to prove that the only Nash equilibrium for this game is that Row plays a mixed strategy playing both <em>A</em><sub>1</sub> and <em>A</em><sub>2</sub> with probability ½, while Column plays the mixed strategy that gives <em>S</em><sub>1</sub> probability 0.55, and <em>S</em><sub>2</sub> with probability 0.45.</p>
-<p>Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a <strong>metaphysical</strong> interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath’s <em>Games of Strategy</em>.</p>
+<p>Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a <em>metaphysical</em> interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath’s <em>Games of Strategy</em>.</p>
 <blockquote class="blockquote">
 <p>When players choose to act unsystematically, they pick from among their pure strategies in some random way …We call a random mixture between these two pure strategies a mixed strategy. <span class="citation" data-cites="DixitSkeath2004">(<a href="references.html#ref-DixitSkeath2004" role="doc-biblioref">Dixit and Skeath 2004, 186</a>)</span></p>
 </blockquote>
 <p>Dixit and Skeath are saying that it is definitive of a mixed strategy that players use some kind of randomisation device to pick their plays on any particular run of a game. That is, the probabilities in a mixed strategy must be in the world; they must go into the players’ choice of play. That’s one way, the paradigm way really, that we can think of mixed strategies metaphysically.</p>
-<p>But the understanding of game theory as interactive epistemology naturally suggests an <strong>epistemological</strong> interpretation of mixed strategies.</p>
+<p>But the understanding of game theory as interactive epistemology naturally suggests an <em>epistemological</em> interpretation of mixed strategies.</p>
 <blockquote class="blockquote">
 <p>One could easily … [model players] … turning the choice over to a randomizing device, but while it might be harmless to permit this, players satisfying the cognitive idealizations that game theory and decision theory make could have no motive for playing a mixed strategy. So how are we to understand Nash equilibrium in model theoretic terms as a solution concept? We should follow the suggestion of Bayesian game theorists, interpreting mixed strategy profiles as representations, not of players’ choices, but of their beliefs. <span class="citation" data-cites="Stalnaker1994">(<a href="references.html#ref-Stalnaker1994" role="doc-biblioref">Stalnaker 1994, 57–58</a>)</span></p>
 </blockquote>
 <div class="page-columns page-full"><p>One nice advantage of the epistemological interpretation, as noted by Binmore <span class="citation" data-cites="Binmore2007">(<a href="references.html#ref-Binmore2007" role="doc-biblioref">2007, 185</a>)</span> is that we don’t require players to have <em>n</em>-sided dice in their satchels, for every <em>n</em>, every time they play a game.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> But another advantage is that it lets us make sense of the difference between playing a pure strategy and playing a mixed strategy where one of the ‘parts’ of the mixture is played with probability one.</p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;It is worse than that for the metaphysical interpretation if some games have the only equilibria involving mixed strategies with irrational probabilities. And it might be noted that Binmore’s introduction of mixed strategies, on page 44 of his <span class="citation" data-cites="Binmore2007">(<a href="references.html#ref-Binmore2007" role="doc-biblioref">2007</a>)</span>, sounds much more like the metaphysical interpretation. But I think the later discussion is meant to indicate that this is just a heuristic introduction; the epistemological interpretation is the correct one.</p></li></div></div>
 <div class="page-columns page-full"><p>With that in mind, consider the below game, which I’ll call Up-Down.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Informally, in this game <em>A</em> and <em>B</em> must each play a card with an arrow pointing up, or a card with an arrow pointing down. I will capitalise <em>A</em>’s moves, i.e., <em>A</em> can play UP or DOWN, and italicise <em>B</em>’s moves, i.e., <em>B</em> can play <em>up</em> or <em>down</em>. If at least one player plays a card with an arrow facing up, each player gets $1. If two cards with arrows facing down are played, each gets nothing. Each cares just about their own wealth, so getting $1 is worth 1 util. All of this is common knowledge. More formally, here is the game table, with <em>A</em> on the row and <em>B</em> on the column.</p><div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;In earlier work I’d called it Red-Green, but this is too easily confused with the Red-Blue game that plays such an important role in <a href="interests.html">chapter&nbsp;<span>2</span></a>.</p></li></div></div>
+<div id="tbl-up-down" class="anchored">
 <table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;"><em>up</em></th>
-<th style="text-align: center;"><em>down</em></th>
-</tr>
-</thead>
+<caption>Table&nbsp;8.4: The Up-Down game.</caption>
 <tbody>
 <tr class="odd">
+<td></td>
+<td style="text-align: center;"><em>up</em></td>
+<td style="text-align: center;"><em>down</em></td>
+</tr>
+<tr class="even">
 <td>UP</td>
 <td style="text-align: center;">1, 1</td>
 <td style="text-align: center;">1, 1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>DOWN</td>
 <td style="text-align: center;">1, 1</td>
 <td style="text-align: center;">0, 0</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>When I write game tables like this, I mean that the players know that these are the payouts, that the players know the other players to be rational, and these pieces of knowledge are common knowledge to at least as many iterations as needed to solve the game. (I assume here that in solving the game, it is legitimate to assume that if a player knows that one option will do better than another, they have conclusive reason to reject the latter option. This is completely standard in game theory, though somewhat controversial in philosophy.) With that in mind, let’s think about how the agents should approach this game.</p>
 <p>I’m going to make one big simplifying assumption at first. I’ll relax this later, but it will help the discussion to start with this assumption. This assumption is that the doctrine of Uniqueness applies here; there is precisely one rational credence to have in any salient proposition about how the game will play. Some philosophers think that Uniqueness always holds <span class="citation" data-cites="White2005-WHIEP">(<a href="references.html#ref-White2005-WHIEP" role="doc-biblioref">White 2005</a>)</span>. I join with those such as North <span class="citation" data-cites="North2010">(<a href="references.html#ref-North2010" role="doc-biblioref">2010</a>)</span> and Schoenfield <span class="citation" data-cites="Schoenfield2013">(<a href="references.html#ref-Schoenfield2013" role="doc-biblioref">2013</a>)</span> who don’t. But it does seem like Uniqueness might often hold; there might often be a right answer to a particular problem. Anyway, I’m going to start by assuming that it does hold here.</p>
 <p>The first thing to note about the game is that it is symmetric. So the probability of <em>A</em> playing UP should be the same as the probability of <em>B</em> playing <em>up</em>, since <em>A</em> and <em>B</em> face exactly the same problem. Call this common probability <em>x</em>. If <em>x</em>&nbsp;&lt;&nbsp;1, we get a quick contradiction. The expected value, to Row, of UP, is 1. Indeed, the known value of UP is 1. If the probability of <em>up</em> is <em>x</em>, then the expected value of UP is <em>x</em>. So if <em>x</em>&nbsp;&lt;&nbsp;1, and Row is rational, she’ll definitely play UP. But that’s inconsistent with the claim that <em>x</em>&nbsp;&lt;&nbsp;1 since that means that it isn’t definite that Row will play UP.</p>
@@ -518,7 +523,7 @@ MARIE: Probably. It might not, but there is only a one in a thousand chance of t
 <li><em>S</em>’s credence in <em>C</em> ∧ <em>D</em> is less than <em>t</em>.</li>
 <li><em>S</em> knows that she has all these states, and reflectively endorses them.</li>
 </ul>
-<p>The best arguments for the existence of triples〈<em>S</em>,&nbsp;<em>A</em>,&nbsp;<em>B</em>〉are non-constructive existence proofs. David Christensen <span class="citation" data-cites="Christensen2005">(<a href="references.html#ref-Christensen2005" role="doc-biblioref">2005</a>)</span> for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don’t really prove what the Lockean needs. They don’t show that triples satisfying the constraints we associated with〈<em>S</em>,&nbsp;<em>A</em>,&nbsp;<em>B</em>〉are just as common as triples satisfying the constraints we associated with〈<em>S</em>,&nbsp;<em>C</em>,&nbsp;<em>D</em>〉, for any <em>t</em>. But if the Lockean were correct, they should be exactly as common.</p>
+<p>The best arguments for the existence of triples〈<em>S</em>,&nbsp;<em>A</em>,&nbsp;<em>B</em>〉are non-constructive existence proofs. David Christensen <span class="citation" data-cites="Christensen2005">(<a href="references.html#ref-Christensen2005" role="doc-biblioref">2005</a>)</span> for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don’t really prove what the Lockean needs. They don’t show that triples satisfying the constraints we associated with〈<em>S</em>,&nbsp;<em>A</em>,&nbsp;<em>B</em>〉are just as common as triples satisfying the constraints we associated with〈<em>S</em>,&nbsp;<em>C</em>,&nbsp;<em>D</em>〉 for any <em>t</em>. But if the Lockean were correct, they should be exactly as common.</p>
 </section>
 </section>
 <section id="sec-solving" class="level2" data-number="8.5">

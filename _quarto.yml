@@ -31,13 +31,24 @@ bibliography: references.bib
 format:
   html:
     theme: 
-      light: flatly
-      dark: darkly
-    linestretch: 1.7
+      light: 
+        - solar
+        - html-fonts.scss
+        - solar-defaults.scss
+      dark:
+        - solar
+        - html-fonts.scss
+        - dark-table.scss
+    linestretch: 1.5
     toc: true
     toc-depth: 3
     reference-location: margin
     margin-header: "&nbsp;"
+    fontsize: 1.2em
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
+    mainfont: "baskerville, sans-serif"
   pdf:
     documentclass: scrbook
     geometry: "left=1.95in,right=1.95in,top=1.78in,bottom=1.78in"
@@ -68,5 +79,4 @@ format:
     number-sections: true
 
 editor: visual
-
 

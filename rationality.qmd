@@ -94,17 +94,23 @@ Some people might be nervous about resting too much weight on infinitary example
 
 Start with a simple decision problem, where the agent has a choice between two acts *A*~1~and *A*~2~, and there are two possible states of the world, *S*~1~ and *S*~2~, and the agent knows the payouts for each act-state pair are given by the following table.
 
-|        | *S*~1~ | *S*~2~ |
+|        |        |        |
 |--------|:------:|:------:|
+|        | *S*~1~ | *S*~2~ |
 | *A*~1~ |   4    |   0    |
 | *A*~2~ |   1    |   1    |
 
+: An underspecified decision problem. {#tbl-underspecified}
+
 What to do? I hope you share the intuition that it is radically underdetermined by the information I've given you so far. If *S*~2~ is much more probable than *S*~1~, then *A*~2~ should be chosen; otherwise *A*~1~ should be chosen. But I haven't said anything about the relative probability of those two states. Now compare that to a simple game. Row has two choices, which I'll call *A*~1~ and *A*~2~. Column also has two choices, which I'll call *S*~1~ and *S*~2~. It is common knowledge that each player is rational, and that the payouts for the pairs of choices are given in the following table. (As always, Row's payouts are given first.)
 
-|        | *S*~1~ | *S*~2~ |
+|        |        |        |
 |--------|:------:|:------:|
+|        | *S*~1~ | *S*~2~ |
 | *A*~1~ |  4, 0  |  0, 1  |
 | *A*~2~ |  1, 0  |  1, 1  |
+
+: A simple game. {#tbl-simple-game}
 
 What should Row do? This one is easy. Column gets 1 for sure if she plays *S*~2~, and 0 for sure if she plays *S*~1~. So she'll play *S*~2~. And given that she's playing *S*~2~, it is best for Row to play *A*~2~.
 
@@ -118,20 +124,23 @@ This way of thinking about games makes the description of game theory as 'intera
 
 This way of thinking lends itself to an epistemological interpretation of one of the most puzzling concepts in game theory, the mixed strategy. The most important solution concept in modern game theory is the Nash equilibrium. A set of moves is a Nash equilibrium if no player can improve their outcome by deviating from the equilibrium, conditional on no other player deviating. In many simple games, the only Nash equilibria involve mixed strategies. Here's one simple example.
 
-|        | *S*~1~ | *S*~2~ |
+|        |        |        |
 |--------|:------:|:------:|
+|        | *S*~1~ | *S*~2~ |
 | *A*~1~ |  0, 1  | 10, 0  |
 | *A*~2~ |  9, 0  | -1, 1  |
 
+: Death in Damascus as a game. {#tbl-death-damascus}
+
 This game is reminiscent of some puzzles that have been much discussed in the decision theory literature, namely asymmetric Death in Damascus puzzles [@Richter1984] . Here Column wants herself and Row to make the 'same' choice, i.e., *A*~1~ and *S*~1~ or *A*~2~ and *S*~2~. She gets 1 if they do, 0 otherwise. And Row wants them to make different choices, and gets 10 if they do. Row also dislikes playing *A*~2~, and this costs her 1 whatever else happens. It isn't too hard to prove that the only Nash equilibrium for this game is that Row plays a mixed strategy playing both *A*~1~ and *A*~2~ with probability ½, while Column plays the mixed strategy that gives *S*~1~ probability 0.55, and *S*~2~ with probability 0.45.
 
-Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a **metaphysical** interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath's *Games of Strategy*.
+Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a *metaphysical* interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath's *Games of Strategy*.
 
 > When players choose to act unsystematically, they pick from among their pure strategies in some random way ...We call a random mixture between these two pure strategies a mixed strategy. [@DixitSkeath2004 186]
 
 Dixit and Skeath are saying that it is definitive of a mixed strategy that players use some kind of randomisation device to pick their plays on any particular run of a game. That is, the probabilities in a mixed strategy must be in the world; they must go into the players' choice of play. That's one way, the paradigm way really, that we can think of mixed strategies metaphysically.
 
-But the understanding of game theory as interactive epistemology naturally suggests an **epistemological** interpretation of mixed strategies.
+But the understanding of game theory as interactive epistemology naturally suggests an *epistemological* interpretation of mixed strategies.
 
 > One could easily ... \[model players\] ... turning the choice over to a randomizing device, but while it might be harmless to permit this, players satisfying the cognitive idealizations that game theory and decision theory make could have no motive for playing a mixed strategy. So how are we to understand Nash equilibrium in model theoretic terms as a solution concept? We should follow the suggestion of Bayesian game theorists, interpreting mixed strategy profiles as representations, not of players' choices, but of their beliefs. [@Stalnaker1994 57-8]
 
@@ -143,10 +152,13 @@ With that in mind, consider the below game, which I'll call Up-Down.[^rationalit
 
 [^rationality-7]: In earlier work I'd called it Red-Green, but this is too easily confused with the Red-Blue game that plays such an important role in [chapter @sec-interests].
 
-|      | *up* | *down* |
+|      |      |        |
 |------|:----:|:------:|
+|      | *up* | *down* |
 | UP   | 1, 1 |  1, 1  |
 | DOWN | 1, 1 |  0, 0  |
+
+: The Up-Down game. {#tbl-up-down}
 
 When I write game tables like this, I mean that the players know that these are the payouts, that the players know the other players to be rational, and these pieces of knowledge are common knowledge to at least as many iterations as needed to solve the game. (I assume here that in solving the game, it is legitimate to assume that if a player knows that one option will do better than another, they have conclusive reason to reject the latter option. This is completely standard in game theory, though somewhat controversial in philosophy.) With that in mind, let's think about how the agents should approach this game.
 
@@ -237,7 +249,7 @@ Now one might think, indeed I do think, that such triples do not exist at all. B
 -   *S*'s credence in *C* ∧ *D* is less than *t*.
 -   *S* knows that she has all these states, and reflectively endorses them.
 
-The best arguments for the existence of triples〈*S*, *A*, *B*〉are non-constructive existence proofs. David Christensen [-@Christensen2005] for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don't really prove what the Lockean needs. They don't show that triples satisfying the constraints we associated with〈*S*, *A*, *B*〉are just as common as triples satisfying the constraints we associated with〈*S*, *C*, *D*〉, for any *t*. But if the Lockean were correct, they should be exactly as common.
+The best arguments for the existence of triples〈*S*, *A*, *B*〉are non-constructive existence proofs. David Christensen [-@Christensen2005] for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don't really prove what the Lockean needs. They don't show that triples satisfying the constraints we associated with〈*S*, *A*, *B*〉are just as common as triples satisfying the constraints we associated with〈*S*, *C*, *D*〉 for any *t*. But if the Lockean were correct, they should be exactly as common.
 
 ## Solving the Challenges {#sec-solving}
 
