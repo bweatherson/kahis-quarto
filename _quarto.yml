@@ -10,7 +10,7 @@ book:
   sharing: [twitter, facebook]
   chapters:
     - index.qmd
-    - background.qmd
+    - overture.qmd
     - interests.qmd
     - beliefs.qmd
     - knowledge.qmd
