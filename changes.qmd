@@ -12,7 +12,9 @@ My version of IRT version endorse shares defects with more familiar versions of 
 >
 > when affirmed purely because X and Y have sufficiently different practical interests. IRI, as we noted earlier, must seemingly allow that instances of such a conjunction can be true. [@Wright2018 368]
 
-That's right; I do allow that instances of such a conjunction can be true. A similar objection has been made by Gillian Russell and John Doris [-@RussellDoris2008], by Michael @BlomeTillmann2009, and by David Eaton and Timothy Pickavance [-@EatonPickavance2015]. My main reply to these objections is that they overgenerate and would be successful objections to any theory that separates knowledge from rational true belief. Since knowledge does not equal rational true belief, no such objection can work.^[This reply was first made in my [-@Weatherson2016-WEARTE], and earlier replies to Russell and Doris, as well as Blome-Tillman, were made in my [-@Weatherson2011-WEADIR], although I now believe that those replies did not quite get to the heart of the matter.]
+That's right; I do allow that instances of such a conjunction can be true. A similar objection has been made by Gillian Russell and John Doris [-@RussellDoris2008], by Michael @BlomeTillmann2009, and by David Eaton and Timothy Pickavance [-@EatonPickavance2015]. My main reply to these objections is that they overgenerate and would be successful objections to any theory that separates knowledge from rational true belief. Since knowledge does not equal rational true belief, no such objection can work.[^changes-1]
+
+[^changes-1]: This reply was first made in my [-@Weatherson2016-WEARTE], and earlier replies to Russell and Doris, as well as Blome-Tillman, were made in my [-@Weatherson2011-WEADIR], although I now believe that those replies did not quite get to the heart of the matter.
 
 ## Overview of Replies {#sec-overview}
 
@@ -56,7 +58,9 @@ Call this proposition *p*. In this base case, Charlotte knows that *p*. But ther
 
 Charlotte does not know that *p* in all three scenarios. These cases are good evidence that knowledge requires justification, truth, and belief. In variant J, Charlotte's belief in p is not justified, but rather a mere hunch, so she doesn't know. In variant T, Charlotte's belief is incorrect, making it an honest mistake and hence not knowledge. In variant B, Charlotte lacks knowledge because she doesn't even believe *p*; she has the evidence, but does not accept it.
 
-There are philosophers who argue that the conditions in all three cases are not strictly necessary. However, I won't be discussing these points as it would take us too far afield. Instead, I'll assume that Variant J demonstrates the need for justification or some form of rationality for knowledge. Variant T shows that knowledge requires truth, and Variant B shows that belief or strong acceptance is necessary for knowledge.^[I discussed issues about belief more back in [chapter @sec-belief].]
+There are philosophers who argue that the conditions in all three cases are not strictly necessary. However, I won't be discussing these points as it would take us too far afield. Instead, I'll assume that Variant J demonstrates the need for justification or some form of rationality for knowledge. Variant T shows that knowledge requires truth, and Variant B shows that belief or strong acceptance is necessary for knowledge.[^changes-2]
+
+[^changes-2]: I discussed issues about belief more back in [chapter @sec-belief].
 
 For a short while in the mid-20th century, some philosophers thought these conditions were not merely necessary for knowledge, but jointly sufficient. To know that *p* just is to have a justified, true belief that *p*. This became known, largely in retrospect, as the JTB theory of knowledge. It fell out of fashion dramatically after a short but decisive criticism was published by Edmund Gettier [-@Gettier1963]. But Gettier's criticism was not original; he had independently rediscovered a point made by the 8th century philosopher Dharmottara [@Nagel2014]. Here is a version of the kind of case Dharmottara discovered.
 
@@ -124,11 +128,11 @@ The ugly conjunction that IRT endorses is something that theories that are sensi
 
 ## Making Up Knowledge {#sec-building}
 
-All that said, I've come to think there is something right about the JTB theory. Or, as I'd prefer, the RTB theory; as in Rational True Belief.[^changes-2] It isn't extensional adequacy; Dharmottara refuted that 1300 years ago. But it can be expressed using the modern[^changes-3] notion of grounding. Or, as I'd prefer, using the notion of a *building relation* that Karen Bennett [-@Bennett2017] describes.
+All that said, I've come to think there is something right about the JTB theory. Or, as I'd prefer, the RTB theory; as in Rational True Belief.[^changes-3] It isn't extensional adequacy; Dharmottara refuted that 1300 years ago. But it can be expressed using the modern[^changes-4] notion of grounding. Or, as I'd prefer, using the notion of a *building relation* that Karen Bennett [-@Bennett2017] describes.
 
-[^changes-2]: I think it's strange to apply the notion of justification to beliefs, and much more natural to talk about rational beliefs.
+[^changes-3]: I think it's strange to apply the notion of justification to beliefs, and much more natural to talk about rational beliefs.
 
-[^changes-3]: Well, modern if you think it's not the same notion as Meister Eckhart's notion of grounding. I'm a little agnostic on that.
+[^changes-4]: Well, modern if you think it's not the same notion as Meister Eckhart's notion of grounding. I'm a little agnostic on that.
 
 Consider a very abstractly described case where all of 1-4 are true.
 
@@ -165,13 +169,13 @@ The distinction between building and counterfactual sensitivity explains part of
 
 ## Every Theory is Interest-Relative {#sec-das}
 
-Think about the difference between Variant S and Variant K.[^changes-4] Variant S was meant to be a simple case where Charlotte does not know something because of a safety violation. Knowledge is incompatible with a certain kind of luck. To know something is to do better than make a lucky guess. Charlotte isn't guessing, but she seems to be lucky in a similar kind of way to the guesser, so she doesn't know. But in Variant K, she isn't lucky. It's no coincidence that her book said the correct thing. There is no serious possibility of her being misled on this point.
+Think about the difference between Variant S and Variant K.[^changes-5] Variant S was meant to be a simple case where Charlotte does not know something because of a safety violation. Knowledge is incompatible with a certain kind of luck. To know something is to do better than make a lucky guess. Charlotte isn't guessing, but she seems to be lucky in a similar kind of way to the guesser, so she doesn't know. But in Variant K, she isn't lucky. It's no coincidence that her book said the correct thing. There is no serious possibility of her being misled on this point.
 
-[^changes-4]: Though they are making somewhat different points, there is a resemblance between these cases and the cases that Gendler and Hawthorne [-@Gendler2005] use to raise trouble for fake barn intuitions.
+[^changes-5]: Though they are making somewhat different points, there is a resemblance between these cases and the cases that Gendler and Hawthorne [-@Gendler2005] use to raise trouble for fake barn intuitions.
 
-Since Charlotte knows that *p* in Variant K, but not in Variant S, knowledge is sensitive to one's preferred format for reading books. This is hardly a 'truth-relevant' feature, so knowledge isn't only relevant to truth-relevant features. Knowledge generally depends on whether one was lucky, and the factors that determine whether one was lucky on an occasion need not be truth-relevant. 
+Since Charlotte knows that *p* in Variant K, but not in Variant S, knowledge is sensitive to one's preferred format for reading books. This is hardly a 'truth-relevant' feature, so knowledge isn't only relevant to truth-relevant features. Knowledge generally depends on whether one was lucky, and the factors that determine whether one was lucky on an occasion need not be truth-relevant.
 
-The same patterns recurs in other cases. In Variant H, Charlotte lacked knowledge because of evidence around her. But imagine a variant of that variant where Charlotte recently emigrated to a country where no one ever talks about Henriette Caillaux. In the variant, Charlotte knows that *p*. So her knowledge of French history is sensitive to her emigration status. And emigration status isn't truth-relevant or truth-connected. 
+The same patterns recurs in other cases. In Variant H, Charlotte lacked knowledge because of evidence around her. But imagine a variant of that variant where Charlotte recently emigrated to a country where no one ever talks about Henriette Caillaux. In the variant, Charlotte knows that *p*. So her knowledge of French history is sensitive to her emigration status. And emigration status isn't truth-relevant or truth-connected.
 
 If knowledge is sensitive to external factors, and it isn't required that knowledge be infallible, then knowledge will be sensitive to things that are not particularly truth-relevant. Any fallibilist, externalist, theory of knowledge will have to face a version of a reference class problem, in order to say whether a particular true belief was a matter of luck. In general, the things that make one be in this reference class rather than that are not truth-relevant, but they are relevant to whether one knows.
 
