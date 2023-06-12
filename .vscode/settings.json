@@ -45,5 +45,6 @@
         "WEAII",
         "WEARTE",
         "WHIEP"
-    ]
+    ],
+    "r.lsp.promptToInstall": false
 }
