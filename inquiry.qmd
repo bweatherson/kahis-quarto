@@ -78,7 +78,7 @@ I think the best way to systematise things here is to take appearances at face v
 
 Recall Professor Paresseux from [subsection @sec-andintro]. He's told that the visiting speaker this week is his old graduate school colleague Professor Assidue. But he puts no effort into remembering this fact, and it slips from the front of his mind. The talk is approaching, and Paresseux wonders to himself, who's talking to us this afternoon? So he Googles the department talk schedule, sees that it is Assidue, and then says to himself "Ah, I knew that, I saw the email the other day."
 
-It is very hard to fit the category of information that has 'slipped one's mind' into familiar epistemological categories. I think we should say that Paresseux is correct, and he did indeed know the answer to his inquiry before he started looking. After all, he could have retrieved the information by simply thinking hard about what had happened this week. And the best explanation for why that's possible is that he did still know that Professor Assidue would be the speaker. But I also think it made sense for him to conduct an inquiry into this thing that he knew. It's much easier to Google something than to trawl one's memory for the answer. More reliable too. So this looks like a sensible inquiry for him to have conducted.
+It is very hard to fit the category of information that has 'slipped one's mind' into familiar epistemological categories.^[The point here is related to the discussion in @sec-neutrality-contextualism about how sometimes *knows* seems to just mean *possesses the information*.] I think we should say that Paresseux is correct, and he did indeed know the answer to his inquiry before he started looking. After all, he could have retrieved the information by simply thinking hard about what had happened this week. And the best explanation for why that's possible is that he did still know that Professor Assidue would be the speaker. But I also think it made sense for him to conduct an inquiry into this thing that he knew. It's much easier to Google something than to trawl one's memory for the answer. More reliable too. So this looks like a sensible inquiry for him to have conducted.
 
 Following Andy Egan [-@Egan2008], I think we should think of this as a case where Paresseux's mind is 'fragmented', in the sense of @Lewis1982c and @Stalnaker1984. There is a part that contains the information about who the speaker is. That part isn't at the front of his attention, so he doesn't act on it. Still it is a part of him; he knows that stuff. Still, it is better to conduct an inquiry, i.e., a Google search, than to rely on this knowledge. So it is rational to inquire into something one knows.
 
@@ -156,21 +156,48 @@ With this picture of the relationship between knowledge, inquiry, and checking i
 
 ## Double Checking {#sec-doublecheck}
 
-An example from Jessica Brown
+In her 2008 paper "Subject-Sensitive Invariantism and the Knowledge Norm for Practical Reasoning, Jessica @Brown2008 runs through a bunch of cases where, she says, intuitively someone knows a proposition but they cannot use it in practical deliberation. The first of these cases has been frequently cited as a problem for the kind of view I'm defending.
 
 > A student is spending the day shadowing a surgeon. In the morning he observes her in clinic examining patient A who has a diseased left kidney. The decision is taken to remove it that afternoon. Later, the student observes the surgeon in theatre where patient A is lying anaesthetised on the operating table. The operation hasn't started as the surgeon is consulting the patient's notes. The student is puzzled and asks one of the nurses what's going on:
 >
-> Student: I don't understand. Why is she looking at the patient's records? She was in clinic with the patient this morning. Doesn't she even know which kidney it is? Nurse: Of course, she knows which kidney it is. But, imagine what it would be like if she removed the wrong kidney. She shouldn't operate before checking the patient's records.
+> *Student*: I don't understand. Why is she looking at the patient's records? She was in clinic with the patient this morning. Doesn't she even know which kidney it is?  
+> *Nurse*: Of course, she knows which kidney it is. But, imagine what it would be like if she removed the wrong kidney. She shouldn't operate before checking the patient's records.
 
-I think this is a good inquiry even though the doctor knows.
+I think there are pretty good arguments that checking the chart is the right thing to do even if the surgeon knows which kidney is diseased, so this case isn't a problem for the views about knowledge and action that I'm defending.
 
-I don't have as snappy a story about her next example, Affair. I have several inconclusive thoughts about it.
+In medical contexts, intuitions about appropriate action very rarely track expected utility maximisation. This is one reason why it is so easy to come up with medical counterexamples to act utilitarianism for intro ethics classes. Instead, intuitions about appropriate actions here are more likely to track with rule utilitarianism. And the rule _Double-check the notes before removing an organ_ seems like it will on average maximise utility, even if it would not help in this case.
 
-1.  It strikes me as less compelling that it is coherent
-2.  It's striking that it gets much less attention than surgeon; I wonder if others share my suspicion (but maybe Surgeon is just first)
-3.  Feels like loose talk, like "I knew there was a fire here", or "I knew we'd lose the game"
-4.  Or maybe it's just an information possession sense of 'knows'. We sometimes use that as well, and it's very different to what the vast majority of epistemologists talk about. (Maybe not contextualists, maybe not Dretske.)
-5.  In any case, I'm not committed to ordinary usage being good around here. I'm aiming to find a theoretically interesting notion that fits the roles knowledge should fit.
+To connect this to the discussion in @sec-settling, the surgeon here is doing a bit of mostly harmless sensitivity chasing. Before checking the notes, their belief that the left kidney was diseased was not sensitive to the possibility that they'd misremembered the morning meeting; after checking the notes it is. Since busy surgeons do sometimes misremember meetings some hours earlier. So this is a reasonable bit of sensitivity for the surgeon to chase, and for the rule-makers to require be chased.^[In @Weatherson2015 I argue that someone whose memory is working has knowledge by memory, even if they are phenomenologically indistinguishable from someone whose memories have been altered, and even if there are salient people whose memories have been tampered with, and who are phenomenologically indistinguishable from them. I don't mean to argue that there is something wrong with such a person if they double-check the things they know by memory.]
+
+These considerations don't just defend IRT against the example, they show how IRT can be used to resolve a puzzle about a related case. Continue Brown's story by imagining that every time the surgeon raises the scalpel to make the first incision, they instead go back to look at the notes to check they are removing the correct kidney. Now we have the following conversation.
+
+> *Student*: I don't understand. Why is she looking at the patient's records for the seventeeth time? She just looked at the notes each minute for the last sixteen minutes; she knows which kidney it is. 
+> *Nurse*: Of course, she knows which kidney it is. But, imagine what it would be like if she removed the wrong kidney. She shouldn't operate before checking the patient's records.
+
+This is a really bad defence of the surgeon's actions. And we are owed a story about why it is a bad defence. My story starts with the point that Student is right to ask why she is inquiring into something she knows. While as we've seen there are cases where that is appropriate, these cases are somewhat unusual. It's a reasonable default assumption that inquiry into something one knows is mistaken. And that assumption is only defeated if there is some other worthwhile epistemic good that can be attained. In this case, there isn't, since sensitivity to whether one misread the chart the last sixteen times isn't a worthwhile kind of sensitivity to get.
+
+In general, anyone who wants to separate out knowledge from action, and do so on account of the fact that sometimes we double check things we know, owes a story about why we don't also triple-check, quadruple-check, and so on. And I suspect such a story won't be easy to tell.
+
+Brown has another example that hasn't attracted nearly as much attention in the literature. This is unfortunate since I think it's a more pressing problem for the view Brown is attacking.
+
+> A husband is berating his friend for not telling him that his wife has been having an affair even though the friend has known of the affair for weeks.
+> 
+> *Husband*: Why didn't you say she was having an affair? You've known for weeks.    
+> *Friend*: Ok, I admit I knew, but it wouldn't have been right for me to say anything before I was absolutely sure. I knew the damage it would cause to your marriage.
+ 
+In this case, the tricks I was deploying in @sec-settling don't seem to help. There is no further epistemic good that Friend obtains by waiting further.
+
+That said, my intuition here is that Friend's speech is just incoherent. Or, at least, it is incoherent if we take the final statement at face value. My best guess as to what's going on here is that we really shouldn't do that; Friend didn't really know about the affair.^[The particular versions of IRT Brown was responding to in the 2008 paper were heavily motivated by intuitions about cases. Brown argues, quite correctly I think, that those theories aren't entitled to appeal to arguments that the intuitions which go against them are mistaken. After all, if IRT is just motivated by intuitions, the argument that knowledge is not sensitive to interests is just as good an argument against those intuitions as the arguments that IRT defenders can make about this example. Happily, my version of IRT is not motivated just by intuitions about cases, so I don't have to worry about this dialectical point.]
+
+There are two things that might be going on in this case. My best guess is that the explanation for why Friend's statement seems so natural relies on both of them.
+
+First, we do sometimes use 'know' in a purely informational sense. We saw this in @sec-defraginquiry with Paresseux's claim that he *knew* Assidue was visiting. He possessed the information, though little more than that. Still, in context this can be enough to ascribe knowledge.
+
+Second, we can be very flexible about past-tense knowledge claims when we, the current speakers, know how things turned out. After our sports team loses a game they should have won, we might say "I had a bad feeling about today, I knew we were going to mess it up." In most cases it would be weird to say the speaker even thought their team would mess up, let alone believed it. (Why didn't they bet on the opposition if they thought the result was a foregone conclusion?) But even if they did believe it, we really don't think *bad feelings* are appropriate grounds for knowledge. And yet, the speakers claim that they knew the team would mess up sounds fine.
+
+Is Friend's statement like Paresseux's knowing (i.e., possessing the information) that Assidue would be visiting, or the sports fan's knowing (i.e., having an accurate premonition) that their team would mess up? My guess is that it's a bit of both. The Friend didn't know, in the sense of *know* relevant to epistemology, about the affair. 
+
+The general methodological point is that these last two senses of knowledge do seem different to what we typically talk about in epistemology. It's possible, as I noted in @sec-neutrality-contextualism, that considering the information-possession sense of knowledge is important for thinking through whether any kind of contextualism is true. I don't think the 'bad feeling' cases are relevant to anything in epistemology, save for cases where we might need to explain away intuitions that they are involved in. Maybe that's what's happening in Brown's second case. 
 
 ## The Need to Inquire {#sec-need}
 
