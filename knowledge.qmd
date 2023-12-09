@@ -138,9 +138,61 @@ That's my primary argument for KAE. In general, it is reasonable to do as many r
 
 ## Other Answers {#sec-other-answers}
 
-\[Say why alternatives to KAE fail\]
+If KAE is false, what should go in its place? What could be the state which does allow exclusion?^[This section draws heavily on §1.1 of @Weatherson2012.]
 
-If knowledge structures decision tables, then there is a simple argument that Anisa loses knowledge when playing the red-blue game. The following would be a bad table for Anisa to use when deciding what to do.
+### None of the Above {#sec-none-of-the-above}
+
+One might object to the presupposition of that question. Maybe exclusion is never allowed. Perhaps every table should partition the possibility space. In any table, the last state should be _None of the above_, so (assuming classical logic) it must always be true that some state in the table obtains.
+
+If one is not completely convinced that classical logic is correct, this move won't seem particularly appealing. But I suspect most readers are completely convinced that classical logic is correct, so I won't investigate that line. Instead I'll look at two more pressing objections to the idea that decision tables should always have a none of the above option.
+
+First, in many cases there is no sensible way to determine the probabilities or utilities that would go in this column. Imagine that I'm making a decision whose consequences are sensitive to which team wins the next Super Bowl. (Perhaps I'm planning a giant Super Bowl party, or I'm setting the odds for season long bets at a sports book.) I work out the probabilities that each of the 32 teams in the NFL will win this year, and what the consequences of my various options would be in each case. If it's never permissible to exclude states from a decision table, if decision tables always have to be logically complete, I need a 33rd state: that none of these teams win. But how could that be? Maybe the league might be cancelled? Maybe a new team could be introduced mid-season and could win? There is not really a sensible way to even assign probabilities to these options. Worse still, there is no way to assign utilities to actions given that state. The expected return of an action given this state will depend on the probabilities of the different ways it could come about. But the error bars on those probabilities are bigger than the probabilities themselves. There is simply no sensible value to put in the cell as the value of the pair; _Schedule a large Super Bowl party in Las Vegas_, _None of these 32 teams win the league_. If that state comes about beacuse the Super Bowl is cancelled, it's terrible. If it comes about because a new team gets added, that would create so much interest that it would be great. If I don't have any way of figuring out the relative probabilities of these events, I have no idea what the expected value is. So this approach makes decision tables useless.
+
+Second, one should only be unwilling to exclude states from decision tables if one is so sceptical that one is unwilling to take any contingent proposition to be evidence. After all, taking something to be evidence involves excluding possibilities where it doesn't obtain from one's reasoning. But if one doesn't take anything to be evidence, then it is unclear how one's probabilities can update. It can't be by regular conditionalisation. It could be by Jeffrey conditionalisation, if one thought that somehow it was impossible to ever learn that *p*, but sometimes possible to learn what *p*'s probability is. Personally, I've never had a learning experience that told me the precise probability of some proposition without learning for sure some other proposition. I have never seen reason to think anyone else has either.
+
+This is a quite general point about interest-relative epistemology, and one that will keep coming up in different ways throughout the book. If one wants to do without knowledge, and just use probabilities (or credences), one owes us a story of how those probabilities change. And the best stories will involve some kind of interest-relative theory.
+
+### Evidence {#sec-kae-evidence}
+
+These considerations suggest a different answer to this exclusion problem; perhaps the decision maker can exclude *p* iff *p* is part of their evidence. Call this view EAE, for Evidence Allows Exclusion.
+
+It isn't obvious that this is an alternative to KAE. If evidence and knowledge are co-extensive, as @Williamson2000 argued, it will not be. But since I'm going to argue in @sec-evidence against this claim of Williamson's, I can't rely on that.
+
+Instead I'll offer a two-part response. That *p* is part of one's evidence either entails that one knows *p* or it does not. Either way, EAE doesn't pose a problem for my overall argument.
+
+If it does, then whether EAE or KAE is true won't matter for the overall argument. I'm going to argue that some propositions that are known in typical situations might not be excludable if one's interests change. That will imply interest-relativity given KAE, but it will also imply interest-relativity given EAE plus the thesis that evidence entails knowledge.
+
+If evidence doesn't entail knowledge, then EAE is implausible. If evidence isn't strong enough to let the decision maker know that propositions inconsistent with it are false, it surely isn't strong enough to let the decision maker know they can ignore propositions inconsistent with it.
+
+The view I'll defend in @sec-evidence is that evidence does entail knowledge. There is a really simple argument for this view. One way to know that *p* is by properly deducing *p* from one's evidence. The deduction *p, therefore p* can be properly carried out. So one can know anything in one's evidence. But I'm not relying on this argument here, and instead on the point that if evidence doesn't suffice for knowledge, it surely doesn't suffice for exclusion.
+
+The same considerations show that CAE, the view that Certainty Allows Exclusion, doesn't threaten the larger argument for interest-relativity. Either certainty entails knowledge or it doesn't. If it does, then CAE can be used in place of KAE below to derive interest-relativity. If it does not, and this might happen if certainty just is subjective certainty, then it is implausible that it suffices for proper exclusion.
+
+### Sufficiently High Probability {#sec-kae-high-prob}
+
+Perhaps one can exclude those propositions whose falsity is sufficiently high that treating them as definitely false doesn't make a difference to the decision one makes. Call this view PAE, for sufficiently high Probability Allows Exclusion.
+
+The first thing to note is that if this is to be plausible, the notion of sufficiency here must be interest-relative. It's often fine to ignore propositions that have a one in 10,000 chance of being true. When planning what to do a fine sunny day with a clear weather forecast, I simply ignore the chance that there will be a passing shower, even though that probably still has a 1 in 10000 chance. But it's absurd to ignore one in 10,000 chances when deciding what insurance to buy. Fewer than one home in 10,000 burns down in any given year; that's not a reason to skip fire insurance for the year.
+
+Second, as stated this view has the odd consequence that decision makers can ignore situations that actually obtain. This doesn't seem very plausible. At least, it would be very odd to have a textbook representation of a decision problem where the actual world wasn't in one of the columns. So probably the best way to interpret PAE is as saying that falsehoods can be excluded iff they have sufficiently high probability.
+
+Third, once one does that, PAE starts to look suspiciously like a form of KAE. In particular, it looks like the view I'll call IRT-CP in @sec-ties. That means (a) that it isn't obviously an alternative to KAE, and (b) the objections to IRT-CP are also objections to it. Some of those objections will come up in @sec-lockecoin and @sec-lockegames. But I'll end this survey with a different puzzle case.
+ 
+Luc is lucky; he's in a casino where they are offering better than fair odds on roulette. Although the chance of winning any bet is 1 in 38, if Luc bets \$10, and his bet wins, he will win \$400. (That's the only bet on offer.) Luc is considering betting on 28. As it turns out, 28 won't come up, although since this is a fair roulette wheel, Luc doesn't know this. Luc, like most agents, has a declining marginal utility for money. He currently has \$1,000, and for any amount of money \$*x*, Luc gets utility *x*~0.5~ out of having $*x*. So Luc's current utility (from money) is, roughly, 31.622. If he bets and loses, his utility will be, roughly, 31.464. And if he bets and wins, his utility will be, roughly, 37.417. So he stands to gain about 5.794, and to lose about 0.159. So he stands to gain about 36.5 as much as he stands to lose. Since the odds of winning are less than 1 in 36.5, his expected utility goes down if he takes the bet, so he shouldn't take it. Of course, if the probability of losing was 1, and not merely 37 in 38, he shouldn't take the bet too. 
+
+Does that mean it is acceptable, in presenting Luc's decision problem, to leave off the table any possibility of him winning, since he won't win, and setting the probability of losing to 1 rather than 37 in 38 doesn't change the decision he should make? No; this would misrepresent Luc's situation in an important way. In particular, it would misrepresent how sensitive Luc's choice is to his utility function, and to the size of the stakes. If Luc's utility function had been that he gets utility *x*~0.75~ from wealth *x*, then it would have been wise for Luc to take the bet. Even with his actual utility function, if the bet had been \$1 against \$40, rather than \$10 against \$400, he would have been wise to take the bet. Leaving off the possibility of winning hides these facts, and badly misrepresents Luc's situation.
+
+### Wrapping Up {#sec-kae-wrapping-ip}
+
+I've argued that the states we can exclude from a decision table are the states that the agent knows not to obtain. The argument is largely by elimination. One might object that I haven't excluded _all_ alternatives. We could keep going asking whether one can exclude all and only those things that are justifiably believed to be false, or which are known to be known, or any number of other alternatives.
+
+At this point, it is natural to object to alternatives that they are too complicated to warrant much confidence. What we can properly take for granted in decision making is a very important fact about our doxastic states. If one is sympathetic to a broadly functionalist picture of mind, it might be the most important fact. If so, it isn't surprising that the most common form of appraisal of doxastic states, that they are knowledge, is the norm for appropriate exclusion. It would be very surprising if something considerably more complicated was the correct norm instead.
+
+That's hardly a conclusive argument, but it seems like a good enough one to leave off the survey here, and return to the main narrative of asking what follows if Knowledge Allows Exclusion.
+
+## From KAE to Interest-Relativity {#sec-from-kae-to-irt}
+
+If Knowledge Allows Exclusion, then there is a simple argument that Anisa loses knowledge when playing the red-blue game. The following would be a bad table for Anisa to use when deciding what to do.
 
 |            |       |         |
 |-----------:|:-----:|:-------:|
@@ -152,7 +204,7 @@ If knowledge structures decision tables, then there is a simple argument that An
 
 : What the Red-Blue game looks like if Anisa assumes that the Battle of Agincourt was in 1415. {#tbl-assume-agincourt}
 
-If she used that table, then it would look like Blue-True is the weakly dominant option. And that would mean that Blue-True is at least a rational choice, and perhaps the rational choice. Since Blue-True is not a rational choice, this table must be wrong. But if Anisa knows that the Battle of Agincourt was in 1415, and knowledge structures decision tables, then everything on this table is correct. So Anisa does not know that the Battle of Agincourt was in 1415.
+If she used that table, then it would look like Blue-True is the weakly dominant option. And that would mean that Blue-True is at least a rational choice, and perhaps the rational choice. Since Blue-True is not a rational choice, this table must be wrong. But if Anisa knows that the Battle of Agincourt was in 1415, and knowledge structures decision tables, then everything on this table is correct. So Anisa does not know that the Battle of Agincourt was in 1415. Since she does know this when not playing the game, her knowledge is interest-relative.
 
 ## Theoretical Knowledge {#sec-theoreticalknowledge}
 
