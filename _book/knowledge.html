@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.523">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -68,7 +69,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -77,8 +84,10 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
@@ -92,13 +101,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./knowledge.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./knowledge.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Knowledge</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -107,7 +116,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
@@ -165,8 +174,8 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./overture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -232,7 +241,7 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -272,23 +281,29 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<p>In <a href="beliefs.html">chapter&nbsp;<span>3</span></a>, I argued that to believe something is to take it as given in all relevant inquiries, and in at least one possible inquiry. And I explained what it was to take something as given in terms of how one answers conditional and unconditional questions. In this chapter I’m going to argue that whatever is known can be properly taken as given in all relevant inquiries, where a relevant inquiry is one that one either is or should be conducting. Since some things that are usually known cannot be properly taken as given in some inquiries, this implies that knowledge is sensitive to one’s inquiries and hence to one’s interests.</p>
+
+<p>In <a href="beliefs.html" class="quarto-xref"><span>Chapter&nbsp;3</span></a>, I argued that to believe something is to take it as given in all relevant inquiries, and in at least one possible inquiry. And I explained what it was to take something as given in terms of how one answers conditional and unconditional questions. In this chapter I’m going to argue that whatever is known can be properly taken as given in all relevant inquiries, where a relevant inquiry is one that one either is or should be conducting. Since some things that are usually known cannot be properly taken as given in some inquiries, this implies that knowledge is sensitive to one’s inquiries and hence to one’s interests.</p>
 <p>There is an easy argument for the conclusion of this chapter.</p>
 <ol type="1">
 <li>To believe something is to, inter alia, take it as given for all relevant inquiries.</li>
 <li>Whatever is known is correctly believed.</li>
 <li>So, whatever is known is correctly taken as given in all relevant inquiries.</li>
 </ol>
-<p>I think this argument is basically sound. But both premises are controversial, and it isn’t completely obvious that it is even valid. So I’m not going to rely on this argument. Rather, I’ll argue more directly for the conclusion that whatever is known is correctly taken as given in all relevant inquiries. This will provide indirect evidence that the theory of belief in <a href="beliefs.html">chapter&nbsp;<span>3</span></a> was correct, since we can now take that theory of belief to be an explanation for the claim that whatever is known is correctly taken as given in all relevant inquiries, rather than as part of the motivation for it.</p>
+<p>I think this argument is basically sound. But both premises are controversial, and it isn’t completely obvious that it is even valid. So I’m not going to rely on this argument. Rather, I’ll argue more directly for the conclusion that whatever is known is correctly taken as given in all relevant inquiries. This will provide indirect evidence that the theory of belief in <a href="beliefs.html" class="quarto-xref"><span>Chapter&nbsp;3</span></a> was correct, since we can now take that theory of belief to be an explanation for the claim that whatever is known is correctly taken as given in all relevant inquiries, rather than as part of the motivation for it.</p>
 <p>The argument here will be in two parts. First, I’ll focus on practical inquiries, i.e., inquiries about what to do, and argue that what is known can be taken as given in all practical inquiries. Then I’ll extend the discussion to theoretical inquiries, and hence to inquiries in general. Then with the argument complete, I’ll look at two possible objections to the argument - that it has implausible consequences about the role of logical reasoning in extending knowledge, and that it leads to implausible results when a source provides both relevant and irrelevant information.</p>
 <section id="sec-makdec" class="level2 page-columns page-full" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="sec-makdec"><span class="header-section-number">4.1</span> Ten Decision Commandments</h2>
-<div class="page-columns page-full"><p>A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Here, for instance, is a table for the problem faced by a person, call him Ragnar, choosing how to get to work.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;This section is loosely based on §1.1 of my <span class="citation" data-cites="Weatherson2012">(<a href="references.html#ref-Weatherson2012" role="doc-biblioref">2012</a>)</span>.</p></li></div></div>
-<div id="tbl-walkbus" class="anchored">
+<p>A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Here, for instance, is a table for the problem faced by a person, call him Ragnar, choosing how to get to work.</p>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;This section is loosely based on §1.1 of my <span class="citation" data-cites="Weatherson2012">(<a href="references.html#ref-Weatherson2012" role="doc-biblioref">2012</a>)</span>.</p></li></div><div id="tbl-walkbus" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-walkbus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: Ragnar’s trip to work
+</figcaption>
+<div aria-describedby="tbl-walkbus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;4.1: Ragnar’s trip to work</caption>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">&nbsp;</td>
@@ -308,19 +323,21 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>If we tell the students that the probability of rain is 0.4, we expect them to figure out that the expected utility of walking is 3, and the expected utility of taking the bus is 3.6, so it is better to take the bus. And that’s a little surprising, since it probably won’t rain, and if it doesn’t, it is better to walk. But walking is risky, and in this case expected utility theory say that it isn’t a risk worth taking.</p>
-<div class="page-columns page-full"><p><a href="#tbl-walkbus">Table&nbsp;<span>4.1</span></a> can serve two related philosophical purposes, which we can helpfully distinguish using terminology from Peter Railton <span class="citation" data-cites="Railton1984">(<a href="references.html#ref-Railton1984" role="doc-biblioref">1984</a>)</span>. The table can provide a <em>criterion of rightness</em> for Ragnar’s actions. It is rational for him to take the bus because of the calculation that I mentioned in the previous paragraph. The table can do more than that though. In simple cases like this one, it can provide a <em>deliberation procedure</em>. Ragnar can, in theory and in simple cases, use a table like this to decide what to do. There are limits to when tables can be used in this way, and as I’ll argue in <a href="ties.html">chapter&nbsp;<span>6</span></a>, those limits end up suggesting limits to how often the tables even provide criteria of rightness. In simple cases though, the table isn’t just something the theorist can use to understand Ragnar, it is something Ragnar himself can use to deliberate. This is especially true in cases where one of the options is dominated, either strictly or weakly, by another.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> I’ve appealed to the fact that the tables can be deliberation procedures, and not just criteria of rightness, already, in the discussion of Sully and Mack in <a href="beliefs.html#sec-given">section&nbsp;<span>3.4</span></a>. There the focus was on how tables like these related to belief; here I want to relate them to knowledge.</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;An option is strictly dominated by another if it does worse than that option in every state. It is weakly dominated by another if it does worse than that option in some states, and never does better than it.</p></li></div></div>
-<p>There are (at least) ten ways in which <a href="#tbl-walkbus">table&nbsp;<span>4.1</span></a> could misrepresent Ragnar’s situation. To put the same point another way, there are (at least) tend ways in which it could correctly represent his situation. One way to think about the core project of this book is to say what it means for a table to correctly represent a decision situation in one of these ten respects. It is a little easier to think about the misrepresentations, so I’ll start with them.</p>
-<div class="page-columns page-full"><p>First, the numbers in the table might be wrong. The table says that, conditional on catching the bus, Ragnar is better off it is dry than if it rains. Maybe that isn’t true. The theory of well-being <span class="citation" data-cites="sep-well-being">(<a href="references.html#ref-sep-well-being" role="doc-biblioref">Crisp 2021</a>)</span> is about, among other things, when the numbers in the cells of tables like this are correct. That’s a big topic, and not one I’m going to have anything to say about here.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;As well as questions about well-being, there are also questions here about what one should do in cases where the outcome is itself a kind of gamble. Imagine that chooser is trying to decide whether to bet on a basketball game, and it is known how much money they will win or lose in the four states. The value to the chooser of those outcomes depends on any number of further things, like the rate of inflation in the near term, and the “position of wealth holders in the social system” <span class="citation" data-cites="Keynes1937">(<a href="references.html#ref-Keynes1937" role="doc-biblioref">Keynes 1937, 214</a>)</span> some years hence. Just how these uncertainties should be accounted for is a difficult question, especially for any theorist who deviates in any way from orthodox expected utility theory. I would like to have a better theory of how the account of decision making with deliberation costs that I discuss in <a href="ties.html">chapter&nbsp;<span>6</span></a> interacts with this question.</p></li></div></div>
-<p>Second, the probabilities might be wrong. Maybe it isn’t the case that the probability of rain is 0.4, and in fact it is 0.2. There is an enormous question here about what it even means for one to misrepresent the probabilities. Is the correct representation one that tracks objective chances, or Ragnar’s evidence, or Ragnar’s beliefs, or something else, or some combination of these? One upside of focussing on dominance arguments is that these questions can be temporarily set aside.</p>
+<p><a href="#tbl-walkbus" class="quarto-xref">Table&nbsp;<span>4.1</span></a> can serve two related philosophical purposes, which we can helpfully distinguish using terminology from Peter Railton <span class="citation" data-cites="Railton1984">(<a href="references.html#ref-Railton1984" role="doc-biblioref">1984</a>)</span>. The table can provide a <em>criterion of rightness</em> for Ragnar’s actions. It is rational for him to take the bus because of the calculation that I mentioned in the previous paragraph. The table can do more than that though. In simple cases like this one, it can provide a <em>deliberation procedure</em>. Ragnar can, in theory and in simple cases, use a table like this to decide what to do. There are limits to when tables can be used in this way, and as I’ll argue in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a>, those limits end up suggesting limits to how often the tables even provide criteria of rightness. In simple cases though, the table isn’t just something the theorist can use to understand Ragnar, it is something Ragnar himself can use to deliberate. This is especially true in cases where one of the options is dominated, either strictly or weakly, by another.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> I’ve appealed to the fact that the tables can be deliberation procedures, and not just criteria of rightness, already, in the discussion of Sully and Mack in <a href="beliefs.html#sec-given" class="quarto-xref"><span>Section&nbsp;3.4</span></a>. There the focus was on how tables like these related to belief; here I want to relate them to knowledge.</p>
+<div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;An option is strictly dominated by another if it does worse than that option in every state. It is weakly dominated by another if it does worse than that option in some states, and never does better than it.</p></li></div><p>There are (at least) ten ways in which <a href="#tbl-walkbus" class="quarto-xref">Table&nbsp;<span>4.1</span></a> could misrepresent Ragnar’s situation. To put the same point another way, there are (at least) tend ways in which it could correctly represent his situation. One way to think about the core project of this book is to say what it means for a table to correctly represent a decision situation in one of these ten respects. It is a little easier to think about the misrepresentations, so I’ll start with them.</p>
+<p>First, the numbers in the table might be wrong. The table says that, conditional on catching the bus, Ragnar is better off it is dry than if it rains. Maybe that isn’t true. The theory of well-being <span class="citation" data-cites="sep-well-being">(<a href="references.html#ref-sep-well-being" role="doc-biblioref">Crisp 2021</a>)</span> is about, among other things, when the numbers in the cells of tables like this are correct. That’s a big topic, and not one I’m going to have anything to say about here.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;As well as questions about well-being, there are also questions here about what one should do in cases where the outcome is itself a kind of gamble. Imagine that chooser is trying to decide whether to bet on a basketball game, and it is known how much money they will win or lose in the four states. The value to the chooser of those outcomes depends on any number of further things, like the rate of inflation in the near term, and the “position of wealth holders in the social system” <span class="citation" data-cites="Keynes1937">(<a href="references.html#ref-Keynes1937" role="doc-biblioref">Keynes 1937, 214</a>)</span> some years hence. Just how these uncertainties should be accounted for is a difficult question, especially for any theorist who deviates in any way from orthodox expected utility theory. I would like to have a better theory of how the account of decision making with deliberation costs that I discuss in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a> interacts with this question.</p></li></div><p>Second, the probabilities might be wrong. Maybe it isn’t the case that the probability of rain is 0.4, and in fact it is 0.2. There is an enormous question here about what it even means for one to misrepresent the probabilities. Is the correct representation one that tracks objective chances, or Ragnar’s evidence, or Ragnar’s beliefs, or something else, or some combination of these? One upside of focussing on dominance arguments is that these questions can be temporarily set aside.</p>
 <p>The next four questions concern the rows. There is much less philosophical work on this. Brian Hedden <span class="citation" data-cites="Hedden2012">(<a href="references.html#ref-Hedden2012" role="doc-biblioref">2012</a>)</span> has a paper arguing that the options should all be decisions, rather than actions like walking. This would be a fairly radical change, though one worth taking seriously. The more conservative option would be to link the rows to some or other philosophical theory of abilities <span class="citation" data-cites="sep-abilities">(<a href="references.html#ref-sep-abilities" role="doc-biblioref">Maier 2022</a>)</span>. In some sense it seems right to say that there should be a row for all and only the actions that Ragnar is able to perform. The details are going to be tricky though. This book is focussed on the columns rather than the rows, but I want to briefly mention four important topics about the rows, which will constitute our third through sixth ways the table might misrepresent Ragnar’s situation.</p>
 <p>Third, the table might leave off an option that should be there. Perhaps Ragnar should, or at least should consider, driving to work. Or perhaps it should include the option of quitting his job immediately, and hence not going to work.</p>
 <p>Fourth, the table might include an option that should not be there. If the bus route near Ragnar’s house has just been cancelled, perhaps the table should not include a row for the bus.</p>
 <p>Fifth, the table might have merged multiple options that should be separated. Perhaps it should have separate rows for walking with an umbrella, and walking without an umbrella. This differs from the third point, because it does not say that Ragnar should do (or consider) something wholly distinct from what is already there, but rather that it should separate out different ways of bringing about something that is considered.</p>
-<p>Sixth, the table might have separated multiple options that should be merged. It’s hard to see how <a href="#tbl-walkbus">table&nbsp;<span>4.1</span></a> could have made this mistake, but if we had separate rows for walking while wearing a red shirt, and walking while wearing a blue shirt, it would be arguable that this is too fine a grain, and the right table would not distinguish these.</p>
+<p>Sixth, the table might have separated multiple options that should be merged. It’s hard to see how <a href="#tbl-walkbus" class="quarto-xref">Table&nbsp;<span>4.1</span></a> could have made this mistake, but if we had separate rows for walking while wearing a red shirt, and walking while wearing a blue shirt, it would be arguable that this is too fine a grain, and the right table would not distinguish these.</p>
 <p>The final four questions concern the columns, and they mirror the four questions about the rows. These questions will be central to the narrative of this chapter, and of this whole book.</p>
-<div class="page-columns page-full"><p>Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, and perhaps they should be included.</p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;As noted back in <a href="beliefs.html#sec-given">section&nbsp;<span>3.4</span></a>, I’m using ‘possibilities’ here in the sense described by <span class="citation" data-cites="Humberstone1981">Humberstone (<a href="references.html#ref-Humberstone1981" role="doc-biblioref">1981</a>)</span>.</p></li></div></div>
-<p>Eighth, the table might include a state that should not be there. If it is bucketing down as Ragnar is preparing to leave, including a state where it is dry might be a mistake.</p>
+<p>Seventh, the table might leave off a state that should be there. Perhaps Ragnar should consider the possibility that it will snow, or that there will be an ice storm. Taking the only two states to be rain and dry excludes those possibilities<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, and perhaps they should be included.</p>
+<div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;As noted back in <a href="beliefs.html#sec-given" class="quarto-xref"><span>Section&nbsp;3.4</span></a>, I’m using ‘possibilities’ here in the sense described by <span class="citation" data-cites="Humberstone1981">Humberstone (<a href="references.html#ref-Humberstone1981" role="doc-biblioref">1981</a>)</span>.</p></li></div><p>Eighth, the table might include a state that should not be there. If it is bucketing down as Ragnar is preparing to leave, including a state where it is dry might be a mistake.</p>
 <p>Ninth, the table might have merged states that should be separated. Perhaps the column that simply says <em>Dry</em> should have been split into two: one being <em>Dry and Sunny</em>, the other being <em>Dry and Cloudy</em>.</p>
 <p>Tenth, the table might have split states that should be merged. It’s unlikely that a two state table will do this, but if we had made the split suggested in the previous paragraph, one could easily argue that it was a mistake, and that Ragnar should have treated these as a single state.</p>
 <p>That gives us ten ways that the table could go wrong. It’s helpful to have them in a simple list.</p>
@@ -337,8 +354,8 @@ div.csl-indent {
 <li>The states might be too fine-grained.</li>
 </ol>
 <p>For every one of these ten possible mistakes, there is a prior philosophical question about what it means for the table to have made, or not made, that mistake. Every one of those ten questions is, at least to my mind, incredibly philosophically important. Even someone who thought, like Foxwell, that books should only be written for “grave cause” <span class="citation" data-cites="Keynes1936Foxwell">(<a href="references.html#ref-Keynes1936Foxwell" role="doc-biblioref">Keynes 1936, 599</a>)</span>, should concede that a clear answer to any one of the ten would be sufficient grounds to warrant a scholarly monograph.</p>
-<div class="page-columns page-full"><p>This book is primarily concerned with the seventh, though the argument touches to some extent on the eighth as well. It is proper to exclude a possibility from the table if the chooser knows that possibility does not obtain. If that conditional could be turned into a biconditional, we’d have an answer to the eighth question, too, but that is a more delicate question.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> In any case, the conditional will be enough.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;Back in <a href="interests.html#sec-neutrality">section&nbsp;<span>2.7</span></a> I said I was staying neutral on that question, and I’m not changing that position here.</p></li></div></div>
-</section>
+<p>This book is primarily concerned with the seventh, though the argument touches to some extent on the eighth as well. It is proper to exclude a possibility from the table if the chooser knows that possibility does not obtain. If that conditional could be turned into a biconditional, we’d have an answer to the eighth question, too, but that is a more delicate question.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> In any case, the conditional will be enough.</p>
+<div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;Back in <a href="interests.html#sec-neutrality" class="quarto-xref"><span>Section&nbsp;2.7</span></a> I said I was staying neutral on that question, and I’m not changing that position here.</p></li></div></section>
 <section id="sec-icecream" class="level2 page-columns page-full" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-icecream"><span class="header-section-number">4.2</span> Knowing Where the Ice Cream Goes</h2>
 <p>The aim of this section is to argue for the following principle.</p>
@@ -350,11 +367,15 @@ div.csl-indent {
 </dl>
 <p>Knowledge Allows Exclusion is Jessica Brown’s principle K Suff applied to practical decision making using tables. That’s a fairly central case for K Suff, so if KAE is true, then it seems plausible that K Suff will be true too. I’ll come back to the more general case for K Suff in later sections, though; here the focus is KAE. I’m going to build up to KAE in stages; first I’m going to talk about ice cream.</p>
 <p>The contemporary theory of duopoly starts with Harold Hotelling’s paper “Stability in Competition” <span class="citation" data-cites="Hotelling1929">(<a href="references.html#ref-Hotelling1929" role="doc-biblioref">1929</a>)</span>. Hotelling describes how a duopoly that does not maximise consumer welfare can be stable if the two parties have the ability to differentiate their product along one dimension. Surprisingly, the equilibrium is that they do not in fact take advantage of this ability. Having the ability, however, means that neither party has the incentive they would normally have to reduce prices to the point where consumer surplus is maximised. Hotelling is interested in possible equilibria, and he doesn’t focus on how the parties might calculate the equilibria. (The impression one gets from the paper is that it will involve a good chunk of trial-and-error.) It turns out that in some duopoly situations, not much is needed to get to the equilibrium; just iterated deletion of dominated strategies.</p>
-<div class="page-columns page-full"><p>Here is the standard way Hotelling’s model is introduced in textbooks.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Imagine that two ice cream trucks have to choose (simultaneously) where they will be located on a beach. The beach has seven locations, numbered 1 to 7. The distance between location <em>m</em> and location <em>n</em> is |<em>m</em> - <em>n</em>|. Assume for simplicity that the price of ice cream is fixed, the trucks just compete on location. There are two beach-goers at each of locations 1 to 7, so 14 in total. Each beach-goer will buy an ice cream from the nearest truck. If two trucks are equidistant from a location, the two people there will head off in either direction, one buying from each truck. Question: Where should the two trucks go, assuming that it is common knowledge that each truck owner is rational, and simply wants to maximise their own sales?</p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;This particular example isn’t in Hotelling, but it is in so many textbooks that I haven’t been able to find out where it was first introduced. It differs from his examples in that the parties do not have the capacity to compete on price.</p></li></div></div>
-<p>This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. Here is the table for how many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we’re in, the choice of the second truck determines which column of the table we’re in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck.</p>
+<p>Here is the standard way Hotelling’s model is introduced in textbooks.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Imagine that two ice cream trucks have to choose (simultaneously) where they will be located on a beach. The beach has seven locations, numbered 1 to 7. The distance between location <em>m</em> and location <em>n</em> is |<em>m</em> - <em>n</em>|. Assume for simplicity that the price of ice cream is fixed, the trucks just compete on location. There are two beach-goers at each of locations 1 to 7, so 14 in total. Each beach-goer will buy an ice cream from the nearest truck. If two trucks are equidistant from a location, the two people there will head off in either direction, one buying from each truck. Question: Where should the two trucks go, assuming that it is common knowledge that each truck owner is rational, and simply wants to maximise their own sales?</p>
+<div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;This particular example isn’t in Hotelling, but it is in so many textbooks that I haven’t been able to find out where it was first introduced. It differs from his examples in that the parties do not have the capacity to compete on price.</p></li></div><p>This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. Here is the table for how many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we’re in, the choice of the second truck determines which column of the table we’re in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck.</p>
 <div id="tbl-hotelling" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hotelling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.2: Payouts in the Hotelling game
+</figcaption>
+<div aria-describedby="tbl-hotelling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;4.2: Payouts in the Hotelling game</caption>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;"></td>
@@ -407,11 +428,17 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>Assume that it is common knowledge, in the sense of <span class="citation" data-cites="Lewis1969a">Lewis (<a href="references.html#ref-Lewis1969a" role="doc-biblioref">1969</a>)</span>, that this is the payout table, and that each player will not make choices that are strictly dominated. That is, for each <em>n</em>, the proposition we get by having <em>n</em> iterations of <em>each player knows</em> in front of <em>this is the game table, and each player is rational</em>, is true. Then the theorist, and each player, can reason as follows.</p>
 <p>Row’s option 1 is strictly dominated by option 2; option 2 gets 1 more sale in three possible states, and 3 more sales in the other two, so it should be excluded. The same goes for option 5, which is strictly dominated by option 4. And, since the game is symmetric, the same goes for Column’s options 1 and 5. By the common knowledge assumption, this means we can delete those rows, and columns, from the table. The result is the following table.</p>
 <div id="tbl-hotelling-iterated" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hotelling-iterated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.3: The Hotelling game after one iteration
+</figcaption>
+<div aria-describedby="tbl-hotelling-iterated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;4.3: The Hotelling game after one iteration</caption>
 <tbody>
 <tr class="odd">
 <td></td>
@@ -440,11 +467,13 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>And for both players, option 3 dominates the other two options, so it will be chosen. Moreover, the reasoning here generalises. If there are 7 options to start with, we need to do two rounds of deleting dominated options to get the players to the middle of the beach. If there are 9 options to start with, we need to do three rounds of deletion. In general, if there are 2<em>k</em>+1 options, we get the players to the middle of the beach after <em>k</em> rounds of deletion. Since common knowledge licences all these iterations, the players will always end up in the middle of the beach if there are an odd number of options.</p>
 <p>At this point you might be worried for two reasons. Practically, this seems like it proves too much. Contra the conclusion of Hotelling’s paper, it’s not true that shoes, churches, and cider mills are as homogenous as this argument would suggest. Theoretically, there are plenty of reasons to be worried about common knowledge as Lewis understood it. Harvey Lederman <span class="citation" data-cites="Lederman2018">(<a href="references.html#ref-Lederman2018" role="doc-biblioref">2018</a>)</span> shows that assuming common knowledge, in Lewis’s sense, of dominance avoidance leads to paradoxes. Let’s see whether we can get by with less.</p>
-<p>Assume that it is not common knowledge, but merely mutual knowledge that the payout table is as in <a href="#tbl-hotelling">Table&nbsp;<span>4.2</span></a>, and the players do not take dominated options. That is, each player knows both those things. And that’s all we’ll assume. Since knowledge is factive, we can still rule out the extreme options, i.e., 1 and 5. And given that each player knows the other will not take dominated options, each player knows that it is only options 2 through 4 that are relevant. So given just the mutual knowledge assumption, we can show that from each player’s perspective, they are playing the game depicted in <a href="#tbl-hotelling-iterated">Table&nbsp;<span>4.3</span></a>. And in that game, option 3 is strictly dominant. So this assumption is enough to get us back to the middle of the beach. Note, however, that this reasoning does not generalise. Given merely mutual knowledge of non-dominance, we can show that neither player will take options 1 or 2, or the second-last or last options, but we can’t show any more than that. So in the 7 option game, we can only show that they will both end up somewhere between options 3 and 5. And in the games with much larger numbers of options, we can’t show much at all. That seems both empirically and theoretically more plausible.</p>
-<div class="page-columns page-full"><p>The argument of the last paragraph is meant to serve two distinct, but related, philosophical purposes.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> It is meant to show that we theorists can deduce what the players will in fact do, given their evidence, and the assumptions about rationality. And it is meant to show that it would be rational for the players themselves to get to that conclusion via just that reasoning. It is important, in general, to distinguish between what is entailed by some assumptions, and what can be reasonably inferred from those assumptions <span class="citation" data-cites="Stalnaker1975">Harman (<a href="references.html#ref-Harman1986" role="doc-biblioref">1986</a>)</span>. In this case, though, I want to claim that the reasoning I’ve set out in that paragraph plays both roles. As theorists, we can tell that the players will not player either the extreme, or the next to extreme, option, and no more. And the players themselves should not go to any of those 4 spots, but we can’t tell more than that without knowing more about the players.</p><div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;I’m indebted here to conversations with Eric Swanson.</p></li></div></div>
-<p>But wait a minute! Without KAE, the last two paragraphs consist of one fallacious step after another. The player knows that the other player will not play an extreme option. And they know that if the extreme options are excluded, option 2 is strictly dominated. Without KAE, it doesn’t follow that they can simply delete the extreme options. To delete an option just is to exclude it from the table. Without KAE, the fact that the player knows an option doesn’t obtain isn’t a sufficient reason to make this deletion. Since it is, in practice, a sufficient reason, it follows that KAE is true. Or, at least, that a restricted version of KAE applied to this case is true. Since the case seems arbitrary, it follows that KAE is true in general.</p>
+<p>Assume that it is not common knowledge, but merely mutual knowledge that the payout table is as in <a href="#tbl-hotelling" class="quarto-xref">Table&nbsp;<span>4.2</span></a>, and the players do not take dominated options. That is, each player knows both those things. And that’s all we’ll assume. Since knowledge is factive, we can still rule out the extreme options, i.e., 1 and 5. And given that each player knows the other will not take dominated options, each player knows that it is only options 2 through 4 that are relevant. So given just the mutual knowledge assumption, we can show that from each player’s perspective, they are playing the game depicted in <a href="#tbl-hotelling-iterated" class="quarto-xref">Table&nbsp;<span>4.3</span></a>. And in that game, option 3 is strictly dominant. So this assumption is enough to get us back to the middle of the beach. Note, however, that this reasoning does not generalise. Given merely mutual knowledge of non-dominance, we can show that neither player will take options 1 or 2, or the second-last or last options, but we can’t show any more than that. So in the 7 option game, we can only show that they will both end up somewhere between options 3 and 5. And in the games with much larger numbers of options, we can’t show much at all. That seems both empirically and theoretically more plausible.</p>
+<p>The argument of the last paragraph is meant to serve two distinct, but related, philosophical purposes.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> It is meant to show that we theorists can deduce what the players will in fact do, given their evidence, and the assumptions about rationality. And it is meant to show that it would be rational for the players themselves to get to that conclusion via just that reasoning. It is important, in general, to distinguish between what is entailed by some assumptions, and what can be reasonably inferred from those assumptions <span class="citation" data-cites="Stalnaker1975">Harman (<a href="references.html#ref-Harman1986" role="doc-biblioref">1986</a>)</span>. In this case, though, I want to claim that the reasoning I’ve set out in that paragraph plays both roles. As theorists, we can tell that the players will not player either the extreme, or the next to extreme, option, and no more. And the players themselves should not go to any of those 4 spots, but we can’t tell more than that without knowing more about the players.</p>
+<div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;I’m indebted here to conversations with Eric Swanson.</p></li></div><p>But wait a minute! Without KAE, the last two paragraphs consist of one fallacious step after another. The player knows that the other player will not play an extreme option. And they know that if the extreme options are excluded, option 2 is strictly dominated. Without KAE, it doesn’t follow that they can simply delete the extreme options. To delete an option just is to exclude it from the table. Without KAE, the fact that the player knows an option doesn’t obtain isn’t a sufficient reason to make this deletion. Since it is, in practice, a sufficient reason, it follows that KAE is true. Or, at least, that a restricted version of KAE applied to this case is true. Since the case seems arbitrary, it follows that KAE is true in general.</p>
 <p>That’s my primary argument for KAE. In general, it is reasonable to do as many rounds of deletion of dominated strategies as we have iterations of mutual knowledge of rationality and the structure of the game table. That is, it is reasonable for the theorist to do exactly as many rounds of deletion as there are iterations of mutual knowledge of rationality among the players. Without KAE, that match up isn’t guaranteed, so KAE must be true.</p>
 </section>
 <section id="sec-other-answers" class="level2" data-number="4.3">
@@ -452,8 +481,12 @@ div.csl-indent {
 <p>[Say why alternatives to KAE fail]</p>
 <p>If knowledge structures decision tables, then there is a simple argument that Anisa loses knowledge when playing the red-blue game. The following would be a bad table for Anisa to use when deciding what to do.</p>
 <div id="tbl-assume-agincourt" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-assume-agincourt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: What the Red-Blue game looks like if Anisa assumes that the Battle of Agincourt was in 1415.
+</figcaption>
+<div aria-describedby="tbl-assume-agincourt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;4.4: What the Red-Blue game looks like if Anisa assumes that the Battle of Agincourt was in 1415.</caption>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">&nbsp;</td>
@@ -483,6 +516,8 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>If she used that table, then it would look like Blue-True is the weakly dominant option. And that would mean that Blue-True is at least a rational choice, and perhaps the rational choice. Since Blue-True is not a rational choice, this table must be wrong. But if Anisa knows that the Battle of Agincourt was in 1415, and knowledge structures decision tables, then everything on this table is correct. So Anisa does not know that the Battle of Agincourt was in 1415.</p>
 </section>
 <section id="sec-theoreticalknowledge" class="level2 page-columns page-full" data-number="4.4">
@@ -498,7 +533,7 @@ div.csl-indent {
 <p>It’s enough to get us a fairly strong, but also fairly natural, kind of interest-relativity. In normal circumstances, Anisa knows that the Battle of Agincourt was in 1415. Now imagine not that she’s playing the red-blue game, but thinking about how to play it. And she wonders what to do if the red sentence says that two plus two is four, and the blue sentence says that the Battle of Agincourt was in 1415. It would be a mistake for her to reason as follows: Well, the Battle of Agincourt was in 1415, so playing Blue-True will get me $50, and nothing will get me more than $50, so I should play Blue-True. And it looks like the problem is the first step; she just can’t take this for granted in this very context.</p>
 <p>This is a very obscure kind of question to wonder about. But there are more natural questions that lead to the same kind of result. Imagine that the day after reading the book, but before playing any weird game, Anisa starts wondering how likely it is that the book was correct. History books do make mistakes, and she wants to estimate how likely it is that this was a mistake. Again, it would be an error to reason as follows: Well, the Battle of Agincourt was in 1415, and that’s what the book says, so the book is certainly correct. And it looks like the problem is the first step; she just can’t take this for granted in this very context.</p>
 <p>But it’s not like she can only take for granted in that context things that are certain. If that were true, she couldn’t even start inquiry into how likely it is the book got this wrong. She has to take a bunch of stuff as beyond the scope of present inquiry. She should not question that the book says that the battle was in 1415, or that there was a Battle of Agincourt, or that it is a widely written about (but also widely mythologised) battle, or that 1415 is before the invention of the printing press and this might affect the reliability of records, and so on. None of these things are things that she knows with Cartesian certainty. Indeed, some of them are probably all-things-considered less likely than that the Battle of Agincourt was in 1415. So it’s not like there is some threshold of likelihood, or of evidential support, and inquiring into the likelihood of this statement implies that one can take for granted all and only things that clear this threshold. Rather, individual inquiries have their own logic, their own rules about what can and can’t be taken for granted.</p>
-<p>There is an interesting analogy here with the rules of evidence in criminal trials. Whether some facts can be admitted at a trial depends in part on what the trial is. For example, some jurisdictions allow evidence obtained in a search that illegally violated X’s rights to be used in a trial of Y, though it could not be used when X was on trial. The picture I have of knowledge is similar; what one knows is what one can use in inquiry, and what one can use changes depending on the question under discussion. I’ll have much more to say about this in <a href="inquiry.html">chapter&nbsp;<span>5</span></a>.</p>
+<p>There is an interesting analogy here with the rules of evidence in criminal trials. Whether some facts can be admitted at a trial depends in part on what the trial is. For example, some jurisdictions allow evidence obtained in a search that illegally violated X’s rights to be used in a trial of Y, though it could not be used when X was on trial. The picture I have of knowledge is similar; what one knows is what one can use in inquiry, and what one can use changes depending on the question under discussion. I’ll have much more to say about this in <a href="inquiry.html" class="quarto-xref"><span>Chapter&nbsp;5</span></a>.</p>
 <p>So the starting point is that what’s known is what can be used. What I’m going to ultimately defend is a much more restricted thesis. Using what is known provides immunity from a particular criticism: that your starting point might not be true. I’m going to say a little bit about why this immunity claim is correct, and then say much more about why I prefer this way of talking about the role of knowledge in reasoning.</p>
 <p>When one says that it is good to use what one knows in reasoning, there are two natural ways to interpret this. One is that using what one knows is all-things-considered good unless there is some independent reason to the contrary. The other is to say that there is a kind of badness in reasoning one avoids if one uses what one knows. I’m going to be defending the second kind of reading. That’s what I mean by saying that using what one knows provides immunity from a certain kind of criticism. The alternative requires that we can specify all the ways in which one might go wrong while using what one knows - those are the “independent reasons to the contrary”. And I don’t think that’s something we’re now in a position to do.</p>
 <p>The justification for the immunity claim is quite straightforward. It’s incoherent to say of someone that they know that <em>p</em>, but they shouldn’t have used <em>p</em> in reasoning because it might be false. That’s Moore-paradoxical, if not outright contradictory. And if it is incoherent to say <em>A, and X shouldn’t have done B because C</em>, then <em>A</em> is a defence to the criticism of <em>X</em> that she shouldn’t have done <em>B</em> because <em>C</em>. So knowing that <em>p</em> is a defence to the criticism that one shouldn’t have used <em>p</em> in reasoning because it might be false.</p>
@@ -533,13 +568,13 @@ div.csl-indent {
 <li>So, a football match is being played, as opposed to, e.g., an ersatz match for the purposes of filming a movie.</li>
 </ol>
 <p>As Wright points out, there is something wrong with the step from 2 to 3 here. As he also points out, it isn’t trivial to say just what it is that’s wrong. After all, 2 entails 3, and Ada knows that 2 entails 3. But it seems wrong to make just this <em>inference</em>.</p>
-<div class="page-columns page-full"><p>Here’s one natural suggestion about what’s wrong.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> It’s too simple to be the full story, but it’s a start. The transition Ada makes from 1 to 2 presupposes 3. And 1 is her only evidence for 2. When those two conditions are met, it is wrong to infer from 2 to 3. More generally, there is something wrong with inferring a conclusion from an intermediate step in reasoning if that conclusion must be presupposed in order to even reach that intermediate step.</p><div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;This is far from an original suggestion. See Weisberg <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">2010</a>)</span> for discussion of it, and of related proposals, and for more discussion of the literature on Wright’s examples.</p></li></div></div>
-<p>This is too rough as it stands to be a full theory of what is going on in cases like Ada’s. But the details aren’t important at this point. What is important is that there might be some kind of holistic constraint on reasoning. In some sense, Ada goes wrong in taking 2 for granted when she infers 3. But this doesn’t intuitively undermine her claim to know 2.</p>
+<p>Here’s one natural suggestion about what’s wrong.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> It’s too simple to be the full story, but it’s a start. The transition Ada makes from 1 to 2 presupposes 3. And 1 is her only evidence for 2. When those two conditions are met, it is wrong to infer from 2 to 3. More generally, there is something wrong with inferring a conclusion from an intermediate step in reasoning if that conclusion must be presupposed in order to even reach that intermediate step.</p>
+<div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;This is far from an original suggestion. See Weisberg <span class="citation" data-cites="Weisberg2010">(<a href="references.html#ref-Weisberg2010" role="doc-biblioref">2010</a>)</span> for discussion of it, and of related proposals, and for more discussion of the literature on Wright’s examples.</p></li></div><p>This is too rough as it stands to be a full theory of what is going on in cases like Ada’s. But the details aren’t important at this point. What is important is that there might be some kind of holistic constraint on reasoning. In some sense, Ada goes wrong in taking 2 for granted when she infers 3. But this doesn’t intuitively undermine her claim to know 2.</p>
 <p>One important commonality between the last two cases, the moral encroachment and the transmission failure cases, is that the reasoning is not subject to the following kind of criticism. The speaker can’t be criticised for taking as a premise something that might be false. Maybe there is something wrong with inferring something is probably true of an individual because it is true of most people in the group the individual is part of. But this restriction applies to the inference; not to the premises. We wouldn’t say to the person who made this inference, “You shouldn’t reason like that; it might not be true that most people in the group have this feature.” If we did say that, they would have an easy reply. And if Ada does do the problematic reasoning, it would be wrong to reply to her “You shouldn’t reason like this; it might not have been a goal.” She could simply, and correctly, say that it quite clearly was a goal.</p>
 <p>This is the key to the correct rule linking knowledge and reasoning. If the inquirer uses as a step in reasoning something that she knows to be true, then she is immune to a certain kind of criticism. She is immune to the criticism that the premise she used might not be true.</p>
 <p>What I started this section doing was saying that such a reasoner is immune to all criticism, then trying to work out exceptions to that principle. So an exception needed to be included to allow that the reasoner might be criticised for using an irrelevant reason. And the hope was that eventually a full list of such exceptions could be found. But this project seems wildly optimistic. I don’t know that we need to include further exceptions to handle the moral encroachment or transmission failure cases. But I also don’t know that we don’t need to include extra exceptions. And I have no idea, and no idea how to find out, whether we need yet more exceptions.</p>
 <p>Rather than say knowledge provides immunity to criticism except in these cases, and then try to fill out the list of cases, it’s better to say that knowledge provides a particular kind of immunity. If the reasoner knows that the premise they use is true, they can’t be criticised on the grounds that it might be false. This isn’t a trivial claim. There were several examples involving Anisa where she could be criticised for using a premise that might be false. And all of those seemed like legitimate criticisms even though the premise was one she knew before starting the inquiry. But it says nothing about cases like the moral encroachment case, or the transmission failure case, or other cases like them that may be discovered.</p>
-<p>So that’s the key principle I’ll be working with. One cannot be criticised for using what one knows in an inquiry on the grounds that one is using what might be false. That’s a bit of a mouthful, so sometimes I’ll simply say that one can rationally take for granted what one knows. I’ll have a lot more to say about this principle in the rest of this book, especially in <a href="evidence.html">chapter&nbsp;<span>9</span></a>.</p>
+<p>So that’s the key principle I’ll be working with. One cannot be criticised for using what one knows in an inquiry on the grounds that one is using what might be false. That’s a bit of a mouthful, so sometimes I’ll simply say that one can rationally take for granted what one knows. I’ll have a lot more to say about this principle in the rest of this book, especially in <a href="evidence.html" class="quarto-xref"><span>Chapter&nbsp;9</span></a>.</p>
 <p>But I’ll spend the rest of this chapter talking about how this principle relates to the idea that knowledge is closed under competent deduction. There are interesting examples that seem to show that the principle leads to several distinct kinds of violations of that principle. And I’ll argue that this is not right, and for any plausible closure principle, adding the idea that one can take for granted what one knows does not yield a new objection to that principle.</p>
 <p>The principle as stated is a little ambiguous, and to defend it I need to resolve that ambiguity. Surprisingly, I need to resolve it by taking the logically stronger disambiguation. Normally if a principle is ambiguous, and might lead to problems, the trick is to insist on the weaker reading. That’s not what’s about to happen.</p>
 <p>When I say that an inquirer can rationally take for granted the things they know, this should be understood collectively. That’s to say, I endorse the collective and not (merely) the individual version of the immunity to criticism principles stated here.</p>
@@ -553,7 +588,7 @@ div.csl-indent {
 <p>If an inquirer knows some things, then they can take all of those things for granted in conducting the inquiry.</p>
 </dd>
 </dl>
-<p>I’ll come back to the difference between these principles, and why I need to endorse the collective version, in <a href="#sec-andintro">subsection&nbsp;<span>4.5.2</span></a>. Until then I’ll be talking about single pieces of knowledge at a time.</p>
+<p>I’ll come back to the difference between these principles, and why I need to endorse the collective version, in <a href="#sec-andintro" class="quarto-xref"><span>Section&nbsp;4.5.2</span></a>. Until then I’ll be talking about single pieces of knowledge at a time.</p>
 </section>
 <section id="knowledge-and-closure" class="level2 page-columns page-full" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="knowledge-and-closure"><span class="header-section-number">4.5</span> Knowledge and Closure</h2>
@@ -568,12 +603,12 @@ div.csl-indent {
 <p>If one knows some premises and competently deduces <em>q</em> from those premises, thereby coming to believe <em>q</em>, while retaining one’s knowledge of those premises throughout, one comes to know that <em>q</em>. <span class="citation" data-cites="Hawthorne2005">(<a href="references.html#ref-Hawthorne2005" role="doc-biblioref">Hawthorne 2005, 43</a>)</span></p>
 </dd>
 </dl>
-<p>Hawthorne endorses the first of these, but has reservations about the second for reasons related to the preface paradox. I’m similarly going to endorse the first and have reservations about the second. But my reasons don’t have anything to do with the preface paradox. I argued in “Can We Do Without Pragmatic Encroachment” <span class="citation" data-cites="Weatherson2005-WEACWD">(<a href="references.html#ref-Weatherson2005-WEACWD" role="doc-biblioref">Weatherson 2005</a>)</span> that concerns about the preface paradox are over-rated, and I think those arguments still hold up. But I have a slightly different qualification than Hawthorne does to Multiple Premise Closure, and I will discuss that more in <a href="#sec-andintro">subsection&nbsp;<span>4.5.2</span></a>.</p>
+<p>Hawthorne endorses the first of these, but has reservations about the second for reasons related to the preface paradox. I’m similarly going to endorse the first and have reservations about the second. But my reasons don’t have anything to do with the preface paradox. I argued in “Can We Do Without Pragmatic Encroachment” <span class="citation" data-cites="Weatherson2005-WEACWD">(<a href="references.html#ref-Weatherson2005-WEACWD" role="doc-biblioref">Weatherson 2005</a>)</span> that concerns about the preface paradox are over-rated, and I think those arguments still hold up. But I have a slightly different qualification than Hawthorne does to Multiple Premise Closure, and I will discuss that more in <a href="#sec-andintro" class="quarto-xref"><span>Section&nbsp;4.5.2</span></a>.</p>
 <p>It is not trivial to prove that my version of IRT satisfies these closure conditions. One reason for this is that I have not stated a sufficient condition for knowledge. all that I have said is that knowledge is incompatible with a certain kind of caution. So in principle I cannot show that if some conditions obtain then someone knows something. What I can show is that introducing new conditions linking knowledge with relevant questions does not introduce new violations of the closure conditions.</p>
 <section id="sec-andelim" class="level3 page-columns page-full" data-number="4.5.1">
 <h3 data-number="4.5.1" class="anchored" data-anchor-id="sec-andelim"><span class="header-section-number">4.5.1</span> Single Premise Closure</h3>
-<div class="page-columns page-full"><p>But it turns out that even showing this is not completely trivial. Imagine yet another version of the red-blue game.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> In this game, both of the sentences are claims about history that are well supported without being certain. And both of them are supported in the very same way. It turns out to be a little distracting to use concrete examples in this case, so just call the claims A and B. Imagine that the player read both of these claims in the same reliable but not infallible history book, and she knows the book is reliable but not infallible, and she aims to maximise her expected returns. Then all four of the following things are true about the game.</p><div class="no-row-height column-margin column-container"><li id="fn9"><p><sup>9</sup>&nbsp;This game will resemble the examples that Zweber <span class="citation" data-cites="Zweber2016">(<a href="references.html#ref-Zweber2016" role="doc-biblioref">2016</a>)</span> and Anderson and Hawthorne <span class="citation" data-cites="AndersonHawthorne2019b">(<a href="references.html#ref-AndersonHawthorne2019b" role="doc-biblioref">2019</a>)</span> use to raise doubts about whether pragmatic theories like mine really do endorse single premise closure.</p></li></div></div>
-<ol type="1">
+<p>But it turns out that even showing this is not completely trivial. Imagine yet another version of the red-blue game.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> In this game, both of the sentences are claims about history that are well supported without being certain. And both of them are supported in the very same way. It turns out to be a little distracting to use concrete examples in this case, so just call the claims A and B. Imagine that the player read both of these claims in the same reliable but not infallible history book, and she knows the book is reliable but not infallible, and she aims to maximise her expected returns. Then all four of the following things are true about the game.</p>
+<div class="no-row-height column-margin column-container"><li id="fn9"><p><sup>9</sup>&nbsp;This game will resemble the examples that Zweber <span class="citation" data-cites="Zweber2016">(<a href="references.html#ref-Zweber2016" role="doc-biblioref">2016</a>)</span> and Anderson and Hawthorne <span class="citation" data-cites="AndersonHawthorne2019b">(<a href="references.html#ref-AndersonHawthorne2019b" role="doc-biblioref">2019</a>)</span> use to raise doubts about whether pragmatic theories like mine really do endorse single premise closure.</p></li></div><ol type="1">
 <li>Unconditionally, the player is indifferent between playing red-true and playing blue-true.</li>
 <li>Conditional on <em>A</em>, the player prefers red-true to blue-true, because red-true will certainly return $50 while blue-true is not completely certain to win the money.</li>
 <li>Conditional on <em>B</em>, the player prefers blue-true to red-true, because blue-true will certainly return $50 while red-true is not completely certain to win the money.</li>
@@ -593,7 +628,7 @@ div.csl-indent {
 <p>She will note, and rely on, the fact that she has equally good evidence for <em>A</em> as for <em>B</em>. That is why each option is equally good by her lights. The equality of evidence really matters. If she had read that <em>A</em> in three books, but only one of those books added that <em>B</em>, then the two options would not have the same expected returns. She should check that nothing like this is going on; that the evidence really is equally balanced.</p>
 <p>But nothing like this happens in answering 6. In that case, <em>A</em>&nbsp;∧&nbsp;<em>B</em> is stipulated to be given. So there is no question about how good the evidence for either is. When answering a question about what to do if a condition obtains, we don’t ask how good the evidence for the condition is. We just assume that it holds. So in answering 6, there is no step that acknowledges the equality of the evidence for both <em>A</em> and <em>B</em>.</p>
 <p>So in fact the player does not answer the two questions the same way. She ends up with the same conclusion, but she gets there by a different means. And that is enough, I say, to make it a different answer. If she knew <em>A</em>&nbsp;∧&nbsp;<em>B</em> she could follow exactly the same steps in answering 5 and 6, but she cannot.</p>
-<p>What should we say if she does follow the same steps? If this is irrational, nothing changes, since what matters for knowledge is which questions should be answered the same way, not which questions are answered the same way. (It does matter for belief, but that is not the current topic.) So I will assume that it is possible for the player to rationally answer both questions the same way. (I will have much more to say about why this is a coherent assumption in <a href="ties.html">chapter&nbsp;<span>6</span></a>.)</p>
+<p>What should we say if she does follow the same steps? If this is irrational, nothing changes, since what matters for knowledge is which questions should be answered the same way, not which questions are answered the same way. (It does matter for belief, but that is not the current topic.) So I will assume that it is possible for the player to rationally answer both questions the same way. (I will have much more to say about why this is a coherent assumption in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a>.)</p>
 <p>The way she should answer 6 is to take <em>A</em>&nbsp;∧&nbsp;<em>B</em> as given. And hence she will take either option, red-true or blue-true, as being equivalent to just taking $50. And she knows that is the best she can do in the game. So in answering question 6, she will take it as given that both of these options are maximally good.</p>
 <p>By hypothesis, she is answering question 5 and question 6 the same way. So she will take it to be part of the setup of question 5 that both options return a sure $50 After all, that is part of the setup of question 6. But if she takes that as given, then conditionalising on either <em>A</em> or <em>B</em> does not change her expected returns. So now claims 2 and 3 are wrong; conditionalising on either conjunct won’t make a difference because she treats each conjunct as given.</p>
 <p>And that is the totally general case. Assume that someone has competently deduced <em>Y</em> from <em>X</em>, and they know <em>X</em>. So they are entitled to answer the questions <em>Q?</em> and <em>If X, Q?</em> by the same method. Since the method for the latter takes <em>X</em> as given, so can the method for the former. So they can answer <em>Q?</em> taking <em>X</em> as given. What one can appropriately take as given is closed under competent deduction? (Why? Because in the answer to <em>Q?</em> that starts with <em>X</em>, you can just go on to derive <em>Y</em>, and then see that it is also a way to answer <em>If Y, Q?</em>.) So they can answer <em>Q?</em> taking <em>Y</em> as given. So they can answer <em>Q?</em> in the same way they answer <em>If Y, Q?</em>.</p>
@@ -618,8 +653,8 @@ div.csl-indent {
 </ol>
 <p>Premise 1 is just a restatement of my version of IRT. And premise 3 should be uncontroversial. If one can take some premises for granted, then one (rationally) is ruling out possibilities where they are false. And to rule out possibilities where they are false just is to take their conjunction for granted. So those premises should be fairly uncontroversial. What is controversial is that the argument is sound, and, in particular, that premise 2 is correct.</p>
 <p>The conclusion is not that Multiple Premise Closure holds. Maybe you think it fails for some independent reason, distinct from IRT. I don’t think the other reasons that have been offered in the literature are compelling. But I am not building the failure of these reasons into IRT. So the main assumption behind the argument is that if adding the ‘take for granted’ clause to our theory of knowledge does not lead to closure violations, then nothing else in the theory does. And the argument for that is basically that there isn’t much more to the theory. So I think the argument is sound.</p>
-<div class="page-columns page-full"><p>But it might look like the argument must be wrong. After all, it is easy to cook up cases where it looks like IRT leads to a closure failure. Here is one such example. It is another version of the red-blue game. In this version, the red sentence is, once again,&nbsp;<em>Two plus two equals four</em>. And the blue sentence is a conjunction <em>A and B</em>, where both <em>A</em> and <em>B</em> express historical facts that the player has excellent, but not perfect, evidence for.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Now the following four claims all seem true.</p><div class="no-row-height column-margin column-container"><li id="fn10"><p><sup>10</sup>&nbsp;If you want to make this more concrete, pick a random history book off the shelf and choose two claims that are both reasonably specific - so there could easily be a mistake about the details - and not something that was independently warranted.</p></li></div></div>
-<ol type="1">
+<p>But it might look like the argument must be wrong. After all, it is easy to cook up cases where it looks like IRT leads to a closure failure. Here is one such example. It is another version of the red-blue game. In this version, the red sentence is, once again,&nbsp;<em>Two plus two equals four</em>. And the blue sentence is a conjunction <em>A and B</em>, where both <em>A</em> and <em>B</em> express historical facts that the player has excellent, but not perfect, evidence for.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Now the following four claims all seem true.</p>
+<div class="no-row-height column-margin column-container"><li id="fn10"><p><sup>10</sup>&nbsp;If you want to make this more concrete, pick a random history book off the shelf and choose two claims that are both reasonably specific - so there could easily be a mistake about the details - and not something that was independently warranted.</p></li></div><ol type="1">
 <li>Unconditionally, the only rational play is Red-True.</li>
 <li>Conditional on <em>A</em>, the only rational play is Red-True. Even given <em>A</em>, playing Blue-True requires betting that <em>B</em> is true, and that’s a pointless risk to run when playing Red-True only requires that two and two make four.</li>
 <li>Conditional on <em>B</em>, the only rational play is Red-True. Even given <em>B</em>, playing Blue-True requires betting that <em>A</em> is true, and that’s a pointless risk to run when playing Red-True only requires that two and two make four.</li>
@@ -632,9 +667,9 @@ div.csl-indent {
 <li>Similarly, they can take <em>B</em> for granted.</li>
 <li>But they cannot both take <em>A</em> for granted and take <em>B</em> for granted. If both those things are taken for granted, then they can rationally infer that Blue-True will have a maximal payout, and hence that it is a rational play. And they cannot infer that.</li>
 </ul>
-<p>It is cases like this one that required the clarification that I made at the end of <a href="#sec-theoreticalknowledge">section&nbsp;<span>4.4</span></a>. The player here cannot take both of <em>A</em> and <em>B</em> for granted. And so they don’t know both those things. So this is not a case where they know <em>A</em>, know <em>B</em>, and don’t know <em>A</em>&nbsp;∧&nbsp;<em>B</em>. Since they cannot take both <em>A</em> and <em>B</em> for granted, they do not know both of those things.</p>
-<div class="page-columns page-full"><p>The picture I’m presenting here is similar to the picture Thomas Kroedel <span class="citation" data-cites="Kroedel2012">(<a href="references.html#ref-Kroedel2012" role="doc-biblioref">2012</a>)</span> offers as a solution to the lottery paradox.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> He argues that we can solve the lottery paradox if we take justification to be a kind of permissibility, not a kind of obligation. And just as we can have individual permissions that don’t combine into a collective permission, we can have individually justified beliefs that are such that we can’t justifiably believe each of them. This isn’t exactly how I’d put it. For one thing, I’m talking about knowledge not justification. For another, it’s not that knowledge is a species of permission, as much as it behaves like permission in certain contexts, and those are just the contexts where counterexamples to And-Introduction Closure arise. But these are minor points of difference; I’m agreeing in large part with his picture.</p><div class="no-row-height column-margin column-container"><li id="fn11"><p><sup>11</sup>&nbsp;Different writers take different things to be <em>the</em> lottery paradox. In all cases, they concern what kind of non-probabilistic attitude an ideal agent would take towards the proposition that a particular ticket in a large, fair, lottery will lose. It seems unintuitive to say that they will not believe this, since the ticket might win. And this will lead to an inconsistency, since they will believe of every ticket that it will not win, but also believe that a ticket will win. But if you say it is not belief, you seem to either get scepticism, or the view that the ideal agent can believe <em>p</em>, and not believe <em>q</em>, even though they think <em>q</em> is more probable than <em>p</em>. Which of the four problems I just mentioned is most salient to a writer tends to depend on their background commitments, but most people defend views on which at least one of the problems is genuinely problematic.</p></li></div></div>
-<p>And thinking of things the way Kroedel suggests helps say something positive about what is going on in this game. So far I’ve said something negative - the player does not know both that <em>A</em> and that <em>B</em>. And that’s enough to show that the case is not a counterexample to And-Introduction Closure. A counterexample would, after all, have to be a case where the player knows both <em>A</em> and <em>B</em>. But saying what’s not the case is not a helpful way to say what is the case. To say something more positive, it helps to think about other cases where permissions do not agglomerate. To that end, I’ll talk through one case involving professional norms.</p>
+<p>It is cases like this one that required the clarification that I made at the end of <a href="#sec-theoreticalknowledge" class="quarto-xref"><span>Section&nbsp;4.4</span></a>. The player here cannot take both of <em>A</em> and <em>B</em> for granted. And so they don’t know both those things. So this is not a case where they know <em>A</em>, know <em>B</em>, and don’t know <em>A</em>&nbsp;∧&nbsp;<em>B</em>. Since they cannot take both <em>A</em> and <em>B</em> for granted, they do not know both of those things.</p>
+<p>The picture I’m presenting here is similar to the picture Thomas Kroedel <span class="citation" data-cites="Kroedel2012">(<a href="references.html#ref-Kroedel2012" role="doc-biblioref">2012</a>)</span> offers as a solution to the lottery paradox.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> He argues that we can solve the lottery paradox if we take justification to be a kind of permissibility, not a kind of obligation. And just as we can have individual permissions that don’t combine into a collective permission, we can have individually justified beliefs that are such that we can’t justifiably believe each of them. This isn’t exactly how I’d put it. For one thing, I’m talking about knowledge not justification. For another, it’s not that knowledge is a species of permission, as much as it behaves like permission in certain contexts, and those are just the contexts where counterexamples to And-Introduction Closure arise. But these are minor points of difference; I’m agreeing in large part with his picture.</p>
+<div class="no-row-height column-margin column-container"><li id="fn11"><p><sup>11</sup>&nbsp;Different writers take different things to be <em>the</em> lottery paradox. In all cases, they concern what kind of non-probabilistic attitude an ideal agent would take towards the proposition that a particular ticket in a large, fair, lottery will lose. It seems unintuitive to say that they will not believe this, since the ticket might win. And this will lead to an inconsistency, since they will believe of every ticket that it will not win, but also believe that a ticket will win. But if you say it is not belief, you seem to either get scepticism, or the view that the ideal agent can believe <em>p</em>, and not believe <em>q</em>, even though they think <em>q</em> is more probable than <em>p</em>. Which of the four problems I just mentioned is most salient to a writer tends to depend on their background commitments, but most people defend views on which at least one of the problems is genuinely problematic.</p></li></div><p>And thinking of things the way Kroedel suggests helps say something positive about what is going on in this game. So far I’ve said something negative - the player does not know both that <em>A</em> and that <em>B</em>. And that’s enough to show that the case is not a counterexample to And-Introduction Closure. A counterexample would, after all, have to be a case where the player knows both <em>A</em> and <em>B</em>. But saying what’s not the case is not a helpful way to say what is the case. To say something more positive, it helps to think about other cases where permissions do not agglomerate. To that end, I’ll talk through one case involving professional norms.</p>
 <p>Professor Paresseux is, like most academics, in a situation where professional morality requires he do his fair share, but is fairly open about what tasks he does that will constitute doing his fair share. Right now he has two requests for work, R1 and R2, and while he is not obliged to do both, he is obliged to do at least one. So he may turn down R1, and he may turn down R2, but he may not turn down both. So as not to keep the reader in suspense, let’s say up front that he is going to turn down both. Our question will be, what exactly does Professor Paresseux do that’s wrong?</p>
 <p>To make this a little more concrete, and a little more complicated, I want to add two features to the case. First, accepting R1 would be better than accepting R2. He is uniquely well placed to do R1, and it would create more work for others if he turns it down. (As, indeed, he will.) But the norms governing Professor Paresseux are not maximising norms, and he does not violate them if he accepts R2 and rejects R1. Second, Professor Paresseux first turns down R1, let’s say in the morning, and then later that day, let’s say after a hearty lunch, turns down R2. Given that, there are three models we can have for the case, all of which have some plausibility.</p>
 <p>The first model says that he was wrong to turn down R1. Here’s a little argument for that, using language that seems natural. He should have accepted one of the requests. And since he was well placed to perform R1, it’s also true that if he did one of them, it should have been R1. So he should have accepted R1, and turning it down was the mistake. Oddly, it turns out to have been made true that he did the wrong thing in turning down R1 by his latter decision to turn down R2, but that’s just an odd feature of the case.</p>
@@ -659,11 +694,11 @@ div.csl-indent {
 <section id="sec-closuresummary" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="sec-closuresummary"><span class="header-section-number">4.6</span> Summary</h2>
 <p>Putting all that together, IRT is consistent with Single Premise Closure and with And-Introduction Closure. Assuming that it is a harmless idealisation to treat anyone who uses multiple premises in reasoning as reasoning from the truth of all the conjunction of their premises, it follows that IRT is consistent with Multiple Premise Closure.</p>
-<p>But this isn’t quite the end of the story. Even if the arguments of the last two sections work, what they show is that there must be some way to explain away any apparent conflict between IRT and closure principles. The arguments do not, on their own, tell us what that explanation will look like, or whether it will have unacceptable consequences. And without such an explanation, we might be sceptical of the arguments of this chapter, and indeed of IRT itself. So I’ll come back several times to issues about closure. In <a href="ties.html">chapter&nbsp;<span>6</span></a>, I’ll go over what IRT says about cases like Zweber’s, and Anderson and Hawthorne’s, more thoroughly.</p>
+<p>But this isn’t quite the end of the story. Even if the arguments of the last two sections work, what they show is that there must be some way to explain away any apparent conflict between IRT and closure principles. The arguments do not, on their own, tell us what that explanation will look like, or whether it will have unacceptable consequences. And without such an explanation, we might be sceptical of the arguments of this chapter, and indeed of IRT itself. So I’ll come back several times to issues about closure. In <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a>, I’ll go over what IRT says about cases like Zweber’s, and Anderson and Hawthorne’s, more thoroughly.</p>
 <p>Before I get to that though, it is time to say more about a notion that has done a lot of work so far but which has not been adequately investigated: inquiry.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-AndersonHawthorne2019b" class="csl-entry" role="listitem">
 Anderson, Charity, and John Hawthorne. 2019. <span>“Pragmatic Encroachment and Closure.”</span> In <em>Pragmatic Encroachment in Epistemology</em>, edited by Brian Kim and Matthew McGrath, 107–15. New York: Routledge.
 </div>
@@ -784,6 +819,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -850,13 +912,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -935,10 +999,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -948,8 +1011,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -962,6 +1034,135 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1005,6 +1206,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1030,6 +1232,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1091,17 +1319,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./beliefs.html" class="pagination-link">
+      <a href="./beliefs.html" class="pagination-link  aria-label=" &lt;span="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./inquiry.html" class="pagination-link">
+      <a href="./inquiry.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Inquiry</span>">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Inquiry</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

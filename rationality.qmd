@@ -4,7 +4,7 @@ This chapter is about rational belief. My version of IRT allows a new kind of ga
 
 ## Atomism about Rational Belief {#sec-atomism}
 
-In [chapter @sec-belief] I suggested that the following two conditions were individually necessary for belief that *p*, and suggested they might be jointly sufficient.[^rationality-1]
+In @sec-belief I suggested that the following two conditions were individually necessary for belief that *p*, and suggested they might be jointly sufficient.[^rationality-1]
 
 [^rationality-1]: This section is based on §§3.1 of my [-@Weatherson2012].
 
@@ -64,7 +64,7 @@ However we explain Coraline's belief, the upshot is that she has a rational, tru
 
 So rational belief is not identical to rationally having the dispositions that constitute belief. But nor is rational belief a matter of rational high credence. In this section and the next I'll argue that even rational credence 1 does not suffice for rational belief. Then in the next section I'll run through some relatively familiar arguments that no threshold short of 1 could suffice for belief. If the argument of this section or the next is successful, those 'familiar arguments' will be unnecessary. But the two arguments I'm about to give are controversial even by the standards of a book arguing for IRT, so I'm including them as backups.
 
-The point of these sections is primarily normative, but it should have metaphysical consequences. I'm interested in arguing against the 'Lockean' thesis that to believe *p* just is to have a high credence in *p*. Normally, this threshold of high enough belief for credence is taken to be interest-invariant, so this is a rival to IRT. But there is some variation in the literature about whether the phrase *The Lockean Thesis* refers to a metaphysical claim, belief is high credence, or a normative claim, rational belief is rational high credence. Since everyone who accepts the metaphysical claim also accepts the normative claim, and usually takes it to be a consequence of the metaphysical claim, arguing against the normative claim is a way of arguing against the metaphysical claim. This section and the next argue that no matter how high the Lockean sets the threshold, their theory fails, since rational credence one does not entail rational belief. In [section @sec-lockepuzzles] I'll go over puzzles that arise for Lockean theories that set the threshold below one.
+The point of these sections is primarily normative, but it should have metaphysical consequences. I'm interested in arguing against the 'Lockean' thesis that to believe *p* just is to have a high credence in *p*. Normally, this threshold of high enough belief for credence is taken to be interest-invariant, so this is a rival to IRT. But there is some variation in the literature about whether the phrase *The Lockean Thesis* refers to a metaphysical claim, belief is high credence, or a normative claim, rational belief is rational high credence. Since everyone who accepts the metaphysical claim also accepts the normative claim, and usually takes it to be a consequence of the metaphysical claim, arguing against the normative claim is a way of arguing against the metaphysical claim. This section and the next argue that no matter how high the Lockean sets the threshold, their theory fails, since rational credence one does not entail rational belief. In @sec-lockepuzzles I'll go over puzzles that arise for Lockean theories that set the threshold below one.
 
 The first puzzle for Lockeans comes from an argument that Timothy Williamson [-@Williamson2007] made about certain kinds of infinitary events. A fair coin is about to be tossed. It will be tossed repeatedly until it lands heads twice. The coin tosses will get faster and faster, so even if there is an infinite sequence of tosses, it will finish in a finite time. (This isn't physically realistic, but this need not detain us. All that will really matter for the example is that someone could believe this will happen, and that's physically possible.)
 
@@ -152,7 +152,7 @@ One nice advantage of the epistemological interpretation, as noted by Binmore [-
 
 With that in mind, consider the below game, which I'll call Up-Down.[^rationality-8] Informally, in this game *A* and *B* must each play a card with an arrow pointing up, or a card with an arrow pointing down. I will capitalise *A*'s moves, i.e., *A* can play UP or DOWN, and italicise *B*'s moves, i.e., *B* can play *up* or *down*. If at least one player plays a card with an arrow facing up, each player gets \$1. If two cards with arrows facing down are played, each gets nothing. Each cares just about their own wealth, so getting \$1 is worth 1 util. All of this is common knowledge. More formally, here is the game table, with *A* on the row and *B* on the column.
 
-[^rationality-8]: In earlier work I'd called it Red-Green, but this is too easily confused with the Red-Blue game that plays such an important role in [chapter @sec-interests].
+[^rationality-8]: In earlier work I'd called it Red-Green, but this is too easily confused with the Red-Blue game that plays such an important role in @sec-interests.
 
 |      |      |        |
 |------|:----:|:------:|
@@ -174,7 +174,7 @@ For the rest of this section I want to reply to one objection, and weaken an ass
 
 I argued that if we knew that *A* would play UP, we could show that *A* had no reason to play UP. But actually what we showed was that the expected utility of playing UP would be the same as playing DOWN. Perhaps *A* has a reason to play UP, namely that UP weakly dominates DOWN. After all, there's one possibility on the table where UP does better than DOWN, and none where RED does better. And perhaps that's a reason, even if it isn't a reason that expected utility considerations are sensitive to.
 
-Since I rejected an unrestricted version of expected utility maximisation in [chapter @sec-ties], I better not assume it here. Perhaps this is a case where it fails. There are two reasons it might fail, and neither seems applicable here. One is that the players have deliberation costs. Those, however, can be easily assumed away. The arguments are pretty simple to follow, and the players can be realistically assumed to be able to follow them. A better reason, following a suggestion from Stalnaker, is that weak dominance reasoning might be a supplement to expected utility maximisation.
+Since I rejected an unrestricted version of expected utility maximisation in @sec-ties, I better not assume it here. Perhaps this is a case where it fails. There are two reasons it might fail, and neither seems applicable here. One is that the players have deliberation costs. Those, however, can be easily assumed away. The arguments are pretty simple to follow, and the players can be realistically assumed to be able to follow them. A better reason, following a suggestion from Stalnaker, is that weak dominance reasoning might be a supplement to expected utility maximisation.
 
 Weak dominance reasoning doesn't provide to play UP in this case as I've set it up. When Stalnaker says that agents should use weak dominance reasoning, it is always in the context of games where the agents' attitude towards the game matrix is different to their attitude towards each other. One case that Stalnaker discusses in detail is where the game table is common knowledge, but there is merely common (justified, true) belief in common rationality. Given such a difference in attitudes, it does seem there's a good sense in which the most salient departure from equilibrium will be one in which the players end up somewhere else on the table. And given that, weak dominance reasoning seems appropriate.
 
@@ -212,7 +212,7 @@ That's what's bad about making the belief/non-belief distinction arbitrary. It m
 
 ### Correctness {#sec-lockecorrect}
 
-I've talked about this one a bit in [subsection @sec-mecorrect], so I'll be brief here. Beliefs have correctness conditions. To believe *p* when *p* is false is to make a mistake. That might be an excusable mistake, or even a rational mistake, but it is a mistake. On the other hand, having an arbitrarily high credence in *p* when *p* turns out to be false is not a mistake. So having high credence in *p* is not the same as believing *p*.
+I've talked about this one a bit in @sec-mecorrect, so I'll be brief here. Beliefs have correctness conditions. To believe *p* when *p* is false is to make a mistake. That might be an excusable mistake, or even a rational mistake, but it is a mistake. On the other hand, having an arbitrarily high credence in *p* when *p* turns out to be false is not a mistake. So having high credence in *p* is not the same as believing *p*.
 
 Matthew Lee [-@Lee2017a] argues that the versions of this argument by Ross and Schroeder [-@RossSchroeder2014] and Fantl and McGrath [-@FantlMcGrath2009] are incomplete because they don't provide a conclusive case for the premise that having a high credence in a falsehood is not a mistake. But this gap can be plugged. Imagine a scientist, call her Marie, who knows the correct theory of chance for a given situation. She knows that the chance of *p* obtaining is 0.999. (If you think the belief/non-belief threshold is greater than 0.999, just increase this number, and change the resulting dialogue accordingly.) And her credence in *p* is 0.999, because her credences track what she knows about chances. She has the following exchange with an assistant.
 
@@ -227,7 +227,7 @@ The Lockean says other strange things about Marie. By hypothesis, she believes t
 
 The same thing goes for Chamira. Does she believe the Battle of Agincourt was in 1415? Yes, say the Lockeans. Does she also believe that it might not have been in 1415? Yes, say the Lockeans, that is why it was rational of her to play Red-True, and it would have been irrational to play Blue-True. So she believes both that something is the case, and that it might not be the case. This seems irrational, but Lockeans insist that it is perfectly consistent with her being a model of rationality.
 
-Back in [subsection @sec-orthodoxmoore] I argued that this kind of thing would be a problem for any kind of orthodox theory. And in some sense all I'm doing here is noting that the Lockean really is a kind of orthodox theorist. But the argument that the Lockean is committed to the rationality of Moore-paradoxical claims doesn't rely on those earlier arguments; it's a direct consequence of their view applied to simple cases like Marie and Chamira.
+Back in @sec-orthodoxmoore I argued that this kind of thing would be a problem for any kind of orthodox theory. And in some sense all I'm doing here is noting that the Lockean really is a kind of orthodox theorist. But the argument that the Lockean is committed to the rationality of Moore-paradoxical claims doesn't rely on those earlier arguments; it's a direct consequence of their view applied to simple cases like Marie and Chamira.
 
 ### Closure and the Lockean Theory {#sec-closure}
 
@@ -257,7 +257,7 @@ The best arguments for the existence of triples〈*S*, *A*, *B*〉are non-cons
 
 ## Solving the Challenges {#sec-solving}
 
-Critiquing other theories for their inability to meet a challenge that one's own theory cannot meet is unfair. So I'll conclude this chapter by showing that the six problems I have presented for Lockeans do not pose a problem for my interest-relative theory of (rational) belief. I've already discussed the points about correctness in [subsection @sec-mecorrect], and about closure in chapters [-@sec-knowledge] and [-@sec-ties], and there isn't much to be added. However, I would like to briefly touch upon the remaining four problems.
+Critiquing other theories for their inability to meet a challenge that one's own theory cannot meet is unfair. So I'll conclude this chapter by showing that the six problems I have presented for Lockeans do not pose a problem for my interest-relative theory of (rational) belief. I've already discussed the points about correctness in @sec-mecorrect, and about closure in chapters [-@sec-knowledge] and [-@sec-ties], and there isn't much to be added. However, I would like to briefly touch upon the remaining four problems.
 
 ### Coins
 

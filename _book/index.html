@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.523">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Brian Weatherson">
-<meta name="dcterms.date" content="2023-06-08">
+<meta name="dcterms.date" content="2023-12-09">
 
 <title>Knowledge</title>
 <style>
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./history.html" rel="next">
+<link href="./overture.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -50,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,8 +65,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
@@ -74,13 +82,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -89,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
@@ -147,8 +155,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./overture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -214,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -250,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 8, 2023</p>
+      <p class="date">December 9, 2023</p>
     </div>
   </div>
   
@@ -258,16 +266,18 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="sec-preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
 <p>Over the years I’ve written many papers defending an idiosyncratic version of interest-relative epistemology. This book collects and updates the views I’ve expressed over those papers.</p>
-<p>My original plan was not a collection of papers, that would hardly add much value over a well designed webpage, but a book that was largely structured out of different sections of different papers. My thought was that I had something like a working theory between the papers, and what would be useful would be to blend the sentences, paragraphs, and even whole sections from them into a coherent narrative. Some of that plan has been retained. Most sections in chapters <a href="rationality.html"><span>8</span></a> and <a href="evidence.html"><span>9</span></a> are very similar to sections in one or other previously published paper. But the bulk of the book is new. In putting the pieces together, I realised that I’d changed my mind about enough things, and needed to express myself very differently about enough other things, so as to make it worth rewriting much of what I had. The result is that this is about 60% a new book, 20% a heavily edited version of previous material, and 20% lightly edited republishing of previous material. Even that last 20% has some value I think - it helps to see those points in the context of an overall story - but this is mostly a new book.</p>
+<p>My original plan was not a collection of papers, that would hardly add much value over a well designed webpage, but a book that was largely structured out of different sections of different papers. My thought was that I had something like a working theory between the papers, and what would be useful would be to blend the sentences, paragraphs, and even whole sections from them into a coherent narrative. Some of that plan has been retained. Most sections in chapters <a href="rationality.html" class="quarto-xref"><span>8</span></a> and <a href="evidence.html" class="quarto-xref"><span>9</span></a> are very similar to sections in one or other previously published paper. But the bulk of the book is new. In putting the pieces together, I realised that I’d changed my mind about enough things, and needed to express myself very differently about enough other things, so as to make it worth rewriting much of what I had. The result is that this is about 60% a new book, 20% a heavily edited version of previous material, and 20% lightly edited republishing of previous material. Even that last 20% has some value I think - it helps to see those points in the context of an overall story - but this is mostly a new book.</p>
 <p>Interest-relative epistemologies all start in roughly the same way. A big part of what makes knowledge important is that it rationalises action. But for almost anything we purportedly know, there is some action that it wouldn’t rationalise. I know what I had for breakfast, but I wouldn’t take a bet at billion to one odds about it. Knowledge has practical limits. The first idiosyncratic feature of my version of interest-relative epistemology is how those limits are identified. Other interest-relative philosophers typically say that the limits have to do with stakes; in <em>high stakes</em> situations knowledge goes away. That’s no part of my view. I think knowledge goes away in <em>long odds</em> situations. High stakes situations are almost always are long odds situations, for reasons to do with the declining marginal utility of money. But the converse isn’t true. On my view, knowledge often goes away in cases where it is trivial to check before action. This idea, that interests matter in long odds cases, and not just in high stakes cases, is the main constant in what I’ve written on interest-relativity over the years.</p>
 <p>But there are three other respects in which the view I’m going to set out and defend in this book is very different from the view I set out in older papers.</p>
 <p>I used to identify the practical limits on knowledge with cases where relying on the purported knowledge would get the wrong answer. I focused, that is, on the outputs of inquiry. Knowledge goes away if relying on it would lead one to make a mistake. I now think I was looking at the wrong end of inquiry. Knowledge goes away if the thinker starts conducting an inquiry where the purported knowledge is an inappropriate starting point, and inappropriate for the special reason that it might be false. Now one way we can tell that something is a bad starting point is that starting there will mean we end up at the wrong place. But it’s not the only way. Sometimes a bad starting point will lead to the right conclusion for the wrong reasons. As the Nyāya philosophers argued, rational inquiry starts with knowledge. If it would be irrational to start this inquiry with a particular belief, that belief isn’t knowledge.</p>
-<p>Not all inquiries are practical inquiries, but many are. And practical inquiries are usually going to be at the center of attention in this book. But what is someone trying to figure out when they conduct a practical inquiry? I used to think that they were trying to figure out which option maximised expected utility, and to a first approximation identified knowledge with those things one could conditionalise on without changing the option that maximised expected utility. As noted in the previous paragraph, I no longer think that we can identify knowledge with what doesn’t change our verdicts. But more importantly, I no longer think that expected utility maximisation is as central to practical inquiry as I once did. There are some theoretical reasons from game theory that raise some doubts about expected utility maximisation. Weak dominance reasoning is part of our theory of rational choice, and can’t be modeled as expected utility maximisation. Perhaps some kinds of equilibrium seeking are parts of practical inquiry, and can’t be modeled as expected utility maximisation. But there are also very practical reasons to think that practical inquiry doesn’t aim at expected utility maximisation. When there are a lot of very similar options - think about selecting a can from a supermarket shelf - and it’s more trouble than it’s worth to figure out which of them maximises expected utility, it’s best to ignore the differences between them and just pick. As I’ll argue in <a href="ties.html">chapter&nbsp;<span>6</span></a>, this makes a big difference to how interests and knowledge interact.</p>
+<p>Not all inquiries are practical inquiries, but many are. And practical inquiries are usually going to be at the center of attention in this book. But what is someone trying to figure out when they conduct a practical inquiry? I used to think that they were trying to figure out which option maximised expected utility, and to a first approximation identified knowledge with those things one could conditionalise on without changing the option that maximised expected utility. As noted in the previous paragraph, I no longer think that we can identify knowledge with what doesn’t change our verdicts. But more importantly, I no longer think that expected utility maximisation is as central to practical inquiry as I once did. There are some theoretical reasons from game theory that raise some doubts about expected utility maximisation. Weak dominance reasoning is part of our theory of rational choice, and can’t be modeled as expected utility maximisation. Perhaps some kinds of equilibrium seeking are parts of practical inquiry, and can’t be modeled as expected utility maximisation. But there are also very practical reasons to think that practical inquiry doesn’t aim at expected utility maximisation. When there are a lot of very similar options - think about selecting a can from a supermarket shelf - and it’s more trouble than it’s worth to figure out which of them maximises expected utility, it’s best to ignore the differences between them and just pick. As I’ll argue in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a>, this makes a big difference to how interests and knowledge interact.</p>
 <p>In the version of interest-relativity that I’m defending here, everything in epistemology is interest-relative. Knowledge, rational belief, and evidence are all interest-relative. But they are all interest-relative in slightly different ways. The main aim here is to defend the interest-relativity of knowledge. A common objection to interest-relative theories of knowledge is that they can’t be extended into theories of all the things we care about in epistemology. Here I try to meet that challenge. The way I do so is a little messy. It would be nice if there was some part of epistemology that’s interest-invariant, as I used to think, or if all the interest-relative notions were interest-relative in the same way, as other interest-relative epistemologists argue. For better or worse, that’s not the view I’m defending. Interests matter throughout epistemology, and we just have to go case by case to figure out how and why they matter.</p>
 <p>The ideas from the last three paragraphs are totally absent from my earliest work - several times they are explicitly rejected - but become more prevalent as the years go on. This is the first time I’ve defended them all in one place. And I think they are all necessary to make the theory I want to defend hang together.</p>
 <p>Here is a list of these papers on interest-relativity that I’ve mentioned a few times already.</p>
@@ -284,10 +294,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>(NB: The final version will include lists of permissions for reprints here.)</p>
 <p>I wrote most of this manuscript while on sabbatical at the Australian National University in the first half of 2019, and I’m very grateful for their hospitality while I was a visitor there.</p>
-<p>Support for that sabattical came from the Marshall M. Weinberg Professorship at the University of Michigan. And I’m once again incredibly grateful for the support Marshall has given to philosophy, and to many other disciplines, at the University of Michigan.</p>
+<p>Support for that sabbatical came from the Marshall M. Weinberg Professorship at the University of Michigan. And I’m once again incredibly grateful for the support Marshall has given to philosophy, and to many other disciplines, at the University of Michigan.</p>
 <p>Many of the papers were drafted, and workshopped, while I was a Visiting Fellow at the Arché Research Centre at the University of St Andrews. You could probably fill a book this long with the mistakes I was talked out of in formal and informal meetings in St Andrews. And it was a real privilege to have been part of that community for a decade.</p>
 <p>In Winter 2020 I taught a graduate seminar based off a draft of this manuscript at the University of Michigan. I received a lot of valuable feedback from the students in that seminar. I suspect I would have received even more valuable feedback had we not had to scramble to convert the course into a virtual event halfway through the semester. But I’m still very grateful for what I learned from them over that course.</p>
-<p>I’ve presented this material at many departments and workshops, and am very grateful to the feedback I’ve received on each occasion. Most of the book was presented in one form or another at Arché. As well, parts have been presented at the 2012 Rutgers Epistemology Conference, the 2017 <em>Episteme</em> Conference, a workshop on pragmatic encroachment organised by Arizona State University in 2017, the University of Sydney, the Australian National University, and the 2020 Ranch Metaphysics Workshop. I’ve also had valuable feedback on ideas in the book over the years from Michael Almeida, Charity Anderson, Thomas Blackson, Jessica Brown, Stewart Cohen, Josh Dever, Tom Donaldson, Tamar Szabó Gendler, Peter Gerdes, Katherine Hawley, John Hawthorne, Jonathan Jenkins Ichikawa, Jon Kvanvig, Jennifer Lackey, Barry Lam, Harvey Lederman, Matthew McGrath, Sarah Moss, Jennifer Nagel, Shyam Nair, Daniel Nolan, Ángel Pinillos, Jacob Ross, Mark Schroeder, Kieran Setiya, Ernie Sosa, Levi Spectre, Robert Stalnaker, Jason Stanley, and Matthew Weiner.</p>
+<p>I’ve presented this material at many departments and workshops, and am very grateful to the feedback I’ve received on each occasion. Most of the book was presented in one form or another at Arché. As well, parts have been presented at the 2012 Rutgers Epistemology Conference, the 2017 <em>Episteme</em> Conference, a workshop on pragmatic encroachment organized by Arizona State University in 2017, the University of Sydney, the Australian National University, and the 2020 Ranch Metaphysics Workshop. I’ve also had valuable feedback on ideas in the book over the years from Michael Almeida, Charity Anderson, Thomas Blackson, Jessica Brown, Stewart Cohen, Josh Dever, Tom Donaldson, Tamar Szabó Gendler, Peter Gerdes, Katherine Hawley, John Hawthorne, Jonathan Jenkins Ichikawa, Jon Kvanvig, Jennifer Lackey, Barry Lam, Harvey Lederman, Matthew McGrath, Sarah Moss, Jennifer Nagel, Shyam Nair, Daniel Nolan, Ángel Pinillos, Jacob Ross, Mark Schroeder, Kieran Setiya, Ernie Sosa, Levi Spectre, Robert Stalnaker, Jason Stanley, and Matthew Weiner.</p>
 <p>And of course I’ve got more feedback, and more useful feedback, from Ishani Maitra than from anyone, or any place, else. She’s had to listen to, and often talk me out of, any number of dead ends, false leads, and outright mistakes, on this topic for the best part of two decades. If there’s anything in what follows that manages to be true, useful, and new, it’s thanks to her feedback, advice, and support.</p>
 
 
@@ -335,6 +345,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -403,13 +440,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -488,10 +527,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -501,8 +539,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -515,6 +562,135 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -558,6 +734,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -583,6 +760,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -646,12 +849,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./history.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./overture.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Overture</span>">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

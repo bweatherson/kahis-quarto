@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.523">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -50,7 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./beliefs.html" rel="next">
-<link href="./history.html" rel="prev">
+<link href="./overture.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,7 +69,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -77,8 +84,10 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
@@ -94,13 +103,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./interests.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./interests.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Interests</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -109,7 +118,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
@@ -167,8 +176,8 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./overture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -234,7 +243,7 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -255,7 +264,11 @@ div.csl-indent {
   <li><a href="#sec-oddsandstakes" id="toc-sec-oddsandstakes" class="nav-link" data-scroll-target="#sec-oddsandstakes"><span class="header-section-number">2.4</span> Odds and Stakes</a></li>
   <li><a href="#sec-whatinterests" id="toc-sec-whatinterests" class="nav-link" data-scroll-target="#sec-whatinterests"><span class="header-section-number">2.5</span> Theoretical Interests Matter</a></li>
   <li><a href="#sec-global" id="toc-sec-global" class="nav-link" data-scroll-target="#sec-global"><span class="header-section-number">2.6</span> Global Interest Relativity</a></li>
-  <li><a href="#sec-neutrality" id="toc-sec-neutrality" class="nav-link" data-scroll-target="#sec-neutrality"><span class="header-section-number">2.7</span> Neutrality</a></li>
+  <li><a href="#sec-neutrality" id="toc-sec-neutrality" class="nav-link" data-scroll-target="#sec-neutrality"><span class="header-section-number">2.7</span> Neutrality</a>
+  <ul class="collapse">
+  <li><a href="#sec-neutrality-contextualism" id="toc-sec-neutrality-contextualism" class="nav-link" data-scroll-target="#sec-neutrality-contextualism"><span class="header-section-number">2.7.1</span> Neutrality about Contextualism</a></li>
+  <li><a href="#sec-neutrality-k-nec" id="toc-sec-neutrality-k-nec" class="nav-link" data-scroll-target="#sec-neutrality-k-nec"><span class="header-section-number">2.7.2</span> Other Aspects of Neutrality</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -277,7 +290,9 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <section id="sec-redblue" class="level2 page-columns page-full" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-redblue"><span class="header-section-number">2.1</span> Red or Blue?</h2>
@@ -291,8 +306,8 @@ div.csl-indent {
 <li>If they win, they get $50, and if they lose, they get nothing.</li>
 </ol>
 <p>Our player is Anisa. She has been reading some medieval history, and last night was reading about the Battle of Agincourt. She was amused to see that it too place on her birthday, October 25, and in 1415, precisely 600 years before her own birthday. The book says all these things about the Battle of Agincourt because they are actually true, and when she read the book, Anisa believed them. She believed them because she had lots of independent evidence that the book was reliable (it came from a respected author and publisher, it didn’t contradict her well-grounded background beliefs), and she was sensitive to that evidence of its reliability. And, indeed, the book was generally reliable, as well as accurate on this point. That is to say, the Battle of Agincourt was indeed on October 25, 1415, and everything else the book says about the battle without qualification is also true.</p>
-<div class="page-columns page-full"><p>Anisa comes to know that she is playing the Red-Blue game, and that these are its rules. She does not come to know any other relevant fact about the game.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> When the game starts, the following two sentences are written on the board, the first in red, the second in blue.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;When presenting this material, some people have been puzzled about how this could be possible. It’s implausible that Anisa knows nothing else about the game; if she didn’t know who was putting the money up she could hardly trust that she would be paid out iff she was correct. And wouldn’t this extra knowledge tell her something about the sentences? I think it helps assuage these worries to imagine this as one round of a repeated game Anisa is playing. Every round two sentences from a large stock are drawn at random to be the red and blue sentences. Anisa will play 20 such rounds, and get paid something between $0 and $1000 at the end, depending on how many she gets right. Why is she playing this? It could be the prize round of a game show that she was the nightly winner on. With something like this background, it’s plausible that what I said in the text is true; she knows 1-6, and nothing else relevant. At least, this backstory should be enough to make it plausible that the setup is indeed possible.</p></li></div></div>
-<ul>
+<p>Anisa comes to know that she is playing the Red-Blue game, and that these are its rules. She does not come to know any other relevant fact about the game.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> When the game starts, the following two sentences are written on the board, the first in red, the second in blue.</p>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;When presenting this material, some people have been puzzled about how this could be possible. It’s implausible that Anisa knows nothing else about the game; if she didn’t know who was putting the money up she could hardly trust that she would be paid out iff she was correct. And wouldn’t this extra knowledge tell her something about the sentences? I think it helps assuage these worries to imagine this as one round of a repeated game Anisa is playing. Every round two sentences from a large stock are drawn at random to be the red and blue sentences. Anisa will play 20 such rounds, and get paid something between $0 and $1000 at the end, depending on how many she gets right. Why is she playing this? It could be the prize round of a game show that she was the nightly winner on. With something like this background, it’s plausible that what I said in the text is true; she knows 1-6, and nothing else relevant. At least, this backstory should be enough to make it plausible that the setup is indeed possible.</p></li></div><ul>
 <li>Two plus two equals four.</li>
 <li>The Battle of Agincourt took place in 1415.</li>
 </ul>
@@ -309,17 +324,17 @@ div.csl-indent {
 <p>Again, there is an intuition that Blaise did something horribly wrong here, and one possible explanation of this wrongness is that knowledge is interest-relative. However, the argument that the interest-relativity of knowledge is the very best explanation of what’s going on is somewhat weaker in Blaise’s case than in Anisa’s. It’s not that I don’t accept the interest-relative explanation of the case; I do accept it. It’s rather that in Blaise’s case there are alternative interest-invariant explanations are somewhat more plausible. Because these competing explanations exist, it’s hard to argue that interest-relativity is the best explanation of why Blaise’s action is wrong. And without that argument, it’s hard to infer from Blaise’s case that knowledge is interest-relative by inference to the best explanation. So I’ll focus on Anisa, not Blaise.</p>
 <p>This choice of focus occasionally means that this book is less connected to the existing literature than I would like. I occasionally infer what a philosopher would say about cases like Anisa’s from what they have said about cases like Blaise’s. I’ll probably get some of those inferences wrong. But I want to set out the best argument for the interest-relativity of knowledge that I know, and that means going via the example of Anisa.</p>
 <p>Though I am starting with an example, and with an intuition about it, I am not starting with an intuition about what is known in the example. I don’t have any clear intuitions about what Anisa knows or doesn’t know while playing the Red-Blue game. The intuition that matters here is that her choice of Blue-True is irrational. It’s going to be a matter of inference, not intuition, that Anisa lacks knowledge.</p>
-<p>And that inference will largely be by process of elimination. In <a href="#sec-fourfamilies">section&nbsp;<span>2.2</span></a> I will set out four possible things we can say about Anisa, and argue that one of them must be true. (The argument won’t appeal to any principles more controversial than the Law of Excluded Middle.) But all four of them, including the interest-relative view I favour, have fairly counterintuitive consequences. So something counterintuitive is true around here. And this puts a limit on how we can argue. At least one instance of the argument <em>this is counterintuitive, so it is false</em> must fail. And that casts doubt over all such arguments. This is a point that critics of interest-relativity haven’t sufficiently acknowledged, but it also puts constraints on how one can defend interest-relativity.</p>
-<p>When Anisa starts playing the Red-Blue game, her practical situation changes. So you might think I’ve gone wrong in stressing Anisa’s interests, not her practical situation. I’ve put the focus on interests for two reasons. One is that if Anisa is totally indifferent to money, then there is no rational requirement to play Red-True. We need to posit something about Anisa’s interests to even get the data point that the interest-relative theory explains. The second reason, which I’ll talk about more in <a href="#sec-whatinterests">section&nbsp;<span>2.5</span></a>, is that sometimes we can lose knowledge due to a change not in our practical situation, but our theoretical interests.</p>
-<p>In the existing literature, views like mine are sometimes called versions of <strong>subject-sensitive invariantism</strong>, since they make knowledge relevant to the stakes and salient alternatives available to the subject. This is a bad name; of course whether a knowledge ascription is true is sensitive to who the subject of the ascription is. I know what I had for breakfast and you (probably) don’t. The distinctive feature of theories like mine is that a particular fact about the subject’s situation is relevant: their interests. That should be reflected in the name. In the past, I’ve called this view <strong>interest-relative invariantism</strong>, or IRI. For reasons I’ll say more about in <a href="#sec-neutrality">section&nbsp;<span>2.7</span></a>, I’m not committed to <em>invariantism</em> in this book. So in this book it’s just the interest-relative theory of knowledge, or IRT.</p>
+<p>And that inference will largely be by process of elimination. In <a href="#sec-fourfamilies" class="quarto-xref"><span>Section&nbsp;2.2</span></a> I will set out four possible things we can say about Anisa, and argue that one of them must be true. (The argument won’t appeal to any principles more controversial than the Law of Excluded Middle.) But all four of them, including the interest-relative view I favour, have fairly counterintuitive consequences. So something counterintuitive is true around here. And this puts a limit on how we can argue. At least one instance of the argument <em>this is counterintuitive, so it is false</em> must fail. And that casts doubt over all such arguments. This is a point that critics of interest-relativity haven’t sufficiently acknowledged, but it also puts constraints on how one can defend interest-relativity.</p>
+<p>When Anisa starts playing the Red-Blue game, her practical situation changes. So you might think I’ve gone wrong in stressing Anisa’s interests, not her practical situation. I’ve put the focus on interests for two reasons. One is that if Anisa is totally indifferent to money, then there is no rational requirement to play Red-True. We need to posit something about Anisa’s interests to even get the data point that the interest-relative theory explains. The second reason, which I’ll talk about more in <a href="#sec-whatinterests" class="quarto-xref"><span>Section&nbsp;2.5</span></a>, is that sometimes we can lose knowledge due to a change not in our practical situation, but our theoretical interests.</p>
+<p>In the existing literature, views like mine are sometimes called versions of <strong>subject-sensitive invariantism</strong>, since they make knowledge relevant to the stakes and salient alternatives available to the subject. This is a bad name; of course whether a knowledge ascription is true is sensitive to who the subject of the ascription is. I know what I had for breakfast and you (probably) don’t. The distinctive feature of theories like mine is that a particular fact about the subject’s situation is relevant: their interests. That should be reflected in the name. In the past, I’ve called this view <strong>interest-relative invariantism</strong>, or IRI. For reasons I’ll say more about in <a href="#sec-neutrality" class="quarto-xref"><span>Section&nbsp;2.7</span></a>, I’m not committed to <em>invariantism</em> in this book. So in this book it’s just the interest-relative theory of knowledge, or IRT.</p>
 </section>
 <section id="sec-fourfamilies" class="level2 page-columns page-full" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-fourfamilies"><span class="header-section-number">2.2</span> Four Families</h2>
 <p>A lot of philosophers have written about cases like Anisa’s and Blaise’s over the last couple of decades. Relatedly, there are a huge number of theories that have been defended concerning these cases. Rather than describe them all, I’m going to start with a taxonomy of them. The taxonomy has some tricky edge cases, and it isn’t always trivial to classify a philosopher from their statements about the cases. It is, nevertheless, a helpful way to start thinking about the available moves.</p>
 <p>Our first family of theories are the <strong>sceptical</strong> theories. They deny that Anisa ever knew that the Battle of Agincourt was in 1415. The particular kind of sceptic I have in mind says that if someone’s epistemic position is, all things considered, better with respect to <em>q</em> than with respect to <em>p</em>, that person doesn’t know that <em>p</em>. The core idea for this sceptic, which perhaps they draw from work by Peter Unger <span class="citation" data-cites="Unger1975">(<a href="references.html#ref-Unger1975" role="doc-biblioref">1975</a>)</span>, is that knowledge is a maximal epistemic state, so any non-maximal state is not knowledge. The sceptics say that for almost any belief, Anisa’s belief that two plus two is four will have higher epistemic standing than that belief, so that belief doesn’t amount to knowledge.</p>
 <p>Our second family of theories are what I’ll call <strong>epistemicist</strong> theories. The epistemicists say that Anisa’s reasoning is perfectly sound, and perhaps Blaise’s is too. They both know when the Battle of Agincourt took place, so they both know that the choices they take are optimal, so they are rational in taking those choices. The intuitions to the contrary are, say the epistemicist, at best confused. There is something off about Anisa and Blaise, perhaps, but it isn’t that these particular decisions are irrational.</p>
-<div class="page-columns page-full"><p>It’s not essential to epistemicism, but one natural form of epistemicism takes on board Maria Lasonen-Aarnio’s point that act-level and agent-level assessments might come apart.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> On this version of epistemicism, taking the bet reveals something bad about Blaise’s character, and arguably manifests a vice, but the act itself is rational. It’s that last claim, that the actions like Blaise’s are rational, that is distinctive of epistemicism.</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;See Lasonen-Aarnio <span class="citation" data-cites="Lasonen-Aarnio2010b Lasonen-Aarnio2014">(<a href="references.html#ref-Lasonen-Aarnio2010b" role="doc-biblioref">2010</a>, <a href="references.html#ref-Lasonen-Aarnio2014" role="doc-biblioref">2014</a>)</span> for more details on her view. In <em>Normative Externalism</em>, I describe the difference between act-level and agent-level assessments as the difference between asking whether what Anisa does is rational, and whether Anisa’s action manifests wisdom <span class="citation" data-cites="Weatherson2019">(<a href="references.html#ref-Weatherson2019" role="doc-biblioref">Weatherson 2019, 124–25</a>)</span>. The best form of epistemicism, I’m suggesting, says that Anisa and Blaise are rational but unwise. This isn’t Lasonen-Aarnio’s terminology, but otherwise I’m just coopting her ideas.</p></li></div></div>
-<p>The third family is the family of <strong>pragmatist</strong> theories, and this family includes the interest-relative theory that I’ll defend. The pragmatists say that yesterday Anisa knew when the Battle of Agincourt was, but now she doesn’t. The change in her practical situation, combined with her interest in getting more money, destroys her knowledge.</p>
+<p>It’s not essential to epistemicism, but one natural form of epistemicism takes on board Maria Lasonen-Aarnio’s point that act-level and agent-level assessments might come apart.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> On this version of epistemicism, taking the bet reveals something bad about Blaise’s character, and arguably manifests a vice, but the act itself is rational. It’s that last claim, that the actions like Blaise’s are rational, that is distinctive of epistemicism.</p>
+<div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;See Lasonen-Aarnio <span class="citation" data-cites="Lasonen-Aarnio2010b Lasonen-Aarnio2014">(<a href="references.html#ref-Lasonen-Aarnio2010b" role="doc-biblioref">2010</a>, <a href="references.html#ref-Lasonen-Aarnio2014" role="doc-biblioref">2014</a>)</span> for more details on her view. In <em>Normative Externalism</em>, I describe the difference between act-level and agent-level assessments as the difference between asking whether what Anisa does is rational, and whether Anisa’s action manifests wisdom <span class="citation" data-cites="Weatherson2019">(<a href="references.html#ref-Weatherson2019" role="doc-biblioref">Weatherson 2019, 124–25</a>)</span>. The best form of epistemicism, I’m suggesting, says that Anisa and Blaise are rational but unwise. This isn’t Lasonen-Aarnio’s terminology, but otherwise I’m just coopting her ideas.</p></li></div><p>The third family is the family of <strong>pragmatist</strong> theories, and this family includes the interest-relative theory that I’ll defend. The pragmatists say that yesterday Anisa knew when the Battle of Agincourt was, but now she doesn’t. The change in her practical situation, combined with her interest in getting more money, destroys her knowledge.</p>
 <p>And the final family are what I’ll call, a little tendentiously, the <strong>orthodox</strong> theories. Orthodoxy says that Anisa knew when the Battle of Agincourt was last night, since her belief satisfied every plausible criterion for testimonial knowledge. Orthodox also says she knows it today, since changing practical scenarios or interests like this doesn’t affect knowledge. On the other hand, orthodoxy says that the actions that Anisa and Blaise take are wrong; they are both irrational, and Blaise’s is immoral. Moreover it says that they are wrong because they are risky. So knowing that what one is doing is for the best is consistent with one’s action being faulted on epistemic grounds.</p>
 <p>My reading of the literature is that a considerable majority of philosophers writing on these cases are orthodox. (Hence the name!) But I can’t be entirely sure, because a lot of these philosophers are more vocal about opposing pragmatist views than they are about supporting any particular view. There are some views that are clearly orthodox in the sense I’ve described, and I really think most of the people who have opposed pragmatist treatments of cases like Anisa’s and Blaise’s are orthodox, but it’s possible more of them are sceptical or epistemicist than I’ve appreciated.</p>
 <p>Calling this last family orthodox lets me conveniently label the other three families as heterodox. And this lets me state what I hope to argue for in this book: the interest-relative treatment of these cases is correct; and if it isn’t, then at least some pragmatist treatment is correct; and if it isn’t, then at least some heterodox treatment is correct.</p>
@@ -331,7 +346,7 @@ div.csl-indent {
 <li>Pragmatist theories say that offering someone a bet can cause them to lose knowledge and, presumably, that withdrawing that offer can cause them to get the knowledge back.</li>
 <li>Orthodox theories say that it is irrational to do something that one knows will get the best result simply because it might get a bad result.</li>
 </ul>
-<p>I’m going to mostly focus on the orthodox theories throughout the book, and in particular I’ll go into much more detail on this last point in <a href="#sec-orthodox">section&nbsp;<span>2.3</span></a>.</p>
+<p>I’m going to mostly focus on the orthodox theories throughout the book, and in particular I’ll go into much more detail on this last point in <a href="#sec-orthodox" class="quarto-xref"><span>Section&nbsp;2.3</span></a>.</p>
 <p>Much of what the argumentation in this book, like much of what’s in this literature, will fall into one of two categories. Either it will be an attempt to sharpen one of these implausible consequences, so the view with that consequence looks even worse than it does now. Or it will be an attempt to dull one of them, by coming up with a version of the view that doesn’t have quite as bad a consequence. Sometimes this latter task is sophistry in the bad sense; it’s an attempt to make the implausible consequence of the theory harder to say, and so less of an apparent flaw on that ground alone. Sometimes, though, it is valuable drawing of distinctions. That is, it is scholasticism in the good sense. It turns out that the allegedly plausible claim is ambiguous. On one disambiguation we have really good reason to believe it is true, on another the theory in question violates it, but on no disambiguation do we get a violation of something really well-supported. I hope that they work I do here to defend the interest-relative theory is more scholastic than sophistic, but I’ll leave that for others to decide.</p>
 <p>Still, if all of the theories are implausible in one way or another, shouldn’t we look for an alternative? Perhaps we should look, but we won’t find any. At least if we define the theories carefully enough, the truth is guaranteed to be among them. Let’s try placing theories by asking three yes/no questions.</p>
 <ol type="1">
@@ -342,8 +357,8 @@ div.csl-indent {
 <p>That’s it - those are your options. There are two two points of clarification that matter, but I don’t think they make a huge difference.</p>
 <p>The first point of clarification is really a reminder that these are families of views. It might be that one member of the family is considerably less implausible than other members. Indeed, I’ve changed my mind a fair bit about what is the best kind of pragmatist theory since I first started writing on this topic. And there are a lot of possible orthodox theories. Finding out the best version of these kinds of theories, especially the last two kinds, is hard work, but it is worth doing. That doesn’t mean that it will lessen the implausibility of endorsing a view from that family; some of the implausibility flows directly from how one answers the three questions.</p>
 <p>The second point of clarification is that what I’ve really done here is classify what the different theories say about Anisa’s case. They may say different things about other cases. A theory might take an epistemicist stand on Anisa’s case, but an orthodox one on Blaise’s case, for example. Or it might be orthodox about Anisa, but would be epistemicist if the blue sentence was something much more secure, such as that the Battle of Hastings was in 1066. If this taxonomy is going to be complete, it needs to say something about theories that treat different cases differently. So here is the more general taxonomy I will use.</p>
-<div class="page-columns page-full"><p>The cases I’ll quantify over have the following structure. The hero is given strong evidence for some truth <em>p</em>, and they believe it on the basis of that evidence. There are no defeaters, the belief is caused by the truth of the proposition in the right way, and in general all the conditions for knowledge that people worried about in the traditional (i.e., late twentieth century) epistemological literature are met. Then they are offered a choice, where one of the options will have an optimal outcome if <em>p</em>, but will not be the best choice according to normal theories of decision unless the probability of <em>p</em> is incredibly close to one<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. And while hero’s evidence is strong, it isn’t maximally strong. Despite this, hero takes the risky option, using the fact that <em>p</em> as a key part of their reasoning. Now consider the following three questions.</p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;I used to say at points like this that the decision only maximised expected utility if the probability of <em>p</em> was incredibly close to one. I no longer think we should be so quick to equate rational choice with choice that maximises expected utility, and this will become important in <a href="ties.html">chapter&nbsp;<span>6</span></a>.</p></li></div></div>
-<ol type="1">
+<p>The cases I’ll quantify over have the following structure. The hero is given strong evidence for some truth <em>p</em>, and they believe it on the basis of that evidence. There are no defeaters, the belief is caused by the truth of the proposition in the right way, and in general all the conditions for knowledge that people worried about in the traditional (i.e., late twentieth century) epistemological literature are met. Then they are offered a choice, where one of the options will have an optimal outcome if <em>p</em>, but will not be the best choice according to normal theories of decision unless the probability of <em>p</em> is incredibly close to one<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. And while hero’s evidence is strong, it isn’t maximally strong. Despite this, hero takes the risky option, using the fact that <em>p</em> as a key part of their reasoning. Now consider the following three questions.</p>
+<div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;I used to say at points like this that the decision only maximised expected utility if the probability of <em>p</em> was incredibly close to one. I no longer think we should be so quick to equate rational choice with choice that maximises expected utility, and this will become important in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a>.</p></li></div><ol type="1">
 <li>In cases with this form, does the theory say that when the hero first forms the belief that <em>p</em>, they know that <em>p</em>? If the answer is that this is <em>generally</em> the case, then restrict attention to those cases where they do know that <em>p</em>, and move to question 2. Otherwise, the theory is sceptical.</li>
 <li>In the cases that remain, is hero rational in taking the option that is optimal iff <em>p</em>. If the answer is yes in <em>every</em> case, the theory is epistemicist. Otherwise, restrict attention to cases where this choice is irrational, and move to question 3.</li>
 <li>In <em>any</em> of the cases that remain, does the fact that hero was offered the choice destroy their knowledge that <em>p</em>? If yes, the theory is pragmatic. If no, the theory is orthodox.</li>
@@ -427,18 +442,18 @@ Chamari: No, I definitely didn’t know when the battle was, but it was probably
 </section>
 <section id="sec-probrescue" class="level3 page-columns page-full" data-number="2.3.3">
 <h3 data-number="2.3.3" class="anchored" data-anchor-id="sec-probrescue"><span class="header-section-number">2.3.3</span> Rational Credences to the Rescue?</h3>
-<div class="page-columns page-full"><p>So imagine the orthodox theorist drops super-knowledge, and looks somewhere else. A natural alternative is to use credences. Assume that the probability that the rules of the game are as described is independent of the probabilities of the red and blue sentence. And assume that Anisa must, if she is to be rational, maximise expected utility. Then we get the natural result that Anisa should pick the sentence that is more probably true.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> And that can explain why she must choose Red-True, which is what the orthodox theorist needed to explain.</p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;Strictly speaking, we need one more assumption - namely that for any unexpected way for the game to be, the probability of it being that way is independent of the truth of both the red and blue sentences. This feels like a safe assumption for the orthodox theorist to make.</p></li></div></div>
-<p>This kind of approach doesn’t really have any place for knowledge in its theory of action. One should simply maximise expected utility; since doing what one knows to be best might not maximise expected utility, we shouldn’t think knowledge has any particularly special role.</p>
+<p>So imagine the orthodox theorist drops super-knowledge, and looks somewhere else. A natural alternative is to use credences. Assume that the probability that the rules of the game are as described is independent of the probabilities of the red and blue sentence. And assume that Anisa must, if she is to be rational, maximise expected utility. Then we get the natural result that Anisa should pick the sentence that is more probably true.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> And that can explain why she must choose Red-True, which is what the orthodox theorist needed to explain.</p>
+<div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;Strictly speaking, we need one more assumption - namely that for any unexpected way for the game to be, the probability of it being that way is independent of the truth of both the red and blue sentences. This feels like a safe assumption for the orthodox theorist to make.</p></li></div><p>This kind of approach doesn’t really have any place for knowledge in its theory of action. One should simply maximise expected utility; since doing what one knows to be best might not maximise expected utility, we shouldn’t think knowledge has any particularly special role.</p>
 <p>There are many problems with this kind of approach. Several of these problems will be discussed elsewhere in this book at more length. I will point to where those problems are discussed rather than duplicate the discussion here. Some other problems I’ll address straight away.</p>
-<p>Like the view discussed in <a href="#sec-orthodoxmoore">subsection&nbsp;<span>2.3.1</span></a> that separates knowledge from assertion, separating knowledge from action leads to strange consequences. As Timothy Williamson <span class="citation" data-cites="Williamson2005">(<a href="references.html#ref-Williamson2005" role="doc-biblioref">2005</a>)</span> points out, once we break apart knowledge from action in this way, it becomes hard to see the point of knowledge. It’s worth pausing a bit more over the bizarreness of the claim that Blaise knows that taking the bet will work out for the best, but he shouldn’t take it - because of its possible consequences.</p>
+<p>Like the view discussed in <a href="#sec-orthodoxmoore" class="quarto-xref"><span>Section&nbsp;2.3.1</span></a> that separates knowledge from assertion, separating knowledge from action leads to strange consequences. As Timothy Williamson <span class="citation" data-cites="Williamson2005">(<a href="references.html#ref-Williamson2005" role="doc-biblioref">2005</a>)</span> points out, once we break apart knowledge from action in this way, it becomes hard to see the point of knowledge. It’s worth pausing a bit more over the bizarreness of the claim that Blaise knows that taking the bet will work out for the best, but he shouldn’t take it - because of its possible consequences.</p>
 <p>If one excludes knowledge from having an important role in one’s theory of decision, one ends up having a hard time explaining how dominance reasoning works. It is, however, a compulsory task for a theory of decision to explain how dominance reasoning works. Among other things, we need a good account of how dominance reasoning works in order to handle Newcomb problems, and we need to handle Newcomb problems in order to motivate, or even to state, a careful version of expected utility maximisation. That little argument was very compressed. I’m not going to expand upon it just yet because there will be so much more discussion of dominance reasoning throughout this book; a sketch will do for now.</p>
-<p>Probabilistic models of reasoning and decision have their limits, and what we need to explain about the Red-Blue game goes beyond those limits. So probabilistic models can’t be the full story about the Red-Blue game. To see this, imagine for a second that the Blue sentence is not about the Battle of Agincourt, but is instead a slightly more complicated arithmetic truth, like <em>Thirteen times seventeen equals two hundred and twenty one</em>, or a slightly complicated logical truth, like ¬<em>q</em> → ((<em>p</em> → <em>q</em>) → ¬<em>p</em>). If either of those are the blue sentence, then it is still uniquely rational to play Red-True. But the probability of each of those sentences is one. So rational choice is more demanding than expected utility maximisation. In sections <a href="rationality.html#sec-lockecoin"><span>8.2</span></a> and <a href="rationality.html#sec-lockegames"><span>8.3</span></a> I’ll go over more cases of propositions whose probability is 1, but which should be treated as uncertain even it is certain that two plus two is four. The lesson is that we can’t just use expected utility maximisation to explain the Red-Blue game.</p>
+<p>Probabilistic models of reasoning and decision have their limits, and what we need to explain about the Red-Blue game goes beyond those limits. So probabilistic models can’t be the full story about the Red-Blue game. To see this, imagine for a second that the Blue sentence is not about the Battle of Agincourt, but is instead a slightly more complicated arithmetic truth, like <em>Thirteen times seventeen equals two hundred and twenty one</em>, or a slightly complicated logical truth, like ¬<em>q</em> → ((<em>p</em> → <em>q</em>) → ¬<em>p</em>). If either of those are the blue sentence, then it is still uniquely rational to play Red-True. But the probability of each of those sentences is one. So rational choice is more demanding than expected utility maximisation. In sections <a href="rationality.html#sec-lockecoin" class="quarto-xref"><span>8.2</span></a> and <a href="rationality.html#sec-lockegames" class="quarto-xref"><span>8.3</span></a> I’ll go over more cases of propositions whose probability is 1, but which should be treated as uncertain even it is certain that two plus two is four. The lesson is that we can’t just use expected utility maximisation to explain the Red-Blue game.</p>
 <p>Finally, we need to understand the notion of probability that’s being appealed to in this explanation. It can’t be some purely subjective notion, like credence, because that couldn’t explain why some decisions are rational and others aren’t. If Anisa was subjectively certain that the Battle of Agincourt was in 1415, she would still be irrational to play Blue-True. It can’t be some purely physical notion, like chance or frequency, because that won’t even get the cases right. (What is the chance, or frequency, of the Battle of Agincourt being in 1415?) It needs to be something like evidential probability. That will run into problems in versions of the Red-Blue game where the Blue sentence is arguably (but not certainly) part of the player’s evidence. I’ll end my discussion of orthodoxy with a discussion of cases like these.</p>
 </section>
 <section id="sec-orthodoxevidence" class="level3 page-columns page-full" data-number="2.3.4">
 <h3 data-number="2.3.4" class="anchored" data-anchor-id="sec-orthodoxevidence"><span class="header-section-number">2.3.4</span> Evidential Probability</h3>
-<div class="page-columns page-full"><p>No matter which of these explanations the orthodox theorist goes for, they need a notion of evidence to support them.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Let’s assume that we can find some doxastic attitude D such that Anisa can’t rationally stand in D to <em>Play Blue-True</em>, and that this is why she can’t rationally play Blue-True. Then we need to ask the further question, why doesn’t she stand in relation D to <em>Play Blue-True</em>? And presumably the answer will be that she lacks sufficient evidence. After all, if she had optimal evidence about when the Battle of Agincourt was, she could play Blue-True.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;This subsection is based on §2 of my <span class="citation" data-cites="Weatherson2018-WEAIEA-2">(<a href="references.html#ref-Weatherson2018-WEAIEA-2" role="doc-biblioref">2018</a>)</span>.</p></li></div></div>
-<p>The orthodox theorist also has to have an interest-invariant account of evidence. I guess it’s logically possible to have evidence be interest-relative, but knowledge be interest-neutral, but it is very hard to see how one would motivate such a position.</p>
+<p>No matter which of these explanations the orthodox theorist goes for, they need a notion of evidence to support them.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Let’s assume that we can find some doxastic attitude D such that Anisa can’t rationally stand in D to <em>Play Blue-True</em>, and that this is why she can’t rationally play Blue-True. Then we need to ask the further question, why doesn’t she stand in relation D to <em>Play Blue-True</em>? And presumably the answer will be that she lacks sufficient evidence. After all, if she had optimal evidence about when the Battle of Agincourt was, she could play Blue-True.</p>
+<div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;This subsection is based on §2 of my <span class="citation" data-cites="Weatherson2018-WEAIEA-2">(<a href="references.html#ref-Weatherson2018-WEAIEA-2" role="doc-biblioref">2018</a>)</span>.</p></li></div><p>The orthodox theorist also has to have an interest-invariant account of evidence. I guess it’s logically possible to have evidence be interest-relative, but knowledge be interest-neutral, but it is very hard to see how one would motivate such a position.</p>
 <p>And now we run into a problem. Imagine a version of the Red-Blue game where the blue sentence is something that, if known, is part of the player’s evidence. If it is still irrational to play Blue-True, then any orthodox explanation that relies on evidence sensitive notions (like super-knowledge or evidential probability) will be in trouble. The aim of this subsection is to spell out why this is.</p>
 <p>So let’s imagine a new player for the red-blue game. Call her Parveen. She is playing the game in a restaurant. It is near her apartment in Ann Arbor, Michigan. Just before the game starts, she notices an old friend, Rahul, across the room. Rahul is someone she knows well, and can ordinarily recognise, but she had no idea he was in town. She thought Rahul was living in Italy. Still, we would ordinarily say that she now knows Rahul is in town; indeed that he is in the restaurant. As evidence for this, note that it would be perfectly acceptable for her to say to someone else, “I saw Rahul here”. Now the game starts.</p>
 <ul>
@@ -454,19 +469,23 @@ Chamari: No, I definitely didn’t know when the battle was, but it was probably
 </section>
 <section id="sec-oddsandstakes" class="level2 page-columns page-full" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="sec-oddsandstakes"><span class="header-section-number">2.4</span> Odds and Stakes</h2>
-<div class="page-columns page-full"><p>If orthodox views are wrong, then it is important to get clear on which heterodox view is most plausible.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> I’m defending a version of the pragmatic view, but it’s a different version to the most prominent versions defended in the literature. The difference can be most readily seen by looking at the class of cases that have motivated pragmatic views.</p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;This section is based on §3 of my <span class="citation" data-cites="Weatherson2016">(<a href="references.html#ref-Weatherson2016" role="doc-biblioref">2016</a>)</span>.</p></li></div></div>
-<p>The cases involve a subject making a practical decision. The subject has a safe choice, which has a guaranteed return of <em>S</em>. And they have a risky choice. If things go well, the return of the risky choice is <em>S</em>&nbsp;+&nbsp;<em>G</em>, so they will gain <em>G</em> from taking the risk. If things go badly, the return of the risky choice is <em>S</em>&nbsp;‑&nbsp;<em>L</em>, so they will lose <em>L</em> from taking the risk. What it takes for things to go well is that a particular proposition <em>p</em> is true. All of this is known by the subject facing the choice. It’s also true (but not uncontroversially known by the subject) that they satisfy all the conditions for knowing <em>p</em> that would have been endorsed by a well-informed epistemologist circa 1997. (That is, by a proponent of the traditional view.) So <em>p</em> is true, and things won’t go badly for them if they take the risk. Still, in a lot of these cases, there is a strong intuition that they should not take the bet, and as I’ve just been arguing, that is hard to square with the idea that they know that <em>p</em>. So assuming the traditional view is right about the subject as they were before facing the practical choice, having this choice in front of them causes them to lose knowledge that <em>p</em>.</p>
+<p>If orthodox views are wrong, then it is important to get clear on which heterodox view is most plausible.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> I’m defending a version of the pragmatic view, but it’s a different version to the most prominent versions defended in the literature. The difference can be most readily seen by looking at the class of cases that have motivated pragmatic views.</p>
+<div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;This section is based on §3 of my <span class="citation" data-cites="Weatherson2016">(<a href="references.html#ref-Weatherson2016" role="doc-biblioref">2016</a>)</span>.</p></li></div><p>The cases involve a subject making a practical decision. The subject has a safe choice, which has a guaranteed return of <em>S</em>. And they have a risky choice. If things go well, the return of the risky choice is <em>S</em>&nbsp;+&nbsp;<em>G</em>, so they will gain <em>G</em> from taking the risk. If things go badly, the return of the risky choice is <em>S</em>&nbsp;‑&nbsp;<em>L</em>, so they will lose <em>L</em> from taking the risk. What it takes for things to go well is that a particular proposition <em>p</em> is true. All of this is known by the subject facing the choice. It’s also true (but not uncontroversially known by the subject) that they satisfy all the conditions for knowing <em>p</em> that would have been endorsed by a well-informed epistemologist circa 1997. (That is, by a proponent of the traditional view.) So <em>p</em> is true, and things won’t go badly for them if they take the risk. Still, in a lot of these cases, there is a strong intuition that they should not take the bet, and as I’ve just been arguing, that is hard to square with the idea that they know that <em>p</em>. So assuming the traditional view is right about the subject as they were before facing the practical choice, having this choice in front of them causes them to lose knowledge that <em>p</em>.</p>
 <p>But what is it about these choices that triggers a loss of knowledge? There is a familiar answer to this, one explicitly endorsed by Hawthorne <span class="citation" data-cites="Hawthorne2004">(<a href="references.html#ref-Hawthorne2004" role="doc-biblioref">2004</a>)</span> and Stanley <span class="citation" data-cites="Stanley2005">(<a href="references.html#ref-Stanley2005" role="doc-biblioref">2005</a>)</span>. It is that they are facing a ‘high stakes’ choice. Now what it is for a choice to be high stakes is never made entirely clear, and Anderson and Hawthorne <span class="citation" data-cites="AndersonHawthorne2019a">(<a href="references.html#ref-AndersonHawthorne2019a" role="doc-biblioref">2019a</a>)</span> show that it is hard to provide an adequate definition in full generality. In the simple cases described in the previous paragraph, however, it is easy enough to say what a high stakes case is. It just means that <em>L</em> is large. So one gets the suggestion that practical factors kick in when faced with a case where there is a chance of a large loss.</p>
-<div class="page-columns page-full"><p>The version of IRT defended in this book does not care about whether a subject faces a high stakes bet. Instead, it says that <em>L</em> matters, but only indirectly. What is (typically) true in these cases is that the subject should maximise expected utility relative to their evidence.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> And taking the risky choice maximises expected utility only if this equation is true.</p><div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;This simplifies the relationship between rational choice and expected utility maximisation. Later in the book I’ll have to be much more careful about this relationship. See chapter <a href="ties.html"><span>6</span></a> for many more details.</p></li></div></div>
-<p><span class="math display">\[
+<p>The version of IRT defended in this book does not care about whether a subject faces a high stakes bet. Instead, it says that <em>L</em> matters, but only indirectly. What is (typically) true in these cases is that the subject should maximise expected utility relative to their evidence.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> And taking the risky choice maximises expected utility only if this equation is true.</p>
+<div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;This simplifies the relationship between rational choice and expected utility maximisation. Later in the book I’ll have to be much more careful about this relationship. See chapter <a href="ties.html" class="quarto-xref"><span>6</span></a> for many more details.</p></li></div><p><span class="math display">\[
 \frac{\Pr(\textit{p})}{1&nbsp;‑&nbsp;\Pr(\textit{p})}&nbsp;&gt;&nbsp;\frac{\textit{L}}{\textit{G}}
 \]</span></p>
 <p>The left hand side expresses the odds that <em>p</em> is true. The right hand side expresses how high those odds have to be before the risk is worth taking. If the equation fails to hold, then the risk is not worth taking. And if risk is not worth taking, then the subject doesn’t know that <em>p</em>.</p>
 <p>Since the numerator of the right hand side is <em>L</em>, then one way to destroy knowledge that <em>p</em> is to present the subject with a situation where <em>L</em> is very high. It isn’t, however, the only way. Since the denominator of the right hand side is <span class="math inline">\(G\)</span>, another way to destroy knowledge that <em>p</em> is to present the subject with a situation where <span class="math inline">\(G\)</span> is very low.</p>
 <p>In effect, we’ve seen such a situation with Anisa. To make the parallel to Anisa’s case even clearer, consider the following case, involving a character I’ll call Darja. Darja has been reading books about World War One, and yesterday read that Franz Ferdinand was assassinated on St Vitus’s Day, June 28, 1914. She is now offered a chance to play a slightly unusual quiz game. She has to answer the question <em>What was the date of Franz Ferdinand’s assassination?</em> If she gets it right, she wins $50. If she gets it wrong, she wins nothing. Here’s what is strange about the game. She is allowed to Google the answer before answering. So here are the two live options for Darja. In the table, and in what follows, <em>p</em> is the proposition that Franz Ferdinand was indeed assassinated on June 28, 1914.</p>
 <div id="tbl-google" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-google-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Darja’s choice between answering the question, and checking Google.
+</figcaption>
+<div aria-describedby="tbl-google-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;2.1: Darja’s choice between answering the question, and checking Google.</caption>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">&nbsp;</td>
@@ -486,14 +505,16 @@ Chamari: No, I definitely didn’t know when the battle was, but it was probably
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>If Darja has her phone near her, and has cheap easy access to Google, then ε might be really low. In that case she should take the safe option; it’s the one that maximises expected utility. And that means she doesn’t know that <em>p</em>, even if she remembers reading it in a book that is actually reliable. Facing a long odds bet can cause knowledge loss, even in low stakes situations.</p>
 <p>So I’m committed to the view that Darja loses knowledge in her relatively low stakes situation, and indeed I think that’s true. That’s not because I have any kind of intuition that she loses knowledge. I don’t have any clear intuition about her case, and I’m certainly not taking any intuition about the case as a premise. What I am taking as a premise is that Darja should Google the answer in cases like this one; doing otherwise is taking a bad risk. And the best explanation of why this is a bad risk is that she doesn’t know when Franz Ferdinand was assassinated. So practical interests can matter even in relatively low stakes cases.</p>
 <p>I’m not the first to focus on these long odds/low stakes cases. Jessica Brown <span class="citation" data-cites="Brown2008">(<a href="references.html#ref-Brown2008" role="doc-biblioref">2008, 176</a>)</span> notes that these cases raise problems for the stakes-centric version of IRT. And Anderson and Hawthorne <span class="citation" data-cites="AndersonHawthorne2019a">(<a href="references.html#ref-AndersonHawthorne2019a" role="doc-biblioref">2019a</a>)</span> argue that once we get beyond the simple two-state/two-option choices, it isn’t at all easy to say what situations are and are not high-stakes choices. These cases are not problems for the version of IRT that I defend, since this version gives no role to stakes.</p>
 </section>
 <section id="sec-whatinterests" class="level2 page-columns page-full" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="sec-whatinterests"><span class="header-section-number">2.5</span> Theoretical Interests Matter</h2>
-<div class="page-columns page-full"><p>When saying why I called my theory IRT, one of the reasons I gave was that I wanted theoretical, and not just practical, interests to matter to knowledge.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> This is also something of a break with the existing literature. After all, Jason Stanley’s book on interest-relative epistemology is called <em>Knowledge and Practical Interests</em>. He defends a theory on which what an agent knows depends on the practical questions they face. There are strong reasons to think that theoretical reasons matter as well.</p><div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;This section is based on §4 of my <span class="citation" data-cites="Weatherson2017-WEAII">(<a href="references.html#ref-Weatherson2017-WEAII" role="doc-biblioref">2017</a>)</span>.</p></li></div></div>
-<p>In <a href="#sec-oddsandstakes">section&nbsp;<span>2.4</span></a>, I suggested that someone knows that <em>p</em> only if the rational choice to make would also be rational given <em>p</em>. That is, someone knows that <em>p</em> only if the answer to the question <em>What should I do?</em> is the same unconditionally as it is conditional on <em>p</em>. My preferred version of IRT generalises this approach. Someone knows that <em>p</em> only if the rational answer to a question she is interested in is the same unconditionally as it is conditional on <em>p</em>. Interests matter because they determine just what it is for the person to be interested in a question. Are the questions, in this sense, always practical questions, or do they also include theoretical questions? There are two primary motivations for allowing theoretical interests as well as practical interests to matter.</p>
+<p>When saying why I called my theory IRT, one of the reasons I gave was that I wanted theoretical, and not just practical, interests to matter to knowledge.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> This is also something of a break with the existing literature. After all, Jason Stanley’s book on interest-relative epistemology is called <em>Knowledge and Practical Interests</em>. He defends a theory on which what an agent knows depends on the practical questions they face. There are strong reasons to think that theoretical reasons matter as well.</p>
+<div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;This section is based on §4 of my <span class="citation" data-cites="Weatherson2017-WEAII">(<a href="references.html#ref-Weatherson2017-WEAII" role="doc-biblioref">2017</a>)</span>.</p></li></div><p>In <a href="#sec-oddsandstakes" class="quarto-xref"><span>Section&nbsp;2.4</span></a>, I suggested that someone knows that <em>p</em> only if the rational choice to make would also be rational given <em>p</em>. That is, someone knows that <em>p</em> only if the answer to the question <em>What should I do?</em> is the same unconditionally as it is conditional on <em>p</em>. My preferred version of IRT generalises this approach. Someone knows that <em>p</em> only if the rational answer to a question she is interested in is the same unconditionally as it is conditional on <em>p</em>. Interests matter because they determine just what it is for the person to be interested in a question. Are the questions, in this sense, always practical questions, or do they also include theoretical questions? There are two primary motivations for allowing theoretical interests as well as practical interests to matter.</p>
 <p>The first comes from what Jeremy Fantl and Matthew McGrath call the Unity Thesis&nbsp;<span class="citation" data-cites="FantlMcGrath2009">(<a href="references.html#ref-FantlMcGrath2009" role="doc-biblioref">Fantl and McGrath 2009, 73–76</a>)</span>. They argue that whether or not <em>p</em> is a reason for someone is independent of whether they are engaged in practical or theoretical deliberation. And the intuition supporting this is quite clear. Consider two people with the same background thinking about the question <em>What to do in situation S</em>. One of them is in <em>S</em>, the other is just thinking about it as an idle fantasy. Any reasoning one can properly do, the other can properly do. Since one is facing a theoretical question, and the other a practical question, the difference between theoretical and practical questions can’t be relevant.</p>
 <p>Let’s make that a little less abstract. Imagine Anisa is not actually faced with the choice between Red-True, Blue-True, Red False and Blue-False with these particular red and blue sentences. In fact, she has no practical decision to make that turns on the date of the Battle of Agincourt. Instead, she is idly musing over what she would do if she were playing that game. (Perhaps because she is reading this book.) If she knows when the battle was, then she should be indifferent between Red-True and Blue-True. After all, she knows they will both win $50. Intuitively she should think Red-True is preferable, both in the abstract setting and when she’s actually making the decision. And this seems to be the totally general case.</p>
 <p>The general lesson is that if whether one can take <em>p</em> for granted is relevant to the choice between A and B, it is similarly relevant to the theoretical question of whether one would choose A or B, given a choice. And since those questions should receive the same answer, if <em>p</em> can’t be known while making the practical deliberation between A and B, it can’t be known while musing on whether A or B is more choiceworthy.</p>
@@ -502,23 +523,29 @@ Chamari: No, I definitely didn’t know when the battle was, but it was probably
 </section>
 <section id="sec-global" class="level2 page-columns page-full" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="sec-global"><span class="header-section-number">2.6</span> Global Interest Relativity</h2>
-<p>IRT was introduced as a thesis about knowledge. I’m going to argue in <a href="rationality.html">chapter&nbsp;<span>8</span></a> that it also extends to rational belief. We need not stop there. At the extreme, we could argue that every epistemologially interesting notion is interest-relative. Doing so gives us a global version of IRT. And that is what I’m going to defend here.</p>
+<p>IRT was introduced as a thesis about knowledge. I’m going to argue in <a href="rationality.html" class="quarto-xref"><span>Chapter&nbsp;8</span></a> that it also extends to rational belief. We need not stop there. At the extreme, we could argue that every epistemologially interesting notion is interest-relative. Doing so gives us a global version of IRT. And that is what I’m going to defend here.</p>
 <p>Jason Stanley <span class="citation" data-cites="Stanley2005">(<a href="references.html#ref-Stanley2005" role="doc-biblioref">2005</a>)</span> comes close to defending a global version. He notes that if one has both IRT, and a ‘knowledge first’ epistemology &nbsp;<span class="citation" data-cites="Williamson2000">(<a href="references.html#ref-Williamson2000" role="doc-biblioref">Williamson 2000</a>)</span>, then one is a long way to towards global IRT. Even if one doesn’t accept the whole knowledge first package, but just accepts the thesis that evidence is all and only what one knows, then one is a long way towards globalism. After all, if evidence is interest-relative, then probability, justification, rationality, and evidential support are interest-relative too.</p>
-<p>That’s close to the path I’ll take to global IRT, but not exactly it. In <a href="evidence.html">chapter&nbsp;<span>9</span></a> I’m going to argue that evidence is indeed interest-relative, and so all those other notions are interest-relative too. But that’s not because I equate knowledge and evidence. The version of IRT I defend implies that evidence is a subset of knowledge, and which subset it is turns out to be interest-relative.</p>
-<div class="page-columns page-full"><p>There is a deep puzzle here for IRT. On the one hand, the arguments for IRT look like they will generalise to arguments for the interest-relativity of evidence.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> On the other hand, the simplest explanation of cases like Anisa’s presupposes that we can identify Anisa’s evidence independent of her interests. That simple explanation says that Anisa shouldn’t play Blue-True because the evidential probability of the blue sentence being true is lower than the evidential probability of the red sentence being true. And since she can’t rationally play Blue-True, it follows that she mustn’t know that the blue sentence is true. If evidence is identified independently, this looks like it might generalise into a nice story about when changes of interests lead to changes of knowledge. The story looks much less nice if evidence is also interest-relative, and it is.</p><div class="no-row-height column-margin column-container"><li id="fn9"><p><sup>9</sup>&nbsp;I was first convinced of this by conversations with Tom Donaldson some years back. The earlier example of Parveen in the restaurant grew out of these conversations.</p></li></div></div>
-<p>The aim of <a href="evidence.html">chapter&nbsp;<span>9</span></a> is to tell a story that avoids the worst of these problems. On the story I’ll tell, evidence is indeed interest-relative, so we can’t tell a simple story about precisely when changes in interests will lead to changes in knowledge. Still, it will be true that people lose knowledge when the evidential probability of a proposition is no longer high enough for them to take it for granted with respect to every question they are interested in. And I will be able to say how interests impact evidence in a way that doesn’t require antecedently identifying how interests impact knowledge, so the story will still be somewhat reductive. It just won’t be as simple a story as one might hope to tell, or indeed that I tried to tell in earlier work.</p>
+<p>That’s close to the path I’ll take to global IRT, but not exactly it. In <a href="evidence.html" class="quarto-xref"><span>Chapter&nbsp;9</span></a> I’m going to argue that evidence is indeed interest-relative, and so all those other notions are interest-relative too. But that’s not because I equate knowledge and evidence. The version of IRT I defend implies that evidence is a subset of knowledge, and which subset it is turns out to be interest-relative.</p>
+<p>There is a deep puzzle here for IRT. On the one hand, the arguments for IRT look like they will generalise to arguments for the interest-relativity of evidence.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> On the other hand, the simplest explanation of cases like Anisa’s presupposes that we can identify Anisa’s evidence independent of her interests. That simple explanation says that Anisa shouldn’t play Blue-True because the evidential probability of the blue sentence being true is lower than the evidential probability of the red sentence being true. And since she can’t rationally play Blue-True, it follows that she mustn’t know that the blue sentence is true. If evidence is identified independently, this looks like it might generalise into a nice story about when changes of interests lead to changes of knowledge. The story looks much less nice if evidence is also interest-relative, and it is.</p>
+<div class="no-row-height column-margin column-container"><li id="fn9"><p><sup>9</sup>&nbsp;I was first convinced of this by conversations with Tom Donaldson some years back. The earlier example of Parveen in the restaurant grew out of these conversations.</p></li></div><p>The aim of <a href="evidence.html" class="quarto-xref"><span>Chapter&nbsp;9</span></a> is to tell a story that avoids the worst of these problems. On the story I’ll tell, evidence is indeed interest-relative, so we can’t tell a simple story about precisely when changes in interests will lead to changes in knowledge. Still, it will be true that people lose knowledge when the evidential probability of a proposition is no longer high enough for them to take it for granted with respect to every question they are interested in. And I will be able to say how interests impact evidence in a way that doesn’t require antecedently identifying how interests impact knowledge, so the story will still be somewhat reductive. It just won’t be as simple a story as one might hope to tell, or indeed that I tried to tell in earlier work.</p>
 </section>
 <section id="sec-neutrality" class="level2 page-columns page-full" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="sec-neutrality"><span class="header-section-number">2.7</span> Neutrality</h2>
 <p>This book defends, at some length, the idea that knowledge is interest-relative. But I’m staying neutral on a number of other topics in the vicinity.</p>
-<div class="page-columns page-full"><p>Most notably, I’m not taking any stand on whether contextualist theories of knowledge are true or false. If you think that contextualism is true, then what I’m defending is that the view that ‘knowledge’ picks out in this context, and in most other contexts, is interest-relative.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn10"><p><sup>10</sup>&nbsp;I am opposed to something that many contextualists appeal to in defending and motivating their theory, namely meta-linguistic norms on assertion, reasoning, and action. But that opposition doesn’t extend to contextualism in general.</p></li></div></div>
-<p>Contextualist theories of knowledge have a lot in common with interest-relative theories. The kind of cases that motivate the interest-relative theories, cases like Anisa’s and Blaise’s, also motivate contextualism. They might even be seen as competitors, since they are offering rival explanations of similar phenomena. They are not, however, strictly inconsistent. Consider principles A and B below.</p>
+<section id="sec-neutrality-contextualism" class="level3 page-columns page-full" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="sec-neutrality-contextualism"><span class="header-section-number">2.7.1</span> Neutrality about Contextualism</h3>
+<p>Most notably, I’m not taking any stand on whether contextualist theories of knowledge are true or false. If you think that contextualism is true, then what I’m defending is that the view that ‘knowledge’ picks out in this context, and in most other contexts, is interest-relative.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<div class="no-row-height column-margin column-container"><li id="fn10"><p><sup>10</sup>&nbsp;I am opposed to something that many contextualists appeal to in defending and motivating their theory, namely meta-linguistic norms on assertion, reasoning, and action. But that opposition doesn’t extend to contextualism in general.</p></li></div><p>Contextualist theories of knowledge have a lot in common with interest-relative theories. The kind of cases that motivate the interest-relative theories, cases like Anisa’s and Blaise’s, also motivate contextualism. They might even be seen as competitors, since they are offering rival explanations of similar phenomena. They are not, however, strictly inconsistent. Consider principles A and B below.</p>
 <ol type="A">
 <li>A’s utterance that <em>B knows that p</em> is true only if for any question <em>Q?</em> in which A is interested, the rational answer for B to give is the same unconditionally as it is conditional on <em>p</em>.</li>
 <li>A’s utterance that <em>B knows that p</em> is true only if for any question <em>Q?</em> in which B is interested, the rational answer for B to give is the same unconditionally as it is conditional on <em>p</em>.</li>
 </ol>
-<div class="page-columns page-full"><p>I endorse principle B, and that’s why I endorse an interest-relative theory of knowledge. If I endorsed principle A, then I would be (more or less) committed to a contextualist theory of knowledge. And principle A is not inconsistent with principle B.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn11"><p><sup>11</sup>&nbsp;There is a technical difficulty in how to understand one person answering an infinitival question that another person is asking themselves. But the points I’m making in this section aren’t sensitive to this level of technical detail.</p></li></div></div>
-<div class="page-columns page-full"><p>It isn’t hard to see why cases like Anisa and Blaise can move one to endorse principle A, and hence contextualism. It would be very odd for Anisa to say “This morning, I knew the Battle of Agincourt was in 1415.” That’s odd because she can’t now take it as given that the Battle of Agincourt was in 1415, and in some sense she wasn’t in any better or worse evidential position this morning with respect to the date of the battle. Perhaps, and this is the key point, it would even be false for Anisa to say this now. The contextualist, especially the contextualist who endorses principle A, has a good explanation for why that’s false. The interest-relative theorist doesn’t have anything to say about that. Personally I think it’s not obvious whether this would be false for Anisa to say, or merely inappropriate, and even if it is false, there may be decent explanations of this that are not contextualist. (For instance, maybe knowledge is sensitive to what interests one will have. Or maybe some kind of relativist theory is true.) But there is clearly an argument for contextualism here. And it isn’t one that I’m going to endorse or reject.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn12"><p><sup>12</sup>&nbsp;One reason I’m not rejecting contextualism is that I’m not sure really what it is. Here’s a theory about ‘knows’ that I think is interesting, and I don’t know whether it is contextualist. The word ‘knows’ is polysemous. It has three possible meanings. One of them is something like Cartesian certainty. In this sense, most knowledge claims are false. Another is something like information possession. In this sense, my car might know lots of things, since its systems do quite reliably store a lot of information. And there is a moderate sense, which is what we most commonly use. The difference between the three might even be marked phonologically; the Cartesian sense is often somewhat drawn out or otherwise emphasised. Is this contextualist? I don’t know. Sort of, I guess. It agrees with the standard contextualist account of the appeal of scepticism. On the other hand, it denies that ‘knows’ has the kind of continuous variation that is typical in comparative adjectives like ‘rich’. Since I think this kind of polysemy theory might be true, and (independently) that it might be contextualist, I’m not in a position to deny contextualism.</p></li></div></div>
+<p>I endorse principle B, and that’s why I endorse an interest-relative theory of knowledge. If I endorsed principle A, then I would be (more or less) committed to a contextualist theory of knowledge. And principle A is not inconsistent with principle B.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<div class="no-row-height column-margin column-container"><li id="fn11"><p><sup>11</sup>&nbsp;There is a technical difficulty in how to understand one person answering an infinitival question that another person is asking themselves. But the points I’m making in this section aren’t sensitive to this level of technical detail.</p></li></div><p>It isn’t hard to see why cases like Anisa and Blaise can move one to endorse principle A, and hence contextualism. It would be very odd for Anisa to say “This morning, I knew the Battle of Agincourt was in 1415.” That’s odd because she can’t now take it as given that the Battle of Agincourt was in 1415, and in some sense she wasn’t in any better or worse evidential position this morning with respect to the date of the battle. Perhaps, and this is the key point, it would even be false for Anisa to say this now. The contextualist, especially the contextualist who endorses principle A, has a good explanation for why that’s false. The interest-relative theorist doesn’t have anything to say about that. Personally I think it’s not obvious whether this would be false for Anisa to say, or merely inappropriate, and even if it is false, there may be decent explanations of this that are not contextualist. (For instance, maybe knowledge is sensitive to what interests one will have. Or maybe some kind of relativist theory is true.) But there is clearly an argument for contextualism here. And it isn’t one that I’m going to endorse or reject.</p>
+<p>One reason I’m not rejecting contextualism is that I’m not sure really what it is. Here’s a theory about ‘knows’ that I think is interesting, and I don’t know whether it is contextualist. The word ‘knows’ is polysemous. It has three possible meanings. One of them is something like Cartesian certainty. In this sense, most knowledge claims are false. Another is something like information possession. In this sense, my car might know lots of things, since its systems do quite reliably store a lot of information. And there is a moderate sense, which is what we most commonly use. The difference between the three might even be marked phonologically; the Cartesian sense is often somewhat drawn out or otherwise emphasised. Is this contextualist? I don’t know. Sort of, I guess. It agrees with the standard contextualist account of the appeal of scepticism. On the other hand, it denies that ‘knows’ has the kind of continuous variation that is typical in comparative adjectives like ‘rich’. Since I think this kind of polysemy theory might be true, and (independently) that it might be contextualist, I’m not in a position to deny contextualism.</p>
+</section>
+<section id="sec-neutrality-k-nec" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="sec-neutrality-k-nec"><span class="header-section-number">2.7.2</span> Other Aspects of Neutrality</h3>
 <p>As I’ve already noted, I’m making heavy use of the principle that Jessica Brown calls K-Suff. I’m going to defend that at much greater length in what follows. What I’m not defending is the converse of that principle, what she calls K-Nec.</p>
 <dl>
 <dt>K-Nec</dt>
@@ -530,10 +557,10 @@ Chamari: No, I definitely didn’t know when the battle was, but it was probably
 <p>I’m obviously not going to offer anything like a full theory of knowledge. I am defending a particular necessary condition on knowledge. That condition entails that knowledge is interest-relative given some common-sense assumptions about how widespread knowledge is. And that’s just about as far as I’ll go.</p>
 <p>I will be making one claim about how interests typically enter into the theory of knowledge. I’ll argue that there is a certain kind of defeater. A person only knows that <em>p</em> if the belief that <em>p</em> coheres in the right way with the rest of their attitudes. What’s ‘the right way’? That, I argue, is interest-relative. In particular, some kinds of incoherence are compatible with knowledge if the incoherence concerns questions that are not interesting.</p>
 <p>So the impact of interests is (typically) very indirect. Even if the other conditions for knowledge are satisfied, someone might fail to know something because it doesn’t cohere well with the rest of their beliefs. What turns out to be most important here is an exception to this exception clause. Incoherence with respect to uninteresting questions is compatible with knowledge.</p>
-<p>This is going to matter because it affects how we think about what happen when interests change. It is odd to think that a change in interests could make one know something. But it isn’t as odd to think that a change in interests could block or defeat something that was potentially going to block or defeat an otherwise well supported belief from being knowledge. This is something I will return to repeatedly in <a href="changes.html">chapter&nbsp;<span>7</span></a>.</p>
+<p>This is going to matter because it affects how we think about what happen when interests change. It is odd to think that a change in interests could make one know something. But it isn’t as odd to think that a change in interests could block or defeat something that was potentially going to block or defeat an otherwise well supported belief from being knowledge. This is something I will return to repeatedly in <a href="changes.html" class="quarto-xref"><span>Chapter&nbsp;7</span></a>.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-AndersonHawthorne2019a" class="csl-entry" role="listitem">
 Anderson, Charity, and John Hawthorne. 2019a. <span>“Knowledge, Practical Adequacy, and Stakes.”</span> <em>Oxford Studies in Epistemology</em> 6: 234–57.
 </div>
@@ -605,6 +632,7 @@ Williamson, Timothy. 2000. <em><span class="nocase">Knowledge and its Limits</sp
 </div>
 </div>
 </section>
+</section>
 
 
 </main> <!-- /main -->
@@ -649,6 +677,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -717,13 +772,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -802,10 +859,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -815,8 +871,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -829,6 +894,135 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -872,6 +1066,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -897,6 +1092,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -958,17 +1179,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./history.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span>
+      <a href="./overture.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./beliefs.html" class="pagination-link">
+      <a href="./beliefs.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Belief</span>">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Belief</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

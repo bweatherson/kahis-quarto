@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.523">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -68,7 +69,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -77,8 +84,10 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <link rel="stylesheet" href="https://use.typekit.net/gdw0otp.css">
@@ -92,13 +101,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./power.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./power.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Power</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -107,7 +116,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Knowledge: <br>A Human Interest Story</a> 
@@ -165,8 +174,8 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  <a href="./overture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overture</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -232,7 +241,7 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p>&nbsp;</p>
@@ -257,10 +266,12 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<div class="page-columns page-full"><p>Knowledge is power. That is, it grounds an ability to do things. What things? Not, typically, bodily movements. If Lupin knows the passcode for the phone, he can unlock the phone. But even without that knowledge, he could make the bodily movement of typing in 220348 or whatever the passcode was. What power does he get from knowing the code is 220348? He gets the ability to deliberately unlock the phone. He gets the ability to unlock the phone by typing 220348, and this not be a lucky guess, but a rational action. Knowledge makes rational action possible. That’s why it is powerful. That’s what its power consists in. That’s why the Nyāya philosophers were right to base anti-sceptical arguments on the possibility of rational action. Knowledge matters in everyday life; it explains why we have the power to act rationally.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;The story I’m telling in this paragraph deliberately echoes the view that ability modals do not express possibility but necessity <span class="citation" data-cites="MandelkernEtAl2017">(<a href="references.html#ref-MandelkernEtAl2017" role="doc-biblioref">Mandelkern, Schultheis, and Boylan 2017</a>)</span>. To say Lupin can unlock the phone is not to say he might unlock the phone - anyone might unlock it hitting random numbers - it’s to say he has a method that would unlock the phone if deployed.</p></li></div></div>
-<p>But it turns out to be surprisingly hard to articulate the magnitude of that power. One might want to say that knowing that <em>p</em> makes rational any action whatsoever that would make sense if <em>p</em> could be taken as given. This, as we’ve seen many times over, can’t be right. If it were right it would entail either that some actions that seem horribly reckless are in fact rational, or that an absurd form of scepticism is true, and almost no actions are in fact rational. If our pre-theoretic judgments of which actions are rational is even close to being right, there must be limits to the power of knowledge.</p>
+
+<p>Knowledge is power. That is, it grounds an ability to do things. What things? Not, typically, bodily movements. If Lupin knows the passcode for the phone, he can unlock the phone. But even without that knowledge, he could make the bodily movement of typing in 220348 or whatever the passcode was. What power does he get from knowing the code is 220348? He gets the ability to deliberately unlock the phone. He gets the ability to unlock the phone by typing 220348, and this not be a lucky guess, but a rational action. Knowledge makes rational action possible. That’s why it is powerful. That’s what its power consists in. That’s why the Nyāya philosophers were right to base anti-sceptical arguments on the possibility of rational action. Knowledge matters in everyday life; it explains why we have the power to act rationally.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;The story I’m telling in this paragraph deliberately echoes the view that ability modals do not express possibility but necessity <span class="citation" data-cites="MandelkernEtAl2017">(<a href="references.html#ref-MandelkernEtAl2017" role="doc-biblioref">Mandelkern, Schultheis, and Boylan 2017</a>)</span>. To say Lupin can unlock the phone is not to say he might unlock the phone - anyone might unlock it hitting random numbers - it’s to say he has a method that would unlock the phone if deployed.</p></li></div><p>But it turns out to be surprisingly hard to articulate the magnitude of that power. One might want to say that knowing that <em>p</em> makes rational any action whatsoever that would make sense if <em>p</em> could be taken as given. This, as we’ve seen many times over, can’t be right. If it were right it would entail either that some actions that seem horribly reckless are in fact rational, or that an absurd form of scepticism is true, and almost no actions are in fact rational. If our pre-theoretic judgments of which actions are rational is even close to being right, there must be limits to the power of knowledge.</p>
 <p>Are those limits sensitive to the interests of the would-be knower, or are they independent of those interests? I’ve argued that they are sensitive to the knower’s interests, against what I called the orthodox view that they are not. There are two primary reasons I’ve given for this.</p>
 <p>One reason is that the interest-relative answer, unlike the orthodox answer, makes it clear why the boundary between knowledge and non-knowledge matters. On the interest-relative view, the boundary between knowledge and non-knowledge is philosophically and practically significant. On the orthodox view, it’s like the boundary between heavy things and non-heavy things. How heavy something is matters a lot; but which side of the heavy/non-heavy boundary it falls on does not.</p>
 <p>According to orthodoxy, to know something is to have enough power to use that knowledge to act rationally in, you know, a wide enough range of cases. How wide? It’s sort of wide enough. Why is it this range rather than some other? Oh, no good reason. We just talk that way, and it’s the job of epistemologists to explain why we do. No, not explain - because it’s arbitrary and inexplicable. It’s to describe the limits, limits which are ultimately quite arbitrary. This is no good at all. The heterodox interest-relative view has a better answer. The limits are set just where they need to be to make it true that what this person knows rationalises the actions that it should in fact rationalise.</p>
@@ -275,16 +286,16 @@ div.csl-indent {
 <p>If <em>X</em> has to choose between <em>A</em> and <em>B</em>, and there is some partition <em>P</em> of a space of possibilities such that <em>X</em> knows both that precisely one member of <em>P</em> is actual, and that conditional on each member of <em>P</em>, <em>A</em> is better than <em>B</em>, then <em>X</em> should prefer <em>A</em> to <em>B</em>.</p>
 </dd>
 </dl>
-<div class="page-columns page-full"><p>Given orthodoxy, neither of these can be correct. In each case, <em>X</em> might know that <em>A</em> will lead to a good outcome, but it also be sufficiently probable that <em>A</em> will lead to a disastrous outcome that it is irrational for <em>X</em> to choose <em>A</em>. That’s absurd, and so we should reject orthodoxy. The interest-relative view makes these, and any number of related principles, turn out unrestrictedly true.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Note that it’s not much help to say that the principles are approximately true on the orthodox picture. In game theory we want to be able to iterate principles like this, and approximately true principles can’t be applied iteratively.</p></li></div></div>
-<p>If these are the two reasons for adopting an interest-relative view, the appeal of some kind of contextualist version of an interest-invariant view should be clear. The contextualist can, and does, say that there is something special about the boundary between knowledge and non-knowledge. When one say that someone knows something, one means (more or less) that their evidence for that thing is good enough for one’s own purposes. Any speaker of the language can truly say, “When I use ‘knows’, it means what I need it to mean, neither more nor less.” We could quibble here, but that’s something like a solution to the problem of arbitrariness.</p>
-<div class="page-columns page-full"><p>The problems come with the principles like Means-End Rationality and Strict Dominance Reasoning. These are both false on standard, interest-invariant, contextualist views.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Contextualists are aware of this fact, and say that they have something nearly as good: a meta-linguistic replacement. Both principles are true if we replace talk about what <em>X</em> knows with talk about what <em>X</em> can truly self-predicate ‘knowledge’ of. It doesn’t matter whether <em>X</em> knows that <em>A</em> will lead to end <em>E</em>, but whether <em>X</em> can say the words <em>I know that performing A will lead to end E</em>. But it’s absurd to think that fundamental principles of rationality should make reference to a particular language, e.g., English, like this. So contextualism cannot get us out of this jam. This is not to say that contextualism is false. Maybe there are other reasons to believe in contextualism. It might be supported by general principles about the way that names behave in attitude ascriptions. Or it might be a consequence of the view that ‘knows’ is polysemous, a view I floated in a footnote in <a href="interests.html#sec-neutrality">section&nbsp;<span>2.7</span></a>. Or it might be supported by reflection on cases where people talk about others with lower evidential needs than their own. I don’t take a stance on these questions here; I’m just arguing that contextualism doesn’t save orthodoxy.</p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;For the rest of this chapter, when I talk about contextualism, I mean the standard version of contextualism that does not entail that knowledge is interest-relative.</p></li></div></div>
-<p>But all these benefits of the interest-relative view are of no use if the view has even worse defects. And most of this book has involved pushing back against some of the alleged defects of the view. In some case, I’ve avoided possible criticisms by adopting a form of interest-relative epistemology that doesn’t allow the criticisms to take hold. Many existing critiques of interest-relative epistemology focus on forms of the view where being in a ‘high stakes’ situation is relevant to what one knows. Since my version of the view doesn’t have stakes play a direct role, those criticisms don’t have any bite. Other critiques target a part-time version of interest-relative epistemology, where some but not all key notions are interest-relative. I used to endorse such a part-time interest-relative theory, but eventually decided that the criticisms of such a view were decisive.</p>
-<p>Still, many criticisms do need replies, and much of this book has consisted in replying to them. In <a href="beliefs.html">chapter&nbsp;<span>3</span></a> I replied to (successful) criticisms of how I’d formally handled knowledge of propositions that are not relevant to the thinker’s current inquiries. In <a href="inquiry.html">chapter&nbsp;<span>5</span></a> I replied to arguments that started with the observation that it sometimes seems right to double check things that we know. And in <a href="ties.html">chapter&nbsp;<span>6</span></a> I replied to arguments based on how some versions of interest-relative epistemology (including the version I’d previously endorsed) handled choices between nearly indistinguishable options.</p>
-<p>Many criticisms of interest-relative epistemology do not turn on detailed engagement with how the view handles this or that case, but on the very idea of interests being relevant to epistemology. One way you see this is with arguments that just start from the implausibility of two people who are alike in evidence differing with respect to knowledge. But you also see it in the surprisingly common position in the literature that there is some extra large burden of proof on defenders of interest-relativity. It seems to be a common presupposition that unless there is a super compelling argument that knowledge is interest-relative, we should reject the idea that it is, even if there is no equally compelling argument against the idea. I’m in general very sceptical of burden of proof arguments; it always looks like an attempt to win by bribing the umpires. But there is extra reason to be sceptical here. The reason I so belabored the point in <a href="changes.html">chapter&nbsp;<span>7</span></a> about how many sensitive knowledge is to a variety of environmental factors was to show that it is really very hard to make any sweeping generalisations about what might matter to knowledge.</p>
+<p>Given orthodoxy, neither of these can be correct. In each case, <em>X</em> might know that <em>A</em> will lead to a good outcome, but it also be sufficiently probable that <em>A</em> will lead to a disastrous outcome that it is irrational for <em>X</em> to choose <em>A</em>. That’s absurd, and so we should reject orthodoxy. The interest-relative view makes these, and any number of related principles, turn out unrestrictedly true.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Note that it’s not much help to say that the principles are approximately true on the orthodox picture. In game theory we want to be able to iterate principles like this, and approximately true principles can’t be applied iteratively.</p></li></div><p>If these are the two reasons for adopting an interest-relative view, the appeal of some kind of contextualist version of an interest-invariant view should be clear. The contextualist can, and does, say that there is something special about the boundary between knowledge and non-knowledge. When one say that someone knows something, one means (more or less) that their evidence for that thing is good enough for one’s own purposes. Any speaker of the language can truly say, “When I use ‘knows’, it means what I need it to mean, neither more nor less.” We could quibble here, but that’s something like a solution to the problem of arbitrariness.</p>
+<p>The problems come with the principles like Means-End Rationality and Strict Dominance Reasoning. These are both false on standard, interest-invariant, contextualist views.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Contextualists are aware of this fact, and say that they have something nearly as good: a meta-linguistic replacement. Both principles are true if we replace talk about what <em>X</em> knows with talk about what <em>X</em> can truly self-predicate ‘knowledge’ of. It doesn’t matter whether <em>X</em> knows that <em>A</em> will lead to end <em>E</em>, but whether <em>X</em> can say the words <em>I know that performing A will lead to end E</em>. But it’s absurd to think that fundamental principles of rationality should make reference to a particular language, e.g., English, like this. So contextualism cannot get us out of this jam. This is not to say that contextualism is false. Maybe there are other reasons to believe in contextualism. It might be supported by general principles about the way that names behave in attitude ascriptions. Or it might be a consequence of the view that ‘knows’ is polysemous, a view I floated in a footnote in <a href="interests.html#sec-neutrality" class="quarto-xref"><span>Section&nbsp;2.7</span></a>. Or it might be supported by reflection on cases where people talk about others with lower evidential needs than their own. I don’t take a stance on these questions here; I’m just arguing that contextualism doesn’t save orthodoxy.</p>
+<div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;For the rest of this chapter, when I talk about contextualism, I mean the standard version of contextualism that does not entail that knowledge is interest-relative.</p></li></div><p>But all these benefits of the interest-relative view are of no use if the view has even worse defects. And most of this book has involved pushing back against some of the alleged defects of the view. In some case, I’ve avoided possible criticisms by adopting a form of interest-relative epistemology that doesn’t allow the criticisms to take hold. Many existing critiques of interest-relative epistemology focus on forms of the view where being in a ‘high stakes’ situation is relevant to what one knows. Since my version of the view doesn’t have stakes play a direct role, those criticisms don’t have any bite. Other critiques target a part-time version of interest-relative epistemology, where some but not all key notions are interest-relative. I used to endorse such a part-time interest-relative theory, but eventually decided that the criticisms of such a view were decisive.</p>
+<p>Still, many criticisms do need replies, and much of this book has consisted in replying to them. In <a href="beliefs.html" class="quarto-xref"><span>Chapter&nbsp;3</span></a> I replied to (successful) criticisms of how I’d formally handled knowledge of propositions that are not relevant to the thinker’s current inquiries. In <a href="inquiry.html" class="quarto-xref"><span>Chapter&nbsp;5</span></a> I replied to arguments that started with the observation that it sometimes seems right to double check things that we know. And in <a href="ties.html" class="quarto-xref"><span>Chapter&nbsp;6</span></a> I replied to arguments based on how some versions of interest-relative epistemology (including the version I’d previously endorsed) handled choices between nearly indistinguishable options.</p>
+<p>Many criticisms of interest-relative epistemology do not turn on detailed engagement with how the view handles this or that case, but on the very idea of interests being relevant to epistemology. One way you see this is with arguments that just start from the implausibility of two people who are alike in evidence differing with respect to knowledge. But you also see it in the surprisingly common position in the literature that there is some extra large burden of proof on defenders of interest-relativity. It seems to be a common presupposition that unless there is a super compelling argument that knowledge is interest-relative, we should reject the idea that it is, even if there is no equally compelling argument against the idea. I’m in general very sceptical of burden of proof arguments; it always looks like an attempt to win by bribing the umpires. But there is extra reason to be sceptical here. The reason I so belabored the point in <a href="changes.html" class="quarto-xref"><span>Chapter&nbsp;7</span></a> about how many sensitive knowledge is to a variety of environmental factors was to show that it is really very hard to make any sweeping generalisations about what might matter to knowledge.</p>
 <p>We’ve known since 1963 (if not many centuries before) that knowledge depends on more than just the evidential basis of the thing purportedly known. Since then there has been a dizzying array of proposals about what else knowledge might depend on. And on reflection, many of these proposals have been very plausible. This book aims to defend one such proposal, that knowledge depends on interests. In particular, how much evidential support one needs to have knowledge depends on what inquiries one is, and should be, engaged in. Given the tight relationships between knowledge and rational action, adding this to the vast list of things knowledge is sensitive to should not be surprising.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-MandelkernEtAl2017" class="csl-entry" role="listitem">
 Mandelkern, Matthew, Ginger Schultheis, and David Boylan. 2017. <span>“Agentive Modals.”</span> <em>Philosophical Review</em> 126 (3): 301–43. <a href="https://doi.org/10.1215/00318108-3878483">https://doi.org/10.1215/00318108-3878483</a>.
 </div>
@@ -333,6 +344,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -401,13 +439,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -486,10 +526,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -499,8 +538,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -513,6 +561,135 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -556,6 +733,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -581,6 +759,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -642,17 +846,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./evidence.html" class="pagination-link">
+      <a href="./evidence.html" class="pagination-link  aria-label=" &lt;span="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evidence</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
+      <a href="./references.html" class="pagination-link" aria-label="References">
         <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
