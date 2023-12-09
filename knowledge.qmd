@@ -86,7 +86,6 @@ This book is primarily concerned with the seventh, though the argument touches t
 The aim of this section is to argue for the following principle.
 
 Knowledge Allows Exclusion (KAE)
-
 :   If a chooser knows that a possibility does not obtain, then it is permissible to use a decision table where that possibility is excluded, i.e., is incompatible with the possibilities in each of the columns.
 
 Knowledge Allows Exclusion is Jessica Brown's principle K Suff applied to practical decision making using tables. That's a fairly central case for K Suff, so if KAE is true, then it seems plausible that K Suff will be true too. I'll come back to the more general case for K Suff in later sections, though; here the focus is KAE. I'm going to build up to KAE in stages; first I'm going to talk about ice cream.
