@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"r.lsp.promptToInstall": false,
+		"cSpell.words": [
+			"conditionalise",
+			"underspecified"
+		]
+	}
+}
