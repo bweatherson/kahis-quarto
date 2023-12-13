@@ -31,6 +31,10 @@ book:
 bibliography: references.bib
 csl: ergo.csl
 
+comments:
+  hypothesis: 
+    theme: clean
+
 format:
   html:
     theme: 
