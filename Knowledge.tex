@@ -196,7 +196,7 @@
 \makeatother
 \subtitle{A Human Interest Story}
 \author{Brian Weatherson}
-\date{2023-12-17}
+\date{2023-12-18}
 
 \begin{document}
 \frontmatter
@@ -9711,12 +9711,12 @@ characteristics.\footnote{The first five sections of this chapter are
 \end{itemize}
 
 I'm going to argue that there are cases where the only rational play is
-Red-True, but the blue sentence is something we want to say that,
-ordinarily, is part of the subject's evidence. And I'll argue that this
-is a problem for the theory I have described so far. It is not a problem
-that shows that anything I've said so far is untrue. But it does suggest
-that what I've said so far is incomplete, and in a key respect
-unexplanatory.
+Red-True, but the blue sentence is something that, in normal
+circumstances, would be part of the subject's evidence. And I'll argue
+that this is a problem for the theory I have described so far. It is not
+a problem that shows that anything I've said so far is untrue. But it
+does suggest that what I've said so far is incomplete, and in a key
+respect unexplanatory.
 
 I have tried so far to argue that belief, rational belief, and knowledge
 are all interest-relative. And I have tried to tell a story about when
@@ -9926,10 +9926,10 @@ colloquially, we need to know their goals.
 \tightlist
 \item
   The Radical Interpreter assigns mental states to Human in such a way
-  as to predict Human's actions given Human rationality. We'll assume
-  here that evidence is a mental state, so saying what evidence Human
-  has is among Radical Interpreter's tasks. (Indeed, in the game play to
-  come, it will be their primary task.)
+  as to predict Human's actions given that Human is rational. We'll
+  assume here that evidence is a mental state, so saying what evidence
+  Human has is among Radical Interpreter's tasks. (Indeed, in the game
+  play to come, it will be their primary task.)
 \item
   Human acts so as to maximise the expected utility of their action,
   conditional on the evidence that they have. Human doesn't always know
@@ -9948,9 +9948,9 @@ on \emph{p}. If the bet wins, it wins 1 util; if the bet loses, it loses
 100 utils. Human's only choice is to Take or Decline the bet. The
 proposition \emph{p}, the subject of the bet, is like the claim that
 Rahul is in the restaurant. It is something that is arguably part of
-Human's evidence. Unfortunately, it is also arguable that it is not part
-of Human's evidence. We will let \emph{K} be the rest of Human's
-evidence (apart from \emph{p}, and things entailed by \emph{K} ∪
+Human's evidence. Unfortunately, it is also arguable that \emph{p} is
+not part of Human's evidence. We will let \emph{K} be the rest of
+Human's evidence (apart from \emph{p}, and things entailed by \emph{K} ∪
 \emph{p}), and stipulate that Pr(\emph{p} \textbar{}\emph{K})~=~0.9.
 Each party now faces a choice.
 
@@ -9971,7 +9971,8 @@ if \emph{p} is not part of the evidence, then The Radical Interpreter
 thinks that the bet has negative expected utility, so Human will decline
 it. Either way, The Radical Interpreter wants Human's action to
 coordinate with theirs. And Human wants to maximise expected utility. So
-we get the following table for the game.
+the payouts for the game are those in
+Table~\ref{tbl-radical-interpreter}.
 
 \begin{longtable}[]{@{}rcc@{}}
 \caption{The Radical Interpreter
@@ -10013,7 +10014,7 @@ by an example of Rousseau's.
 \section{Risk-Dominant Equilibria}\label{sec-globalgame}
 
 At an almost maximal level of abstraction, a two player, two option each
-game looks like this.
+game looks like Table~\ref{tbl-generic-game}.
 
 \begin{longtable}[]{@{}rcc@{}}
 \caption{A generic 2 by 2 by 2
@@ -10032,7 +10033,8 @@ game.}\label{tbl-generic-game}\tabularnewline
 
 We're going to focus on games that have the following eight properties:
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   \emph{r}\textsubscript{11}~\textgreater~\emph{r}\textsubscript{21}
@@ -10050,7 +10052,7 @@ We're going to focus on games that have the following eight properties:
   \emph{r}\textsubscript{21}~+~\emph{r}\textsubscript{22}~\textgreater~\emph{r}\textsubscript{11}~+~\emph{r}\textsubscript{12}
 \item
   \emph{c}\textsubscript{12}~+~\emph{c}\textsubscript{22}~≥~\emph{c}\textsubscript{11}~+~\emph{c}\textsubscript{21}
-\end{itemize}
+\end{enumerate}
 
 The first four clauses say that the game has two (strict) Nash
 equilibria: \emph{Aa} and \emph{Bb}. The fifth and sixth clauses say
@@ -10103,9 +10105,9 @@ on is why Rousseau was right to think that a `stranger to foresight',
 who is just focussing on this game, should take the rabbit.
 
 To make matters a little easier, we'll focus on a very particular
-instance of Stag Hunt, as shown here. (From here I'm following Carlsson
-and van Damme very closely; this is their example, with just the
-labelling slightly altered.)
+instance of Stag Hunt, as shown in Table~\ref{tbl-stag-hunt}. (From here
+I'm following Carlsson and van Damme very closely; this is their
+example, with just the labelling slightly altered.)
 
 \begin{longtable}[]{@{}rcl@{}}
 \caption{A simple version of Stag
@@ -10127,9 +10129,9 @@ outcome for each individual. But it is risky, and Carlsson and van Damme
 suggest a way to turn that risk into an argument for choosing \emph{Bb}.
 
 Embed this game in what they call a \emph{global game}. We'll start the
-game with each player knowing just that they will play a game with the
-following payout table, with \emph{x} to be selected at random from a
-flat distribution over {[}-1, 5{]}.
+game with each player knowing just that they will play
+Table~\ref{tbl-global-game}, with \emph{x} to be selected at random from
+a flat distribution over {[}-1, 5{]}.
 
 \begin{longtable}[]{@{}rcc@{}}
 \caption{The global game.}\label{tbl-global-game}\tabularnewline
@@ -10244,13 +10246,13 @@ they will maximise expected utility, and so on.
 
 The rest of this section goes into more technical detail about Carlsson
 and van Damme's example. Readers not interested in these details can
-skip ahead to the next section. In the first subsection I summarise
-their argument that we only need iterated deletion of strictly dominated
-strategies to get the result that rational players will play the
-risk-dominant strategies. In the second subsection I offer a small
-generalisation of their argument, showing that it still goes through
-when one of the players gets a precise signal, and the other gets a
-noisy signal.
+skip ahead to Section~\ref{sec-evsolution}. In
+Section~\ref{sec-cvdproof} I summarise their argument that we only need
+iterated deletion of strictly dominated strategies to get the result
+that rational players will play the risk-dominant strategies. Then in
+Section~\ref{sec-perfectri} I offer a small generalisation of their
+argument, showing that it still goes through when one of the players
+gets a precise signal, and the other gets a noisy signal.
 
 \subsection{The Dominance Argument for Risk-Dominant
 Equilibria}\label{sec-cvdproof}
@@ -10263,12 +10265,12 @@ signals \emph{s\textsubscript{R}} and \emph{s\textsubscript{C}}. Each
 player must then choose \emph{A}, getting either 4 or 0 depending on the
 other player's choice, or choose \emph{B}, getting \emph{x} for sure.
 
-Before getting the signal, the players must choose a strategy. A
-strategy is a function from signals to choices. Since the higher the
-signal is, the better it is to play \emph{B}, we can equate strategies
-with `tipping points', where the player plays \emph{B} if the signal is
-above the tipping point, and \emph{A} below the tipping point. Strictly
-speaking, a tipping point will pick out not a strategy but an
+Before getting the signal, the players must choose a strategy. In this
+context, a strategy is a function from signals to choices. Since the
+higher the signal is, the better it is to play \emph{B}, we can equate
+strategies with `tipping points', where the player plays \emph{B} if the
+signal is above the tipping point, and \emph{A} below the tipping point.
+Strictly speaking, a tipping point will pick out not a strategy but an
 equivalence class of strategies, which differ in how they act if the
 signal is the tipping point. But since that happens with probability 0,
 the strategies in the equivalence class have the same expected return,
@@ -10378,9 +10380,10 @@ large as that as well. And then we can use that fact to derive a further
 upper bound on \emph{T\textsubscript{R}} and hence on
 \emph{T\textsubscript{C}}, and so on. And this will continue until we
 push both down to 2. It does require quite a number of steps of iterated
-deletion. Here is the upper bound on the threshold after \emph{n} rounds
-of deletion of dominated strategies. (These numbers are precise for the
-first two rounds, then just to three significant figures after that.)
+deletion. Table~\ref{tbl-threshold} shows the upper bound on the
+threshold after \emph{n} rounds of deletion of dominated strategies.
+(The numbers in Table~\ref{tbl-threshold} are precise for the first two
+rounds, and correct to three significant figures after that.)
 
 \begin{longtable}[]{@{}cc@{}}
 \caption{How the threshold moves towards
@@ -10405,9 +10408,9 @@ first two rounds, then just to three significant figures after that.)
 
 That is, \emph{T\textsubscript{R}}~=~4.25 dominates any strategy with a
 tipping point above 4.25. And \emph{T\textsubscript{R}}~=~3.875
-dominates any strategy with a higher tipping point than that, assuming
+dominates any strategy with a higher tipping point than 3.875, assuming
 \emph{T\textsubscript{C}}~≤~4.25. And \emph{T\textsubscript{R}}~≈~3.599
-dominates any strategy with a higher tipping point than that, assuming
+dominates any strategy with a higher tipping point than 3.599, assuming
 \emph{T\textsubscript{C}}~≤~3.875. And so on.
 
 And similar reasoning shows that at each stage not only are all
@@ -10637,16 +10640,14 @@ thing as Jack, i.e., go up the hill.
 
 Normally we wouldn't spell out the `happy to infer' steps, but I've
 included them in here to make the reasoning a bit more explicit. But
-note that what I didn't need to make explicit, even in this laborious
-reconstruction. That Jack went up the hill goes from a conclusion of the
-first little argument, to a premise in a later argument. The later
-argument says that we can conclude from the fact that Jack went up the
-hill, and that a friend said Jack and Jill did the same thing, that Jill
-went up the hill. And what matters for our purposes is that there
-doesn't seem to be a gap between the rationality of inferring that Jack
-went up the hill, and the rationality of using that as a premise in
-later reasoning. The idea that there is no gap here just is the idea
-that the principle \emph{Cut} is true.
+note what I didn't need to make explicit, even in this laborious
+reconstruction. I didn't need to note a change of status of the claim
+that Jack went up the hill. That goes from being a conclusion to being a
+premise. What matters for our purposes is that there doesn't seem to be
+a gap between the rationality of inferring that Jack went up the hill,
+and the rationality of using that as a premise in later reasoning. The
+idea that there is no gap here just is the idea that the principle
+\emph{Cut} is true.
 
 But while \emph{Cut} seems intuitive in cases like this, Nair argues
 that it can't be right in general. (And so we have a duty, one he takes
@@ -10682,7 +10683,7 @@ ways the argument against E=K I'm going to give is just a notational
 variant on Goldman's, but I think the notation I'm borrowing from Nair
 helps bring out the argument's strength.
 
-Here's the crucial background assumption for the example. (I'll come
+Here is the crucial background assumption for the example. (I'll come
 back to how plausible this is after setting the example up.) The nature
 of \emph{F} around here varies, but it varies very very slowly. If we
 find a pattern in common to all the \emph{F} within distance \emph{d} of
@@ -11254,14 +11255,15 @@ explains why we have the power to act rationally.\footnote{The story I'm
   it's to say he has a method that would unlock the phone if deployed.}
 
 But it turns out to be surprisingly hard to articulate the magnitude of
-that power. One might want to say that knowing that \emph{p} makes
-rational any action whatsoever that would make sense if \emph{p} could
-be taken as given. This, as we've seen many times over, can't be right.
-If it were right it would entail either that some actions that seem
-horribly reckless are in fact rational, or that an absurd form of
-scepticism is true, and almost no actions are in fact rational. If our
-pre-theoretic judgments of which actions are rational is even close to
-being right, there must be limits to the power of knowledge.
+that power. One might want to say that the actions which knowing that
+\emph{p} makes rational include all the actions whatsoever that make
+sense if \emph{p} can be taken as given. This, as we've seen many times
+over, can't be right. If it were right it would entail either that some
+actions that seem horribly reckless are in fact rational, or that an
+absurd form of scepticism is true, and almost no actions are in fact
+rational. If our pre-theoretic judgments of which actions are rational
+is even close to being right, there must be limits to the power of
+knowledge.
 
 Are those limits sensitive to the interests of the would-be knower, or
 are they independent of those interests? I've argued that they are
@@ -11302,17 +11304,18 @@ intend to perform \emph{A}.
 \item[Strict Dominance Reasoning]
 If \emph{X} has to choose between \emph{A} and \emph{B}, and there is
 some partition \emph{P} of a space of possibilities such that \emph{X}
-knows both that precisely one member of \emph{P} is actual, and that
-conditional on each member of \emph{P}, \emph{A} is better than
+knows both that precisely one member of \emph{P} is actual, that
+\emph{X}'s actions make no difference to which member is actual, and
+that conditional on each member of \emph{P}, \emph{A} is better than
 \emph{B}, then \emph{X} should prefer \emph{A} to \emph{B}.
 \end{description}
 
 Given orthodoxy, neither of these can be correct. In each case, \emph{X}
-might know that \emph{A} will lead to a good outcome, but it also be
-sufficiently probable that \emph{A} will lead to a disastrous outcome
-that it is irrational for \emph{X} to choose \emph{A}. That's absurd,
-and so we should reject orthodoxy. The interest-relative view makes
-these, and any number of related principles, turn out unrestrictedly
+might know that \emph{A} will lead to a good outcome, but it might also
+be probable enough that \emph{A} will lead to a disastrous outcome for
+it to be irrational for \emph{X} to choose \emph{A}. That's absurd, and
+so we should reject orthodoxy. The interest-relative view makes these,
+and any number of related principles, turn out unrestrictedly
 true.\footnote{Note that it's not much help to say that the principles
   are approximately true on the orthodox picture. In game theory we want
   to be able to iterate principles like this, and approximately true
@@ -11354,22 +11357,23 @@ their own. I don't take a stance on these questions here; I'm just
 arguing that contextualism doesn't save orthodoxy.
 
 But all these benefits of the interest-relative view are of no use if
-the view has even worse defects. And most of this book has involved
-pushing back against some of the alleged defects of the view. In some
-case, I've avoided possible criticisms by adopting a form of
-interest-relative epistemology that doesn't allow the criticisms to take
-hold. Many existing critiques of interest-relative epistemology focus on
-forms of the view where being in a `high stakes' situation is relevant
-to what one knows. Since my version of the view doesn't have stakes play
-a direct role, those criticisms don't have any bite. Other critiques
-target a part-time version of interest-relative epistemology, where some
-but not all key notions are interest-relative. I used to endorse such a
+the interest-relative view has even worse defects. And most of this book
+has involved pushing back against some of the alleged defects of the
+view. In some case, I've avoided possible criticisms by adopting a form
+of interest-relative epistemology that doesn't allow the criticisms to
+take hold. Many existing critiques of interest-relative epistemology
+focus on forms of the view where being in a `high stakes' situation is
+relevant to what one knows. Since my version of the view does not say
+that interests matter iff they put the chooser in a high stakes
+situation, those criticisms don't have any bite. Other critiques target
+a part-time version of interest-relative epistemology, where some but
+not all key notions are interest-relative. I used to endorse such a
 part-time interest-relative theory, but eventually decided that the
 criticisms of such a view were decisive.
 
 Still, many criticisms do need replies, and much of this book has
 consisted in replying to them. In Chapter~\ref{sec-belief} I replied to
-(successful) criticisms of how I'd formally handled knowledge of
+(successful) criticisms of how I'd previously handled knowledge of
 propositions that are not relevant to the thinker's current inquiries.
 In Chapter~\ref{sec-inquiry} I replied to arguments that started with
 the observation that it sometimes seems right to double check things
@@ -11391,10 +11395,10 @@ interest-relative, we should reject the idea that it is, even if there
 is no equally compelling argument against the idea. I'm in general very
 sceptical of burden of proof arguments; it always looks like an attempt
 to win by bribing the umpires. But there is extra reason to be sceptical
-here. The reason I so belabored the point in Chapter~\ref{sec-changes}
-about how many sensitive knowledge is to a variety of environmental
-factors was to show that it is really very hard to make any sweeping
-generalisations about what might matter to knowledge.
+of these particular burden of proof arguments. It's hard to even state a
+principle about the (alleged) independence of knowledge and interests
+without saying something false about double luck cases, or variable
+reliability cases, or deviant causal chain cases.
 
 We've known since 1963 (if not many centuries before) that knowledge
 depends on more than just the evidential basis of the thing purportedly
