@@ -22,8 +22,10 @@
 \usepackage{lmodern}
 \ifPDFTeX\else  
     % xetex/luatex font selection
-  \setmainfont[Scale = MatchLowercase]{Scala Pro}
-  \setsansfont[]{Scala Sans Pro}
+  \setmainfont[ItalicFont=EB Garamond Italic,BoldFont=EB Garamond
+Bold]{EB Garamond Math}
+  \setsansfont[]{Europa-Bold}
+  \setmathfont[]{Garamond-Math}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -42,7 +44,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage[left=1.5in,right=1.5in,top=1.78in,bottom=1.78in]{geometry}
+\usepackage[left=2in,right=2in,top=1.78in,bottom=1.78in]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -196,7 +198,7 @@
 \makeatother
 \subtitle{A Human Interest Story}
 \author{Brian Weatherson}
-\date{2023-12-18}
+\date{2024-03-22}
 
 \begin{document}
 \frontmatter
@@ -6846,7 +6848,7 @@ relatively recent technological innovation.
 \chapter{Ties}\label{sec-ties}
 
 I have mentioned a couple of times that a natural version of IRT leads
-to unpleasant closure failures. Alex Zweber
+to unpleasant closure failures. Adam Zweber
 (\citeproc{ref-Zweber2016}{2016}) and, separately, Charity Anderson and
 John Hawthorne (\citeproc{ref-AndersonHawthorne2019a}{2019a}), showed
 that the following principle cannot be the only way interests enter into
@@ -6922,9 +6924,10 @@ Assume there are \emph{k} notes on the footstool. Call them
 \emph{c\textsubscript{i}} be the proposition that note
 \emph{n\textsubscript{i}} is counterfeit, and its negation
 \emph{g\textsubscript{i}} be that it is genuine. Let \emph{g}, without a
-subscript, be the conjunction \emph{g}\textsubscript{1} ∧ \ldots{} ∧
-\emph{g\textsubscript{n}}; i.e., the proposition that all the notes are
-genuine. Let \emph{t\textsubscript{i}} be the act of taking note
+subscript, be the conjunction
+\emph{g}\textsubscript{1}~∧~\ldots~∧~\emph{g\textsubscript{n}}; i.e.,
+the proposition that all the notes are genuine. Let
+\emph{t\textsubscript{i}} be the act of taking note
 \emph{n\textsubscript{i}}. Let \emph{U} be Frankie Lee's utility
 function, and \emph{Cr} his credence function.
 
@@ -7306,9 +7309,9 @@ ordinary sense of option), or something antecedent.
 
 And I'm going to call any search procedure that is sensitive to resource
 considerations a satisficing procedure. This isn't an uncommon usage.
-Charles Manski -Manski (\citeproc{ref-Manski2017}{2017}) uses the term
-this way, and notes that it has rarely been defined more precisely than
-that. But it isn't the only way that it is used. Mauro Papi
+Charles Manski (\citeproc{ref-Manski2017}{2017}) uses the term this way,
+and notes that it has rarely been defined more precisely than that. But
+it isn't the only way that it is used. Mauro Papi
 (\citeproc{ref-Papi2013}{2013}) uses the term to exclusively mean that
 the chooser has a `reservation level', and they choose the first option
 that crosses it. This kind of meaning will be something that becomes

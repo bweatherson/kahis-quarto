@@ -63,10 +63,14 @@ format:
   pdf:
     documentclass: scrbook
     keep-tex: true
-    geometry: "left=1.5in,right=1.5in,top=1.78in,bottom=1.78in"
-    mainfont: Scala Pro
-    sansfont: Scala Sans Pro
-    mainfontoptions: Scale = MatchLowercase
+    geometry: "left=2in,right=2in,top=1.78in,bottom=1.78in"
+    mathspec: false
+    mathfont: Garamond-Math
+    mainfont: EB Garamond Math
+    sansfont: Europa-Bold
+    mainfontoptions: 
+      - ItalicFont=EB Garamond Italic
+      - BoldFont=EB Garamond Bold
     biblio-style: philreview
     fontsize: 12pt
     linkcolor: black
