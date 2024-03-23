@@ -94,7 +94,7 @@ format:
         \addtolength{\headheight}{1.6pt}
   docx:
     toc: true
-    reference-doc: my-template.docx
+    reference-doc: kahis-template.docx
     output-file: "Knowledge"
     number-sections: true
   epub:
