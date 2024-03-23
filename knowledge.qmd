@@ -98,6 +98,10 @@ Here is the standard way Hotelling's model is introduced in textbooks.[^knowledg
 
 This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. Here is the table for how many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we're in, the choice of the second truck determines which column of the table we're in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck.
 
+:::{.content-visible when-format="pdf"}
+\clearpage
+:::
+
 |       |       |       |       |       |       |
 |------:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |       | **1** | **2** | **3** | **4** | **5** |
