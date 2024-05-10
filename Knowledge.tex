@@ -1,14 +1,14 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-  12pt,
+  10pt,
   letterpaper,
-]{scrbook}
+  twoside]{scrbook}
 
 \usepackage{amsmath,amssymb}
+\usepackage{setspace}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -33,18 +33,10 @@ Bold]{EB Garamond Math}
   \usepackage[]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
 \usepackage{xcolor}
-\usepackage[left=2in,right=2in,top=1.78in,bottom=1.78in]{geometry}
+\usepackage[left=1in, right=1in, top=0.8in, bottom=0.8in,
+paperheight=9.5in, paperwidth=6.5in, includemp=TRUE, marginparwidth=0in,
+marginparsep=0in]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -116,19 +108,30 @@ Bold]{EB Garamond Math}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{#1 }{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[CE]{\nouppercase{\textit \leftmark}}
-\fancyhead[CO]{\nouppercase{\textit \rightmark}}
-\fancyhead[LE,RO]{\thepage}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
 \setlength\heavyrulewidth{0ex}
 \setlength\lightrulewidth{0ex}
-\addtolength{\headheight}{1.6pt}
+\usepackage[automark]{scrlayer-scrpage}
+\clearpairofpagestyles
+\cehead{
+  \leftmark
+  }
+\cohead{
+  \rightmark
+}
+\ohead{\bfseries \pagemark}
+\cfoot{}
+\makeatletter
+\newcommand*\NoIndentAfterEnv[1]{%
+  \AfterEndEnvironment{#1}{\par\@afterindentfalse\@afterheading}}
+\makeatother
+\NoIndentAfterEnv{itemize}
+\NoIndentAfterEnv{enumerate}
+\NoIndentAfterEnv{description}
+\NoIndentAfterEnv{quote}
+\NoIndentAfterEnv{equation}
+\NoIndentAfterEnv{longtable}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
@@ -182,11 +185,7 @@ Bold]{EB Garamond Math}
 \hypersetup{
   pdftitle={Knowledge},
   pdfauthor={Brian Weatherson},
-  colorlinks=true,
-  linkcolor={black},
-  filecolor={Maroon},
-  citecolor={black},
-  urlcolor={black},
+  hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Knowledge}
@@ -198,7 +197,7 @@ Bold]{EB Garamond Math}
 \makeatother
 \subtitle{A Human Interest Story}
 \author{Brian Weatherson}
-\date{2024-03-23}
+\date{2024}
 
 \begin{document}
 \frontmatter
@@ -206,10 +205,10 @@ Bold]{EB Garamond Math}
 
 \renewcommand*\contentsname{Table of contents}
 {
-\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
+\setstretch{1.1}
 \mainmatter
 \bookmarksetup{startatroot}
 
