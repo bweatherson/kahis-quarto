@@ -179,7 +179,8 @@ marginparsep=0in]{geometry}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -286,19 +287,20 @@ without changing the option that maximised expected utility. As noted in
 the previous paragraph, I no longer think that we can identify knowledge
 with what doesn't change our verdicts. But more importantly, I no longer
 think that expected utility maximisation is as central to practical
-inquiry as I once did. There are some theoretical reasons from game
-theory that raise some doubts about expected utility maximisation. Weak
-dominance reasoning is part of our theory of rational choice, and can't
-be modelled as expected utility maximisation. Perhaps some kinds of
-equilibrium seeking are parts of practical inquiry, and can't be
-modelled as expected utility maximisation. But there are also very
-practical reasons to think that practical inquiry doesn't aim at
-expected utility maximisation. When there are a lot of very similar
-options - think about selecting a can from a supermarket shelf - and
-it's more trouble than it's worth to figure out which of them maximises
-expected utility, it's best to ignore the differences between them and
-just pick. As I'll argue in \hyperref[sec-ties]{Chapter 6}, this makes a
-big difference to how interests and knowledge interact.
+inquiry as I once did. There are theoretical reasons from game theory
+that raise doubts about expected utility maximisation being the full
+theory of rational choice. Weak dominance reasoning is part of our
+theory of rational choice, and can't be modelled as expected utility
+maximisation. Perhaps some kinds of equilibrium seeking are parts of
+practical inquiry, and can't be modelled as expected utility
+maximisation. There are also very practical reasons to think that
+practical inquiry doesn't aim at expected utility maximisation. When
+there are a lot of very similar options - think about selecting a can
+from a supermarket shelf - and it's more trouble than it's worth to
+figure out which of them maximises expected utility, it's best to ignore
+the differences between them and just pick. As I'll argue in
+\hyperref[sec-ties]{Chapter 6}, this makes a big difference to how
+interests and knowledge interact.
 
 In the version of interest-relativity that I'm defending here,
 everything in epistemology is interest-relative. Knowledge, rational
@@ -356,9 +358,6 @@ mentioned a few times already.
   ``Interests, Evidence and Games,'' \emph{Episteme} 15 (2018): 329-344.
 \end{itemize}
 
-(NB: The final version will include lists of permissions for reprints
-here.)
-
 I wrote most of this manuscript while on sabbatical at the Australian
 National University in the first half of 2019, and I'm very grateful for
 their hospitality while I was a visitor there.
@@ -392,11 +391,11 @@ the Australian National University, and the 2020 Ranch Metaphysics
 Workshop. I've also had valuable feedback on ideas in the book over the
 years from Michael Almeida, Charity Anderson, Thomas Blackson, Jessica
 Brown, Stewart Cohen, Josh Dever, Tom Donaldson, Tamar Szabó Gendler,
-Peter Gerdes, Katherine Hawley, John Hawthorne, Jonathan Jenkins
-Ichikawa, Jon Kvanvig, Jennifer Lackey, Barry Lam, Harvey Lederman,
-Matthew McGrath, Sarah Moss, Jennifer Nagel, Shyam Nair, Daniel Nolan,
-Ángel Pinillos, Jacob Ross, Mark Schroeder, Kieran Setiya, Ernie Sosa,
-Levi Spectre, Robert Stalnaker, Jason Stanley, and Matthew Weiner.
+Peter Gerdes, Katherine Hawley, John Hawthorne, Jonathan Ichikawa, Jon
+Kvanvig, Jennifer Lackey, Barry Lam, Harvey Lederman, Matthew McGrath,
+Sarah Moss, Jennifer Nagel, Shyam Nair, Daniel Nolan, Ángel Pinillos,
+Jacob Ross, Mark Schroeder, Kieran Setiya, Ernie Sosa, Levi Spectre,
+Robert Stalnaker, Jason Stanley, and Matthew Weiner.
 
 And of course I've got more feedback, and more useful feedback, from
 Ishani Maitra than from anyone, or any place, else. She's had to listen
@@ -416,24 +415,27 @@ of inquiry. Inquiry has to start somewhere, and a natural place to start
 is with what one knows. If one is planning a meal for friends, and
 choosing what to make, it's natural to start with what one knows about
 what ingredients are on hand or easily available, what the friends like,
-what dietary preferences and restrictions they have, and so on. But now
-we face a puzzle. Either we identify knowledge with absolute certainty
-or we do not. If we do, then inquiry can barely get started. If one
-knows anything with absolute certainty, then it is at most trivialities
-like instances of the law of identity. That won't be enough to get going
-on planning dinner. So let's say we do not identify knowledge with
-absolute certainty, and instead pick some particular level of certainty
-below that. Then there will be propositions that are more certain than
-that threshold, but which one should not use this particular inquiry.
-For instance, there will be cases where one's evidence that a particular
-friend is not allergic to peanuts is just above that threshold, but
-given the potentially lethal consequences of getting it wrong, this
-isn't something that should be taken as a starting point in inquiry. The
-solution, I'll argue at some length, is to identify knowledge with a
-variable level of certainty. And the level varies with the nature of the
-inquiry. In particular, it varies both with how important it is to get
-the inquiry right (very important in the case of the allergy), and with
-how hard it would be to get further information relevant to the inquiry.
+what dietary preferences and restrictions they have, and so on.
+
+Now we face a puzzle. Either we identify knowledge with absolute
+certainty or we do not. If we do, then inquiry can barely get started.
+If one knows anything with absolute certainty, then it is at most
+trivialities like instances of the law of identity. That won't be enough
+to get going on planning dinner. So let's say we do not identify
+knowledge with absolute certainty, and instead pick some particular
+level of certainty below that. Then there will be propositions that are
+more certain than that threshold, but which one should not use this
+particular inquiry. For instance, there will be cases where one's
+evidence that a particular friend is not allergic to peanuts is just
+above that threshold, but given the potentially lethal consequences of
+getting it wrong, this isn't something that should be taken as a
+starting point in inquiry.
+
+The solution is to identify knowledge with a level of certainty which
+varies with the nature of the inquiry. In particular, it varies both
+with how important it is to get the inquiry right (very important in the
+case of the allergy), and with how hard it would be to get further
+information relevant to the inquiry.
 
 I'm not the first to defend such a view; there is a thriving literature
 on interest-relative theories of knowledge like the one I'm defending
@@ -443,28 +445,26 @@ virtually nowhere. It's possible things changed around the time of the
 COVID-19 pandemic; after 2020 there were more positive discussions of
 interest-relativity.\footnote{See, for instance: Kim
   (\citeproc{ref-Kim2023}{2023}), Gao (\citeproc{ref-Gao2023}{2023}),
-  McKenna (\citeproc{ref-McKenna2024}{forthcoming}), Schmidt
-  (\citeproc{ref-Schmidt2024}{forthcoming}), Steglich-Petersen
-  (\citeproc{ref-Steglich-Petersen2024}{forthcoming}), Wu
+  Schmidt (\citeproc{ref-Schmidt2024}{forthcoming}), Steglich-Petersen
+  (\citeproc{ref-Steglich-Petersen2024}{2024}), Wu
   (\citeproc{ref-Wu2024}{forthcoming}), and Ye
   (\citeproc{ref-Ye2024}{forthcoming}). That's about as many people
   defending interest-relative theories in one year as defended them for
   the first 15 years since they were introduced in Fantl \& McGrath
   (\citeproc{ref-FantlMcGrath2002}{2002}).} Before then,
-interest-relative theories held a place last occupied by concrete modal
-realism. Rarely does a theory give rise to a literature with so many
-opponents and so few proponents.
+interest-relative theories had a ratio of discussion to endorsement that
+philosophy hadn't seen since Lewis put concrete modal realism on the
+agenda.
 
 The terminology that is used to describe the debate about
-interest-relativity is striking as well. The interest-relative view is
-usually squared off against the `purist' or `traditionalist' view. I'm
-not going to dive into the literature on which views get described as
-`pure' or `impure', but I wanted to pause a bit over `tradition'.
-Because this is a particularly curious choice of word, and I think its
-curiosity is related to the strange shape of the literature around
-interest-relativity.
+interest-relativity is striking. The interest-relative view is usually
+opposed to the `purist' or `traditionalist' view. I'm not going to dive
+into the literature on which views get described as `pure' or `impure',
+but I wanted to pause a bit over `tradition'. This is a particularly
+curious choice of word, and I think its curiosity is related to the
+strange shape of the literature around interest-relativity.
 
-The recent literature on interest-relativity was kick started by three
+The recent literature on interest-relativity was kick-started by three
 works in the early 2000s. First was Jeremy Fantl and Matthew McGrath's
 paper ``Evidence, Pragmatics and Justification'', published in \emph{The
 Philosophical Review} in 2002. Then came two books from Oxford
@@ -500,16 +500,15 @@ that they offered a new account of what affects knowledge; it was that
 they offered a view that came out of nowhere.
 
 If that was the impression that epistemologists had, it was mistaken.
-They weren't wrong that safety has precursors, but they were wrong that
-interest-relative theories did not. There are precursors to contemporary
-interest-relative views, and looking at them is helpful for thinking
-about why one might want to endorse an interest-relative view. I'm going
-to focus on two of these precursors, one from Hellenistic philosophy and
-one from Medieval philosophy.\footnote{A quick note on sources. This is
-  not at all a work of historical scholarship, and I'm not in a position
-  to write such a work. So everything I cite here is going to be a
-  contemporary secondary source. I do hope in the future there will be
-  more work on looking at the relationship between these historically
+There are precursors to contemporary interest-relative views, and
+looking at them is helpful for thinking about why one might want to
+endorse an interest-relative view. I'm going to focus on two of these
+precursors, one from Hellenistic philosophy and one from Medieval
+philosophy.\footnote{A quick note on sources. This is not at all a work
+  of historical scholarship, and I'm not in a position to write such a
+  work. So everything I cite here is going to be a contemporary
+  secondary (or tertiary) source. I do hope in the future there will be
+  more work which looks at the relationship between these historically
   important figures and contemporary views, but that work will have to
   be done by someone with a different skill set to mine.}
 
@@ -525,15 +524,15 @@ but the one that's important here is his `mitigated scepticism'. The
 sceptics faced a challenge: if no one knows anything, and indeed no one
 should believe anything, then it seems rational action is impossible.
 But surely some acts are rational, or at least more rational than other
-acts. What can be done.
+acts. What can be done?
 
 Philo's response is to say that while it is true that nothing can be
 known, it can be rational to assent to certain `persuasive impressions'.
-And action that is based in the right way on an impression that is
-really persuasive (and not just one that actually persuades) can be
-rational. Moreover, says Philo, how much evidence one needs to be
-properly persuaded can vary with differences in what's at stake with the
-action. As Adamson puts it,
+Action that is based in the right way on an impression that is really
+persuasive (and not just one that actually persuades) can be rational.
+Moreover, says Philo, how much evidence one needs to be properly
+persuaded can vary with differences in what's at stake with the action.
+As Adamson puts it,
 
 \begin{quote}
 Like Arcesilaus, Philo suggests that these impressions will be used as a
@@ -589,20 +588,20 @@ was a bad murderer. (Buridan, as quoted in Pasnau
 Note particular the phrase `the demands of such circumstances'.
 Buridan's notion here is clearly interest-relative. What it takes to
 properly judge a defendant guilty of murder is considerably more than
-what it takes to judge that someone broke a promise. And the difference
-here, while in the first instance a moral difference, matters to the
-applicability of this epistemic concept.
+what it takes to judge that someone broke a promise. The difference
+between the misdeeds, while in the first instance a moral difference,
+matters to the applicability of this epistemic concept.
 
 Now Buridan does not have an interest-relative account of knowledge.
 After all, the very example he uses to introduce this interest-relative
-concept is one where the belief is false, and hence not knowledge. But
-this would change over time. Eventually John Wilkins, writing in the
-17th Century, would take moral certainty to be the standard for
-knowledge (\citeproc{ref-Pasnau2017}{Pasnau, 2017: 218}). Wilkins is
-important to the history of science as one of the founders of the Royal
-Society. And he is important to the history of epistemology because he
-starts the tradition of centering epistemology around attainable norms.
-Here is how Pasnau puts the point.
+concept is one where the belief is false, and hence not knowledge. This
+would change over time. Eventually John Wilkins, writing in the 17th
+Century, would take moral certainty to be the standard for knowledge
+(\citeproc{ref-Pasnau2017}{Pasnau, 2017: 218}). Wilkins is important to
+the history of science as one of the founders of the Royal Society. And
+he is important to the history of epistemology because he starts the
+tradition of centering epistemology around attainable norms. Here is how
+Pasnau puts the point.
 
 \begin{quote}
 Wilkins in particular, in his small way, takes what can retrospectively
@@ -651,13 +650,13 @@ the contemporary interest-relative view. But the precursors are there.
 Indeed, they are there at some of the earliest sightings of what we
 might, in current terminology, call fallible epistemologies. If
 anything, I suspect the idea that an epistemology can be fallibilist and
-interest-invariant is the more recent innovation. But rather than dive
-too deeply into those historical waters, let's turn to a connection
-between Buridan's epistemology and (a particular strand in) Indian
-epistemology: the place of action theory in epistemology. What worries
-Buridan is whether a certain action, hanging an innocent man, can be
-given an epistemological defence. But he's hardly the first philosopher
-to see a tight connection between epistemology and action theory.
+interest-invariant is the more recent innovation. Rather than dive too
+deeply into those historical waters, let's turn to a connection between
+Buridan's epistemology and (a particular strand in) Indian epistemology:
+the place of action theory in epistemology. What worries Buridan is
+whether a certain action, hanging an innocent man, can be given an
+epistemological defence. Buridan isn'tthe first philosopher to see a
+tight connection between epistemology and action theory.
 
 The fifth century philosopher Vātsyāyana is known for his commentary on
 the first or second century Nyāya-sūtra.\footnote{My source for
@@ -707,14 +706,13 @@ The Nyāya philosophers, like Vātsyāyana, are relevant to this story for
 another reason. As well as closely connecting knowledge with action,
 they connect it closely with inquiry. And this book, like many
 contemporary philosophers, takes the same approach. Jane Friedman
-(\citeproc{ref-Friedman2019a}{2019b},
-\citeproc{ref-Friedman2019b}{2019a}, \citeproc{ref-Friedman2020}{2020})
-has developed a detailed account of what inquiry is and how it relates
-to epistemology. Elise Woodard (\citeproc{ref-Woodard2021}{2020}) and
-Arienne Falbo (\citeproc{ref-Falbo2021}{2021}) have some persuasive
-criticisms of particular details of Friedman's views, but enough of the
-picture survives, and indeed is developed by both Woodard and Falbo, to
-be useful in theorising about knowledge. Guido Melchior
+Friedman (\citeproc{ref-Friedman2024}{2024}) has developed a detailed
+account of what inquiry is and how it relates to epistemology. Elise
+Woodard (\citeproc{ref-Woodard2021}{2020}) and Arienne Falbo
+(\citeproc{ref-Falbo2021}{2021}) have some persuasive criticisms of
+particular details of Friedman's views, but enough of the picture
+survives, and indeed is developed by both Woodard and Falbo, to be
+useful in theorising about knowledge. Guido Melchior
 (\citeproc{ref-Melchior2019}{2019}) has developed a detailed account of
 a special kind of inquiry, namely checking, and some of what he says
 about checking is very useful in resolving some tensions in the
@@ -752,42 +750,39 @@ not on grounds of uncertainty.
 
 But I'm going to reject 2 and 3. I'm disagreeing here with Friedman,
 whose theory of inquiry gives an important role to 2. And Woodard argues
-convincingly that the failure of 3 implies that 2 has to fail as well.
-(There are similar arguments in Falbo and Melchior, all developed
-independently I believe.) Inquiry might aim at knowledge, but it might
-aim at any number of other things. It could aim at understanding, or at
+convincingly that the failure of 3 implies that 2 has to fail as
+well.\footnote{Note that Friedman (\citeproc{ref-Friedman2024}{2024})
+  also rejects 3, but not because she thinks inquiry aims at something
+  else; she is sceptical of the metaphor of \emph{aiming} in this
+  context. Note also that Falbo and Melchior developed similar arguments
+  to Woodard's.} Inquiry might aim at knowledge, but it might aim at any
+number of other things. It could aim at understanding, or at
 sensitivity, or at developing reasons that convince others. (The latter
 aim plays an important role in the explanation Michael Strevens
 (\citeproc{ref-Strevens2020}{2020}) offers for some striking features of
 contemporary science.) Since one might want to understand something one
 knows, or have a more sensitive belief in what one knows, or convince
 others of what one knows, it can make sense to inquire into what one
-knows.\footnote{This is one of the biggest changes between the theory of
-  this book and the theory of my earlier papers. In that earlier work
-  I'd based my arguments for interest-relative theories in pictures of
-  inquiry that ruled out these kinds of inquiry. This was a mistake, and
-  I'll say more in Chapter~\ref{sec-inquiry} about the picture of
-  inquiry that endorses 1, rejects 2 and 3, and validates the
-  interest-relative picture.}
+knows.
 
 The next chapter presents a straightforward argument for
-interest-relative epistemology. But before I get to that, I want to
-offer two motivations for the view. You could try to turn either of
-these motivations into a nice, clean, premise-conclusion argument for
+interest-relative epistemology. Before I get to that, I want to offer
+two motivations for the view. You could try to turn either of these
+motivations into a nice, clean, premise-conclusion argument for
 interest-relativity. I haven't done that because in both of these cases,
 the premise-conclusion format obscures more than it enlightens. The
 first motivation comes from the practical nature of belief, and the
 second from the thought that knowledge is a natural kind.
 
 Think back to the problem facing Philo of Larissa. He wants to be a
-sceptic, so nothing is known. But he also wants to be able to act in the
-world. And action requires a picture of what reality is like. So we need
+sceptic, so nothing is known. He also wants to be able to act in the
+world. Action requires a picture of what reality is like. So we need
 some mental state that aims to fit the world, and which can guide
-action. But once we have that state, you might well think that it's just
+action. Once we have that state, you might well think that it's just
 belief. Hugo Mercier (\citeproc{ref-Mercier2020}{2020}) argues that
 people do not believe as many conspiracy theories as they say they do;
 these apparent endorsements he argues are moves in a complicated
-signaling game. And his evidence that they don't actually believe the
+signaling game. His evidence that they don't actually believe the
 conspiracy theories is that they act nothing like how they would act
 were the theories true. Whether or not the details of Mercier's argument
 are right, the form of it seems right. Apparent belief that is out of
@@ -796,14 +791,10 @@ sync with action is not really belief at all.
 If belief is practical, the norms for belief should be practical too.
 This isn't a logically necessary conditional; it is easy to describe
 cases where we have non-practical norms for an essentially practical
-state. But you should expect that the norms of a practical state are
+state. Still, you should expect that the norms of a practical state are
 typically practical. So you should expect that epistemology, the study
 of norms for belief, will be shot through with practical considerations.
-And that's what the interest-relative theorist says is in fact the
-case.\footnote{When I first worked on interest-relativity in
-  epistemology, that was my primary motivation. And while I still think
-  it is a good reason to expect some interest-relativity, it isn't as
-  central to this book as it was to my earlier work.}
+That's what the interest-relative theorist says is in fact the case.
 
 The second motivation comes from reflection on what we're trying to do
 in epistemology, and how it relates to the importance of knowledge. I
@@ -815,8 +806,8 @@ improve one's doxastic position.) He thinks this is a retreat into mere
 lexicography, and away from what was traditionally, and correctly,
 viewed as the primary task of epistemology, namely clarifying the nature
 of the epistemic ideal. I'm working in this post-Wilkins tradition, so I
-probably should say some words in defence of it. And the defence I'll
-offer ends up motivating an interest-relative approach.
+probably should say some words in defence of it. This defence ends up
+motivating an interest-relative approach.
 
 Firstly, even if one didn't care about threshold standards like
 knowledge, the right thing to do isn't to focus on the ideal. We aren't
@@ -826,13 +817,13 @@ how to do better. This is a general consequence of the Theory of the
 Second Best (\citeproc{ref-LipseyLancaster}{Lipsey \& Lancaster,
 1956-1957}). Very often, being like the ideal is a way of being worse
 rather than better. For example, the ideal inquirer doesn't forget
-anything, so they don't need to take notes while reading. But it's a
-good epistemic practice to take notes while reading. So even if what you
-ultimately care about is doing better, not meeting thresholds, it isn't
-obvious that exploring the ideal is the way to get there. If our aim is
-epistemic improvement, we're probably better off exploring tools that
-fallible humans have developed for helping other fallible humans will be
-more useful than exploring the ideal.
+anything, so they don't need to take notes while reading. Nevertheless,
+it's a good epistemic practice to take notes while reading. So even if
+what you ultimately care about is doing better, not meeting thresholds,
+it isn't obvious that exploring the ideal is the way to get there. If
+our aim is epistemic improvement, we're probably better off exploring
+tools that fallible humans have developed for helping other fallible
+humans will be more useful than exploring the ideal.
 
 Secondly, and more importantly, the project here is not one of
 lexicography. I don't particularly care how the English word `knows' is
@@ -840,33 +831,34 @@ used. The fact that a phonologically indistinguishable word is used to
 talk both about knowing who won last night and knowing the players on
 the winning team is of no relevance to the project we're engaged in
 here. The fact that most languages have a word that is very close to
-synonymous to the English word `knows' is more relevant. But it's not
-relevant because it makes the lexicography important. Rather, it's
-relevant because it suggests that there is an important concept that
-English speakers are picking out with `knows', that French speakers are
-picking out with `savoir', and so on for all the other languages in the
-world. It could be that all these different language groups agreed to
-use one of their limited stock of words for this concept, and it was a
-mistake in every case. But as Austin frequently reminded us, that's not
-the way to bet.
+synonymous to the English word `knows' is more relevant. That's not
+because it makes the lexicography important. Rather, it's because it
+suggests that there is an important concept that English speakers are
+picking out with `knows', that French speakers are picking out with
+`savoir', and so on for all the other languages in the world. It could
+be that all these different language groups agreed to use one of their
+limited stock of words for this concept, and it was a mistake in every
+case. But as Austin frequently reminded us, that's not the way to bet.
 
 The concept of knowledge is, among other things, scientifically
 important. Throughout the social sciences, there are theories that are
-grounded in patterns of human behavior. And those patterns are, usually,
-best explained in terms of what those humans know. So consider the
+grounded in patterns of human behavior. Those patterns are, usually,
+best explained in terms of what those humans know. Consider the
 (stylized) fact that in a small, open, free market, competing suppliers
 of a common good will usually sell goods for the same price. We could
 offer an explanation of this in terms of the effective demand for a
 supplier's goods given their price and the price of competing suppliers.
-(The demand curve facing this individual supplier will have a striking
+The demand curve facing this individual supplier will have a striking
 discontinuity; once the price goes above the price others are offering
-the good at, demand falls to 0.) Such an explanation will be good as far
-as it goes, but we can do better. We can note that there is are
-mechanisms - in the sense of mechanism developed by Machamer, Darden and
-Craver (\citeproc{ref-MachamerEtAl2000}{2000}) - that underlie this
-pattern of effective demand. The mechanisms are individual consumers who
-will change their purchasing patterns if they know that someone else is
-selling the same good more cheaply. Now mechanisms, in this sense, are
+the good at, demand falls to 0.
+
+Such an explanation will be good as far as it goes, but we can do
+better. We can note that there is are mechanisms - in the sense of
+mechanism developed by Machamer, Darden and Craver
+(\citeproc{ref-MachamerEtAl2000}{2000}) - that underlie this pattern of
+effective demand. The mechanisms are individual consumers who will
+change their purchasing patterns if they know that someone else is
+selling the same good more cheaply. Mechanisms, in this sense, are
 things that display a consistent pattern of activity. The activities
 have external triggers and reliable outputs given that trigger. Here the
 trigger is knowledge that someone else is offering the good more
@@ -875,31 +867,32 @@ for us is that here, like in many other social science applications, the
 trigger needs to be stated in terms of knowledge. It can't just be that
 the change in prices leads to a change in behavior; a change in price
 that no one knows about won't plausibly bring about any behavioral
-change. And it can't be that the trigger is stated in terms of what is
-absolutely certain. Since no one can be absolutely certain of contingent
-things like the price that a supplier is charging for a good, the
-mechanism would never get triggered. Nor can it be stated in terms of
-high probability; no matter how probable I think it is that supplier B
-is cheaper than supplier A, it might still be rational to buy from
-supplier A if the rest of the probability goes to possibilities where B
-is much much more expensive. Knowledge alone seems to do the trick; the
-generalisation that people buy from suppliers they know to be cheaper
-seems both true, and to rationalise their purchasing behavior. And
-what's important for us is that this places knowledge in the center of
-our understanding of how this social arrangement works. That is going to
-be the general case; you just can't do social science without talking
-about how people behave when they come to know things.
+change. It can't be that the trigger is stated in terms of what is
+absolutely certain because no one can be absolutely certain of
+contingent things like the price that a supplier is charging for a good.
+Nor can the trigger be stated in terms of high probability. No matter
+how probable I think it is that supplier B is cheaper than supplier A,
+it might still be rational to buy from supplier A if the rest of the
+probability goes to possibilities where B is much much more expensive.
+
+Knowledge alone seems to do the trick. The generalisation that people
+buy from suppliers they know to be cheaper seems both true, and to
+rationalise their purchasing behavior. What's important for us is that
+this places knowledge in the center of our understanding of how this
+social arrangement works. That is going to be the general case; you just
+can't do social science without talking about how people behave when
+they come to know things.
 
 So we have two reasons for thinking knowledge is a reasonably natural
 kind: there are more or less synonymous terms for it across languages,
-and it plays a key role in scientific explanations. But most fallibilist
+and it plays a key role in scientific explanations. Most fallibilist
 theories of knowledge won't make it be particularly natural. (I'll
 expand on this point in Section~\ref{sec-lockearb}.) Most such theories
 say that to know something is to have a belief that's good enough along
 some dimension. So the belief must be justified enough, or safe enough,
-or produced by a reliable enough mechanism. But concepts that just pick
-out points high enough up some or other scale are not particularly
-natural. We should expect that we could do better.
+or produced by a reliable enough mechanism. Concepts that just pick out
+points high enough up some or other scale are not particularly natural.
+We should expect that we could do better.
 
 Some fallibilist theories, or at least theories that make knowledge
 `sub-optimal' in the sense I used above, do seem to be reasonably
@@ -907,39 +900,39 @@ natural. The sensitivity theory that Nozick
 (\citeproc{ref-Nozick1981}{1981}) develops, for instance, plausibly
 makes knowledge into a natural kind. Whether a belief would be retained
 were its content false is not a matter of how well the belief does on
-some scale. A good way to understand the `knowledge first' program that
-Williamson (\citeproc{ref-Williamson2000}{2000}) defends is as involving
-the claim that knowledge is natural but not in virtue of what makes it
-the case that things are known. That's not completely implausible; it
-isn't obvious that the naturalness of social kinds has to be explained
-in virtue of what metaphysically makes it the case that things satisfy
-those kinds. But it would be nice to have a better explanation of why
-knowledge is natural.
+some scale. Alternatively, one could hold that knowledge is primitively
+natural, not natural in virtue of its analysis or parts.\footnote{Such a
+  view might be inspired by the `knowledge first' program of Williamson
+  (\citeproc{ref-Williamson2000}{2000}).} That's not completely
+implausible; it isn't obvious that the naturalness of social kinds has
+to be explained in virtue of what metaphysically makes it the case that
+things satisfy those kinds. Still, it would be nice to have a better
+explanation of why knowledge is natural.
 
 On the view defended here, a person knows a proposition if and only if
-they properly take it to be settled. And what one properly takes to be
+they properly take it to be settled. What one properly takes to be
 settled is interest-relative, hence knowledge is interest-relative. I'm
 not putting forward this biconditional an analysis of knowledge, or an
 explanation of knowledge. It could be that the order of explanation here
 runs from knowledge to proper settling. What I am claiming is that this
 biconditional is true, and is part of the explanation of why knowledge
-is a natural kind. And the way to finish that explanation is to develop
-a theory where knowledge interest-relative.
+is a natural kind. The way to finish that explanation is to develop a
+theory where knowledge interest-relative.
 
 So those are the two big motivations for the interest-relative view: the
 practicality of belief and the naturalness of knowledge. Belief is a
-practical notion, so the norms of it should be practical. And knowledge
-is, at its most essential, a norm of belief. Knowledge is a natural
-kind, as evidenced by its cross-linguistic prevalence and its role in
-science. This raises a challenge, since knowledge often feels like it
-requires the knower do `well enough' along one or other scale, and there
-is nothing particularly natural about choosing this point on the scale
+practical notion, so the norms of it should be practical. Knowledge is,
+at its most essential, a norm of belief. Knowledge is a natural kind, as
+evidenced by its cross-linguistic prevalence and its role in science.
+This raises a challenge, since knowledge often feels like it requires
+the knower do `well enough' along one or other scale, and there is
+nothing particularly natural about choosing this point on the scale
 rather than that point. The interest-relative theory has an answer to
 this problem: a believer has knowledge when their evidence is good
 enough to properly settle the inquiries the believer is engaged in, and
 that's more than an arbitrary point on a scale.
 
-But while these are motivations, neither of them is strictly speaking at
+While these are motivations, neither of them is strictly speaking an
 argument. The main argument in this book for the interest-relative
 theory is developed in Chapter~\ref{sec-interests}. It is that in some
 fairly simple situations, there is a choice between four options.
@@ -948,7 +941,7 @@ fairly simple situations, there is a choice between four options.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Scepticism about all contingent knowledge.
+  Accepting scepticism about all contingent knowledge.
 \item
   Denying some very simple principles connecting knowledge and action -
   and in particular denying that it is rational to take the action one
@@ -968,7 +961,7 @@ situations. The only cases where the interest-relative theory disagrees
 with its rivals are ones where intuitions about knowledge seem to me to
 be very weak. For what it's worth, and it isn't worth much, I think the
 interest-relative theory says the more intuitive thing about most cases.
-But ultimately I don't particularly care about intuitions about
+Ultimately though, I don't particularly care about intuitions about
 knowledge, at least in these relatively borderline cases. I will spend
 some time defending my version of the interest-relative theory against
 the frequently voiced complaint that interest-relative theories get some
@@ -982,14 +975,16 @@ something to be settled even if the evidence in favor of settling is
 strong enough for everyday purposes. The first is that the cost of being
 wrong is very high. The second is that the cost of checking whether one
 is wrong is very low. The previous literature on interest-relativity has
-focussed almost exclusively on the first kind of reason. So the
-literature is replete with discussion of `high stakes' cases, where
-someone stands to lose a lot if something they have excellent evidence
-for turns out to be false. And knowledge is often lost in these cases.
-But the literature has ended up a bit lopsided. Knowledge is also lost
-in `easy checking' cases. As I'll put it in
-Section~\ref{sec-oddsandstakes}, what matters is not the stakes, but the
-odds one faces in a particular situation.
+primarily focussed on the first kind of reason. So the literature is
+replete with discussion of `high stakes' cases, where someone stands to
+lose a lot if something they have excellent evidence for turns out to be
+false. Knowledge is often lost in these cases. There is somewhat less
+discussion, however, about how knowledge is also lost in `easy checking'
+cases, or about how (as Mark Schroeder
+(\citeproc{ref-Schroeder2012}{2012}) notes), knowledge might not be lost
+in cases where the stakes are high but checking is impossible. As I'll
+put it in Section~\ref{sec-oddsandstakes}, what matters is not the
+stakes, but the odds one faces in a particular situation.
 
 Humans engage in both practical and theoretical inquiries. For that
 matter, they often engage in inquiries which mix the practical and the
@@ -1013,12 +1008,7 @@ in that inquiry will lead to loss of knowledge. This is what is right in
 scepticism, and infallibilism. The Cartesian meditator does, on this
 view, lose knowledge in anything when they seriously reflect on how good
 their evidence is for it. Happily, this knowledge comes back when they
-return to their normal life.\footnote{This paragraph and the previous
-  one set out features of my version of an interest-relative theory of
-  knowledge which are somewhat idiosyncratic, but which I've endorsed
-  for as long as I've been writing about interest-relativity. The next
-  two paragraphs describe two idiosyncrasies that reflect changes of
-  mind in response to convincing objections to my previous views.}
+return to their normal life.
 
 In the middle of the discussion about knowledge and probability there is
 a little inference from the premise that taking \emph{p} as settled
@@ -1026,11 +1016,7 @@ would lead to an incorrect answer, to the conclusion it is improper to
 take \emph{p} as settled. That's a good inference; that taking \emph{p}
 as settled leads to a mistaken conclusion is indeed compelling evidence
 that it is improper to take \emph{p} as settled. But it's not the only
-reason that it could be improper to take \emph{p} as settled.\footnote{I
-  used to think it was the only reason. Indeed, I used to identify
-  things that could be properly taken as settled with things that could
-  be taken as settled without changing the answer to any inquiry. This
-  led to all sorts of complications, and it was just a mistake.} Among
+reason that it could be improper to take \emph{p} as settled. Among
 other things, taking \emph{p} to be settled might get to the right
 answer for the wrong reasons. So this principle, don't take something to
 be settled if it will lead to the wrong answer, might be good advice,
@@ -1048,19 +1034,10 @@ explained by patterns of coherence among their other beliefs, and will
 not be analytically prior to facts about rationality.) It would be
 convenient for several purposes if we could have an interest-invariant
 notion of evidence that explained why interests caused people to
-sometimes lose knowledge.\footnote{In my earliest work on
-  interest-relative epistemology, I assumed without much argument that
-  this convenient idea, that there is interest-invariant evidence, was
-  true. From this I argued that interest-relativity was a somewhat
-  superficial phenomenon. The real epistemology lay in the interaction
-  of evidence and probability, and interests were irrelevant to those.
-  Where interests came in was in how we used everyday notions like
-  knowledge and belief to talk about this important deep structure. As
-  will be clear in what follows, I no longer believe any of that.} But
-that's not a viable position. As I'll argue in
-Chapter~\ref{sec-evidence}, the arguments that knowledge is
-interest-relative generalise into arguments that evidence itself can be
-interest-relative.
+sometimes lose knowledge. Unfortunately, that's not a viable position.
+As I'll argue in Chapter~\ref{sec-evidence}, the arguments that
+knowledge is interest-relative generalise into arguments that evidence
+itself can be interest-relative.
 
 So far I've sketched in the very broadest outlines the kind of theory
 I'm going to propose. Here's the plan for how that theory will be laid
@@ -1095,10 +1072,10 @@ inquiry plays in my theory. On my theory, if something is known, it is
 available to use as a starting point in inquiry. I used to think this
 meant I was committed to agreeing with Jane Friedman
 (\citeproc{ref-Friedman2019a}{2019b}) that it is incoherent to inquire
-into something one knows. But I've come to see that this isn't right;
+into something one knows. I've come to see that this isn't right;
 depending on what one wants to do in an inquiry one may want to
-deliberately set aside some premises. And that might mean inquiry into
-what one already knows is reasonable. This fact is used to respond to an
+deliberately set aside some premises. That might mean inquiry into what
+one already knows is reasonable. This fact is used to respond to an
 influential objection by Jessica Brown (\citeproc{ref-Brown2008}{2008})
 to the style of argument I use in Chapter~\ref{sec-interests}.
 
@@ -1107,23 +1084,24 @@ mine are committed to implausible closure failures in cases where
 choosers have very similar options to choose between. There is a proof
 in ``Can We Do Without Pragmatic Encroachment?'' that the theory
 developed there is immune to closure failures in these types of cases,
-so the objection can't be right as stated. But it turns out that the
-reason the theory of that paper respects closure is that it has absurdly
+so the objection can't be right as stated. It turns out that the reason
+the theory of that paper respects closure is that it has absurdly
 sceptical consequences in cases where there are similar objects to
 choose between. That's hardly better than a closure failure. In this
-chapter I aim to do better. I show that the objections rely on the
-assumption that the chooser aims to maximise expected utility, and this
-isn't the right criteria of correctness for decisions in close call
-situations. It isn't true that when one is selecting cans off the
-supermarket shelf, one's selection is rational iff it is utility
-maximising. Rather, the rational chooser in such a situation will adopt
-a strategy that has the best long-run consequences. In this case, the
-strategy will probably be something like the strategy of picking
-arbitrarily unless it is clear that one of the choices is defective.
-Given a theory of rational choice that emphasizes the importance of
-decision making strategies, rather than the importance of utility
-maximisation, my preferred epistemological theory gets the right
-answers. There are two traps to avoid here: closure failure and
+chapter I aim to do better.
+
+I show that the objection relies on the assumption that the chooser aims
+to maximise expected utility, and this isn't the right criteria of
+correctness for decisions in close call situations. It isn't true that
+when one is selecting cans off the supermarket shelf, one's selection is
+rational iff it is utility maximising. Rather, the rational chooser in
+such a situation will adopt a strategy that has the best long-run
+consequences. In this case, the strategy will probably be something like
+the strategy of picking arbitrarily unless it is clear that one of the
+choices is defective. Given a theory of rational choice that emphasizes
+the importance of decision making strategies, rather than the importance
+of utility maximisation, my preferred epistemological theory gets the
+right answers. There are two traps to avoid here: closure failure and
 scepticism. And the focus on strategies lets us avoid both.
 
 In Chapter~\ref{sec-changes} I respond to the frequently voiced
@@ -1159,18 +1137,18 @@ the so-called `Lockean' theory of belief.
 
 Chapter~\ref{sec-evidence} sets out my interest-relative theory of
 evidence. I argue that one's evidence just is what a radical interpreter
-would say one's evidence is. But, I go on to argue, in some cases that
-means we end up playing a kind of coordination game with the radical
-interpreter. What our evidence is turns on what the right solution to
-that game. And the solution is interest-relative, but not in the way
-that knowledge is, nor in the way that rational belief is.
+would say one's evidence is. In some cases, this means we end up playing
+a kind of coordination game with the radical interpreter. What our
+evidence is turns on what the right solution to that game. The solution
+is interest-relative, but not in the way that knowledge is, nor in the
+way that rational belief is.
 
 Chapter~\ref{sec-power} ends with a short note connected
 interest-relativity to the familiar saying \emph{Knowledge is Power}. I
 argue that this saying only makes sense on an interest-relative view of
 knowledge. If interest-relative theories were flawed for one reason or
-another, then we'd have to simply concede that the saying is false. But
-we shouldn't concede that; the saying is true, and interest-relative
+another, then we'd have to simply concede that the saying is false. We
+shouldn't concede that; the saying is true, and interest-relative
 epistemology explains why it is true.
 
 \bookmarksetup{startatroot}
@@ -1202,17 +1180,17 @@ Red-Blue game.
 
 Our player is Anisa. She has been reading some medieval history, and
 last night was reading about the Battle of Agincourt. She was amused to
-see that it too place on her birthday, October 25, and in 1415,
+see that it took place on her birthday, October 25, and in 1415,
 precisely 600 years before her own birthday. The book says all these
 things about the Battle of Agincourt because they are actually true, and
 when she read the book, Anisa believed them. She believed them because
 she had lots of independent evidence that the book was reliable (it came
 from a respected author and publisher, it didn't contradict her
 well-grounded background beliefs), and she was sensitive to that
-evidence of its reliability. And, indeed, the book was generally
-reliable, as well as accurate on this point. That is to say, the Battle
-of Agincourt was indeed on October 25, 1415, and everything else the
-book says about the battle without qualification is also true.
+evidence of its reliability. These beliefs were correct; the book was
+reliable and accurate on this point. The Battle of Agincourt was indeed
+on October 25, 1415, and everything else the book says about the battle
+without qualification is also true.
 
 Anisa comes to know that she is playing the Red-Blue game, and that
 these are its rules. She does not come to know any other relevant fact
@@ -1220,19 +1198,20 @@ about the game.\footnote{When presenting this material, some people have
   been puzzled about how this could be possible. It's implausible that
   Anisa knows nothing else about the game; if she didn't know who was
   putting the money up she could hardly trust that she would be paid out
-  iff she was correct. And wouldn't this extra knowledge tell her
-  something about the sentences? I think it helps assuage these worries
-  to imagine this as one round of a repeated game Anisa is playing.
-  Every round two sentences from a large stock are drawn at random to be
-  the red and blue sentences. Anisa will play 20 such rounds, and get
-  paid something between \$0 and \$1000 at the end, depending on how
-  many she gets right. Why is she playing this? It could be the prize
-  round of a game show that she was the nightly winner on. With
-  something like this background, it's plausible that what I said in the
-  text is true; she knows 1-6, and nothing else relevant. At least, this
-  backstory should be enough to make it plausible that the setup is
-  indeed possible.} When the game starts, the following two sentences
-are written on the board, the first in red, the second in blue.
+  iff she was correct. More importantly, this extra knowledge might tell
+  her something about the sentences. I think it helps assuage these
+  worries to imagine this as one round of a repeated game Anisa is
+  playing. Every round two sentences from a large stock are drawn at
+  random to be the red and blue sentences. Anisa will play 20 such
+  rounds, and get paid something between \$0 and \$1000 at the end,
+  depending on how many she gets right. Why is she playing this? It
+  could be the prize round of a game show that she was the nightly
+  winner on. With something like this background, it's plausible that
+  what I said in the text is true; she knows 1-6, and nothing else
+  relevant. At least, this backstory should be enough to make it
+  plausible that the setup is indeed possible.} When the game starts,
+the following two sentences are written on the board, the first in red,
+the second in blue.
 
 \begin{itemize}
 \tightlist
@@ -1246,19 +1225,19 @@ Anisa looks at this, thinks to herself, ``Oh, my book said that the
 Battle of Agincourt was in 1415, so (given the rules of the game)
 playing Blue-True will be as good as any other play, so I'm playing
 Blue-True. Playing Red-True would get the same amount, since obviously
-two plus two is four, but I'm going to play Blue-True instead''. And
-that's what she does, and she wins the \$50.
+two plus two is four, but I'm going to play Blue-True instead''. That's
+what she does, and she wins the \$50.
 
 Intuitively, Anisa's move here is irrational, because it creates a
 needless risk. There was a simple safe option that she should have
 taken, and she declined it. Now it wasn't that much money; it's \$50. To
-be sure, she doesn't actually lose it; she gets the answer correct. And
-the worlds where the risk is costly are somewhat distant; they are
-worlds where either she has misremembered something that seems vivid, or
-where a book that is clearly reliable has gone wrong. Still, it's
-sometimes true that books, even good ones, make mistakes, and memory
-falters. She took a risk, one that she didn't have to take, and got no
-compensation for taking it. That's irrational.
+be sure, she doesn't actually lose it; she gets the answer correct. The
+worlds where the risk is costly are somewhat distant; they are worlds
+where either she has misremembered something that seems vivid, or where
+a book that is clearly reliable has gone wrong. Still, it's sometimes
+true that books, even good ones, make mistakes, and memory falters. She
+took a risk, one that she didn't have to take, and got no compensation
+for taking it. That's irrational.
 
 I'm going to argue, at some length, that the best explanation of why it
 is irrational for Anisa to play Blue-True is that knowledge is
@@ -1284,8 +1263,8 @@ interest-relativity (\citeproc{ref-AndersonHawthorne2019a}{2019a},
 cases. Most of the literature has focussed on high-stakes cases. Let's
 have one on the table.
 
-Last night, Blaise was reading the same book that Anisa was reading. And
-he too was struck by the fact that the Battle of Agincourt took place on
+Last night, Blaise was reading the same book that Anisa was reading. He
+too was struck by the fact that the Battle of Agincourt took place on
 October 25, 1415. Today he is visited by a representative of the
 supernatural world, and offered the following bet. (Blaise knows these
 are the terms of the bet, and doesn't know anything else relevant.) If
@@ -1315,8 +1294,8 @@ the interest-relative explanation of the case; I do accept it. It's
 rather that in Blaise's case there are alternative interest-invariant
 explanations are somewhat more plausible. Because these competing
 explanations exist, it's hard to argue that interest-relativity is the
-best explanation of why Blaise's action is wrong. And without that
-argument, it's hard to infer from Blaise's case that knowledge is
+best explanation of why Blaise's action is wrong. Without that argument,
+it's hard to infer from Blaise's case that knowledge is
 interest-relative by inference to the best explanation. So I'll focus on
 Anisa, not Blaise.
 
@@ -1341,12 +1320,12 @@ can say about Anisa, and argue that one of them must be true. (The
 argument won't appeal to any principles more controversial than the Law
 of Excluded Middle.) But all four of them, including the
 interest-relative view I favour, have fairly counterintuitive
-consequences. So something counterintuitive is true around here. And
-this puts a limit on how we can argue. At least one instance of the
-argument \emph{this is counterintuitive, so it is false} must fail. And
-that casts doubt over all such arguments. This is a point that critics
-of interest-relativity haven't sufficiently acknowledged, but it also
-puts constraints on how one can defend interest-relativity.
+consequences. So something counterintuitive is true around here. This
+puts a limit on how we can argue. At least one instance of the argument
+\emph{this is counterintuitive, so it is false} must fail. That casts
+doubt over all such arguments. This is a point that critics of
+interest-relativity haven't sufficiently acknowledged, but it also puts
+constraints on how one can defend interest-relativity.
 
 When Anisa starts playing the Red-Blue game, her practical situation
 changes. So you might think I've gone wrong in stressing Anisa's
@@ -1451,21 +1430,16 @@ orthodox, but it's possible more of them are sceptical or epistemicist
 than I've appreciated.
 
 Calling this last family orthodox lets me conveniently label the other
-three families as heterodox. And this lets me state what I hope to argue
-for in this book: the interest-relative treatment of these cases is
-correct; and if it isn't, then at least some pragmatist treatment is
-correct; and if it isn't, then at least some heterodox treatment is
-correct.
+three families as heterodox. This lets me state what I hope to argue for
+in this book: the interest-relative treatment of these cases is correct;
+and if it isn't, then at least some pragmatist treatment is correct; and
+if it isn't, then at least some heterodox treatment is correct.
 
 It's worth laying out the interest-relative case in some detail, because
 we can only properly assess the options holistically. Every view is
 going to have some very counterintuitive consequences, and we can only
 weigh them up when we see them all laid out. For instance, here are
 things that each of them say.
-
-The last claim, that every view has counterintuitive consequences,
-deserves some defence. But just to set out a simple version of the
-problems for each theory, observe all of the following look true.
 
 \begin{itemize}
 \tightlist
@@ -1537,10 +1511,10 @@ The first point of clarification is really a reminder that these are
 families of views. It might be that one member of the family is
 considerably less implausible than other members. Indeed, I've changed
 my mind a fair bit about what is the best kind of pragmatist theory
-since I first started writing on this topic. And there are a lot of
-possible orthodox theories. Finding out the best version of these kinds
-of theories, especially the last two kinds, is hard work, but it is
-worth doing. That doesn't mean that it will lessen the implausibility of
+since I first started writing on this topic. There are a lot of possible
+orthodox theories. Finding out the best version of these kinds of
+theories, especially the last two kinds, is hard work, but it is worth
+doing. That doesn't mean that it will lessen the implausibility of
 endorsing a view from that family; some of the implausibility flows
 directly from how one answers the three questions.
 
@@ -1569,7 +1543,7 @@ close to one\footnote{I used to say at points like this that the
   \emph{p} was incredibly close to one. I no longer think we should be
   so quick to equate rational choice with choice that maximises expected
   utility, and this will become important in Chapter~\ref{sec-ties}.}.
-And while hero's evidence is strong, it isn't maximally strong. Despite
+While hero's evidence is strong, it isn't maximally strong. Despite
 this, hero takes the risky option, using the fact that \emph{p} as a key
 part of their reasoning. Now consider the following three questions.
 
@@ -1598,8 +1572,8 @@ knowledge always suffices for action that is optimal given what's known,
 and that offers of bets never constitute a loss of knowledge. The
 epistemicist can allow that the offer of a bet may cause a person to
 `lose their nerve', and hence their belief that \emph{p}, and hence
-their knowledge that \emph{p}. But if they remain confident in \emph{p},
-they retain knowledge that \emph{p}.
+their knowledge that \emph{p}. Still, if they remain confident in
+\emph{p}, they retain knowledge that \emph{p}.
 
 Pragmatism is a very weak theory - it says sometimes the offer of a bet
 can constitute a loss of knowledge. The justification for defending such
@@ -1659,10 +1633,10 @@ not have been fought then, and that's why I'm not taking the bet.
 Chamari has given the best possible answer at each point. Yet she has
 ended up assenting to a Moore-paradoxical sentence. In particular, she
 has assented to a sentence of the form \emph{p, but it might be that not
-p}. And it is very widely held that sentences like this cannot be
-rationally assented to. Since Chamari was, by stipulation, the model for
-what the orthodox view thinks a rational person is, this shows that the
-orthodox view is false.
+p}. It is very widely held that sentences like this cannot be rationally
+assented to. Since Chamari was, by stipulation, the model for what the
+orthodox view thinks a rational person is, this shows that the orthodox
+view is false.
 
 There are three ways out of this puzzle, and none of them seems
 particularly attractive.
@@ -1704,8 +1678,8 @@ what goes wrong in the conversation with Chamari. Armour-Garb
 (\citeproc{ref-ArmourGarb2011}{2011}), who points out how much trouble
 non-contextualist orthodox theorists get into with these
 Moore-paradoxical claims, suggests a contextualist resolution of the
-puzzles. And while this is probably the least bad way to handle the
-case, but it's worth noting just how odd it is.
+puzzles. While this is probably the least bad way to handle the case,
+but it's worth noting just how odd it is.
 
 It's not immediately obvious how to get from contextualism to a
 resolution of the puzzle. Chamari doesn't use the verb `to know' or any
@@ -1725,9 +1699,9 @@ a tight connection between knowledge and assertion
 sophisticated form of a response I just rejected.) What they say instead
 is that there is a kind of meta-linguistic standard for assertion. It is
 epistemically responsible to say that \emph{p} iff it would be true to
-say \emph{I know that p}. And since it would not be true for Chamari to
-say she knows when the Battle of Agincourt was fought, she can't
-responsibly say when it was fought.
+say \emph{I know that p}. Since it would not be true for Chamari to say
+she knows when the Battle of Agincourt was fought, she can't responsibly
+say when it was fought.
 
 The most obvious reason to reject this line of reasoning is that it is
 implausible that meta-linguistic norms like this exist. Imagine we were
@@ -1789,15 +1763,15 @@ And you can probably see all sorts of ways of making Chamari's position
 sound terrible. The argument I'm giving here is a version of an argument
 against contextualism due to John MacFarlane
 (\citeproc{ref-MacFarlane2005-Knowledge}{2005}). He notes that
-contextualists have a particular problem with retraction. And Chamari's
-position does sound very bad here. Still, I don't want to lean too much
-weight on how she sounds. Every position in this area ends up saying
-some strange things. The very idea that the epistemic standard for
-assertion could be meta-linguistic, either in the version which says
-some English word determines the appropriateness conditions for
-assertions in every language, or that the appropriateness conditions
-change from language to language, is even more implausible than the idea
-that we should end up where Chamari does.
+contextualists have a particular problem with retraction; Chamari's
+position sounds much worse than it should if contextualism is right.
+Still, I don't want to lean too much weight on how she sounds. Every
+position in this area ends up saying some strange things. The very idea
+that the epistemic standard for assertion could be meta-linguistic,
+either in the version which says some English word determines the
+appropriateness conditions for assertions in every language, or that the
+appropriateness conditions change from language to language, is even
+more implausible than the idea that we should end up where Chamari does.
 
 \subsection{Super Knowledge to the Rescue?}\label{sec-superknow}
 
@@ -1826,13 +1800,12 @@ placeholder for any kind of relation stronger than knowledge that could
 play the right kind of role in explaining why it is irrational for Anisa
 to play Blue-True. So super-knowledge might be iterated knowledge. Anisa
 super-knows something iff she knows that she knows that \ldots{} she
-knows it. And she super-knows that two plus two is four, but not that
-the Battle of Agincourt was in 1415. Or super-knowledge might be
-(rational) certainty. Anisa is (rationally) certain that two plus two is
-four, but not that the Battle of Agincourt was in 1415. Or it might be
-some other similar relation. My objection to the super-knowledge
-response won't be sensitive to the details of how we understand
-super-knowledge.
+knows it. She super-knows that two plus two is four, but not that the
+Battle of Agincourt was in 1415. Or super-knowledge might be (rational)
+certainty. Anisa is (rationally) certain that two plus two is four, but
+not that the Battle of Agincourt was in 1415. Or it might be some other
+similar relation. My objection to the super-knowledge response won't be
+sensitive to the details of how we understand super-knowledge.
 
 If a super-knowledge solution is going to work, it had better be that
 Anisa does not in fact super-know that the Battle of Agincourt was in
@@ -1863,8 +1836,8 @@ Blue-True. In particular, it can't explain why Anisa rationally must
 choose Red-True. This is because she doesn't super-know that playing
 Red-True will win the \$50. If super-knowledge is demanding enough that
 she doesn't know when the battle was, it's demanding enough that she
-doesn't know the rules of the game. And that implies that she doesn't
-know that playing Red will win the \$50. She has ordinary testimonial
+doesn't know the rules of the game. That implies that she doesn't know
+that playing Red will win the \$50. She has ordinary testimonial
 knowledge of the rules, just like she has ordinary testimonial knowledge
 about the Battle of Agincourt. It's just as realistic that she has
 misunderstood the rules of the game as that a reliable history book has
@@ -1879,11 +1852,11 @@ matters, is probably weaker than her knowledge of history. It is not
 unknown for game shows to promise prizes, then fail to deliver them,
 either because of malice or incompetence. Knowledge of the game rules,
 in particular knowledge that she will actually get \$50 if she selects a
-true sentence, requires some knowledge of the future. And that seems
-harder to obtain than knowledge of what happened in history. After all,
-she has to know that there won't be an alien invasion, or a giant
-asteroid, or an incompetent or malicious game organiser. (The last two
-being considerably more important considerations in normal cases.)
+true sentence, requires some knowledge of the future. That seems harder
+to obtain than knowledge of what happened in history. After all, she has
+to know that there won't be an alien invasion, or a giant asteroid, or
+an incompetent or malicious game organiser. (The last two being
+considerably more important considerations in normal cases.)
 
 So there is no way of understanding `super-knows' such that 1 is true
 and 2 is false.
@@ -1925,16 +1898,16 @@ their promises, sometimes they don't describe their own games
 accurately, sometimes players misinterpret or misunderstand
 instructions, and so on. This shouldn't lead us to scepticism: Anisa
 knows what game she's playing. But she doesn't super-know what game
-she's playing. And that means she doesn't super-know that she'll win if
-she plays Red-True.
+she's playing, which means she doesn't super-know she'll win if she
+plays Red-True.
 
 \subsection{Rational Credences to the Rescue?}\label{sec-probrescue}
 
 So imagine the orthodox theorist drops super-knowledge, and looks
 somewhere else. A natural alternative is to use credences. Assume that
 the probability that the rules of the game are as described is
-independent of the probabilities of the red and blue sentence. And
-assume that Anisa must, if she is to be rational, maximise expected
+independent of the probabilities of the red and blue sentence. Assume
+also that Anisa must, if she is to be rational, maximise expected
 utility. Then we get the natural result that Anisa should pick the
 sentence that is more probably true.\footnote{Strictly speaking, we need
   one more assumption - namely that for any unexpected way for the game
@@ -1983,10 +1956,10 @@ complicated arithmetic truth, like \emph{Thirteen times seventeen equals
 two hundred and twenty one}, or a slightly complicated logical truth,
 like ¬\emph{q} → ((\emph{p} → \emph{q}) → ¬\emph{p}). If either of those
 are the blue sentence, then it is still uniquely rational to play
-Red-True. But the probability of each of those sentences is one. So
-rational choice is more demanding than expected utility maximisation. In
-sections \ref{sec-lockecoin} and \ref{sec-lockegames} I'll go over more
-cases of propositions whose probability is 1, but which should be
+Red-True, even though the probability of each of those sentences is one.
+So rational choice is more demanding than expected utility maximisation.
+In sections \ref{sec-lockecoin} and \ref{sec-lockegames} I'll go over
+more cases of propositions whose probability is 1, but which should be
 treated as uncertain even it is certain that two plus two is four. The
 lesson is that we can't just use expected utility maximisation to
 explain the Red-Blue game.
@@ -2062,9 +2035,9 @@ But take a second look at the story for why Parveen doesn't know where
 Rahul is. It can't be just that her evidence makes it certain that two
 plus two equals four, but not certain that Rahul is in the restaurant.
 At least, it can't be that unless it is not part of her evidence that
-Rahul is in the restaurant. And if evidence is not interest-relative,
-then it is part of Parveen's evidence that Rahul is in the restaurant.
-This isn't something she infers; it is a fact about the world she simply
+Rahul is in the restaurant. If evidence is not interest-relative, then
+it is part of Parveen's evidence that Rahul is in the restaurant. This
+isn't something she infers; it is a fact about the world she simply
 appreciated. Ordinarily, it is a starting point for her later
 deliberations, such as when she deliberates about whether to walk over
 to another part of the restaurant to say hi to Rahul. That is,
@@ -2090,7 +2063,7 @@ evidence, you don't have enough evidence to rationally believe, or even
 rationally make probable, very much at all.
 
 Descartes, via a very different route, walked into a version of this
-problem. And his answer was to (implicitly) take us to be infallible
+problem. His answer was to (implicitly) take us to be infallible
 observers of our own minds, and (explicitly) offer a theistic
 explanation for how we can know about the external world given just this
 psychologistic evidence. Nowadays, most people think that's wrong on
@@ -2110,7 +2083,7 @@ most readily seen by looking at the class of cases that have motivated
 pragmatic views.
 
 The cases involve a subject making a practical decision. The subject has
-a safe choice, which has a guaranteed return of \emph{S}. And they have
+a safe choice, which has a guaranteed return of \emph{S}. They also have
 a risky choice. If things go well, the return of the risky choice is
 \emph{S}~+~\emph{G}, so they will gain \emph{G} from taking the risk. If
 things go badly, the return of the risky choice is \emph{S}~‑~\emph{L},
@@ -2158,7 +2131,7 @@ maximises expected utility only if this equation is true.
 The left hand side expresses the odds that \emph{p} is true. The right
 hand side expresses how high those odds have to be before the risk is
 worth taking. If the equation fails to hold, then the risk is not worth
-taking. And if risk is not worth taking, then the subject doesn't know
+taking. If the risk is not worth taking, then the subject doesn't know
 that \emph{p}.
 
 Since the numerator of the right hand side is \emph{L}, then one way to
@@ -2196,7 +2169,7 @@ Google the answer & \$50~‑~ε & \$50~‑~ε \\
 
 If Darja has her phone near her, and has cheap easy access to Google,
 then ε might be really low. In that case she should take the safe
-option; it's the one that maximises expected utility. And that means she
+option; it's the one that maximises expected utility. That means she
 doesn't know that \emph{p}, even if she remembers reading it in a book
 that is actually reliable. Facing a long odds bet can cause knowledge
 loss, even in low stakes situations.
@@ -2207,19 +2180,19 @@ not because I have any kind of intuition that she loses knowledge. I
 don't have any clear intuition about her case, and I'm certainly not
 taking any intuition about the case as a premise. What I am taking as a
 premise is that Darja should Google the answer in cases like this one;
-doing otherwise is taking a bad risk. And the best explanation of why
-this is a bad risk is that she doesn't know when Franz Ferdinand was
+doing otherwise is taking a bad risk. The best explanation of why this
+is a bad risk is that she doesn't know when Franz Ferdinand was
 assassinated. So practical interests can matter even in relatively low
 stakes cases.
 
 I'm not the first to focus on these long odds/low stakes cases. Jessica
 Brown (\citeproc{ref-Brown2008}{2008: 176}) notes that these cases raise
-problems for the stakes-centric version of IRT. And Anderson and
-Hawthorne (\citeproc{ref-AndersonHawthorne2019a}{2019a}) argue that once
-we get beyond the simple two-state/two-option choices, it isn't at all
-easy to say what situations are and are not high-stakes choices. These
-cases are not problems for the version of IRT that I defend, since this
-version gives no role to stakes.
+problems for the stakes-centric version of IRT. Anderson and Hawthorne
+(\citeproc{ref-AndersonHawthorne2019a}{2019a}) argue that once we get
+beyond the simple two-state/two-option choices, it isn't at all easy to
+say what situations are and are not high-stakes choices. These cases are
+not problems for the version of IRT that I defend, since this version
+gives no role to stakes.
 
 \section{Theoretical Interests Matter}\label{sec-whatinterests}
 
@@ -2250,11 +2223,11 @@ The first comes from what Jeremy Fantl and Matthew McGrath call the
 Unity Thesis~(\citeproc{ref-FantlMcGrath2009}{Fantl \& McGrath, 2009:
 73--76}). They argue that whether or not \emph{p} is a reason for
 someone is independent of whether they are engaged in practical or
-theoretical deliberation. And the intuition supporting this is quite
-clear. Consider two people with the same background thinking about the
-question \emph{What to do in situation S}. One of them is in \emph{S},
-the other is just thinking about it as an idle fantasy. Any reasoning
-one can properly do, the other can properly do. Since one is facing a
+theoretical deliberation. The intuition supporting this is quite clear.
+Consider two people with the same background thinking about the question
+\emph{What to do in situation S}. One of them is in \emph{S}, the other
+is just thinking about it as an idle fantasy. Any reasoning one can
+properly do, the other can properly do. Since one is facing a
 theoretical question, and the other a practical question, the difference
 between theoretical and practical questions can't be relevant.
 
@@ -2267,13 +2240,13 @@ were playing that game. (Perhaps because she is reading this book.) If
 she knows when the battle was, then she should be indifferent between
 Red-True and Blue-True. After all, she knows they will both win \$50.
 Intuitively she should think Red-True is preferable, both in the
-abstract setting and when she's actually making the decision. And this
-seems to be the totally general case.
+abstract setting and when she's actually making the decision. This seems
+to be the totally general case.
 
 The general lesson is that if whether one can take \emph{p} for granted
 is relevant to the choice between A and B, it is similarly relevant to
 the theoretical question of whether one would choose A or B, given a
-choice. And since those questions should receive the same answer, if
+choice. Since those questions should receive the same answer, if
 \emph{p} can't be known while making the practical deliberation between
 A and B, it can't be known while musing on whether A or B is more
 choiceworthy.
@@ -2290,8 +2263,8 @@ probability of \emph{p} is \emph{x}, then that's a relevant question to
 us. Conditional on \emph{p}, the answer to that question is clearly no,
 since conditional on \emph{p}, the probability of \emph{p} is 1. So
 anyone who is thinking about the precise probability of \emph{p}, and
-not thinking it is 1, is not in a position to know \emph{p}. And that's
-why it is wrong, when thinking about \emph{p}'s probability, to infer
+not thinking it is 1, is not in a position to know \emph{p}. That's why
+it is wrong, when thinking about \emph{p}'s probability, to infer
 \emph{p} from its high probability.
 
 Putting the ideas so far together, we get the following picture of how
@@ -2307,7 +2280,7 @@ IRT was introduced as a thesis about knowledge. I'm going to argue in
 Chapter~\ref{sec-ratbel} that it also extends to rational belief. We
 need not stop there. At the extreme, we could argue that every
 epistemologially interesting notion is interest-relative. Doing so gives
-us a global version of IRT. And that is what I'm going to defend here.
+us a global version of IRT. That is what I'm going to defend here.
 
 Jason Stanley (\citeproc{ref-Stanley2005}{2005}) comes close to
 defending a global version. He notes that if one has both IRT, and a
@@ -2323,9 +2296,9 @@ too.
 That's close to the path I'll take to global IRT, but not exactly it. In
 Chapter~\ref{sec-evidence} I'm going to argue that evidence is indeed
 interest-relative, and so all those other notions are interest-relative
-too. But that's not because I equate knowledge and evidence. The version
-of IRT I defend implies that evidence is a subset of knowledge, and
-which subset it is turns out to be interest-relative.
+too. That's not because I equate knowledge and evidence. The version of
+IRT I defend implies that evidence is a subset of knowledge, and which
+subset it is turns out to be interest-relative.
 
 There is a deep puzzle here for IRT. On the one hand, the arguments for
 IRT look like they will generalise to arguments for the
@@ -2337,7 +2310,7 @@ presupposes that we can identify Anisa's evidence independent of her
 interests. That simple explanation says that Anisa shouldn't play
 Blue-True because the evidential probability of the blue sentence being
 true is lower than the evidential probability of the red sentence being
-true. And since she can't rationally play Blue-True, it follows that she
+true. Since she can't rationally play Blue-True, it follows that she
 mustn't know that the blue sentence is true. If evidence is identified
 independently, this looks like it might generalise into a nice story
 about when changes of interests lead to changes of knowledge. The story
@@ -2349,17 +2322,13 @@ interest-relative, so we can't tell a simple story about precisely when
 changes in interests will lead to changes in knowledge. Still, it will
 be true that people lose knowledge when the evidential probability of a
 proposition is no longer high enough for them to take it for granted
-with respect to every question they are interested in. And I will be
-able to say how interests impact evidence in a way that doesn't require
-antecedently identifying how interests impact knowledge, so the story
-will still be somewhat reductive. It just won't be as simple a story as
-one might hope to tell, or indeed that I tried to tell in earlier work.
+with respect to every question they are interested in.
 
 \section{Neutrality}\label{sec-neutrality}
 
 This book defends, at some length, the idea that knowledge is
-interest-relative. But I'm staying neutral on a number of other topics
-in the vicinity.
+interest-relative. I am, however, staying neutral on a number of other
+topics in the vicinity.
 
 \subsection{Neutrality about
 Contextualism}\label{sec-neutrality-contextualism}
@@ -2370,8 +2339,8 @@ then what I'm defending is that the view that `knowledge' picks out in
 this context, and in most other contexts, is
 interest-relative.\footnote{I am opposed to something that many
   contextualists appeal to in defending and motivating their theory,
-  namely meta-linguistic norms on assertion, reasoning, and action. But
-  that opposition doesn't extend to contextualism in general.}
+  namely meta-linguistic norms on assertion, reasoning, and action. That
+  opposition doesn't extend to contextualism in general.}
 
 Contextualist theories of knowledge have a lot in common with
 interest-relative theories. The kind of cases that motivate the
@@ -2398,7 +2367,7 @@ theory of knowledge. If I endorsed principle A, then I would be (more or
 less) committed to a contextualist theory of knowledge. And principle A
 is not inconsistent with principle B.\footnote{There is a technical
   difficulty in how to understand one person answering an infinitival
-  question that another person is asking themselves. But the points I'm
+  question that another person is asking themselves. The points I'm
   making in this section aren't sensitive to this level of technical
   detail.}
 
@@ -2417,7 +2386,7 @@ be false for Anisa to say, or merely inappropriate, and even if it is
 false, there may be decent explanations of this that are not
 contextualist. (For instance, maybe knowledge is sensitive to what
 interests one will have. Or maybe some kind of relativist theory is
-true.) But there is clearly an argument for contextualism here. And it
+true.) But there is clearly an argument for contextualism here, and it
 isn't one that I'm going to endorse or reject.
 
 One reason I'm not rejecting contextualism is that I'm not sure really
@@ -2427,16 +2396,16 @@ polysemous. It has three possible meanings. One of them is something
 like Cartesian certainty. In this sense, most knowledge claims are
 false. Another is something like information possession. In this sense,
 my car might know lots of things, since its systems do quite reliably
-store a lot of information. And there is a moderate sense, which is what
-we most commonly use. The difference between the three might even be
-marked phonologically; the Cartesian sense is often somewhat drawn out
-or otherwise emphasised. Is this contextualist? I don't know. Sort of, I
-guess. It agrees with the standard contextualist account of the appeal
-of scepticism. On the other hand, it denies that `knows' has the kind of
-continuous variation that is typical in comparative adjectives like
-`rich'. Since I think this kind of polysemy theory might be true, and
-(independently) that it might be contextualist, I'm not in a position to
-deny contextualism.
+store a lot of information. Finally, there is a moderate sense, which is
+what we most commonly use. The difference between the three might even
+be marked phonologically; the Cartesian sense is often somewhat drawn
+out or otherwise emphasised. Is this contextualist? I don't know. Sort
+of, I guess. It agrees with the standard contextualist account of the
+appeal of scepticism. On the other hand, it denies that `knows' has the
+kind of continuous variation that is typical in comparative adjectives
+like `rich'. Since I think this kind of polysemy theory might be true,
+and (independently) that it might be contextualist, I'm not in a
+position to deny contextualism.
 
 \subsection{Other Aspects of Neutrality}\label{sec-neutrality-k-nec}
 
@@ -2457,10 +2426,9 @@ note is that the argument of this chapter doesn't rely on K-Nec, and I'm
 mostly going to set it aside.
 
 I'm obviously not going to offer anything like a full theory of
-knowledge. I am defending a particular necessary condition on knowledge.
-That condition entails that knowledge is interest-relative given some
-common-sense assumptions about how widespread knowledge is. And that's
-just about as far as I'll go.
+knowledge. I am just defending a particular necessary condition on
+knowledge. That condition entails that knowledge is interest-relative
+given some common-sense assumptions about how widespread knowledge is.
 
 I will be making one claim about how interests typically enter into the
 theory of knowledge. I'll argue that there is a certain kind of
@@ -2479,10 +2447,10 @@ compatible with knowledge.
 
 This is going to matter because it affects how we think about what
 happen when interests change. It is odd to think that a change in
-interests could make one know something. But it isn't as odd to think
-that a change in interests could block or defeat something that was
-potentially going to block or defeat an otherwise well supported belief
-from being knowledge. This is something I will return to repeatedly in
+interests could make one know something. It isn't as odd to think that a
+change in interests could block or defeat something that was potentially
+going to block or defeat an otherwise well supported belief from being
+knowledge. This is something I will return to repeatedly in
 Chapter~\ref{sec-changes}.
 
 \bookmarksetup{startatroot}
@@ -3250,6 +3218,7 @@ means, compare these two little exchanges.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumii{\alph{enumii}.}
@@ -11631,7 +11600,8 @@ rationality and irrationality}. Cambridge University Press.
 
 \bibitem[\citeproctext]{ref-Falbo2021}
 Falbo, Arianna. (2021). Inquiry and confirmation. \emph{Analysis},
-\emph{forthcoming}.
+\emph{81}(4), 622--631.
+doi:\href{https://doi.org/10.1093/analys/anab037}{10.1093/analys/anab037}
 
 \bibitem[\citeproctext]{ref-FantlMcGrath2002}
 Fantl, Jeremy, and Matthew McGrath. (2002). Evidence, pragmatics, and
@@ -11665,6 +11635,11 @@ doi:\href{https://doi.org/10.1111/nous.12222}{10.1111/nous.12222}
 Friedman, Jane. (2020). The epistemic and the zetetic.
 \emph{Philosophical Review}, \emph{129}(4), 501--536.
 doi:\href{https://doi.org/10.1215/00318108-8540918}{10.1215/00318108-8540918}
+
+\bibitem[\citeproctext]{ref-Friedman2024}
+Friedman, Jane. (2024). The aim of inquiry? \emph{{P}hilosophy and
+{P}henomenological {R}esearch}, \emph{108}(2), 506--523.
+doi:\href{https://doi.org/10.1111/phpr.12982}{10.1111/phpr.12982}
 
 \bibitem[\citeproctext]{ref-Ganson2008}
 Ganson, Dorit. (2008). Evidentialism and pragmatic constraints on
@@ -11958,12 +11933,6 @@ McGrath, Matthew, and Brian Kim. (2019). Introduction. In Brian Kim \&
 Matthew McGrath (Eds.), \emph{Pragmatic encroachment in epistemology}
 (1--9). Routledge.
 
-\bibitem[\citeproctext]{ref-McKenna2024}
-McKenna, Robin. (forthcoming). Pragmatic encroachment and feminist
-epistemology. In Natalie Alana Ashton, Martin Kusch, Robin McKenna, \&
-Katharina Sodoma (Eds.), \emph{Social epistemology and epistemic
-relativism}. Routledge.
-
 \bibitem[\citeproctext]{ref-Melchior2019}
 Melchior, Guido. (2019). \emph{Knowing and checking: An epistemological
 investigation}. Routledge.
@@ -12135,6 +12104,11 @@ Schroeder, Mark. (2009). Means-end coherence, stringency, and subjective
 reasons. \emph{Philosophical Studies}, \emph{143}(2), 223--248.
 doi:\href{https://doi.org/10.1007/s11098-008-9200-x}{10.1007/s11098-008-9200-x}
 
+\bibitem[\citeproctext]{ref-Schroeder2012}
+Schroeder, Mark. (2012). Stakes, withholding and pragmatic encroachment
+on knowledge. \emph{Philosophical Studies}, \emph{160}(2), 265--285.
+doi:\href{https://doi.org/10.1007/s11098-011-9718-1}{10.1007/s11098-011-9718-1}
+
 \bibitem[\citeproctext]{ref-Schwartz2004}
 Schwartz, Barry. (2004). \emph{The paradox of choice: Why more is less}.
 Harper Collins.
@@ -12210,9 +12184,9 @@ Oxford University Press.
 Stanley, Jason. (2011). \emph{Know how}. Oxford University Press.
 
 \bibitem[\citeproctext]{ref-Steglich-Petersen2024}
-Steglich-Petersen, Asbjørn. (forthcoming). An instrumentalist
-explanation of pragmatic encroachment. \emph{Analytic Philosophy}.
-Forthcoming.
+Steglich-Petersen, Asbjørn. (2024). An instrumentalist explanation of
+pragmatic encroachment. \emph{Analytic Philosophy}, \emph{65}(3),
+374--392.
 doi:\href{https://doi.org/10.1111/phib.12283}{10.1111/phib.12283}
 
 \bibitem[\citeproctext]{ref-Strevens2020}
@@ -12347,8 +12321,8 @@ reflections on the variable behaviour of "knows"} (A. Coliva, P.
 Leonardi, \& S. Moruzzi, Eds.). Palgrave Macmillan.
 
 \bibitem[\citeproctext]{ref-Wu2024}
-Wu, Jenny Yi-Chen. (forthcoming). A defense of impurist permissivism
-(1st edition). \emph{Episteme}, (N/A), 1--21.
+Wu, Jenny Yi-Chen. (forthcoming). A defense of impurist permissivism.
+\emph{Episteme}, 1--21.
 doi:\href{https://doi.org/10.1017/epi.2023.22}{10.1017/epi.2023.22}
 
 \bibitem[\citeproctext]{ref-Yalcin2018}
