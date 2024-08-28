@@ -179,8 +179,7 @@ marginparsep=0in]{geometry}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage{bookmark}
-
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -706,7 +705,7 @@ The Nyāya philosophers, like Vātsyāyana, are relevant to this story for
 another reason. As well as closely connecting knowledge with action,
 they connect it closely with inquiry. And this book, like many
 contemporary philosophers, takes the same approach. Jane Friedman
-Friedman (\citeproc{ref-Friedman2024}{2024}) has developed a detailed
+Friedman (\citeproc{ref-Friedman2024}{2024b}) has developed a detailed
 account of what inquiry is and how it relates to epistemology. Elise
 Woodard (\citeproc{ref-Woodard2021}{2020}) and Arienne Falbo
 (\citeproc{ref-Falbo2021}{2021}) have some persuasive criticisms of
@@ -751,7 +750,7 @@ not on grounds of uncertainty.
 But I'm going to reject 2 and 3. I'm disagreeing here with Friedman,
 whose theory of inquiry gives an important role to 2. And Woodard argues
 convincingly that the failure of 3 implies that 2 has to fail as
-well.\footnote{Note that Friedman (\citeproc{ref-Friedman2024}{2024})
+well.\footnote{Note that Friedman (\citeproc{ref-Friedman2024}{2024b})
   also rejects 3, but not because she thinks inquiry aims at something
   else; she is sceptical of the metaphor of \emph{aiming} in this
   context. Note also that Falbo and Melchior developed similar arguments
@@ -1291,13 +1290,12 @@ is interest-relative. However, the argument that the interest-relativity
 of knowledge is the very best explanation of what's going on is somewhat
 weaker in Blaise's case than in Anisa's. It's not that I don't accept
 the interest-relative explanation of the case; I do accept it. It's
-rather that in Blaise's case there are alternative interest-invariant
-explanations are somewhat more plausible. Because these competing
-explanations exist, it's hard to argue that interest-relativity is the
-best explanation of why Blaise's action is wrong. Without that argument,
-it's hard to infer from Blaise's case that knowledge is
-interest-relative by inference to the best explanation. So I'll focus on
-Anisa, not Blaise.
+rather that plausible interest-invariant explanations of the intuitions
+about Blaise's case exist. Because these competing explanations exist,
+it's hard to argue that interest-relativity is the best explanation of
+why Blaise's action is wrong. Without that argument, it's hard to infer
+from Blaise's case that knowledge is interest-relative by inference to
+the best explanation. So I'll focus on Anisa, not Blaise.
 
 This choice of focus occasionally means that this book is less connected
 to the existing literature than I would like. I occasionally infer what
@@ -1314,7 +1312,7 @@ while playing the Red-Blue game. The intuition that matters here is that
 her choice of Blue-True is irrational. It's going to be a matter of
 inference, not intuition, that Anisa lacks knowledge.
 
-And that inference will largely be by process of elimination. In
+That inference will largely be by process of elimination. In
 Section~\ref{sec-fourfamilies} I will set out four possible things we
 can say about Anisa, and argue that one of them must be true. (The
 argument won't appeal to any principles more controversial than the Law
@@ -1529,40 +1527,36 @@ be complete, it needs to say something about theories that treat
 different cases differently. So here is the more general taxonomy I will
 use.
 
-The cases I'll quantify over have the following structure. The hero is
-given strong evidence for some truth \emph{p}, and they believe it on
-the basis of that evidence. There are no defeaters, the belief is caused
-by the truth of the proposition in the right way, and in general all the
-conditions for knowledge that people worried about in the traditional
-(i.e., late twentieth century) epistemological literature are met. Then
-they are offered a choice, where one of the options will have an optimal
-outcome if \emph{p}, but will not be the best choice according to normal
-theories of decision unless the probability of \emph{p} is incredibly
-close to one\footnote{I used to say at points like this that the
-  decision only maximised expected utility if the probability of
-  \emph{p} was incredibly close to one. I no longer think we should be
-  so quick to equate rational choice with choice that maximises expected
-  utility, and this will become important in Chapter~\ref{sec-ties}.}.
-While hero's evidence is strong, it isn't maximally strong. Despite
-this, hero takes the risky option, using the fact that \emph{p} as a key
-part of their reasoning. Now consider the following three questions.
+The cases I'll quantify over have the following structure. Our hero,
+called Hero, is given strong evidence for some truth \emph{p}, and they
+believe it on the basis of that evidence. There are no defeaters, the
+belief is caused by the truth of the proposition in the right way, and
+in general all the conditions for knowledge that people worried about in
+the traditional (i.e., late twentieth century) epistemological
+literature are met. Then they are offered a choice, where one of the
+options will have an optimal outcome if \emph{p}, but will not be the
+best choice according to normal theories of decision unless the
+probability of \emph{p} is incredibly close to one. While Hero's
+evidence is strong, it isn't maximally strong. Despite this, Hero takes
+the risky option, using the fact that \emph{p} as a key part of their
+reasoning. Now consider the following three questions.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  In cases with this form, does the theory say that when the hero first
+  In cases with this form, does the theory say that when Hero first
   forms the belief that \emph{p}, they know that \emph{p}? If the answer
   is that this is \emph{generally} the case, then restrict attention to
   those cases where they do know that \emph{p}, and move to question 2.
   Otherwise, the theory is sceptical.
 \item
-  In the cases that remain, is hero rational in taking the option that
+  In the cases that remain, is Hero rational in taking the option that
   is optimal iff \emph{p}. If the answer is yes in \emph{every} case,
   the theory is epistemicist. Otherwise, restrict attention to cases
   where this choice is irrational, and move to question 3.
 \item
-  In \emph{any} of the cases that remain, does the fact that hero was
+  In \emph{any} of the cases that remain, does the fact that Hero was
   offered the choice destroy their knowledge that \emph{p}? If yes, the
   theory is pragmatic. If no, the theory is orthodox.
 \end{enumerate}
@@ -1786,9 +1780,9 @@ knows won't do worse than any other option.
 
 The orthodox theorist can't offer this explanation. They think Anisa
 knows that Blue-True will get \$50 as well. So what can they offer
-instead? There are two broad kinds of explanation that can try. First,
-they might offer a structurally similar explanation to the one IRT
-gives, but with some other epistemic notion at its centre. So while
+instead? There are two broad kinds of explanation that they can try.
+First, they might offer a structurally similar explanation to the one
+IRT gives, but with some other epistemic notion at its centre. So while
 Anisa knows that Blue-True will get \$50, she doesn't \emph{super-know}
 this, in some sense. Second, they can try to explain the asymmetry
 between Red-True and Blue-True in probablistic, rather than epistemic,
@@ -1817,10 +1811,14 @@ least according to the orthodox theorist), that what she read was
 correct. If she was asked to sort people into whether they do or don't
 know that the Battle was in 1415, she would (in normal versions of the
 case) be fairly good at doing this, and would sort herself into the
-group that does know. When I say `sort people', I mean to allow that she
-can say that she doesn't know for any given case; it's unlikely,
-however, that she would say this about her own case. So she passes all
-the standard tests for knowing that she knows when the battle was.
+group that does know.\footnote{To be sure, she presumably doesn't know
+  for most people what they know about medieval history. What I'm
+  imagining is that if she was presented with a bunch of people, asked
+  if they know when the Battle of Agincourt was, and was allowed to say
+  ``Yes'', ``No'', or ``Don't Know'', then most of the ``Yes'' and
+  ``No'' answers would be correct, and she would say ``Yes'' about
+  herself.} So she passes all the standard tests for knowing that she
+knows when the battle was.
 
 For most versions of what super-knowledge is, it looks like in ideal
 cases it should be closed under conjunction. That is, Anisa super-knows
@@ -1871,8 +1869,9 @@ and 2 is false.
   \$50.
 \end{enumerate}
 
-And that's the kind of contrast we need in order for a super-knowledge
-based explanation of why she should play Red-True to work.
+If the super-knowledge based explanation of why she should play Red-True
+worked, there should be some sense of super-knowledge where 1 is true
+and 2 is false. There isn't, so the explanation doesn't work.
 
 The point I'm making here, that in thinking about these games we need to
 attend to the player's epistemic attitude towards the game itself, is
@@ -1981,7 +1980,7 @@ discussion of orthodoxy with a discussion of cases like these.
 
 No matter which of these explanations the orthodox theorist goes for,
 they need a notion of evidence to support them.\footnote{This subsection
-  is based on §2 of my (\citeproc{ref-Weatherson2018-WEAIEA-2}{2018}).}
+  is based on my (\citeproc{ref-Weatherson2018-WEAIEA-2}{2018: 2}).}
 Let's assume that we can find some doxastic attitude D such that Anisa
 can't rationally stand in D to \emph{Play Blue-True}, and that this is
 why she can't rationally play Blue-True. Then we need to ask the further
@@ -1995,10 +1994,10 @@ evidence. I guess it's logically possible to have evidence be
 interest-relative, but knowledge be interest-neutral, but it is very
 hard to see how one would motivate such a position.
 
-And now we run into a problem. Imagine a version of the Red-Blue game
-where the blue sentence is something that, if known, is part of the
-player's evidence. If it is still irrational to play Blue-True, then any
-orthodox explanation that relies on evidence sensitive notions (like
+Now we run into a problem. Imagine a version of the Red-Blue game where
+the blue sentence is something that, if known, is part of the player's
+evidence. If it is still irrational to play Blue-True, then any orthodox
+explanation that relies on evidence sensitive notions (like
 super-knowledge or evidential probability) will be in trouble. The aim
 of this subsection is to spell out why this is.
 
@@ -2006,11 +2005,11 @@ So let's imagine a new player for the red-blue game. Call her Parveen.
 She is playing the game in a restaurant. It is near her apartment in Ann
 Arbor, Michigan. Just before the game starts, she notices an old friend,
 Rahul, across the room. Rahul is someone she knows well, and can
-ordinarily recognise, but she had no idea he was in town. She thought
-Rahul was living in Italy. Still, we would ordinarily say that she now
-knows Rahul is in town; indeed that he is in the restaurant. As evidence
-for this, note that it would be perfectly acceptable for her to say to
-someone else, ``I saw Rahul here''. Now the game starts.
+ordinarily recognise, but she had no idea he was in town. She actually
+thought Rahul was living in Italy. Still, we would ordinarily say that
+she now knows Rahul is in town; indeed that he is in the restaurant. As
+evidence for this, note that it would be perfectly acceptable for her to
+say to someone else, ``I saw Rahul here''. Now the game starts.
 
 \begin{itemize}
 \tightlist
@@ -2020,16 +2019,15 @@ someone else, ``I saw Rahul here''. Now the game starts.
   The blue sentence is \emph{Rahul is in this restaurant}.
 \end{itemize}
 
-And here is the problem. On the one hand, there is only one rational
-play for Parveen: Red-True. She hasn't seen Rahul in ages, and she
-thought he was in Italy. A glimpse of him across a crowded restaurant
-isn't enough for her to think that \emph{Rahul is in this restaurant} is
-as likely as \emph{Two plus two equals four}. She might be wrong about
-Rahul, so she should take the sure money and play Red-True. So playing
-the red-blue game with these sentences makes it the case that Parveen
-doesn't know where Rahul is. This is another case where knowledge is
-interest-relative, and at first glance it doesn't look very different to
-the other cases we've seen.
+On the one hand, there is only one rational play for Parveen: Red-True.
+She hasn't seen Rahul in ages, and she thought he was in Italy. A
+glimpse of him across a crowded restaurant isn't enough for her to think
+that \emph{Rahul is in this restaurant} is as likely as \emph{Two plus
+two equals four}. She might be wrong about Rahul, so she should take the
+sure money and play Red-True. So playing the red-blue game with these
+sentences makes it the case that Parveen doesn't know where Rahul is.
+This is another case where knowledge is interest-relative, and at first
+glance it doesn't look very different to the other cases we've seen.
 
 But take a second look at the story for why Parveen doesn't know where
 Rahul is. It can't be just that her evidence makes it certain that two
@@ -2075,12 +2073,12 @@ state worse than Cartesian scepticism.
 \section{Odds and Stakes}\label{sec-oddsandstakes}
 
 If orthodox views are wrong, then it is important to get clear on which
-heterodox view is most plausible.\footnote{This section is based on §3
-  of my (\citeproc{ref-Weatherson2016}{2016a}).} I'm defending a version
-of the pragmatic view, but it's a different version to the most
-prominent versions defended in the literature. The difference can be
-most readily seen by looking at the class of cases that have motivated
-pragmatic views.
+heterodox view is most plausible.\footnote{This section is based on my
+  (\citeproc{ref-Weatherson2016}{2016a: 3}).} I'm defending a version of
+the pragmatic view, but it's a different version to the most prominent
+versions defended in the literature. The difference can be most readily
+seen by looking at the class of cases that have motivated pragmatic
+views.
 
 The cases involve a subject making a practical decision. The subject has
 a safe choice, which has a guaranteed return of \emph{S}. They also have
@@ -2137,9 +2135,9 @@ that \emph{p}.
 Since the numerator of the right hand side is \emph{L}, then one way to
 destroy knowledge that \emph{p} is to present the subject with a
 situation where \emph{L} is very high. It isn't, however, the only way.
-Since the denominator of the right hand side is \(G\), another way to
+Since the denominator of the right hand side is \emph{G}, another way to
 destroy knowledge that \emph{p} is to present the subject with a
-situation where \(G\) is very low.
+situation where \emph{G} is very low.
 
 In effect, we've seen such a situation with Anisa. To make the parallel
 to Anisa's case even clearer, consider the following case, involving a
@@ -2198,13 +2196,13 @@ gives no role to stakes.
 
 When saying why I called my theory IRT, one of the reasons I gave was
 that I wanted theoretical, and not just practical, interests to matter
-to knowledge.\footnote{This section is based on §4 of my
-  (\citeproc{ref-Weatherson2017-WEAII}{2017}).} This is also something
-of a break with the existing literature. After all, Jason Stanley's book
-on interest-relative epistemology is called \emph{Knowledge and
-Practical Interests}. He defends a theory on which what an agent knows
-depends on the practical questions they face. There are strong reasons
-to think that theoretical reasons matter as well.
+to knowledge.\footnote{This section is based on my
+  (\citeproc{ref-Weatherson2017-WEAII}{2017: 4}).} This is also
+something of a break with the existing literature. After all, Jason
+Stanley's book on interest-relative epistemology is called
+\emph{Knowledge and Practical Interests}. He defends a theory on which
+what an agent knows depends on the practical questions they face. There
+are strong reasons to think that theoretical reasons matter as well.
 
 In Section~\ref{sec-oddsandstakes}, I suggested that someone knows that
 \emph{p} only if the rational choice to make would also be rational
@@ -2232,7 +2230,7 @@ theoretical question, and the other a practical question, the difference
 between theoretical and practical questions can't be relevant.
 
 Let's make that a little less abstract. Imagine Anisa is not actually
-faced with the choice between Red-True, Blue-True, Red False and
+faced with the choice between Red-True, Blue-True, Red-False and
 Blue-False with these particular red and blue sentences. In fact, she
 has no practical decision to make that turns on the date of the Battle
 of Agincourt. Instead, she is idly musing over what she would do if she
@@ -2336,11 +2334,7 @@ Contextualism}\label{sec-neutrality-contextualism}
 Most notably, I'm not taking any stand on whether contextualist theories
 of knowledge are true or false. If you think that contextualism is true,
 then what I'm defending is that the view that `knowledge' picks out in
-this context, and in most other contexts, is
-interest-relative.\footnote{I am opposed to something that many
-  contextualists appeal to in defending and motivating their theory,
-  namely meta-linguistic norms on assertion, reasoning, and action. That
-  opposition doesn't extend to contextualism in general.}
+this context, and in most other contexts, is interest-relative.
 
 Contextualist theories of knowledge have a lot in common with
 interest-relative theories. The kind of cases that motivate the
@@ -2415,6 +2409,7 @@ length in what follows. What I'm not defending is the converse of that
 principle, what she calls K-Nec.
 
 \begin{description}
+\tightlist
 \item[K-Nec]
 An agent can properly use \emph{p} as a reason for action only if she
 knows that \emph{p}.
@@ -2525,26 +2520,26 @@ they are in. Now see what happens to this case when we adopt two more
 premises. First, this is an honest and sincere self-report, they do, as
 we'd ordinarily say, think that Tranmere will win. Second, `think' in
 English means \emph{believes}. So this person believes Tranmere will
-win. But in the circumstances, they could say that even if they think
-Tranmere is merely the most likely team to win, which might happen even
-if they think the probability of that is very very low. (If there are
-\emph{n} teams in the Champions League, and who knows what value
-\emph{n} will be when you're reading this, their credence that Tranmere
-will win could be maximal even if it is above 1 in \emph{n} by an
-arbitrarily small amount.) Yet surely this person would not, at least
-responsibly, take Tranmere's winning to be a starting point in
-deliberation.
+win. Note though that in the circumstances of the TV show, they could
+say ``I think Tranmere will win'' even if they think Tranmere is merely
+the most likely team to win, which might happen even if they think the
+probability of that is very very low. (If there are \emph{n} teams in
+the Champions League, and who knows what value \emph{n} will be when
+you're reading this, their credence that Tranmere will win could be
+maximal even if it is above 1 in \emph{n} by an arbitrarily small
+amount.) Yet surely this person would not, at least responsibly, take
+Tranmere's winning to be a starting point in deliberation.
 
 Now there are a lot of things we could say about that argument. I
 wouldn't want to sign up for either of the two premises that I mentioned
 in the middle of the paragraph. I'm sympathetic to the criticisms of the
 argument that Timothy Williamson makes in ``Knowledge, Credence, and the
 Strength of Belief'' (\citeproc{ref-Williamson2022}{Williamson, 2022}).
-But for now I just want to note that this is a discussion of a separate
-topic to the one I'm discussing. And in identifying the topic as I have,
-I'm working within a very standard, and very long, tradition. Here's
-Pasnau, responding to a similar kind of challenge in the context of
-interpreting historical figures.
+For now though I just want to note that this is a discussion of a
+separate topic to the one I'm discussing. And in identifying the topic
+as I have, I'm working within a very standard, and very long, tradition.
+Here's Pasnau, responding to a similar kind of challenge in the context
+of interpreting historical figures.
 
 \begin{quote}
 I do not know of any historical figure who resists the idea that we can
@@ -2591,16 +2586,16 @@ clear-headedly on this fact, and yet still fails to intend to do
 \end{quote}
 
 There are challenges about how to make this principle quite right in
-cases where Zach shouldn't intend to do \emph{A}. But if the `belief is
-weak' thesis is correct, the whole tradition in action theory that
-Schroeder is here joining is fundamentally mistaken. From the intention
-to do \emph{A}, and the best guess that the only way to do \emph{A} is
-\emph{B}, it does not follow at all that coherence requires intending to
-do \emph{B}. Since I don't think that the entire literature on means-end
-coherence was based on fundamentally misunderstanding the nature of
-belief, I'm going to assume that we have a strong notion of belief. Just
-how it relates to the English words `guess', `think' and even `believes'
-is left as an issue for another day.
+cases where Zach shouldn't intend to do \emph{A}. If the `belief is
+weak' thesis is correct, however, the whole tradition in action theory
+that Schroeder is here joining is fundamentally mistaken. From the
+intention to do \emph{A}, and the best guess that the only way to do
+\emph{A} is \emph{B}, it does not follow at all that coherence requires
+intending to do \emph{B}. Since I don't think that the entire literature
+on means-end coherence was based on fundamentally misunderstanding the
+nature of belief, I'm going to assume that we have a strong notion of
+belief. Just how it relates to the English words `guess', `think' and
+even `believes' is left as an issue for another day.
 
 \section{Maps and Legends}\label{sec-mapslegends}
 
@@ -2655,35 +2650,35 @@ would typically include it on our map. When I'm reading the morning
 papers and thinking about the effects of some economic policy, such as a
 proposed minimum price for alcohol, I'll steer myself by the maps given
 in introductory economics texts. That is, I'll just use simple
-supply-demand graphs to predict the effects of the policy. But I won't
-always do that. For example, I won't do it when thinking about changes
-in the minimum wage, because systematic changes like that push simple
-models beyond their breaking point.\footnote{I've said in the text that
-  I believe that simple supply-demand models are right for some
-  purposes. At least, I implied that when I said I steer by them, and
-  that beliefs are maps by which we steer. Some philosophers think this
-  is wrong, and that one only ever accepts these simple models, rather
-  than believes them. But once we allow beliefs to be interest-relative,
-  this role for the belief/acceptance distinction seems to go away. A
-  lot of what are commonly called acceptances are, on my theory, beliefs
-  that are highly sensitive to changes in interests.} Or we can mix and
-match the practical and the theoretical. If there is a proposed price
-floor on something widely traded (like electricity), and my predictions
-about the effects of this change have even a small practical
-significance (e.g., I'm thinking about whether my small business should
-lock in the price it purchases electricity at for three years), then I
-might not use the simple model. In this case the combination of
-theoretical and practical interests will change which map I steer by,
-i.e., what I believe, even if neither interest on their own would have
-been enough to bring about a change.
+supply-demand graphs to predict the effects of the policy. Still, I
+won't always do that. For example, I won't do it when thinking about
+changes in the minimum wage, because systematic changes like that push
+simple models beyond their breaking point.\footnote{I've said in the
+  text that I believe that simple supply-demand models are right for
+  some purposes. At least, I implied that when I said I steer by them,
+  and that beliefs are maps by which we steer. Some philosophers think
+  this is wrong, and that one only ever accepts these simple models,
+  rather than believes them. Once we allow beliefs to be
+  interest-relative, this role for the belief/acceptance distinction
+  seems to go away. A lot of what are commonly called acceptances are,
+  on my theory, beliefs that are highly sensitive to changes in
+  interests.} Or we can mix and match the practical and the theoretical.
+If there is a proposed price floor on something widely traded (like
+electricity), and my predictions about the effects of this change have
+even a small practical significance (e.g., I'm thinking about whether my
+small business should lock in the price it purchases electricity at for
+three years), then I might not use the simple model. In this case the
+combination of theoretical and practical interests will change which map
+I steer by, i.e., what I believe, even if neither interest on their own
+would have been enough to bring about a change.
 
 So it looks like belief is interest-relative, and that's for deep
 reasons about the role that belief plays in our cognitive economy. To
 believe something is to steer by a map that represents it as true. To
-steer by it, in this sense, is to take it as given in our inquiries. But
-for normal people, what is taken as given is dependent on what question
-one is interested in. So for normal people, belief is interest-relative.
-I used to think that this could be extended to an argument that it was
+steer by it, in this sense, is to take it as given in our inquiries. For
+normal people, what is taken as given is dependent on what question one
+is interested in. So for normal people, belief is interest-relative. I
+used to think that this could be extended to an argument that it was
 part of the metaphysics of belief that it was interest-relative. But as
 we'll see in the next section, that isn't quite right. The restriction
 to `normal people' a couple of sentences back turns out to be essential,
@@ -2710,9 +2705,9 @@ beliefs.
 
 Stubbie's example shows that while one's beliefs should be
 interest-relative, they need not be. One should steer by a map suitable
-to the circumstances. But if one stubbornly steers by the same map come
-what may, the fact that it would be advisable to steer by different maps
-at different times does not affect what one believes. Stubbie really is
+to the circumstances. If one stubbornly steers by the same map come what
+may, the fact that it would be advisable to steer by different maps at
+different times does not affect what one believes. Stubbie really is
 steering himself by the Melways when hiking, and he really believes the
 simple economic model he uses.
 
@@ -2724,13 +2719,13 @@ metaphysics - what belief itself is.
 There is another complicated variant of this example that raises deeper
 questions about the relationship between belief and interests. Imagine
 that Stubbie is disposed to keep taking what history books say about
-Agincourt for granted. But now he is faced with a decision where a lot
-rides on this practice. Perhaps he is playing a version of the Red-Blue
-game where the prize is \$50,000, not \$50. And the shock of having that
-much at stake causes him to reconsider. So he goes back to thinking it
-merely probable that the Battle of Agincourt was in 1415. This is not a
-case of interest-relativity of belief. Rather, it is like the kind of
-case Jennifer Nagel (\citeproc{ref-Nagel2010}{2010}) discusses, when she
+Agincourt for granted. Now he is faced with a decision where a lot rides
+on this practice. Perhaps he is playing a version of the Red-Blue game
+where the prize is \$50,000, not \$50. And the shock of having that much
+at stake causes him to reconsider. So he goes back to thinking it merely
+probable that the Battle of Agincourt was in 1415. This is not a case of
+interest-relativity of belief. Rather, it is like the kind of case
+Jennifer Nagel (\citeproc{ref-Nagel2010}{2010}) discusses, when she
 talks about beliefs being causally sensitive to interests. And this
 shows we have to be careful to be sure that a case of
 interest-sensitivity is really a case where belief is constitutively,
@@ -2808,10 +2803,10 @@ what he does.
 What Sully has done here is use dominance reasoning, in particular weak
 dominance reasoning. One option weakly dominates another if it might
 have a better return, and can't have a worse return. Weak dominance is
-used as an analytical tool in game theory. But it is also a form of
-inference that non-theorists, like Sully can use. (Though unless they've
-taken a game theory course they might not use this phrase to describe
-it.)
+used as an analytical tool in game theory. It is also a form of
+inference that non-theorists, like Sully, can use. (Though unless
+they've taken a game theory course they might not use this phrase to
+describe it.)
 
 Sully's case can be distinguished from that of his more anxious friend
 Mack. Mack is also a big Red Sox fan, and also looks back on that
@@ -2892,9 +2887,9 @@ lunch tomorrow. If you want to think of these in terms of worlds, they
 are both very large sets of worlds, and within those sets there is a lot
 of variability.\footnote{Analysing these possibilities as sets of worlds
   is unhelpful when we want to use a model like this to represent modal
-  or logical uncertainty. But it's a helpful heuristic in most cases.
-  And there isn't anything wrong with using a model that breaks down
-  when applied outside its appropriate zone.}
+  or logical uncertainty. Still, it's often a helpful heuristic, and
+  there isn't anything wrong with using a model that breaks down when
+  applied outside its appropriate zone.}
 
 But there is more to the content of each column than what is explicitly
 represented in the header row. In each column, for example, the Red Sox
@@ -2921,7 +2916,7 @@ Given is logically weak in one respect, and strong in another. It only
 requires that S be willing to take \emph{p} for granted in one possible
 choice. It doesn't have to be a likely, or even particularly realistic
 choice. Sully is unlikely to have strangers offer him these free money
-bets. But given how representationally sparse decision tables are, for
+bets. Given how representationally sparse decision tables are, for
 something to be true in all columns of a decision table is a very strong
 claim. It doesn't suffice, for instance, for \emph{p} to be true in some
 columns and false in none. Each column has to take a stance on \emph{p},
@@ -3064,7 +3059,7 @@ don't realise its relevance. On the other hand, when I am explicitly
 asked \emph{If p, Q?}, being reminded of \emph{p} makes me see the
 connection, so I follow the natural path from \emph{p} to an answer to
 \emph{Q?}. These kind of one-off performance errors are, sadly, easy to
-make. But as long as they are one-off, they don't threaten the principle
+make. As long as they are one-off, they don't threaten the principle
 connecting dispositions.
 
 A bigger problem comes from the two cases that I started the book with.
@@ -3218,7 +3213,6 @@ means, compare these two little exchanges.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   \begin{enumerate}
   \def\labelenumii{\alph{enumii}.}
@@ -3242,14 +3236,14 @@ means, compare these two little exchanges.
 There is something wrong with 1b as an answer to 1a. It's true that John
 Lennon was in the Beatles. But an ordinary use of 1a will be to ask for
 the names of everyone in the Beatles, not just one person in them.
-(There are exceptions, and it's a fascinating task to work out when they
-occur. But it's not my fascinating task.) On the other hand 2b is a
-perfectly good answer to 2a. (Or so I think, but my knowledge of
-Melbourne coffee is a little out of date.) It is definitely not
-necessary to properly answer 2a that one list every place in Melbourne
-where one can get good coffee. That could take some time. Moreover, 2b
-does not (on its most natural reading) imply that Market Lane is the
-only place in Melbourne to get good coffee.
+(There are exceptions, and it's a fascinating task for another day to
+work out when they occur.) On the other hand 2b is a perfectly good
+answer to 2a. (Or so I think, but my knowledge of Melbourne coffee is a
+little out of date.) It is definitely not necessary to properly answer
+2a that one list every place in Melbourne where one can get good coffee.
+That could take some time. Moreover, 2b does not (on its most natural
+reading) imply that Market Lane is the only place in Melbourne to get
+good coffee.
 
 An answer is a `mention-some' answer when it does not imply exhaustivity
 in this sense. And a question admits of mention-some answers when it is
@@ -3360,18 +3354,18 @@ Resolving this indecision will not involve accepting any modal
 proposition like \emph{I should buy this carton in particular}. It
 better not, because I really have no reason to accept any such
 proposition. Rather, it involves accepting a proposition like \emph{I
-will buy this carton in particular}. And I can accept that by simply
-buying the eggs. But there were many answers I could equally well have
+will buy this carton in particular}. I can accept that by simply buying
+the eggs. There were many other answers I could equally well have
 accepted, since there were many other cartons I could buy.\footnote{I'm
   here mildly disagreeing with Jason Stanley
   (\citeproc{ref-Stanley2011}{2011}, Ch. 5) when he says that these
   questions with infinitival complements can be paraphrased using modals
-  like `should'. But only mildly since we might think `will' just is the
-  modal that gets used in the paraphrase, as Bhatt
-  (\citeproc{ref-Bhatt1999}{1999}) suggests.}
+  like `should'. If `will' just is the modal that gets used in the
+  paraphrase, as Bhatt (\citeproc{ref-Bhatt1999}{1999}) suggests, the
+  spirit of Stanley's view is preserved, even if the letter isn't.}
 
 Practical questions are distinct from questions about modals or
-utilities. But there will usually be a correlation between their
+utilities, but there will usually be a correlation between their
 answers. Usually, if someone asks you when to visit Venice, and there is
 one time in particular such that visiting then maximises expected
 utility, that's what you should tell them. That's when they should
@@ -3427,27 +3421,25 @@ options has the highest expected utility?}. There are bells and
 whistles, especially in thinking about the level of precision that goes
 along with the quantitative questions that S is interested in. (Draw
 these too fine, and S doesn't have beliefs, so you have to be a little
-careful here.) But this is enough to see the basic view, and to see its
-problems.
+careful here.) Even without those complications, I've said enough that
+you can see the basic view, and perhaps see its problems.
 
-There is a lot about this view I've kept. There are still the two parts,
-one primarily to do with propositions that are not practically relevant,
-and one to do with propositions that are. And the clause to deal with
-propositions that are practically relevant requires close match between
-conditional and unconditional answers.
+The biggest change from that view to the one I'm defending here concerns
+propositions that are not relevant to any question S is considering. I
+used to say in that case belief required credence above 0.5; I now say
+that S must be willing, at least sometimes, to take \emph{p} for
+granted.
 
-But there are a lot of changes. Going from saying that the credence in
-\emph{p} is greater than 0.5 to saying that S is willing, at least
-sometimes, to take \emph{p} for granted, is a big change. I no longer
-presuppose that questions about what to do just are questions about
-expected utility. I've stopped focussing exclusively on answers to
-(conditional) questions, and moved to talking about both answers and
-ways that questions are answered. And I dropped the requirement that we
-look at these potentially quite abstruse questions, such as how to
-answer \emph{Q?} assuming both \emph{A} and \emph{p}. The last two
-changes offset each other; the reason for including these doubly
-conditional questions was, in effect, to look at how S was willing to
-get to answers about questions with more practical import.
+There are other changes too. I no longer presuppose that questions about
+what to do just are questions about expected utility. I've stopped
+focussing exclusively on answers to (conditional) questions, and moved
+to talking about both answers and ways that questions are answered. And
+I dropped the requirement that we look at these potentially quite
+abstruse questions, such as how to answer \emph{Q?} assuming both
+\emph{A} and \emph{p}. The last two changes offset each other; the
+reason for including these doubly conditional questions was, in effect,
+to look at how S was willing to get to answers about questions with more
+practical import.
 
 There are many reasons, most of them due to perceptive critics of my
 earlier work, for making these changes. I'll just focus here on the five
@@ -3473,33 +3465,32 @@ There are other mental states that have truth as a correctness
 condition. Guesses are correct or incorrect, even if there need be
 nothing at all irrational about making a false guess. Indeed, any mortal
 who doesn't make false guesses from time to time isn't playing the
-guessing game well. But not all mental states are like this. If I hope
-that \emph{p}, and \emph{p} doesn't come to pass, that doesn't make my
-hope incorrect. It just makes it frustrated. So to say that a false
-belief is incorrect is not to just make the trivial point that it is
-false. It is also to say that the belief failed to meet one important
-standard of evaluation for beliefs - correctly representing the world.
-But the underlying credal states that on my old view constituted belief
-only had rationality conditions, they didn't have correctness
-conditions. And that's a sign that my theory left something out.
+guessing game well. Not all mental states are like this. Hoping for
+something that doesn't turn out to happen is unfortunate, but not
+incorrect. To say that a false belief is incorrect is not to just make
+the trivial point that it is false. It is also to say that the belief
+failed to meet one important standard of evaluation for beliefs -
+correctly representing the world. Credences do not have these
+correctness conditions, so the relatively simple reduction I proposed of
+belief to credence must be mistaken.
 
 The new theory does not have this problem. Doing dominance reasoning
 where all of the situations one considers are non-actual is a mistake.
 It's not a mistake because it will inevitably lead to an irrational
-decision. But it's a mistake because one draws a conclusion that is not
-supported by the premises it is based on. Those premises only say that
-one option is better than another conditional on one or other condition
-obtaining. And that's a bad reason to say the first option is simply
-better if there is some extra option that might obtain. And whatever
-does obtain, might obtain.
+decision. Rather, it's a mistake because one draws a conclusion that is
+not supported by the premises it is based on. Those premises only say
+that one option is better than another conditional on one or other
+condition obtaining. That's a bad reason to say the first option is
+simply better if there is some extra option that might obtain. And
+whatever does obtain, might obtain.
 
 This way of explaining the incorrectness of false belief suggests a
 central role for knowledge in norms of beliefs. False beliefs are
 mistaken because they lead one to treat the actual situation as one that
-could not obtain, yet the actual situation might obtain. But one can
-make the same mistake by treating a situation that doesn't obtain, but
-might, as one that could not obtain. And believing something one doesn't
-know will (typically) lead to doing that.
+could not obtain, yet the actual situation might obtain. One can make
+the same mistake by treating a situation that doesn't obtain, but might,
+as one that could not obtain. Believing something one doesn't know will
+(typically) lead to doing that.
 
 \subsection{Impractical Propositions}\label{sec-meimpractical}
 
@@ -3510,21 +3501,21 @@ ripples without a care in the world. All of the very few questions that
 I'm currently interested in have the same answer unconditionally as they
 do conditional on the Battle of Agincourt having been fought in 1415. So
 according to clause 1, I believe the Battle of Agincourt was in 1415.
-That's good, because I do believe that. But it's also true that all of
-the very few questions that I'm currently interested in have the same
-answer unconditionally as they do conditional on the Battle of Agincourt
-having been fought in 1416. So if clause 1 was the full theory of
-belief, then I would also believe that the Battle of Agincourt was in
-1416. And that's false.
+That's good, because I do believe that. It's also true that all of the
+very few questions that I'm currently interested in have the same answer
+unconditionally as they do conditional on the Battle of Agincourt having
+been fought in 1416. So if clause 1 was the full theory of belief, then
+I would also believe that the Battle of Agincourt was in 1416, which I
+do not.
 
-So I added clause 2 to the theory in order to fix this problem. But it
-only fixes a special case of the problem. Let \emph{p} be the
-proposition that the next die I roll will land 1, 2, 3 or 4. My credence
-in that is two-thirds, so it satisfies clause 2. And conditionalising on
-it doesn't change the answer to any of the very few problems that I'm
-interested while the ripples float down the stream. So I believe
-\emph{p}. But that's absurd too. (This objection is also due in
-important parts to Ross and Schroeder
+I added clause 2 to the theory to try in order to fix this problem, but
+it turned out only to fix a special case. Here's a case it doesn't fix.
+Let \emph{p} be the proposition that the next die I roll will land 1, 2,
+3 or 4. My credence in that is two-thirds, so it satisfies clause 2. And
+conditionalising on it doesn't change the answer to any of the very few
+problems that I'm interested while the ripples float down the stream. So
+I believe \emph{p}. That's absurd, since I know it is just 2/3 likely.
+(This objection is also due in important parts to Ross and Schroeder
 (\citeproc{ref-RossSchroeder2014}{2014}), though my presentation differs
 from theirs to emphasise just which parts of the objections most worry
 me.)
@@ -3540,7 +3531,7 @@ is some salient very large number, and it matters what the remainder is
 when that large number is divided by 1000, or 1000000. Could we get to a
 point where a choice that is better than some alternative unless that
 remainder is, say 537, feel like a dominating choice? I'm not sure
-whether that would ever happen. But it does seem plausible to say that
+whether that would ever happen. It does seem plausible to say that
 whether such a choice ever feels like a dominating choice correlates
 with whether we could ever straight up believe that the remainder is not
 precisely 537 on purely probabilistic grounds.
@@ -3564,14 +3555,14 @@ She has reasons for preferring to answer the question than take one of
 those two options. And she could give those reasons without any
 reflection. So Red-True and Blue-True should be in the range of things
 that we quantify over when thinking about options she is interested in.
-And she has a stable disposition to choose Red-True over Blue-True; I
-think that stable disposition is a strict preference. And that strict
-preference does not survive conditionalising on the proposition that the
-Battle of Agincourt was in 1415. So my earlier theory says that even in
-this revised version of the game, Anisa does not believe that the Battle
-of Agincourt was in 1415.
+Moreover, she has a stable disposition to choose Red-True over
+Blue-True; I think that stable disposition is a strict preference. That
+strict preference does not survive conditionalising on the proposition
+that the Battle of Agincourt was in 1415. So my earlier theory says that
+even in this revised version of the game, Anisa does not believe that
+the Battle of Agincourt was in 1415.
 
-And this seems mistaken to me. In any deliberation Anisa does, her
+This now seems mistaken to me. In any deliberation Anisa does, her
 regular disposition to take it for granted that the Battle of Avignon
 was in 1415 survives. There is a very nearby deliberation where it does
 not survive, namely the deliberation about whether Red-True or Blue-True
@@ -3587,7 +3578,7 @@ options, because you want to choose the best one of them, does not mean
 being interested in all questions about preferences between pairs of
 them. The problem was that I'd been focussing largely on two-way
 choices, so the distinction between being interested in some choices and
-being interested in which of those two is better got elided. But that
+being interested in which of those two is better got elided. That
 distinction matters, and the hybrid pragmatic theory handles it better
 than my old theory.
 
@@ -3598,11 +3589,11 @@ inquiry into which option had the highest expected utility. This was
 wrong for a number of reasons, not least that it gives implausible
 results in cases involving choices between very similar options. I'll
 briefly describe one example that illustrates the problem, and the start
-of how I plan to solve it. But it turns out to be rather tricky to get
-the details right, and I'll come back to this in
-Section~\ref{sec-andelim} and again in Chapter~\ref{sec-ties}. The
-details of the example are new, but it's a very minor modification of a
-kind of example that is discussed in Matthew McGrath and Brian Kim
+of how I plan to solve it. It turns out to be rather tricky to get the
+details right, and I'll come back to this in Section~\ref{sec-andelim}
+and again in Chapter~\ref{sec-ties}. The details of the example are new,
+but it's a very minor modification of a kind of example that is
+discussed in Matthew McGrath and Brian Kim
 (\citeproc{ref-McGrathKim2019}{2019}) and credited to a talk by John
 Hawthorne ``circa 2007''. Similar examples are also discussed by Alex
 Zweber (\citeproc{ref-Zweber2016}{2016}) and by Charity Anderson and
@@ -3615,7 +3606,7 @@ cans, call them \emph{c}1 and \emph{c}2, that are equally easy to reach
 and get from the shelf. Call the actions of taking them \emph{t}1 and
 \emph{t}2. David simply assumes, partially on inductive grounds and
 partially on grounds of what he knows about supermarkets, that neither
-can has passed its expiry date. But while it is wildly implausible that
+can has passed its expiry date. While it is wildly implausible that
 either can has, the probability is not zero. Let
 \emph{e\textsubscript{i}} be that can \emph{i} has expired, and assume
 that \emph{Pr}(\emph{e}\textsubscript{1}) and
@@ -3655,9 +3646,9 @@ chickpeas.
 \subsection{Updates and Modals}\label{sec-modalupdate}
 
 The version of IRT that I defend here gives a big role to conditional
-attitudes.\footnote{This subsection is based on material from §1 of my
-  (\citeproc{ref-Weatherson2016}{2016a}).} That's something that it has
-in common with everything I've written about IRT. But I used to have a
+attitudes.\footnote{This subsection is based on my
+  (\citeproc{ref-Weatherson2016}{2016a: 1}).} That's something that it
+has in common with everything I've written about IRT. I used to have a
 particular pair of views about how to understand conditional attitudes.
 In particular, I took the following two claims to be at least close
 approximations to the truth about conditional attitudes.
@@ -3676,17 +3667,17 @@ The first is at best an approximation for familiar reasons. I can think
 that no one knows whether \emph{p} is true, and even think that this is
 true conditional on \emph{p}. But after updating on \emph{p}, I will no
 longer think that. So we have to be a bit careful in applying principle
-1; it has counterexamples. But it is still a useful heuristic, and
-that's how I'll use it.
+1; it has counterexamples. Still, it is a useful enough heuristic to
+work with.
 
 What wasn't originally obvious to me was that there are counterexamples
-to principle 2 as well. And they are more significant for the way IRT
-should be understood. I used to describe the picture of belief I was
-defending as the view that to believe something is to have a credence in
-it that's close enough to 1 for current purposes. That's still a decent
-heuristic, but it isn't always right. When someone is interested in
-modal questions, credence 1 might be insufficient for belief. To see how
-this might be so, it helps to start with some points Thony Gillies
+to principle 2 as well. They are more significant for the way IRT should
+be understood. I used to describe the picture of belief I was defending
+as the view that to believe something is to have a credence in it that's
+close enough to 1 for current purposes. That's still a decent heuristic,
+but it isn't always right. When someone is interested in modal
+questions, credence 1 might be insufficient for belief. To see how this
+might be so, it helps to start with some points Thony Gillies
 (\citeproc{ref-Gillies2010}{2010}) makes about the relationship between
 modals, conditionals and updating.
 
@@ -3734,13 +3725,13 @@ the new information and the probability that Red must be in the box goes
 from 0 to 0.
 
 Now it's a hard problem to say exactly how this alternative to updating
-by conditionalisation should work. But very roughly, the idea is that at
+by conditionalisation should work. Very roughly, the idea is that at
 least some of the time, we update by eliminating worlds from the space
 of possibilities. This affects dramatically the probability of
 propositions whose truth is sensitive to which worlds are in the space
 of possibilities.
 
-And this matters when we are considering modal questions. For example,
+All this matters when we are considering modal questions. For example,
 if we are considering the question \emph{Must q be true?}, then it is
 plausible that unconditionally the answer is no, and indeed the
 unconditional probability that \emph{q} must be true is 0, but that
@@ -3778,8 +3769,8 @@ insufficient.
 
 Jacob Ross and Mark Schroeder (\citeproc{ref-RossSchroeder2014}{2014})
 have what looks like, on the surface, a rather different view to
-mine.\footnote{This section is based on §3 of my
-  (\citeproc{ref-Weatherson2016}{2016a}).} They say that to believe
+mine.\footnote{This section is based on my
+  (\citeproc{ref-Weatherson2016}{2016a: 3}).} They say that to believe
 \emph{p} is to have a \emph{default reasoning disposition} to use
 \emph{p} in reasoning. Here's how they describe their view.
 
@@ -3897,6 +3888,7 @@ point of disagreement. They think it is very important that a theory of
 belief vindicate a principle they call Stability.
 
 \begin{description}
+\tightlist
 \item[Stability]
 A fully rational agent does not change her beliefs purely in virtue of
 an evidentially irrelevant change in her credences or preferences.
@@ -4019,14 +4011,14 @@ provide an independent reason to reject Stability.
 
 In Chapter~\ref{sec-belief}, I argued that to believe something is to
 take it as given in all relevant inquiries, and in at least one possible
-inquiry. And I explained what it was to take something as given in terms
-of how one answers conditional and unconditional questions. In this
-chapter I'm going to argue that whatever is known can be properly taken
-as given in all relevant inquiries, where a relevant inquiry is one that
-one either is or should be conducting. Since some things that are
-usually known cannot be properly taken as given in some inquiries, this
-implies that knowledge is sensitive to one's inquiries and hence to
-one's interests.
+inquiry. I explained what it was to take something as given in terms of
+how one answers conditional and unconditional questions. In this chapter
+I'm going to argue that whatever is known can be properly taken as given
+in all relevant inquiries, where a relevant inquiry is one that one
+either is or should be conducting. Since some things that are usually
+known cannot be properly taken as given in some inquiries, this implies
+that knowledge is sensitive to one's inquiries and hence to one's
+interests.
 
 There is an easy argument for the conclusion of this chapter.
 
@@ -4043,33 +4035,34 @@ There is an easy argument for the conclusion of this chapter.
   inquiries.
 \end{enumerate}
 
-I think this argument is basically sound. But both premises are
-controversial, and it isn't completely obvious that it is even valid. So
-I'm not going to rely on this argument. Rather, I'll argue more directly
-for the conclusion that whatever is known is correctly taken as given in
-all relevant inquiries. This will provide indirect evidence that the
-theory of belief in Chapter~\ref{sec-belief} was correct, since we can
-now take that theory of belief to be an explanation for the claim that
-whatever is known is correctly taken as given in all relevant inquiries,
-rather than as part of the motivation for it.
+I think this argument is basically sound, but both premises are
+controversial. Further, it isn't completely obvious that it is even
+valid. So I'm not going to rely on this argument. Rather, I'll argue
+more directly for the conclusion that whatever is known is correctly
+taken as given in all relevant inquiries. This will provide indirect
+evidence that the theory of belief in Chapter~\ref{sec-belief} was
+correct, since we can now take that theory of belief to be an
+explanation for the claim that whatever is known is correctly taken as
+given in all relevant inquiries, rather than as part of the motivation
+for it.
 
 The argument here will be in two parts. First, I'll focus on practical
 inquiries, i.e., inquiries about what to do, and argue that what is
 known can be taken as given in all practical inquiries. Then I'll extend
 the discussion to theoretical inquiries, and hence to inquiries in
-general. Then with the argument complete, I'll look at two possible
-objections to the argument - that it has implausible consequences about
-the role of logical reasoning in extending knowledge, and that it leads
-to implausible results when a source provides both relevant and
-irrelevant information.
+general. Finally, with the argument complete, I'll look at two possible
+objections to the argument. One objection is that it has implausible
+consequences about the role of logical reasoning in extending knowledge,
+and the other is that it leads to implausible results when a source
+provides both relevant and irrelevant information.
 
 \section{Ten Decision Commandments}\label{sec-makdec}
 
 A practical inquiry can often be represented by the kind of decision
-table that we use in decision theory courses.\footnote{This section is
-  loosely based on §1.1 of my (\citeproc{ref-Weatherson2012}{2012}).}
-Here, for instance, is a table for the problem faced by a person, call
-him Ragnar, choosing how to get to work.
+table that we use in decision theory courses.\footnote{This section and
+  the next are loosely based on my (\citeproc{ref-Weatherson2012}{2012:
+  1.1}).} Table~\ref{tbl-walkbus}, for instance, is a table for the
+problem faced by a person, call him Ragnar, choosing how to get to work.
 
 \begin{longtable}[]{@{}rcc@{}}
 \caption{Ragnar's trip to work}\label{tbl-walkbus}\tabularnewline
@@ -4087,32 +4080,32 @@ If we tell the students that the probability of rain is 0.4, we expect
 them to figure out that the expected utility of walking is 3, and the
 expected utility of taking the bus is 3.6, so it is better to take the
 bus. And that's a little surprising, since it probably won't rain, and
-if it doesn't, it is better to walk. But walking is risky, and in this
-case expected utility theory say that it isn't a risk worth taking.
+if it doesn't, it is better to walk. The key point is that walking is
+risky, and in this case expected utility theory say that it isn't a risk
+worth taking.
 
 Table~\ref{tbl-walkbus} can serve two related philosophical purposes,
 which we can helpfully distinguish using terminology from Peter Railton
 (\citeproc{ref-Railton1984}{1984}). The table can provide a
 \emph{criterion of rightness} for Ragnar's actions. It is rational for
-him to take the bus because of the calculation that I mentioned in the
-previous paragraph. The table can do more than that though. In simple
-cases like this one, it can provide a \emph{deliberation procedure}.
-Ragnar can, in theory and in simple cases, use a table like this to
-decide what to do. There are limits to when tables can be used in this
-way, and as I'll argue in Chapter~\ref{sec-ties}, those limits end up
-suggesting limits to how often the tables even provide criteria of
-rightness. In simple cases though, the table isn't just something the
-theorist can use to understand Ragnar, it is something Ragnar himself
-can use to deliberate. This is especially true in cases where one of the
-options is dominated, either strictly or weakly, by another.\footnote{An
-  option is strictly dominated by another if it does worse than that
-  option in every state. It is weakly dominated by another if it does
-  worse than that option in some states, and never does better than it.}
-I've appealed to the fact that the tables can be deliberation
-procedures, and not just criteria of rightness, already, in the
-discussion of Sully and Mack in Section~\ref{sec-given}. There the focus
-was on how tables like these related to belief; here I want to relate
-them to knowledge.
+him to take the bus because of the expected utility calculation. The
+table can do more than that though. In simple cases like this one, it
+can provide a \emph{deliberation procedure}. Ragnar can, in theory and
+in simple cases, use a table like this to decide what to do. There are
+limits to when tables can be used in this way, and as I'll argue in
+Chapter~\ref{sec-ties}, those limits end up suggesting limits to how
+often the tables even provide criteria of rightness. In simple cases
+though, the table isn't just something the theorist can use to
+understand Ragnar, it is something Ragnar himself can use to deliberate.
+This is especially true in cases where one of the options is dominated,
+either strictly or weakly, by another.\footnote{An option is strictly
+  dominated by another if it does worse than that option in every state.
+  It is weakly dominated by another if it does worse than that option in
+  some states, and never does better than it.} I've appealed to the fact
+that the tables can be deliberation procedures, and not just criteria of
+rightness, already, in the discussion of Sully and Mack in
+Section~\ref{sec-given}. There the focus was on how tables like these
+related to belief; here I want to relate them to knowledge.
 
 There are (at least) ten ways in which Table~\ref{tbl-walkbus} could
 misrepresent Ragnar's situation. To put the same point another way,
@@ -4152,19 +4145,21 @@ something else, or some combination of these? One upside of focussing on
 dominance arguments is that these questions can be temporarily set
 aside.
 
-The next four questions concern the rows. There is much less
-philosophical work on this. Brian Hedden
+The next four questions concern the rows, and here we have less
+philosophical work to draw on. Brian Hedden
 (\citeproc{ref-Hedden2012}{2012}) has a paper arguing that the options
-should all be decisions, rather than actions like walking. This would be
-a fairly radical change, though one worth taking seriously. The more
-conservative option would be to link the rows to some or other
-philosophical theory of abilities (\citeproc{ref-sep-abilities}{Maier,
-2022}). In some sense it seems right to say that there should be a row
-for all and only the actions that Ragnar is able to perform. The details
-are going to be tricky though. This book is focussed on the columns
-rather than the rows, but I want to briefly mention four important
-topics about the rows, which will constitute our third through sixth
-ways the table might misrepresent Ragnar's situation.
+should all be decisions, rather than actions. So the first row should
+say ``Ragnar decides to walk'' rather than ``Ragnar walks''. This would
+be a fairly radical change from practice in decision theory, though one
+worth taking seriously. The more conservative option would be to link
+the rows to some or other philosophical theory of abilities
+(\citeproc{ref-sep-abilities}{Maier, 2022}). In some sense it seems
+right to say that there should be a row for all and only the actions
+that Ragnar is able to perform. The details are going to be tricky
+though. This book is focussed on the columns rather than the rows, but I
+want to briefly mention four important topics about the rows, which will
+constitute our third through sixth ways the table might misrepresent
+Ragnar's situation.
 
 Third, the table might leave off an option that should be there. Perhaps
 Ragnar should, or at least should consider, driving to work. Or perhaps
@@ -4287,15 +4282,16 @@ The contemporary theory of duopoly starts with Harold Hotelling's paper
 Hotelling describes how a duopoly that does not maximise consumer
 welfare can be stable if the two parties have the ability to
 differentiate their product along one dimension. Surprisingly, the
-equilibrium is that they do not in fact take advantage of this ability.
-Having the ability, however, means that neither party has the incentive
-they would normally have to reduce prices to the point where consumer
-surplus is maximised. Hotelling is interested in possible equilibria,
-and he doesn't focus on how the parties might calculate the equilibria.
-(The impression one gets from the paper is that it will involve a good
-chunk of trial-and-error.) It turns out that in some duopoly situations,
-not much is needed to get to the equilibrium; just iterated deletion of
-dominated strategies.
+equilibrium is that they do not in fact take advantage of this ability,
+and instead provide the very same product. Hotelling's observation is
+that if both parties could differentiate, neither party has the
+incentive they would normally have to reduce prices to the point where
+consumer surplus is maximised. Hotelling is interested in possible
+equilibria, and he doesn't focus on how the parties might calculate the
+equilibria. (The impression one gets from the paper is that it will
+involve a good chunk of trial-and-error.) Subsequent work revealed that
+it turns out that in some duopoly situations, not much is needed to get
+to the equilibrium; just iterated deletion of dominated strategies.
 
 Here is the standard way Hotelling's model is introduced in
 textbooks.\footnote{This particular example isn't in Hotelling, but it
@@ -4303,11 +4299,11 @@ textbooks.\footnote{This particular example isn't in Hotelling, but it
   was first introduced. It differs from his examples in that the parties
   do not have the capacity to compete on price.} Imagine that two ice
 cream trucks have to choose (simultaneously) where they will be located
-on a beach. The beach has seven locations, numbered 1 to 7. The distance
+on a beach. The beach has seven locations, numbered 1 to 5. The distance
 between location \emph{m} and location \emph{n} is \textbar{}\emph{m} -
 \emph{n}\textbar. Assume for simplicity that the price of ice cream is
 fixed, the trucks just compete on location. There are two beach-goers at
-each of locations 1 to 7, so 14 in total. Each beach-goer will buy an
+each of locations 1 to 5, so 10 in total. Each beach-goer will buy an
 ice cream from the nearest truck. If two trucks are equidistant from a
 location, the two people there will head off in either direction, one
 buying from each truck. Question: Where should the two trucks go,
@@ -4315,12 +4311,12 @@ assuming that it is common knowledge that each truck owner is rational,
 and simply wants to maximise their own sales?
 
 This puzzle can be solved using just the idea that strictly dominated
-strategies can be iteratively deleted. Here is the table for how many
-sales each truck will make for each choice of location. The choice of
-the first truck determines which row of the table we're in, the choice
-of the second truck determines which column of the table we're in, and
-the resulting cell lists first the sales of the first truck, then the
-sales of the second truck.
+strategies can be iteratively deleted. Table~\ref{tbl-hotelling} shows w
+many sales each truck will make for each choice of location. The choice
+of the first truck determines which row of the table we're in, the
+choice of the second truck determines which column of the table we're
+in, and the resulting cell lists first the sales of the first truck,
+then the sales of the second truck.
 
 \clearpage
 
@@ -4341,20 +4337,20 @@ game}\label{tbl-hotelling}\tabularnewline
 \end{longtable}
 
 Assume that it is common knowledge, in the sense of Lewis
-(\citeproc{ref-Lewis1969a}{1969}), that this is the payout table, and
-that each player will not make choices that are strictly dominated. That
-is, for each \emph{n}, the proposition we get by having \emph{n}
-iterations of \emph{each player knows} in front of \emph{this is the
-game table, and each player is rational}, is true. Then the theorist,
-and each player, can reason as follows.
+(\citeproc{ref-Lewis1969a}{1969}), that Table~\ref{tbl-hotelling} is the
+payout table, and that each player will not make choices that are
+strictly dominated. That is, for each \emph{n}, the proposition we get
+by having \emph{n} iterations of \emph{each player knows} in front of
+\emph{this is the game table, and each player is rational}, is true.
+Then the theorist, and each player, can reason as follows.
 
 Row's option 1 is strictly dominated by option 2; option 2 gets 1 more
 sale in three possible states, and 3 more sales in the other two, so it
 should be excluded. The same goes for option 5, which is strictly
-dominated by option 4. And, since the game is symmetric, the same goes
-for Column's options 1 and 5. By the common knowledge assumption, this
-means we can delete those rows, and columns, from the table. The result
-is the following table.
+dominated by option 4. Since the game is symmetric, the same goes for
+Column's options 1 and 5. By the common knowledge assumption, this means
+we can delete those rows, and columns, from the table. The result is
+Table~\ref{tbl-hotelling-iterated}.
 
 \begin{longtable}[]{@{}lccc@{}}
 \caption{The Hotelling game after one
@@ -4370,8 +4366,8 @@ iteration}\label{tbl-hotelling-iterated}\tabularnewline
 \textbf{4} & 5,5 & 4,6 & 5,5 \\
 \end{longtable}
 
-And for both players, option 3 dominates the other two options, so it
-will be chosen. Moreover, the reasoning here generalises. If there are 7
+For both players, option 3 dominates the other two options, so it will
+be chosen. Moreover, the reasoning here generalises. If there are 7
 options to start with, we need to do two rounds of deleting dominated
 options to get the players to the middle of the beach. If there are 9
 options to start with, we need to do three rounds of deletion. In
@@ -4392,42 +4388,42 @@ leads to paradoxes. Let's see whether we can get by with less.
 Assume that it is not common knowledge, but merely mutual knowledge that
 the payout table is as in Table~\ref{tbl-hotelling}, and the players do
 not take dominated options. That is, each player knows both those
-things. And that's all we'll assume. Since knowledge is factive, we can
-still rule out the extreme options, i.e., 1 and 5. And given that each
+things. That is all we'll assume. Since knowledge is factive, we can
+still rule out the extreme options, i.e., 1 and 5. Given that each
 player knows the other will not take dominated options, each player
 knows that it is only options 2 through 4 that are relevant. So given
 just the mutual knowledge assumption, we can show that from each
 player's perspective, they are playing the game depicted in
-Table~\ref{tbl-hotelling-iterated}. And in that game, option 3 is
-strictly dominant. So this assumption is enough to get us back to the
-middle of the beach. Note, however, that this reasoning does not
-generalise. Given merely mutual knowledge of non-dominance, we can show
-that neither player will take options 1 or 2, or the second-last or last
-options, but we can't show any more than that. So in the 7 option game,
-we can only show that they will both end up somewhere between options 3
-and 5. And in the games with much larger numbers of options, we can't
-show much at all. That seems both empirically and theoretically more
-plausible.
+Table~\ref{tbl-hotelling-iterated}. In that game, option 3 is strictly
+dominant. So this assumption is enough to get us back to the middle of
+the beach. Note, however, that this reasoning does not generalise. Given
+merely mutual knowledge of non-dominance, we can show that neither
+player will take options 1 or 2, or the second-last or last options, but
+we can't show any more than that. So in the 7 option game, we can only
+show that they will both end up somewhere between options 3 and 5. In
+the games with much larger numbers of options, we can't show much at
+all. That seems both empirically and theoretically more plausible.
 
 The argument of the last paragraph is meant to serve two distinct, but
 related, philosophical purposes.\footnote{I'm indebted here to
-  conversations with Eric Swanson.} It is meant to show that we
+  conversations with Eric Swanson.} First, it is meant to show that we
 theorists can deduce what the players will in fact do, given their
-evidence, and the assumptions about rationality. And it is meant to show
-that it would be rational for the players themselves to get to that
+evidence, and the assumptions about rationality. Second, it is meant to
+show that it would be rational for the players themselves to get to that
 conclusion via just that reasoning. It is important, in general, to
 distinguish between what is entailed by some assumptions, and what can
 be reasonably inferred from those assumptions Harman
 (\citeproc{ref-Harman1986}{1986}). In this case, though, I want to claim
 that the reasoning I've set out in that paragraph plays both roles. As
 theorists, we can tell that the players will not player either the
-extreme, or the next to extreme, option, and no more. And the players
-themselves should not go to any of those 4 spots, but we can't tell more
-than that without knowing more about the players.
+extreme, or the next to extreme, option, and no more. The players
+themselves will not go to any of those 4 spots, given our assumptions,
+but we can't know more about their actions without more knowledge of
+their mental states.
 
 But wait a minute! Without KAE, the last two paragraphs consist of one
 fallacious step after another. The player knows that the other player
-will not play an extreme option. And they know that if the extreme
+will not play an extreme option. Also, they know that if the extreme
 options are excluded, option 2 is strictly dominated. Without KAE, it
 doesn't follow that they can simply delete the extreme options. To
 delete an option just is to exclude it from the table. Without KAE, the
@@ -4448,8 +4444,7 @@ must be true.
 \section{Other Answers}\label{sec-other-answers}
 
 If KAE is false, what should go in its place? What could be the state
-which does allow exclusion?\footnote{This section draws heavily on §1.1
-  of Weatherson (\citeproc{ref-Weatherson2012}{2012}).}
+which does allow exclusion?
 
 \subsection{None of the Above}\label{sec-none-of-the-above}
 
@@ -4460,11 +4455,11 @@ so (assuming classical logic) it must always be true that some state in
 the table obtains.
 
 If one is not completely convinced that classical logic is correct, this
-move won't seem particularly appealing. But I suspect most readers are
-completely convinced that classical logic is correct, so I won't
-investigate that line. Instead I'll look at two more pressing objections
-to the idea that decision tables should always have a none of the above
-option.
+move won't seem particularly appealing. I suspect, however, that most
+readers are completely convinced that classical logic is correct, so I
+won't investigate that line. Instead I'll look at two more pressing
+objections to the idea that decision tables should always have a none of
+the above option.
 
 First, in many cases there is no sensible way to determine the
 probabilities or utilities that would go in this column. Imagine that
@@ -4481,7 +4476,7 @@ mid-season and could win? There is not really a sensible way to even
 assign probabilities to these options. Worse still, there is no way to
 assign utilities to actions given that state. The expected return of an
 action given this state will depend on the probabilities of the
-different ways it could come about. But the error bars on those
+different ways it could come about. The error bars on those
 probabilities are bigger than the probabilities themselves. There is
 simply no sensible value to put in the cell as the value of the pair;
 \emph{Schedule a large Super Bowl party in Las Vegas}, \emph{None of
@@ -4496,8 +4491,8 @@ Second, one should only be unwilling to exclude states from decision
 tables if one is so sceptical that one is unwilling to take any
 contingent proposition to be evidence. After all, taking something to be
 evidence involves excluding possibilities where it doesn't obtain from
-one's reasoning. But if one doesn't take anything to be evidence, then
-it is unclear how one's probabilities can update. It can't be by regular
+one's reasoning. If one doesn't take anything to be evidence, then it is
+unclear how one's probabilities can update. It can't be by regular
 conditionalisation. It could be by Jeffrey conditionalisation, if one
 thought that somehow it was impossible to ever learn that \emph{p}, but
 sometimes possible to learn what \emph{p}'s probability is. Personally,
@@ -4508,8 +4503,9 @@ proposition. I have never seen reason to think anyone else has either.
 This is a quite general point about interest-relative epistemology, and
 one that will keep coming up in different ways throughout the book. If
 one wants to do without knowledge, and just use probabilities (or
-credences), one owes us a story of how those probabilities change. And
-the best stories will involve some kind of interest-relative theory.
+credences), one owes us a story of how those probabilities change. The
+best stories about how probabilities change all involve some kind of
+interest-relativity.
 
 \subsection{Evidence}\label{sec-kae-evidence}
 
@@ -4520,13 +4516,14 @@ Exclusion.
 
 It isn't obvious that this is an alternative to KAE. If evidence and
 knowledge are co-extensive, as Williamson
-(\citeproc{ref-Williamson2000}{2000}) argued, it will not be. But since
-I'm going to argue in Chapter~\ref{sec-evidence} against this claim of
-Williamson's, I can't rely on that.
+(\citeproc{ref-Williamson2000}{2000}) argued, it will not be. Since I'm
+going to argue in Chapter~\ref{sec-evidence} that Williamson is wrong
+about this, I'm committed to EAE and KAE being distinct. So I need an
+argument against EAE.
 
-Instead I'll offer a two-part response. That \emph{p} is part of one's
-evidence either entails that one knows \emph{p} or it does not. Either
-way, EAE doesn't pose a problem for my overall argument.
+My argument will be by cases. That \emph{p} is part of one's evidence
+either entails that one knows \emph{p} or it does not. Either way, EAE
+doesn't pose a problem for my overall argument.
 
 If it does, then whether EAE or KAE is true won't matter for the overall
 argument. I'm going to argue that some propositions that are known in
@@ -4545,9 +4542,9 @@ The view I'll defend in Chapter~\ref{sec-evidence} is that evidence does
 entail knowledge. There is a really simple argument for this view. One
 way to know that \emph{p} is by properly deducing \emph{p} from one's
 evidence. The deduction \emph{p, therefore p} can be properly carried
-out. So one can know anything in one's evidence. But I'm not relying on
-this argument here, and instead on the point that if evidence doesn't
-suffice for knowledge, it surely doesn't suffice for exclusion.
+out. So one can know anything in one's evidence. I'm not relying on this
+argument here, and instead on the point that if evidence doesn't suffice
+for knowledge, it surely doesn't suffice for exclusion.
 
 The same considerations show that CAE, the view that Certainty Allows
 Exclusion, doesn't threaten the larger argument for interest-relativity.
@@ -4565,13 +4562,13 @@ Probability Allows Exclusion.
 
 The first thing to note is that if this is to be plausible, the notion
 of sufficiency here must be interest-relative. It's often fine to ignore
-propositions that have a one in 10,000 chance of being true. When
-planning what to do a fine sunny day with a clear weather forecast, I
-simply ignore the chance that there will be a passing shower, even
-though that probably still has a 1 in 10000 chance. But it's absurd to
-ignore one in 10,000 chances when deciding what insurance to buy. Fewer
-than one home in 10,000 burns down in any given year; that's not a
-reason to skip fire insurance for the year.
+propositions that have a one in 500 chance of being true. When planning
+what to do a fine sunny day with a clear weather forecast, I simply
+ignore the chance that there will be a passing shower, even though that
+still has a 1 in 500 chance. On the other hand, it's absurd to ignore
+one in 500 chances when deciding what insurance to buy. About one house
+in 500 has a fire in a given year; that's not a reason to skip fire
+insurance for the year.
 
 Second, as stated this view has the odd consequence that decision makers
 can ignore situations that actually obtain. This doesn't seem very
@@ -4585,40 +4582,9 @@ Third, once one does that, PAE starts to look suspiciously like a form
 of KAE. In particular, it looks like the view I'll call IRT-CP in
 Chapter~\ref{sec-ties}. That means (a) that it isn't obviously an
 alternative to KAE, and (b) the objections to IRT-CP are also objections
-to it. Some of those objections will come up in
-Section~\ref{sec-lockecoin} and Section~\ref{sec-lockegames}. But I'll
-end this survey with a different puzzle case.
-
-Luc is lucky; he's in a casino where they are offering better than fair
-odds on roulette. Although the chance of winning any bet is 1 in 38, if
-Luc bets \$10, and his bet wins, he will win \$400. (That's the only bet
-on offer.) Luc is considering betting on 28. As it turns out, 28 won't
-come up, although since this is a fair roulette wheel, Luc doesn't know
-this. Luc, like most agents, has a declining marginal utility for money.
-He currently has \$1,000, and for any amount of money \$\emph{x}, Luc
-gets utility \emph{x}\textsubscript{0.5} out of having \$\emph{x}. So
-Luc's current utility (from money) is, roughly, 31.622. If he bets and
-loses, his utility will be, roughly, 31.464. And if he bets and wins,
-his utility will be, roughly, 37.417. So he stands to gain about 5.794,
-and to lose about 0.159. So he stands to gain about 36.5 as much as he
-stands to lose. Since the odds of winning are less than 1 in 36.5, his
-expected utility goes down if he takes the bet, so he shouldn't take it.
-Of course, if the probability of losing was 1, and not merely 37 in 38,
-he shouldn't take the bet too.
-
-Does that mean it is acceptable, in presenting Luc's decision problem,
-to leave off the table any possibility of him winning, since he won't
-win, and setting the probability of losing to 1 rather than 37 in 38
-doesn't change the decision he should make? No; this would misrepresent
-Luc's situation in an important way. In particular, it would
-misrepresent how sensitive Luc's choice is to his utility function, and
-to the size of the stakes. If Luc's utility function had been that he
-gets utility \emph{x}\textsubscript{0.75} from wealth \emph{x}, then it
-would have been wise for Luc to take the bet. Even with his actual
-utility function, if the bet had been \$1 against \$40, rather than \$10
-against \$400, he would have been wise to take the bet. Leaving off the
-possibility of winning hides these facts, and badly misrepresents Luc's
-situation.
+to it. Since I'll go over those objections in detail in
+Section~\ref{sec-lockecoin} and Section~\ref{sec-lockegames}, I won't
+double them up here, but assume that they work against PAE.
 
 \subsection{Wrapping Up}\label{sec-kae-wrapping-ip}
 
@@ -4645,9 +4611,10 @@ what follows if Knowledge Allows Exclusion.
 
 \section{From KAE to Interest-Relativity}\label{sec-from-kae-to-irt}
 
-If Knowledge Allows Exclusion, then there is a simple argument that
-Anisa loses knowledge when playing the red-blue game. The following
-would be a bad table for Anisa to use when deciding what to do.
+If KAE. Knowledge Allows Exclusion, is true then there is a simple
+argument that Anisa loses knowledge when playing the Red-Blue game.
+Table~\ref{tbl-assume-agincourt} would be a bad table for Anisa to use
+when deciding what to do.
 
 \begin{longtable}[]{@{}rcc@{}}
 \caption{What the Red-Blue game looks like if Anisa assumes that the
@@ -4666,9 +4633,9 @@ Blue-False & 0 & 0 \\
 \end{longtable}
 
 If she used that table, then it would look like Blue-True is the weakly
-dominant option. And that would mean that Blue-True is at least a
-rational choice, and perhaps the rational choice. Since Blue-True is not
-a rational choice, this table must be wrong. But if Anisa knows that the
+dominant option. That would mean that Blue-True is at least a rational
+choice, and perhaps the rational choice. Since Blue-True is not a
+rational choice, this table must be wrong. If Anisa knows that the
 Battle of Agincourt was in 1415, and knowledge structures decision
 tables, then everything on this table is correct. So Anisa does not know
 that the Battle of Agincourt was in 1415. Since she does know this when
@@ -4676,28 +4643,28 @@ not playing the game, her knowledge is interest-relative.
 
 \section{Theoretical Knowledge}\label{sec-theoreticalknowledge}
 
-Knowledge structures proper practical deliberation. And because what
-things can be taken as structural assumptions differs between different
-pieces of practical reasoning, knowledge is sensitive to the interests
-of the inquirer. But this isn't the only way in which knowledge is
-sensitive to interests. It is also sensitive to which purely theoretical
-questions the inquirer is taking an interest in.
+Knowledge structures proper practical deliberation. Because what things
+can be taken as structural assumptions differs between different pieces
+of practical reasoning, knowledge is sensitive to the interests of the
+inquirer. But this isn't the only way in which knowledge is sensitive to
+interests. It is also sensitive to which purely theoretical questions
+the inquirer is taking an interest in.
 
 I've already mentioned one way in which this has to be true. One kind of
 theoretical question is \emph{What should I do in this kind of
-situation?} And if actually being in that kind of situation and having
-to decide what to do affected what one knows, then thinking abstractly
+situation?}. If actually being in that kind of situation and having to
+decide what to do affected what one knows, then thinking abstractly
 about it should affect what one knows as well.
 
 This kind of comparison, between practical deliberation about what to
 do, and theoretical deliberation about what one should in just that
 situation, suggests a few things. It suggests that if practical
-interests affect knowledge, then so do theoretical interests. And it
+interests affect knowledge, then so do theoretical interests. It also
 suggests that they should do so in more or less the same way. So it
 would be good to have a story that assigns to knowledge the role of
 structuring theoretical deliberation, in just the way that it structures
-practical deliberation. And that's more or less the story I'm going to
-tell, though there are some complications along the way.
+practical deliberation. That's more or less the story I'm going to tell,
+though there are some complications along the way.
 
 The story I like starts with an observation by Pamela Hieronymi.
 
@@ -4716,31 +4683,29 @@ step in this reasoning. This way of putting things connects Hieronymi's
 view of reasons to the idea present in both Hawthorne and Stanley
 (\citeproc{ref-HawthorneStanley2008}{2008}) and Fantl and McGrath
 (\citeproc{ref-FantlMcGrath2009}{2009}) that things known are reasons.
-And while I'm going to spend the rest of this section quibbling about
+While I'm going to spend the rest of this section quibbling about
 whether this is quite right, it's a good first step.
 
 It's enough to get us a fairly strong, but also fairly natural, kind of
 interest-relativity. In normal circumstances, Anisa knows that the
 Battle of Agincourt was in 1415. Now imagine not that she's playing the
-red-blue game, but thinking about how to play it. And she wonders what
+Red-Blue game, but thinking about how to play it. And she wonders what
 to do if the red sentence says that two plus two is four, and the blue
 sentence says that the Battle of Agincourt was in 1415. It would be a
 mistake for her to reason as follows: Well, the Battle of Agincourt was
 in 1415, so playing Blue-True will get me \$50, and nothing will get me
-more than \$50, so I should play Blue-True. And it looks like the
-problem is the first step; she just can't take this for granted in this
-very context.
+more than \$50, so I should play Blue-True. The mistake is the first
+step; she just can't take this for granted in this very context.
 
-This is a very obscure kind of question to wonder about. But there are
+This is a very obscure kind of question to wonder about, but there are
 more natural questions that lead to the same kind of result. Imagine
 that the day after reading the book, but before playing any weird game,
 Anisa starts wondering how likely it is that the book was correct.
 History books do make mistakes, and she wants to estimate how likely it
 is that this was a mistake. Again, it would be an error to reason as
 follows: Well, the Battle of Agincourt was in 1415, and that's what the
-book says, so the book is certainly correct. And it looks like the
-problem is the first step; she just can't take this for granted in this
-very context.
+book says, so the book is certainly correct. Again, the problem is the
+first step; she just can't take this for granted in this very context.
 
 But it's not like she can only take for granted in that context things
 that are certain. If that were true, she couldn't even start inquiry
@@ -4749,15 +4714,18 @@ of stuff as beyond the scope of present inquiry. She should not question
 that the book says that the battle was in 1415, or that there was a
 Battle of Agincourt, or that it is a widely written about (but also
 widely mythologised) battle, or that 1415 is before the invention of the
-printing press and this might affect the reliability of records, and so
-on. None of these things are things that she knows with Cartesian
-certainty. Indeed, some of them are probably all-things-considered less
-likely than that the Battle of Agincourt was in 1415. So it's not like
-there is some threshold of likelihood, or of evidential support, and
-inquiring into the likelihood of this statement implies that one can
-take for granted all and only things that clear this threshold. Rather,
-individual inquiries have their own logic, their own rules about what
-can and can't be taken for granted.
+moveable type printing press and so records from 1415 might be less
+reliable, and so on. None of these things are things that she knows with
+Cartesian certainty. Indeed, some of them are probably
+all-things-considered less likely than that the Battle of Agincourt was
+in 1415.\footnote{When I was editing this book I realised I wasn't sure
+  when the moveable type printing press was invented, and had to double
+  check it was after 1415.} So it's not like there is some threshold of
+likelihood, or of evidential support, and inquiring into the likelihood
+of this statement implies that one can take for granted all and only
+things that clear this threshold. Rather, individual inquiries have
+their own logic, their own rules about what can and can't be taken for
+granted.
 
 There is an interesting analogy here with the rules of evidence in
 criminal trials. Whether some facts can be admitted at a trial depends
@@ -4785,13 +4753,13 @@ defending the second kind of reading. That's what I mean by saying that
 using what one knows provides immunity from a certain kind of criticism.
 The alternative requires that we can specify all the ways in which one
 might go wrong while using what one knows - those are the ``independent
-reasons to the contrary''. And I don't think that's something we're now
-in a position to do.
+reasons to the contrary''. I don't think that's something we're now in a
+position to do.
 
 The justification for the immunity claim is quite straightforward. It's
 incoherent to say of someone that they know that \emph{p}, but they
 shouldn't have used \emph{p} in reasoning because it might be false.
-That's Moore-paradoxical, if not outright contradictory. And if it is
+That's Moore-paradoxical, if not outright contradictory. If it is
 incoherent to say \emph{A, and X shouldn't have done B because C}, then
 \emph{A} is a defence to the criticism of \emph{X} that she shouldn't
 have done \emph{B} because \emph{C}. So knowing that \emph{p} is a
@@ -4801,8 +4769,8 @@ reasoning because it might be false.
 Can we say something stronger? Can we say that knowing that \emph{p}
 immunises the reasoner from all criticisms? Surely not; using irrelevant
 facts in inquiry is a legitimate criticism, even if the facts are known.
-But could we say something a bit more qualified, but still stronger than
-the immunity claim that I make?
+Is there a true claim that's a bit more qualified, but still stronger
+than the immunity claim that I make?
 
 One possibility would be to say that reasoning that starts with what is
 known is immune from all criticisms except those on a specified list.
@@ -4811,12 +4779,12 @@ irrelevant facts. Another thing might be that the reasoning itself is
 irrelevant to what one should be doing. If there is a drowning child in
 front of me, and I start idly musing about what the smallest prime
 greater than a million might be, I can be criticised for that reasoning.
-And that criticism can be sustained even if my mathematical reasoning is
-impeccable, and I get the correct answer. As it turns out, that's
-1,000,003.
+That criticism can be sustained even if my mathematical reasoning is
+impeccable, and I get the correct answer.\footnote{As it turns out,
+  that's 1,000,003.}
 
 Some facts are irrelevant to an inquiry. Others are relevant, but not
-part of the best path to resolving the inquiry. This can be grounds for
+part of the best path to resolving the inquiry. This can be a ground for
 criticism as well. It's in some cases a mild criticism. If one follows
 an obvious path to solving a problem, when there is an alternative
 quicker way to solving the problem using a clever trick, it isn't much
@@ -4832,7 +4800,7 @@ itself a reason to deny that they end up with knowledge.
 Inefficiency in inquiry is often not a big deal; other mistakes in
 inquiry are more serious. Sometimes the premises do not support the
 conclusion. It's notoriously hard to say what is meant by support here.
-It seems to have some rough relationship to logical entailment. But it's
+It seems to have some rough relationship to logical entailment, but it's
 hard to say more than that. Sometimes premises support a conclusion they
 do not entail - that's what happens in all inductive inquiry. Sometimes
 premises do not support a conclusion they do entail. If I reason, ``3 is
@@ -4844,9 +4812,9 @@ can't know on that basis that 1,000,003 is the first prime greater than
 0, entails the next step. It just fails to support it, in the relevant
 sense.
 
-But maybe now we might suspect we've got enough criticisms on the table.
-Is there anything wrong about an inquiry where the following criteria
-are met?
+Maybe now we might suspect we've got enough criticisms on the table. Is
+there anything wrong about an inquiry where the following criteria are
+met?
 
 \begin{itemize}
 \tightlist
@@ -4862,7 +4830,7 @@ are met?
   immediately preceding it.
 \end{itemize}
 
-An inquiry with these features looks pretty good. And if there is really
+An inquiry with these features looks pretty good. If there is really
 nothing to complain about in such an inquiry, then the following is
 true. An inquirer who starts an inquiry with what they know is immune
 from all criticisms except perhaps (a) that they shouldn't be conducting
@@ -4897,20 +4865,20 @@ suits. The person next to Casey is black, and Casey reasons as follows.
 
 That's not valid, but one might argue that it's a rational inductive
 inference. Alternatively, we can consider the case where Casey
-explicitly concludes that the person next to them is probably black. And
-we can imagine that all of the following things are true. It is
-reasonable for Casey to think about whether the person in question is on
-the wait staff; it matters for the reasonable practical purpose of
-getting a drink. The wait staff are not wearing distinctive clothes, so
-seeing what observational characteristics correlate with being on the
-wait staff is a reasonable approach to that inquiry. Casey knows that
-the premises of the inquiry are true. And the premises support the
+explicitly concludes that the person next to them is probably black. We
+can imagine that all of the following things are true. It is reasonable
+for Casey to think about whether the person in question is on the wait
+staff; it matters for the reasonable practical purpose of getting a
+drink. The wait staff are not wearing distinctive clothes, so seeing
+what observational characteristics correlate with being on the wait
+staff is a reasonable approach to that inquiry. Casey knows that the
+premises of the inquiry are true, and the premises support the
 conclusion of the inquiry.
 
 And yet, it seems something goes badly wrong if Casey reasons this way.
 If the conclusion is false, it doesn't seem like mere inductive bad
 luck. Arguably, there is a moral prohibition on reasoning in this way.
-And also arguably, this moral prohibition prevents Casey's reasoning
+Furthermore, this moral prohibition plausibly prevents Casey's reasoning
 from providing knowledge.
 
 Now one might well question just about every step of the last two
@@ -4919,23 +4887,23 @@ to who is on the wait staff; it's another thing to jump to using skin
 colour as the best proxy. Given how many other things Casey can see
 about this person (such as how they are moving, what they are carrying,
 how they are engaging with others), it isn't clear that the premises
-support the conclusion, even inductively. And even if all those things
-are not true, it might be that Casey can get knowledge this way; the
-inquiry might be morally wrong without having any epistemic flaws that
-prevent it generating knowledge.
+support the conclusion, even inductively.
 
-Other examples of morally problematic inquiry suggest that there is no
-simple connection between an inquiry being morally bad, and it not
-generating knowledge. Many inquiries are morally problematic because
-they involve, or even constitute, privacy violations. But that doesn't
-mean the privacy violator doesn't come to know things about their
-victim. Indeed, part of the wrongness of the privacy violation is that
-they do come to know things about their victim.
+Even if all those things are not true, it might be that Casey can get
+knowledge this way; the inquiry might be morally wrong without having
+any epistemic flaws that prevent it generating knowledge. Other examples
+of morally problematic inquiry suggest that there is no simple
+connection between an inquiry being morally bad, and it not generating
+knowledge. Many inquiries are morally problematic because they involve,
+or even constitute, privacy violations. But that doesn't mean the
+privacy violator doesn't come to know things about their victim. Indeed,
+part of the wrongness of the privacy violation is that they do come to
+know things about their victim.
 
 Still, Casey can be criticised for inquiring in this way, even if the
-criticism does not imply that the inquiry produced no knowledge. And
-that suggests that there are possible criticisms of inquiries that
-satisfy the four bullet points listed earlier.
+criticism does not imply that the inquiry produced no knowledge. That
+suggests that there are possible criticisms of inquiries that satisfy
+the four bullet points listed earlier.
 
 Another source of trouble comes from holistic constraints on reasoning.
 What I have in mind here are rules that allow for a natural resolution
@@ -4970,7 +4938,7 @@ Here's one natural suggestion about what's wrong.\footnote{This is far
   (\citeproc{ref-Weisberg2010}{2010}) for discussion of it, and of
   related proposals, and for more discussion of the literature on
   Wright's examples.} It's too simple to be the full story, but it's a
-start. The transition Ada makes from 1 to 2 presupposes 3. And 1 is her
+start. The transition Ada makes from 1 to 2 presupposes 3, and 1 is her
 only evidence for 2. When those two conditions are met, it is wrong to
 infer from 2 to 3. More generally, there is something wrong with
 inferring a conclusion from an intermediate step in reasoning if that
@@ -4978,11 +4946,11 @@ conclusion must be presupposed in order to even reach that intermediate
 step.
 
 This is too rough as it stands to be a full theory of what is going on
-in cases like Ada's. But the details aren't important at this point.
+in cases like Ada's, but the details aren't important at this point.
 What is important is that there might be some kind of holistic
 constraint on reasoning. In some sense, Ada goes wrong in taking 2 for
-granted when she infers 3. But this doesn't intuitively undermine her
-claim to know 2.
+granted when she infers 3. This doesn't intuitively undermine her claim
+to know both 2 and 3.
 
 One important commonality between the last two cases, the moral
 encroachment and the transmission failure cases, is that the reasoning
@@ -4994,10 +4962,10 @@ is part of. But this restriction applies to the inference; not to the
 premises. We wouldn't say to the person who made this inference, ``You
 shouldn't reason like that; it might not be true that most people in the
 group have this feature.'' If we did say that, they would have an easy
-reply. And if Ada does do the problematic reasoning, it would be wrong
-to reply to her ``You shouldn't reason like this; it might not have been
-a goal.'' She could simply, and correctly, say that it quite clearly was
-a goal.
+reply. If Ada does do the problematic reasoning, it would be wrong to
+reply to her ``You shouldn't reason like this; it might not have been a
+goal.'' She could simply, and correctly, say that it quite clearly was a
+goal.
 
 This is the key to the correct rule linking knowledge and reasoning. If
 the inquirer uses as a step in reasoning something that she knows to be
@@ -5007,9 +4975,9 @@ to the criticism that the premise she used might not be true.
 What I started this section doing was saying that such a reasoner is
 immune to all criticism, then trying to work out exceptions to that
 principle. So an exception needed to be included to allow that the
-reasoner might be criticised for using an irrelevant reason. And the
-hope was that eventually a full list of such exceptions could be found.
-But this project seems wildly optimistic. I don't know that we need to
+reasoner might be criticised for using an irrelevant reason. The hope
+was that eventually a full list of such exceptions could be found. This
+project turned out to be wildly optimistic. I don't know that we need to
 include further exceptions to handle the moral encroachment or
 transmission failure cases. But I also don't know that we don't need to
 include extra exceptions. And I have no idea, and no idea how to find
@@ -5021,26 +4989,39 @@ that knowledge provides a particular kind of immunity. If the reasoner
 knows that the premise they use is true, they can't be criticised on the
 grounds that it might be false. This isn't a trivial claim. There were
 several examples involving Anisa where she could be criticised for using
-a premise that might be false. And all of those seemed like legitimate
+a premise that might be false. All of those seemed like legitimate
 criticisms even though the premise was one she knew before starting the
-inquiry. But it says nothing about cases like the moral encroachment
-case, or the transmission failure case, or other cases like them that
-may be discovered.
+inquiry. That criticism does not seem appropriate in the moral
+encroachment case, or the transmission failure case, or other cases like
+them that may be discovered.
 
-So that's the key principle I'll be working with. One cannot be
+I am assuming here that there is no trivial connection between \emph{It
+might be that not-p}, and \emph{The inquirer does not know that p}. If
+these claims express the same thing, at least in the particular context
+of evaluating the inquirer, then it would be trivial to say that
+knowledge provides immunity to criticism on the grounds that one's
+premises might not be true. The recent literature on epistemic modals,
+however, does not inspire confidence that any such trivial connection
+exists.\footnote{See Holliday \& Mandelkern
+  (\citeproc{ref-HollidayMandelkern2024}{2024}) for a survey of how
+  differently the two claims behave in embeddings and inferences, and a
+  radical claim about how to best account for those differences.} So
+this immunity seems like a non-trivial claim.
+
+So the key principle I'll be working with is that One cannot be
 criticised for using what one knows in an inquiry on the grounds that
 one is using what might be false. That's a bit of a mouthful, so
 sometimes I'll simply say that one can rationally take for granted what
 one knows. I'll have a lot more to say about this principle in the rest
 of this book, especially in Chapter~\ref{sec-evidence}.
 
-But I'll spend the rest of this chapter talking about how this principle
+I'll spend the rest of this chapter talking about how this principle
 relates to the idea that knowledge is closed under competent deduction.
 There are interesting examples that seem to show that the principle
-leads to several distinct kinds of violations of that principle. And
-I'll argue that this is not right, and for any plausible closure
-principle, adding the idea that one can take for granted what one knows
-does not yield a new objection to that principle.
+leads to several distinct kinds of violations of that principle. I'll
+argue that this is not right, and for any plausible closure principle,
+adding the idea that one can take for granted what one knows does not
+yield a new objection to that principle.
 
 The principle as stated is a little ambiguous, and to defend it I need
 to resolve that ambiguity. Surprisingly, I need to resolve it by taking
@@ -5054,6 +5035,7 @@ endorse the collective and not (merely) the individual version of the
 immunity to criticism principles stated here.
 
 \begin{description}
+\tightlist
 \item[Take for Granted (Individual)]
 If an inquirer knows some things, then each of those things are such
 that they can take that thing for granted in conducting the inquiry.
@@ -5072,6 +5054,7 @@ Here are two very plausible principles about knowledge, both due to John
 Hawthorne (\citeproc{ref-Hawthorne2005}{2005}).
 
 \begin{description}
+\tightlist
 \item[Single Premise Closure]
 If one knows \emph{p} and competently deduces \emph{q} from \emph{p},
 thereby coming to believe \emph{q}, while retaining one's knowledge that
@@ -5107,7 +5090,7 @@ violations of the closure conditions.
 \subsection{Single Premise Closure}\label{sec-andelim}
 
 But it turns out that even showing this is not completely trivial.
-Imagine yet another version of the red-blue game.\footnote{This game
+Imagine yet another version of the Red-Blue game.\footnote{This game
   will resemble the examples that Zweber
   (\citeproc{ref-Zweber2016}{2016}) and Anderson and Hawthorne
   (\citeproc{ref-AndersonHawthorne2019b}{2019b}) use to raise doubts
@@ -5125,19 +5108,19 @@ returns. Then all four of the following things are true about the game.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Unconditionally, the player is indifferent between playing red-true
-  and playing blue-true.
+  Unconditionally, the player is indifferent between playing Red-True
+  and playing Blue-True.
 \item
-  Conditional on \emph{A}, the player prefers red-true to blue-true,
-  because red-true will certainly return \$50 while blue-true is not
+  Conditional on \emph{A}, the player prefers Red-True to Blue-True,
+  because Red-True will certainly return \$50 while Blue-True is not
   completely certain to win the money.
 \item
-  Conditional on \emph{B}, the player prefers blue-true to red-true,
-  because blue-true will certainly return \$50 while red-true is not
+  Conditional on \emph{B}, the player prefers Blue-True to Red-True,
+  because Blue-True will certainly return \$50 while Red-True is not
   completely certain to win the money.
 \item
   Conditional on \emph{A}~∧~\emph{B}, the player is back to being
-  indifferent between playing red-true and playing blue-true.
+  indifferent between playing Red-True and playing Blue-True.
 \end{enumerate}
 
 From 1, 2 and 3, it follows in my version of IRT that the player does
@@ -5146,18 +5129,18 @@ either one of them changes her answer to a relevant question. The
 question being,~\emph{Which option maximises my expected returns?},
 where this is understood as a mention-all question.
 
-But look what happens at point 4. Conditionalising on
+Now look what happens at point 4. Conditionalising on
 \emph{A}~∧~\emph{B} does not change the answer to that question. So,
 assuming there is no other reason that the player does not know
-\emph{A}~∧~\emph{B}, arguably she does know \emph{A}~∧~\emph{B}. And
-that would be absurd; how could she know a conjunction without knowing
-either conjunct?
+\emph{A}~∧~\emph{B}, arguably she does know \emph{A}~∧~\emph{B}. That
+would be absurd; how could she know a conjunction without knowing either
+conjunct?
 
 Here is how I used to answer this question. Define a technical notion of
 interest. Say that a person is interested in a conditional question
 \emph{If p, Q?} if they are interested, in the ordinary sense, in both
 the true-false question \emph{p?} and they are interested in the
-question \emph{Q?}. And if conditionalising on a proposition changes (or
+question \emph{Q?}. If conditionalising on a proposition changes (or
 should change) their answer to any question they are interested in in
 this technical sense, then they don't know that proposition. This solves
 the problem because conditionalising on \emph{A}~∧~\emph{B} does change
@@ -5181,9 +5164,9 @@ got wrong was trying to find some other question whose answer changed
 when and only when what was under the hood changed. I should have just
 looked under the hood.
 
-So let's look again at the two questions that are relevant. And this
-time, don't think about what answer the player gives, but about how they
-get to that answer.
+So let's look again at the two questions that are relevant. This time,
+don't think about what answer the player gives, but about how they get
+to that answer.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5228,9 +5211,9 @@ current topic.) So I will assume that it is possible for the player to
 rationally answer both questions the same way. (I will have much more to
 say about why this is a coherent assumption in Chapter~\ref{sec-ties}.)
 
-The way she should answer 6 is to take \emph{A}~∧~\emph{B} as given. And
-hence she will take either option, red-true or blue-true, as being
-equivalent to just taking \$50. And she knows that is the best she can
+The way she should answer 6 is to take \emph{A}~∧~\emph{B} as given.
+Hence she will take either option, Red-True or Blue-True, as being
+equivalent to just taking \$50, which she knows that is the best she can
 do in the game. So in answering question 6, she will take it as given
 that both of these options are maximally good.
 
@@ -5242,17 +5225,17 @@ either \emph{A} or \emph{B} does not change her expected returns. So now
 claims 2 and 3 are wrong; conditionalising on either conjunct won't make
 a difference because she treats each conjunct as given.
 
-And that is the totally general case. Assume that someone has
-competently deduced \emph{Y} from \emph{X}, and they know \emph{X}. So
-they are entitled to answer the questions \emph{Q?} and \emph{If X, Q?}
-by the same method. Since the method for the latter takes \emph{X} as
-given, so can the method for the former. So they can answer \emph{Q?}
-taking \emph{X} as given. What one can appropriately take as given is
-closed under competent deduction? (Why? Because in the answer to
-\emph{Q?} that starts with \emph{X}, you can just go on to derive
-\emph{Y}, and then see that it is also a way to answer \emph{If Y, Q?}.)
-So they can answer \emph{Q?} taking \emph{Y} as given. So they can
-answer \emph{Q?} in the same way they answer \emph{If Y, Q?}.
+That is the totally general case. Assume that someone has competently
+deduced \emph{Y} from \emph{X}, and they know \emph{X}. So they are
+entitled to answer the questions \emph{Q?} and \emph{If X, Q?} by the
+same method. Since the method for the latter takes \emph{X} as given, so
+can the method for the former. So they can answer \emph{Q?} taking
+\emph{X} as given. What one can appropriately take as given is closed
+under competent deduction? (Why? Because in the answer to \emph{Q?} that
+starts with \emph{X}, you can just go on to derive \emph{Y}, and then
+see that it is also a way to answer \emph{If Y, Q?}.) So they can answer
+\emph{Q?} taking \emph{Y} as given. So they can answer \emph{Q?} in the
+same way they answer \emph{If Y, Q?}.
 
 So assuming there is no other reason to deny \textbf{Single Premise
 Closure}, adding a clause about how one may answer questions does not
@@ -5260,12 +5243,13 @@ give us a new reason to deny it.
 
 \subsection{Multiple Premise Closure}\label{sec-andintro}
 
-So that shows that IRT satisfies Single Premise Closure. The argument
-that it satisfies Multiple Premise Closure starts with the observation
-that Multiple Premise Closure more or less follows from Single Premise
+That shows that IRT satisfies Single Premise Closure. The argument that
+it satisfies Multiple Premise Closure starts with the observation that
+Multiple Premise Closure more or less follows from Single Premise
 Closure plus a principle I'll call \textbf{And-Introduction Closure}.
 
 \begin{description}
+\tightlist
 \item[And-Introduction Closure]
 If one knows some propositions, and one competently infers their
 conjunction from those propositions, while retaining one's knowledge of
@@ -5280,12 +5264,12 @@ rule one needs with multiple premises is And-Introduction. In practice,
 people do not generally reason via conjunctions in this way. Someone who
 knows \emph{A}~∨~\emph{B}, and who knows ¬\emph{A}, does not first infer
 (\emph{A} ∨ \emph{B})~∧~¬\emph{A}, and then infer \emph{B} from that.
-They just infer \emph{B}. But I think it's a harmless enough
-idealisation to model them as first inferring the conjunction whenever
-they use multiple premises. So I will assume that if I can show that IRT
-does not cause problems for And-Introduction Closure, and I've already
-argued that it does not cause problems for Single Premise Closure, then
-it does not cause problems for Multiple Premise Closure.
+They just infer \emph{B}. It's a harmless enough idealisation, however,
+to model them as first inferring the conjunction whenever they use
+multiple premises. So I will assume that if I can show that IRT does not
+cause problems for And-Introduction Closure, and I've already argued
+that it does not cause problems for Single Premise Closure, then it does
+not cause problems for Multiple Premise Closure.
 
 Here is the quick argument that IRT does not cause problems for
 And-Introduction Closure.
@@ -5307,10 +5291,10 @@ And-Introduction Closure.
   So, there is no IRT-based reason that And-Introduction Closure fails.
 \end{enumerate}
 
-Premise 1 is just a restatement of my version of IRT. And premise 3
+Premise 1 is just a restatement of my version of IRT, and premise 3
 should be uncontroversial. If one can take some premises for granted,
 then one (rationally) is ruling out possibilities where they are false.
-And to rule out possibilities where they are false just is to take their
+To rule out possibilities where they are false just is to take their
 conjunction for granted. So those premises should be fairly
 uncontroversial. What is controversial is that the argument is sound,
 and, in particular, that premise 2 is correct.
@@ -5318,24 +5302,25 @@ and, in particular, that premise 2 is correct.
 The conclusion is not that Multiple Premise Closure holds. Maybe you
 think it fails for some independent reason, distinct from IRT. I don't
 think the other reasons that have been offered in the literature are
-compelling. But I am not building the failure of these reasons into IRT.
+compelling, but I am not building the failure of these reasons into IRT.
 So the main assumption behind the argument is that if adding the `take
 for granted' clause to our theory of knowledge does not lead to closure
-violations, then nothing else in the theory does. And the argument for
-that is basically that there isn't much more to the theory. So I think
-the argument is sound.
+violations, then nothing else in the theory does. The argument for that
+is basically that there isn't much more to the theory. So I think the
+argument is sound.
 
-But it might look like the argument must be wrong. After all, it is easy
-to cook up cases where it looks like IRT leads to a closure failure.
-Here is one such example. It is another version of the red-blue game. In
-this version, the red sentence is, once again,~\emph{Two plus two equals
-four}. And the blue sentence is a conjunction \emph{A and B}, where both
-\emph{A} and \emph{B} express historical facts that the player has
-excellent, but not perfect, evidence for.\footnote{If you want to make
-  this more concrete, pick a random history book off the shelf and
-  choose two claims that are both reasonably specific - so there could
-  easily be a mistake about the details - and not something that was
-  independently warranted.} Now the following four claims all seem true.
+Still, it might look like the argument must be wrong. After all, it is
+easy to cook up cases where it looks like IRT leads to a closure
+failure. Here is one such example. It is another version of the Red-Blue
+game. In this version, the red sentence is, once again,~\emph{Two plus
+two equals four}. This time the blue sentence is a conjunction
+\emph{A~and~B}, where both \emph{A} and \emph{B} express historical
+facts that the player has excellent, but not perfect, evidence
+for.\footnote{If you want to make this more concrete, pick a random
+  history book off the shelf and choose two claims that are both
+  reasonably specific - so there could easily be a mistake about the
+  details - and not independently warranted.} Now the following four
+claims all seem true.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5386,7 +5371,7 @@ the following things are all true about them.
 
 It is cases like this one that required the clarification that I made at
 the end of Section~\ref{sec-theoreticalknowledge}. The player here
-cannot take both of \emph{A} and \emph{B} for granted. And so they don't
+cannot take both of \emph{A} and \emph{B} for granted. So they don't
 know both those things. So this is not a case where they know \emph{A},
 know \emph{B}, and don't know \emph{A}~∧~\emph{B}. Since they cannot
 take both \emph{A} and \emph{B} for granted, they do not know both of
@@ -5416,20 +5401,20 @@ justifiably believe each of them. This isn't exactly how I'd put it. For
 one thing, I'm talking about knowledge not justification. For another,
 it's not that knowledge is a species of permission, as much as it
 behaves like permission in certain contexts, and those are just the
-contexts where counterexamples to And-Introduction Closure arise. But
-these are minor points of difference; I'm agreeing in large part with
-his picture.
+contexts where counterexamples to And-Introduction Closure arise. These
+are minor points of difference though; I'm still basically relying on
+Kroedel's ideas.
 
-And thinking of things the way Kroedel suggests helps say something
-positive about what is going on in this game. So far I've said something
-negative - the player does not know both that \emph{A} and that
-\emph{B}. And that's enough to show that the case is not a
-counterexample to And-Introduction Closure. A counterexample would,
-after all, have to be a case where the player knows both \emph{A} and
-\emph{B}. But saying what's not the case is not a helpful way to say
-what is the case. To say something more positive, it helps to think
-about other cases where permissions do not agglomerate. To that end,
-I'll talk through one case involving professional norms.
+Thinking of things the way Kroedel suggests helps say something positive
+about what is going on in this game. So far I've said something negative
+- the player does not know both that \emph{A} and that \emph{B}. That's
+enough to show that the case is not a counterexample to And-Introduction
+Closure. A counterexample would, after all, have to be a case where the
+player knows both \emph{A} and \emph{B}. But saying what's not the case
+is not a helpful way to say what is the case. To say something more
+positive, it helps to think about other cases where permissions do not
+agglomerate. To that end, I'll talk through one case involving
+professional norms.
 
 Professor Paresseux is, like most academics, in a situation where
 professional morality requires he do his fair share, but is fairly open
@@ -5454,19 +5439,19 @@ all of which have some plausibility.
 
 The first model says that he was wrong to turn down R1. Here's a little
 argument for that, using language that seems natural. He should have
-accepted one of the requests. And since he was well placed to perform
-R1, it's also true that if he did one of them, it should have been R1.
-So he should have accepted R1, and turning it down was the mistake.
-Oddly, it turns out to have been made true that he did the wrong thing
-in turning down R1 by his latter decision to turn down R2, but that's
-just an odd feature of the case.
+accepted one of the requests. Since he was well placed to perform R1,
+it's also true that if he did one of them, it should have been R1. So he
+should have accepted R1, and turning it down was the mistake. Oddly, it
+turns out to have been made true that he did the wrong thing in turning
+down R1 by his latter decision to turn down R2, but that's just an odd
+feature of the case.
 
 The second model says that odd feature is intolerably odd. It says he
 was wrong to turn down R2. Here's a little argument for that. At
 lunchtime, he hadn't done anything wrong. True, he had turned down R1,
 but he had moral permission to do that. It was only after lunch that he
 made it the case that he violated a norm. So the violation must have
-been after lunch. And so the violation was in turning down R2.
+been after lunch. So the violation was in turning down R2.
 
 A third model says that both of these arguments are inconclusive. What's
 really true is simply that Professor Paresseux should not have turned
@@ -5558,12 +5543,12 @@ to interesting questions, and any question taken conditional on an
 interesting proposition is interesting. So each of the questions
 \emph{What should I play given the first conjunct is true?} and
 \emph{What should I play given the second conjunct is true?} are both
-interesting questions (in this technical sense of `interesting'). And
-inquiring into the first question is incompatible with knowing the
+interesting questions (in this technical sense of `interesting').
+Inquiring into the first question is incompatible with knowing the
 second conjunct, while inquiring into the second question is
 incompatible with knowing the first conjunct. This was a fun way out the
 problem, but it was also overkill. Player loses one bit of knowledge,
-not two, so I don't think this is right.
+not two, so my earlier view must be wrong.
 
 Which of the other four models is correct? I think the fourth, which
 violates And-Introduction Closure, is the least plausible. That's
@@ -5571,8 +5556,8 @@ largely because it violates And-Introduction Closure. But the other
 three are all plausible, and are all consistent with And-Introduction
 Closure. (And note that all five are consistent with IRT. IRT itself
 says very little about this puzzle.) My preferred version of IRT says
-that the common case is the third - usually in cases like this it is
-indeterminate what is known.
+that typically the third option is correct - usually in cases like this
+it is indeterminate what is known.
 
 There are mix-and-match options available. Perhaps if Player's evidence
 for the first conjunct is (much) stronger than their evidence for the
@@ -5580,8 +5565,8 @@ second conjunct, and it was the first one that they took for granted in
 reasoning, then they (determinately) know the first but not the second
 conjunct. I don't need to take a stance on whether cases like this ever
 arise to defend And-Introduction Closure. That's because all I need is
-that for any case like this, one of the first three models is right. And
-that can be true even if it is different models in different cases.
+that for any case like this, one of the first three models is right.
+That can be true even if it is different models in different cases.
 
 \section{Summary}\label{sec-closuresummary}
 
@@ -5595,11 +5580,11 @@ But this isn't quite the end of the story. Even if the arguments of the
 last two sections work, what they show is that there must be some way to
 explain away any apparent conflict between IRT and closure principles.
 The arguments do not, on their own, tell us what that explanation will
-look like, or whether it will have unacceptable consequences. And
-without such an explanation, we might be sceptical of the arguments of
-this chapter, and indeed of IRT itself. So I'll come back several times
-to issues about closure. In Chapter~\ref{sec-ties}, I'll go over what
-IRT says about cases like Zweber's, and Anderson and Hawthorne's, more
+look like, or whether it will have unacceptable consequences. Without
+such an explanation, we might be sceptical of the arguments of this
+chapter, and indeed of IRT itself. So I'll come back several times to
+issues about closure. In Chapter~\ref{sec-ties}, I'll go over what IRT
+says about cases like Zweber's, and Anderson and Hawthorne's, more
 thoroughly.
 
 Before I get to that though, it is time to say more about a notion that
@@ -5622,13 +5607,13 @@ As Jessica Brown (\citeproc{ref-Brown2008}{2008}) argued, there are
 plenty of cases where intuitively a person knows that \emph{p}, but
 should check whether \emph{p} is true. This seems to be a problem for
 IRT, since it is motivated by the thought that what's known is an
-appropriate starting point in inquiry. And intuitively it's very weird
+appropriate starting point in inquiry. At first glance, it's very weird
 to have an inquiry into \emph{p}, when the inquirer is in a position to
 simply say \emph{p},~therefore \emph{p}. I used to think that in these
 cases the defender of IRT would have to either say that they are not
 really cases of knowledge, or not really cases of appropriate inquiry.
-And I tried both options at various times, without much success. I now
-think the objection should be addressed head on. It is possible to
+Unfortunately, neither of these options was particularly successful. I
+now think the objection should be addressed head on. It is possible to
 properly conduct an inquiry into \emph{p}, even when one knows that
 \emph{p}, and even when knowledge provides appropriate starting points
 for inquiry. That's because it is often appropriate to deliberately
@@ -5642,38 +5627,29 @@ Alex Zweber (\citeproc{ref-Zweber2016}{2016}) and, separately, Charity
 Anderson and John Hawthorne
 (\citeproc{ref-AndersonHawthorne2019a}{2019a}) showed, some simple
 versions of IRT say implausible things about cases where a person is
-choosing between very similar options. Now it turns out the version of
-IRT that I had developed in previous work does not say the particular
-implausible thing they were accusing IRT of. On the other hand, the
-views I had developed in those works did say something just as
-implausible, perhaps even more implausible, about their cases. They had
-argued that IRT would lead to closure failures in these cases. I had
-designed a version of IRT that couldn't possibly have closure failures,
-so when I first saw these arguments I thought they couldn't possibly
-apply to my version of IRT. Unfortunately, the theory avoids closure
-failures by being implausibly sceptical, and that's still bad. What I'm
-going to argue is that the problem their cases raise is not due to IRT,
-which is correct, but to the background assumption that choosers should
-maximise expected utility. And my response is going to be that in the
-cases they describe, choosers should not maximise expected utility. That
-might sound like an absurdly radical view, since expected utility theory
-is at the heart of all contemporary decision theory. But expected
-utility theory has fairly implausible things to say about \emph{close
-call} cases. And a better theory, one that takes account of deliberation
-costs, is both more plausible, and consistent with IRT. I'll say much
-more about this in Chapter~\ref{sec-ties}.
+choosing between very similar options. What I'm going to argue is that
+the problem their cases raise is not due to IRT, which is correct, but
+to the background assumption that choosers should maximise expected
+utility. My response is going to be that in the cases they describe,
+choosers should not maximise expected utility. That might sound like an
+absurdly radical view, since expected utility theory is at the heart of
+all contemporary decision theory. But expected utility theory has fairly
+implausible things to say about \emph{close call} cases. A better
+theory, one that takes account of deliberation costs, is both more
+plausible, and consistent with IRT. I'll say much more about this in
+Chapter~\ref{sec-ties}.
 
 The third is what I'll call the \emph{objection from abominable
 conjunctions}. This is the IRT-equivalent of the blank stare objection
 to modal realism. Many people find it simply implausible that knowledge
 could depend on something like interests, which are not relevant to the
-truth of what is purportedly known. And the defender of IRT owes a reply
-to this widespread feeling. Part of my reply came back in
+truth of what is purportedly known. The defender of IRT owes a reply to
+this widespread feeling. Part of my reply came back in
 Chapter~\ref{sec-overture}. I think this feeling is a result of being in
 a very strange place in the history of epistemology, where the focus is
 on fallibilist, interest-invariant, concepts. But we can do better than
 that. It is hard to articulate the intuition behind the unhappiness with
-IRT without lapsing into the JTB theory of knowledge. And most plausible
+IRT without lapsing into the JTB theory of knowledge. Most plausible
 solutions to the problems with the JTB theory end up introducing kinds
 of interest-relativity for independent reasons. I'll go over these
 responses in Chapter~\ref{sec-changes}.
@@ -5710,33 +5686,36 @@ knowledge is interest-relative.
 At the heart of the influential picture of inquiry developed by Jane
 Friedman (\citeproc{ref-Friedman2017}{2017},
 \citeproc{ref-Friedman2019a}{2019b},
-\citeproc{ref-Friedman2019b}{2019a}, \citeproc{ref-Friedman2020}{2020})
-is the view that humans are capable of a number of distinctive
-attitudes. To be inquiring into some question, she argues, is to have a
-\emph{questioning attitude} towards that question. That's to say, she
-does not identify inquiry with particular actions, or at least with
-particular bodily movements. An actor might mimic the movements an
-inquirer makes without actually inquiring; a genuine inquirer might be
-sitting in an armchair quietly synthesizing their evidence. So
-particular movements are neither sufficient nor necessary for real
-inquiry. Rather, inquiry is a state of mind, a questioning state of
-mind.
+\citeproc{ref-Friedman2019b}{2019a}, \citeproc{ref-Friedman2020}{2020},
+\citeproc{ref-Friedman2024}{2024b}) is the view that humans are capable
+of a number of distinctive attitudes. To be inquiring into some
+question, she argues, is to have a \emph{questioning attitude} towards
+that question. That's to say, she does not identify inquiry with
+particular actions, or at least with particular bodily movements. An
+actor might mimic the movements an inquirer makes without actually
+inquiring; a genuine inquirer might be sitting in an armchair quietly
+synthesizing their evidence. So particular movements are neither
+sufficient nor necessary for real inquiry. Rather, inquiry is a state of
+mind, a questioning state of mind.
 
 The contrast to having a questioning attitude is having a \emph{settled}
 attitude.\footnote{These are contrasts, but they don't exhaust the
-  space. One might not have an attitude to a question. And one might not
-  treat a question as settled while not inquiring into it, because one
-  treats the question as unworthy of effort, or impossible to make
-  progress on.} Friedman holds that to believe something is to treat the
-question of whether it is true as being affirmatively settled, and I'm
-adopting the same position here. This attitude is deeply related to
-inquiry. Typically things are settled as the result of inquiry. Also
-typically, one does not inquire into something one has settled. Friedman
-holds a further claim: if one does inquire into something one has
-settled, this is a kind of mistake. It is incoherent to both have a
-questioning and a settled attitude towards the same question. I'm going
-to disagree with this further claim, while mostly adopting the broad
-picture she develops.
+  space. One might not have an attitude to a question. I'd also say that
+  one might not treat a question as settled while not inquiring into it,
+  because one treats the question as unworthy of effort, or impossible
+  to make progress on. As Friedman
+  (\citeproc{ref-Friedman2024debate}{2024a}) notes, it gets complicated
+  to say something coherent about these cases while allowing for the
+  possibility of inquiry to be reopened.} Friedman holds that to believe
+something is to treat the question of whether it is true as being
+affirmatively settled, and I'm adopting the same position here. This
+attitude is deeply related to inquiry. Typically things are settled as
+the result of inquiry. Also typically, one does not inquire into
+something one has settled. Friedman holds a further claim: if one does
+inquire into something one has settled, this is a kind of mistake. It is
+incoherent to both have a questioning and a settled attitude towards the
+same question. I'm going to disagree with this further claim, while
+mostly adopting the broad picture she develops.
 
 The main difference between her picture and the picture of inquiry I'm
 using concerns where beliefs go in inquiry. I think that treating
@@ -5763,10 +5742,9 @@ like this one should end pretty quickly. One can just argue \emph{p},
 therefore \emph{p}, and close the inquiry. If the inquiry stays open
 longer than that, one is doing it wrong.
 
-And this looks like a pretty strong argument for a conclusion that a
-number of people have reached via different routes.\footnote{These
-  quotes were compiled by Elise Woodard
-  (\citeproc{ref-Woodard2021}{2020}).}.
+This looks like a pretty strong argument for a conclusion that a number
+of people have reached via different routes.\footnote{These quotes were
+  compiled by Elise Woodard (\citeproc{ref-Woodard2021}{2020}).}.
 
 \begin{quote}
 If one knows the answer to some question at some time then one ought not
@@ -5800,8 +5778,8 @@ To warm up to this, consider an analogy to legal inquiries. There we are
 all familiar with the idea that some evidence might be inadmissible in
 some inquiries. Now the reasons for this are typically not epistemic.
 It's rather that we think the system as a whole will be more just if
-some kinds of evidence are excluded from some inquiries. And that looks
-a bit different to the situation where an individual inquirer is just
+some kinds of evidence are excluded from some inquiries. That looks a
+bit different to the situation where an individual inquirer is just
 trying to find what's true. But we'll see that the analogy here is not
 quite as bad as it first looks.
 
@@ -5825,14 +5803,16 @@ Here's one thing he doesn't do. He doesn't look at the beans on the
 scale, note that the scale says 24g, note that he knows they are 24g
 (via that excellent scale), and conclude that the scale is still
 working. That's no good at all; he has to use some other scale to check
-this one. This is like the Problem of Easy Knowledge
+this one.
+
+This is like the Problem of Easy Knowledge
 (\citeproc{ref-Cohen2002}{Cohen, 2002}), but note that it doesn't rely
 on the scale being a source of basic knowledge. Florian might have lots
 of independent evidence that the scale is good; it's from a good
 manufacturer and has been producing plausible results for a while.
-Still, if he wants to check it, he has to use something else. And here's
-the part that seems most surprising to me. Add to the story that he has
-a backup scale, one that he thinks is pretty good but not as good as his
+Still, if he wants to check it, he has to use something else. Here's the
+part that seems most surprising to me. Add to the story that he has a
+backup scale, one that he thinks is pretty good but not as good as his
 best scale. It's fine to use the backup scale to check the main scale,
 and not fine to use the scale to check itself. The best explanation for
 this is that checking requires sensitivity. Using the scale to test
@@ -5848,7 +5828,7 @@ more sensitive. Now assume, as most epistemologists believe, that one
 can know \emph{p} even if one's belief is insensitive in various ways.
 One can know \emph{p} even if one would still believe \emph{p} were
 \emph{p} false.\footnote{One simple example from Saul Kripke
-  (\citeproc{ref-KripkeNozick}{2011}). I know that I do not falsely
+  (\citeproc{ref-KripkeNozick}{2011}): I know that I do not falsely
   believe that I was born on the Galapagos Islands. But while this is
   knowledge, it is not a sensitive belief.} If one has insensitive
 knowledge, it might be worthwhile to inquire into what one knows with
@@ -5866,14 +5846,14 @@ learn what \emph{The Age} said would be to look up the result in
 \emph{The Guardian}, and use one's background knowledge that they both
 report the same (correct) result. That's a way to come to know what
 \emph{The Age} said. But it's not a way to check what \emph{The Age}
-said. And it's not a way to check because had \emph{The Age} said
-anything different, you wouldn't have known. That's a kind of
-insensitivity. It's an insensitivity that's consistent with knowledge;
-one can know what a newspaper says by knowing the truth and that it
-reports the truth. But it is one that is removed by proper checking. So
-checking aims for sensitivity that goes beyond belief, and beyond
-knowledge. And given that checking, i.e., chasing this kind of
-sensitivity, is rational, so is inquiring into what one knows.
+said. It's not a way to check because had \emph{The Age} said anything
+different, you wouldn't have known. That's a kind of insensitivity. It's
+an insensitivity that's consistent with knowledge; one can know what a
+newspaper says by knowing the truth and that the newspaper reports the
+truth. This insensitivity is is removed by proper checking. So checking
+aims for sensitivity that goes beyond belief, and beyond knowledge.
+Given that checking, i.e., chasing this kind of sensitivity, is
+rational, so is inquiring into what one knows.
 
 \subsection{Rules}\label{sec-rulesinquiry}
 
@@ -5890,7 +5870,7 @@ deliberation and estimation cost more than they are worth.
 \end{quote}
 
 Knight is interested in the case where the rational thing to do is not
-inquire when inquiry would have minimal gains. But there is another case
+inquire when inquiry would have minimal gains. There is another case
 that is more relevant here. Sometimes it is worth having a simple rule
 that says \emph{Always inquire in these situations}, rather than having
 a meta-inquiry into whether inquiry is worthwhile right now. To make
@@ -5918,8 +5898,8 @@ testimony, even from a trusted testifier. It's odd to convert to
 vegetarianism simply because someone you trust says that's what morality
 requires. There is also a famous answer to this puzzle, due to Alison
 Hills (\citeproc{ref-Hills2009}{2009}). (There are other answers too,
-including ones that deny the puzzle exists. But to avoid going down too
-many rabbit holes, I'm going to assume for now the answer Hills gives is
+including ones that deny the puzzle exists. To avoid going down too many
+rabbit holes, I'm going to assume for now the answer Hills gives is
 correct.) Hills says that moral testimony can give us moral knowledge,
 like any kind of testimony can provide knowledge, but it can't provide
 understanding. What's weird about the person who becomes a vegetarian on
@@ -5944,7 +5924,7 @@ between Austria-Hungary and Serbia. That will be a different kind of
 inquiry to determining whether the assassination really happened. But in
 the moral case things aren't this clear. Imagine again our person who
 hears from a trusted source that meat eating is wrong, but doesn't
-understand why this is so. They should do some moral inquiry. And the
+understand why this is so. They should do some moral inquiry. The
 inquiry will look, as far as I can see, very similar to the inquiry they
 will do in case they are working out whether meat eating is wrong. That
 is, it will look just like an inquiry into whether meat eating is wrong.
@@ -5952,8 +5932,8 @@ is, it will look just like an inquiry into whether meat eating is wrong.
 I think the best way to systematise things here is to take appearances
 at face value. Even once one is convinced meat eating is in fact wrong,
 if one doesn't know why it is, one will continue to inquire into the
-morality of meat eating. And this inquiry is justified by the aim of
-coming to understand the wrongness of meat eating.
+morality of meat eating. This inquiry is justified by the aim of coming
+to understand the wrongness of meat eating.
 
 \subsection{Defragmentation}\label{sec-defraginquiry}
 
@@ -5973,16 +5953,16 @@ one's mind' into familiar epistemological categories.\footnote{The point
 think we should say that Paresseux is correct, and he did indeed know
 the answer to his inquiry before he started looking. After all, he could
 have retrieved the information by simply thinking hard about what had
-happened this week. And the best explanation for why that's possible is
-that he did still know that Professor Assidue would be the speaker. But
-I also think it made sense for him to conduct an inquiry into this thing
+happened this week. The best explanation for why that's possible is that
+he did still know that Professor Assidue would be the speaker. But I
+also think it made sense for him to conduct an inquiry into this thing
 that he knew. It's much easier to Google something than to trawl one's
 memory for the answer. More reliable too. So this looks like a sensible
 inquiry for him to have conducted.
 
-Following Andy Egan (\citeproc{ref-Egan2008}{2008}), I think we should
-think of this as a case where Paresseux's mind is `fragmented', in the
-sense of Lewis (\citeproc{ref-Lewis1982c}{1982}) and Stalnaker
+Following Andy Egan (\citeproc{ref-Egan2008}{2008}), I treat this as a
+case where Paresseux's mind is `fragmented', in the sense of Lewis
+(\citeproc{ref-Lewis1982c}{1982}) and Stalnaker
 (\citeproc{ref-Stalnaker1984}{1984}). There is a part that contains the
 information about who the speaker is. That part isn't at the front of
 his attention, so he doesn't act on it. Still it is a part of him; he
@@ -6046,8 +6026,8 @@ public justifications for. In practice, the vast majority of these ideas
 will be bad ones. But some of them will not be. Indeed, a handful will
 even know that their ideas are good. Still, if this knowledge comes via
 idiosyncratic sources, they will need to come up with more public
-reasons if they want to see their rule implemented. And as I suggested
-in the previous subsection, the way to find reasons for a moral claim is
+reasons if they want to see their rule implemented. As I suggested in
+the previous subsection, the way to find reasons for a moral claim is
 generally to inquire into whether that claim is true. Or, at least, to
 act like that's what one is doing.
 
@@ -6065,17 +6045,16 @@ knows the evidence to be gathered.
 If this was a paper dedicated to proving that it is rational to inquire
 into what one knows, at this stage I'd have to show that a philosopher
 who denies that is ever rational has no good story to tell about these
-six cases. And that would be a lot to show, since actually there is
-plenty that such a philosopher could say. They could deny that the
-inquiries are indeed rational. They could deny that the inquirers in
-question really do know the thing they are inquiring into, perhaps using
-IRT to back up that denial. They could deny that these are real
-inquiries, as opposed to some kind of ersatz inquiry. Or they could deny
-that this is really an inquiry into the very thing known, as opposed to
-an inquiry into some related proposition, like what the causal history
-of that thing was. And they wouldn't even have to choose between these
-four; they could mix-and-match to deal with the putative
-counterexamples.
+six cases. That would be a lot to show, since actually there is plenty
+that such a philosopher could say. They could deny that the inquiries
+are indeed rational. They could deny that the inquirers in question
+really do know the thing they are inquiring into, perhaps using IRT to
+back up that denial. They could deny that these are real inquiries, as
+opposed to some kind of ersatz inquiry. Or they could deny that this is
+really an inquiry into the very thing known, as opposed to an inquiry
+into some related proposition, like what the causal history of that
+thing was. They wouldn't even have to choose between these four; they
+could mix-and-match to deal with the putative counterexamples.
 
 At the end of the day, I don't think these responses will cover all the
 cases. But it would be a massive digression to defend that claim, and it
@@ -6095,25 +6074,31 @@ is a fairly general recipe for constructing the cases. It's due to Elise
 Woodard (\citeproc{ref-Woodard2021}{2020}) and (independently) Arienne
 Falbo (\citeproc{ref-Falbo2021}{2021}). Start with the following two
 assumptions. First, inquiry is not just about collecting knowledge, but
-generally about improving one's epistemic position. Second, given
-fallibilism, one can know \emph{p} but have a sub-optimal epistemic
-position. So one can know \emph{p}, but (rationally) want to improve
-one's epistemic position with respect to \emph{p}. And if one acts to
-address that want, one will be inquiring into what one knows, and doing
-so rationally. Given IRT you should worry about whether every step in
-the last few sentences really does follow from the ones before it. But I
-suspect the general picture is right, especially, as Melchior
-(\citeproc{ref-Melchior2019}{2019}) stresses, in checks aimed at
-increasing sensitivity.
+generally about improving one's epistemic position.\footnote{When I say
+  inquiry is about improving one's epistemic position, I don't mean that
+  that's how inquirers represent what they are doing to themselves. That
+  would be to over-intellectualise things. Rather, inquiry is about
+  doing things that are, as a matter of fact, things that improve one's
+  epistemic position. One can be improving one's epistemic position even
+  if one self-represents one's actions in a more mundane way, e.g., as
+  looking up when the coffee shop opens.} Second, given fallibilism, one
+can know \emph{p} but have a sub-optimal epistemic position. So one can
+know \emph{p}, but (rationally) want to improve one's epistemic position
+with respect to \emph{p}. If one acts to address that want, one will be
+inquiring into what one knows, and doing so rationally. Given IRT you
+should worry about whether every step in the last few sentences really
+does follow from the ones before it. But I suspect the general picture
+is right, especially, as Melchior (\citeproc{ref-Melchior2019}{2019})
+stresses, in checks aimed at increasing sensitivity.
 
 Looking ahead a little, the primary aim of the rest of the chapter will
 be to defuse some potential counterexamples to IRT that involve someone
-rationally inquiring, especially checking, what they know. And my
-response will be disjunctive. Either inquiry solely aims at knowledge,
-or it does not. If inquiry does solely aim at knowledge, appearances in
-this cases are deceiving, and the inquiry is not in fact rational. If,
-as I think, inquiry does not solely aim at knowledge, then the cases are
-not in fact counterexamples to IRT.
+rationally inquiring, especially checking, what they know. My response
+will be disjunctive. Either inquiry solely aims at knowledge, or it does
+not. If inquiry does solely aim at knowledge, appearances in this cases
+are deceiving, and the inquiry is not in fact rational. If, as I think,
+inquiry does not solely aim at knowledge, then the cases are not in fact
+counterexamples to IRT.
 
 \section{Using Knowledge in Inquiry}\label{sec-irtinquiry}
 
@@ -6158,9 +6143,9 @@ beliefs. (\citeproc{ref-FantlMcGrath2009}{Fantl \& McGrath, 2009: 64})
 I'm going to come back in Section~\ref{sec-weakness} to why I don't
 quite think that's right. But my disagreement turns on a fairly small
 technical point; I'm following Fantl and McGrath's lead much more than
-I'm diverging from them. And these examples of properly restricted
-inquiry show how they too can accept rational inquiry into what one
-already knows.
+I'm diverging from them. These examples of properly restricted inquiry
+show how they too can accept rational inquiry into what one already
+knows.
 
 Consider a person who is sensitivity chasing; they know \emph{p} but
 want to have a more sensitive belief that \emph{p}. So they conduct an
@@ -6210,52 +6195,51 @@ in ``Formulating Independence''
 (\citeproc{ref-Christensen2019}{Christensen, 2019}), which also includes
 some new thoughts about how Christensen now thinks the principle should
 be stated.) I argued that this couldn't be right in general; it gives
-the wrong results in clear cases, and leads to regresses. But something
-like it does sound right. It sounds like there should be some kind of
-true claim in the vicinity. In \emph{Normative Externalism} I hinted at
-an inquiry-theoretic proposal about what that nearby truth might be.
-(See, for example, the response to Littlejohn
-(\citeproc{ref-Littlejohn2015}{2018}), at the top of page 178.) But I
-never really spelled it out. Here's what I now think the right thing to
-say is. \footnote{The picture I'm about to give is really similar to the
-  one laid out by Andy Egan (\citeproc{ref-Egan2008}{2008}). We're
-  interested in different kinds of cases, but the idea that a cognitive
-  system might work best by allowing one part to check on another using
-  just the evidence the first part has endorsed is one I'm just taking
-  from him. If I'd seen this connection when writing \emph{Normative
-  Externalism} I would have connected it to the discussion of Madisonian
-  moral psychology in part I of that book.}
+the wrong results in clear cases, and leads to regresses. Still, it
+seems plausible that something like this should be right. In
+\emph{Normative Externalism} I hinted at an inquiry-theoretic proposal
+about what that similar truth might be. (See, for example, the response
+to Littlejohn (\citeproc{ref-Littlejohn2015}{2018}), at the top of page
+178.) But I never really spelled it out. Here's what I now think the
+right thing to say is. \footnote{The picture I'm about to give is really
+  similar to the one laid out by Andy Egan
+  (\citeproc{ref-Egan2008}{2008}). We're interested in different kinds
+  of cases, but the idea that a cognitive system might work best by
+  allowing one part to check on another using just the evidence the
+  first part has endorsed is one I'm just taking from him. If I'd seen
+  this connection when writing \emph{Normative Externalism} I would have
+  connected it to the discussion of Madisonian moral psychology in part
+  I of that book.}
 
 Peer disagreement, or really any other kind of higher order evidence,
 gives a thinker a reason to conduct an inquiry into whether their
-earlier thinking was correct. And not just that, it gives them reason to
-conduct an inquiry that is restricted in a particular way. The
-restriction is that they should not rely on the reasoning from their
-earlier thinking. Putting those two things together, we get that
-disagreement about \emph{p} gives someone who believes \emph{p} reason
-to inquire into \emph{p} using a different approach, any different
-approach, from what they previously used.
+earlier thinking was correct. Further, it gives them reason to conduct
+an inquiry that is restricted in a particular way. The restriction is
+that they should not rely on the reasoning from their earlier thinking.
+Putting those two things together, we get that disagreement about
+\emph{p} gives someone who believes \emph{p} reason to inquire into
+\emph{p} using a different approach, any different approach, from what
+they previously used.
 
 Once we've got a principle about reasons, we could try formulating this
 as a defeasible rule. It's plausible that one should adopt the
 defeasible rule of conducting such an inquiry whenever one sees a
 disagreement, or some other kind of potentially defeating higher-order
-evidence. And as long as one builds enough into the defeasibility
-clause, such a rule won't be subject to the counterexamples I described,
-or the ones that have caused Christensen
-(\citeproc{ref-Christensen2019}{2019}) to have second thoughts about the
-right formulation of the rule. After all, every counterexample will
-naturally fall into the defeasibility clause.
+evidence. As long as one builds enough into the defeasibility clause,
+such a rule won't be subject to the counterexamples I described, or the
+ones that have caused Christensen (\citeproc{ref-Christensen2019}{2019})
+to have second thoughts about the right formulation of the rule. After
+all, every counterexample will naturally fall into the defeasibility
+clause.
 
 Such a rule could be justified by the observation that it will probably
 be beneficial in the long run for people like us to adopt it. Double
-checking isn't that hard. And it can have a lot of benefits in cases
-where it makes a difference; even if most of the time it doesn't.
-Getting stuck in a bad epistemic picture can have devastating
-consequences; it's good to step back from time to time to look if that's
-happening to us. And disagreements with peers are a natural trigger for
-that kind of inquiry. Those same benefits can explain why disagreement,
-or other kinds of higher-order evidence, give us reason to double check.
+checking isn't that hard, and can be very useful. Getting stuck in a bad
+epistemic picture can have devastating consequences; it's good to step
+back from time to time to look if that's happening to us. Disagreements
+with peers are a natural trigger for that kind of inquiry. Those same
+benefits can explain why disagreement, or other kinds of higher-order
+evidence, give us reason to double check.
 
 But why should one conduct a restricted inquiry here? Given the stakes,
 we're trying to work out whether we've got ourselves into a bad
@@ -6281,9 +6265,9 @@ If we want to check whether we're in such a bad situation, we want a
 test that is sensitive to whether we are. That is, we want a test that
 would say something different if we were in that situation to what it
 would say if we were doing well. (This is Melchior's point about the aim
-of tests.) And just conducting the same inquiry we previously conducted
-will typically not be sensitive in this way. Or, more precisely, it will
-be sensitive to something like performance errors, but not competence
+of tests.) Just conducting the same inquiry we previously conducted will
+typically not be sensitive in this way. Or, more precisely, it will be
+sensitive to something like performance errors, but not competence
 errors. We need something more sensitive if the aim is to avoid getting
 stuck in local equilibria, and that requires setting aside the work
 we've previously done.
@@ -6300,9 +6284,9 @@ things would seem if we didn't have our own distinctive way of thinking.
 None of this is to take back anything I said in \emph{Normative
 Externalism}. Disagreement with a peer known to have the same evidence
 does not give someone a reason to reject a well-formed belief. It gives
-them a reason to double-check that belief. But, as I've been stressing
-all chapter, one can double-check one's beliefs, and even one's
-knowledge. And that is what should happen here.
+them a reason to double-check that belief. As I've been stressing all
+chapter, one can double-check one's beliefs, and even one's knowledge.
+That is what should happen here.
 
 Finally, thinking of disagreement as providing a reason to double check
 provides a nice explanation of one of the harder examples in
@@ -6354,13 +6338,14 @@ this case isn't a problem for the views about knowledge and action that
 I'm defending.
 
 In medical contexts, intuitions about appropriate action very rarely
-track expected utility maximisation. This is one reason why it is so
-easy to come up with medical counterexamples to act utilitarianism for
-intro ethics classes. Instead, intuitions about appropriate actions here
-are more likely to track with rule utilitarianism. And the rule
-\emph{Double-check the notes before removing an organ} seems like it
-will on average maximise utility, even if it would not help in this
-case.
+track expected utility maximisation.\footnote{Jonathan Ichikawa
+  (\citeproc{ref-Ichikawa2017}{2017: 152ff}) makes this point well in
+  responding to Brown.} This is one reason why it is so easy to come up
+with medical counterexamples to act utilitarianism for intro ethics
+classes. Instead, intuitions about appropriate actions here are more
+likely to track with rule utilitarianism. The rule \emph{Double-check
+the notes before removing an organ} seems like it will on average
+maximise utility, even if it would not help in this case.
 
 To connect this to the discussion in Section~\ref{sec-settling}, the
 surgeon here is doing a bit of mostly harmless sensitivity chasing.
@@ -6369,14 +6354,7 @@ diseased was not sensitive to the possibility that they'd misremembered
 the morning meeting; after checking the notes it is. Since busy surgeons
 do sometimes misremember meetings some hours earlier. So this is a
 reasonable bit of sensitivity for the surgeon to chase, and for the
-rule-makers to require be chased.\footnote{In Weatherson
-  (\citeproc{ref-Weatherson2015}{2015}) I argue that someone whose
-  memory is working has knowledge by memory, even if they are
-  phenomenologically indistinguishable from someone whose memories have
-  been altered, and even if there are salient people whose memories have
-  been tampered with, and who are phenomenologically indistinguishable
-  from them. I don't mean to argue that there is something wrong with
-  such a person if they double-check the things they know by memory.}
+rule-makers to require be chased.
 
 These considerations don't just defend IRT against the example, they
 show how IRT can be used to resolve a puzzle about a related case.
@@ -6388,27 +6366,27 @@ following conversation.
 \begin{quote}
 \emph{Student}: I don't understand. Why is she looking at the patient's
 records for the seventeenth time? She just looked at the notes each
-minute for the last sixteen minutes; she knows which kidney it is.
+minute for the last sixteen minutes; she knows which kidney it is.\\
 \emph{Nurse}: Of course, she knows which kidney it is. But, imagine what
 it would be like if she removed the wrong kidney. She shouldn't operate
 before checking the patient's records.
 \end{quote}
 
-This is a really bad defence of the surgeon's actions. And we are owed a
+This is a really bad defence of the surgeon's actions. We are owed a
 story about why it is a bad defence. My story starts with the point that
 Student is right to ask why she is inquiring into something she knows.
 While as we've seen there are cases where that is appropriate, these
 cases are somewhat unusual. It's a reasonable default assumption that
-inquiry into something one knows is mistaken. And that assumption is
-only defeated if there is some other worthwhile epistemic good that can
-be attained. In this case, there isn't, since sensitivity to whether one
+inquiry into something one knows is mistaken. That assumption is only
+defeated if there is some other worthwhile epistemic good that can be
+attained. In this case, there isn't, since sensitivity to whether one
 misread the chart the last sixteen times isn't a worthwhile kind of
 sensitivity to get.
 
 In general, anyone who wants to separate out knowledge from action, and
 do so on account of the fact that sometimes we double check things we
 know, owes a story about why we don't also triple-check,
-quadruple-check, and so on. And I suspect such a story won't be easy to
+quadruple-check, and so on. I suspect such a story won't be easy to
 tell.
 
 Brown has another example that hasn't attracted nearly as much attention
@@ -6470,8 +6448,8 @@ team would mess up sounds fine.
 Is Friend's statement like Paresseux's knowing (i.e., possessing the
 information) that Assidue would be visiting, or the sports fan's knowing
 (i.e., having an accurate premonition) that their team would mess up? My
-guess is that it's a bit of both. The Friend didn't know, in the sense
-of \emph{know} relevant to epistemology, about the affair.
+guess is that it's a bit of both. Either way, the Friend didn't know, in
+the sense of \emph{know} relevant to epistemology, about the affair.
 
 The general methodological point is that these last two senses of
 knowledge do seem different to what we typically talk about in
@@ -6494,7 +6472,7 @@ A person believes \emph{p} for good reasons, and it is true, and there
 are no weird things happening that characterise typical gaps between
 rational true belief and knowledge. There is some action 𝜑 they are
 considering that will have mildly good consequences if \emph{p}, and
-absolutely catastrophic consequences if ¬\emph{p}. And one of the
+absolutely catastrophic consequences if ¬\emph{p}. One of the
 alternatives to 𝜑 is first checking whether \emph{p}, which would be
 trivial, and then doing 𝜑 iff \emph{p}. We've seen lots of these cases
 before, but here's the new twist. The person absolutely does not care
@@ -6529,7 +6507,7 @@ rational action. (Just like they would think doing 𝜑 after checking
 whether \emph{p} was rational action.) So this too should be a case
 where we say knowledge fails for practical reasons. (I'm going to come
 back to a version of this case in Section~\ref{sec-atomism}, where it
-will be useful for distinguishing one of the few points where I disagree
+will be useful for highlighting one of the few points where I disagree
 with the theory that Jeremy Fantl and Matthew McGrath
 (\citeproc{ref-FantlMcGrath2002}{2002},
 \citeproc{ref-FantlMcGrath2009}{2009}) endorse.)
@@ -6549,9 +6527,7 @@ were one to inquire into Q, one shouldn't take \emph{p} for granted
 because it might be false, one doesn't know \emph{p}.~
 
 This is a kind of moral encroachment in the sense of Basu \& Schroeder
-(\citeproc{ref-BasuSchroeder2019}{2019}).\footnote{I discussed a famous
-  example from Basu and Schroeder's paper back in
-  Section~\ref{sec-theoreticalknowledge}.} What one knows might be
+(\citeproc{ref-BasuSchroeder2019}{2019}). What one knows might be
 sensitive to one's moral obligations in inquiry. Imagine two people both
 take \emph{p} for granted in making a decision that affects other
 people. This is mostly fine because \emph{p} is true, and they had good
@@ -6595,15 +6571,16 @@ Then we could say that one condition on such a knowledge claim being
 true is that at \emph{t}, \emph{s} can properly use \emph{p} as a
 starting point in inquiry \emph{i}.\footnote{More precisely, as I said
   in Section~\ref{sec-theoreticalknowledge}, if they use \emph{p} in
-  \emph{i}, that won't be a mistake because \emph{p} might be false.
-  I'll use the more informal version in the text in what follows to
-  increase readability.} Unfortunately for IRT, that's not the logical
-form of knowledge ascriptions. The \emph{t}, \emph{s}, and \emph{p} are
-there all right, but not the \emph{i}. Fortunately for IRT, the logical
-form does have reference to a knower, that \emph{s}. Since knowers
-undertake inquiries, we can bring in the inquiries via the knower. All
-knowledge is inquiry-relative, we say, and it is relative to the
-inquiries of the person knowledge is being ascribed to.
+  \emph{i}, that won't be subject to criticism on the grounds that
+  \emph{p} might be false. I'll use the more informal version in the
+  text in what follows to increase readability.} Unfortunately for IRT,
+that's not the logical form of knowledge ascriptions. The \emph{t},
+\emph{s}, and \emph{p} are there all right, but not the \emph{i}.
+Fortunately for IRT, the logical form does have reference to a knower,
+that \emph{s}. Since knowers undertake inquiries, we can bring in the
+inquiries via the knower. All knowledge is inquiry-relative, we say, and
+it is relative to the inquiries of the person knowledge is being
+ascribed to.
 
 If every person was, at each time, undertaking precisely one inquiry,
 everything would fall into place very nicely. Given \emph{t} and
@@ -6615,9 +6592,8 @@ people at some times are making many inquiries. The former case is no
 problem for IRT. If the person is making no inquiries, then what they
 know is determined by `traditional' factors, such as what they believe,
 whether those beliefs are true, grounded in the evidence, safe, and so
-on.\footnote{I'll have much more to say about the notion of
-  `traditional' factors in Section~\ref{sec-gettier}.} The case where
-someone is engaged in multiple inquiries is a little harder.
+on. The case where someone is engaged in multiple inquiries is a little
+harder.
 
 The view I'll defend is that the person knows \emph{p} only if \emph{p}
 can properly be used as a starting point in all the inquiries the person
@@ -6641,20 +6617,20 @@ said so far less abstract, by describing a case where someone has
 multiple inquiries, and this matters in surprising ways. Second, to say
 why it isn't great that IRT is forced to say that someone doesn't know
 something that is otherwise usable in an inquiry they are engaged in.
-And third, to say why this isn't a devastating result, even though it's
-not exactly a happy one.
+Third, to say why this isn't a devastating result, even though it's not
+exactly a happy one.
 
 Our example of someone with multiple inquiries will be a historian
 called Tori. She has been taught, like everyone else, that the Battle of
-Hastings was in 1066. And for most purposes she takes that to be one of
-the fixed points in the historical record. But she's noticed some
-anomalies in some the documents from around that time, anomalies that
-would be explained by the battle being in 1067. She's seen enough
-documents to know that the overwhelming likelihood is that these
-anomalies have some simple explanation, like a transcription error. But
-in her spare time over the last few years, she has been investigating
-off and on whether the best explanation might be that everyone else has
-the date of the battle wrong, and in fact it was in 1067.
+Hastings was in 1066. For most purposes she takes that to be one of the
+fixed points in the historical record. But she's noticed some anomalies
+in some the documents from around that time, anomalies that would be
+explained by the battle being in 1067. She's seen enough documents to
+know that the overwhelming likelihood is that these anomalies have some
+simple explanation, like a transcription error. But in her spare time
+over the last few years, she has been investigating off and on whether
+the best explanation might be that everyone else has the date of the
+battle wrong, and in fact it was in 1067.
 
 If it is worth inquiring into the date of the Battle of Hastings, it is
 not sensible to take the date of the battle as fixed. That would make
@@ -6665,18 +6641,18 @@ Battle of Hastings took place.
 If this inquiry into the date is something she has been working on in
 her spare time for years, she has presumably had other jobs that did not
 involve trying to overturn the historical record about one of the
-central events in British history. And in some of those jobs, it will
-have been sensible to take as given when the Battle of Hastings, and
-hence the Norman rule over Britain, took place. So there will be
-contexts, ones where her primary focus is on an everyday question where
-one takes for granted the common assumptions about British history, but
-she still has as a background project this idea that maybe the Battle of
-Hastings took place a year later, where IRT seems to get into trouble.
-It wants to say that for the purposes of her everyday inquiries, Tori
-knows the Battle of Hastings took place in 1066. After all, this is a
-true, rational, belief, that is based in the right way in the facts, and
-which is reasonably taken as a starting point for this very inquiry.
-That looks like, relative to that inquiry, it is knowledge. But for the
+central events in British history. In some of those jobs, it will have
+been sensible to take as given when the Battle of Hastings, and hence
+the Norman rule over Britain, took place. So there will be contexts,
+ones where her primary focus is on an everyday question where one takes
+for granted the common assumptions about British history, but she still
+has as a background project this idea that maybe the Battle of Hastings
+took place a year later, where IRT seems to get into trouble. It wants
+to say that for the purposes of her everyday inquiries, Tori knows the
+Battle of Hastings took place in 1066. After all, this is a true,
+rational, belief, that is based in the right way in the facts, and which
+is reasonably taken as a starting point for this very inquiry. That
+looks like, relative to that inquiry, it is knowledge. But for the
 purposes of finding out the best explanation of the anomalies, she does
 not know when the battle took place, on pain of not being able to
 rationally investigate one possible explanation.
@@ -6690,7 +6666,7 @@ can we explain away this anomaly?
 
 The first thing to note is that even if Tori loses the knowledge that
 the Battle of Hastings was in 1066, she keeps her voluminous evidence
-that the Battle happened then. And in most inquiries, anything she might
+that the Battle happened then. In most inquiries, anything she might
 infer from a claim about the Battle's date, she can infer from that
 evidence. So she'll still, on the whole, be able to draw the same
 conclusions in other inquiries as if she kept that knowledge.
@@ -6722,6 +6698,7 @@ Assertion} with the slightly more complicated \textbf{Sufficient
 Evidence Norm of Assertion}.
 
 \begin{description}
+\tightlist
 \item[Knowledge Norm of Assertion]
 One must: Assert \emph{p} only if one knows that \emph{p}.
 \item[Sufficient Evidence Norm of Assertion]
@@ -6739,7 +6716,7 @@ IRT. Imagine that \emph{S} is talking to some people who are facing a
 long-shot bet on whether \emph{p}. These people would not be best off,
 in expectation, taking \emph{p} for granted. Unfortunately, \emph{S}
 doesn't care about the welfare of these people, though for some reason
-they do care about being a good informant and testifier. And imagine
+they do care about being a good informant and testifier. Further imagine
 that \emph{S}'s evidence for \emph{p}, while strong, isn't quite strong
 enough to justify the audience in taking this long-shot bet. Then it is
 wrong for \emph{S} to simply say that \emph{p}.
@@ -6748,12 +6725,12 @@ The picture behind the Sufficient Evidence Norm of Assertion is that one
 should say \emph{p} only if one's audience can take \emph{p} as a
 starting point in inquiry. Sometimes one might violate this norm without
 much blame attaching, as when it turns out one's audience has an
-unexpectedly long-odds bet on \emph{p}. But in normal cases, where one
-knows at least something about one's audience, one should calibrate
+unexpectedly long-odds bet on \emph{p}. In normal cases, however, where
+one knows at least something about one's audience, one should calibrate
 one's assertions to the projects of one's audience.
 
-This pictures seems to get two possible cases where Tori is involved in
-a group inquiry just right.
+This picture seems to get two possible cases where Tori is involved in a
+group inquiry just right.
 
 In the first (more normal) case, Tori is working with a group of people
 who do not share her worry about the anomalies in the dating of the
@@ -6788,10 +6765,10 @@ shouldn't undermine the way IRT handles these cases.
 
 Second, there is a really interesting historical question around here.
 Imagine you have a community that governs itself by the Sufficient
-Evidence Norm. And then someone comes along and invents the printing
-press, and all of a sudden it's possible to assert things with no
+Evidence Norm. And then someone comes along and invents the scientific
+journal, and all of a sudden it's possible to assert things with no
 knowledge of what is at take for one's audience. How should one react,
-especially given the usefulness of the printing press for conducting
+especially given the usefulness of the scientific journalfor conducting
 inquiries that are widely distributed over space and time?
 
 A natural move would be to develop some new interest-invariant standards
@@ -6802,16 +6779,16 @@ Once upon a time I had hoped this book would include an argument that
 the development of interest-invariant epistemology was just such a
 reaction to the invention of the printing press and, somewhat later, to
 the adoption of scientific journals as important conduits for sharing
-information in distributed inquiries. And I still think something like
-this is arguably true, at least if we mean the development of
+information in distributed inquiries. I still think something like this
+is arguably true, at least if we mean the development of
 interest-invariant norms for what I called in Chapter~\ref{sec-overture}
 `sub-optimal' epistemology. But defending this claim would require a
 different book, and a writer with very different skills, to this one.
 
-So I'll just leave this as a conjecture for the end of the chapter. What
-most philosophers call `traditional' epistemological views, i.e.,
-fallibilism plus interest-invariance, might just be a response to a
-relatively recent technological innovation.
+So I'll just leave this as a conjecture for future research. What most
+philosophers call `traditional' epistemological views, i.e., fallibilism
+plus interest-invariance, might just be a response to a relatively
+recent technological innovation.
 
 \bookmarksetup{startatroot}
 
@@ -11636,8 +11613,14 @@ Friedman, Jane. (2020). The epistemic and the zetetic.
 \emph{Philosophical Review}, \emph{129}(4), 501--536.
 doi:\href{https://doi.org/10.1215/00318108-8540918}{10.1215/00318108-8540918}
 
+\bibitem[\citeproctext]{ref-Friedman2024debate}
+Friedman, Jane. (2024a). Suspension of judgment is a question-directed
+attitude. In Blake Roeber, Ernest Sosa, Matthias Steup, \& John Turri
+(Eds.), \emph{Contemporary debates in epistemology} (3rd ed., 66--78).
+Wiley Blackwell.
+
 \bibitem[\citeproctext]{ref-Friedman2024}
-Friedman, Jane. (2024). The aim of inquiry? \emph{{P}hilosophy and
+Friedman, Jane. (2024b). The aim of inquiry? \emph{{P}hilosophy and
 {P}henomenological {R}esearch}, \emph{108}(2), 506--523.
 doi:\href{https://doi.org/10.1111/phpr.12982}{10.1111/phpr.12982}
 
@@ -11732,6 +11715,12 @@ Hills, Alison. (2009). Moral testimony and moral epistemology.
 \emph{Ethics}, \emph{120}(1), 94--127.
 doi:\href{https://doi.org/10.1086/648610}{10.1086/648610}
 
+\bibitem[\citeproctext]{ref-HollidayMandelkern2024}
+Holliday, Wesley H., and Matthew Mandelkern. (2024). The orthologic of
+epistemic modals. \emph{Journal of Philosophical Logic},
+\emph{53}(831-907).
+doi:\href{https://doi.org/s10992-024-09746-7}{s10992-024-09746-7}
+
 \bibitem[\citeproctext]{ref-Hotelling1929}
 Hotelling, Harold. (1929). Stability in competition. \emph{The Economic
 Journal}, \emph{39}(153), 41--57.
@@ -11746,6 +11735,10 @@ doi:\href{https://doi.org/10.1007/BF00293423}{10.1007/BF00293423}
 Hunter, Daniel. (1996). On the relation between categorical and
 probabilistic belief. \emph{No{û}s}, \emph{30}, 75--98.
 doi:\href{https://doi.org/10.2307/2216304}{10.2307/2216304}
+
+\bibitem[\citeproctext]{ref-Ichikawa2017}
+Ichikawa, Jonathan. (2017). \emph{Contextualising knowledge}. {O}xford
+{U}niversity {P}ress.
 
 \bibitem[\citeproctext]{ref-IyengarEtAl2006}
 Iyengar, Sheena S., Rachael E. Wells, and Barry Schwartz. (2006). Doing
@@ -12222,11 +12215,6 @@ doi:\href{https://doi.org/10.5840/logos-episteme2011248}{10.5840/logos-episteme2
 Weatherson, Brian. (2012). Knowledge, bets and interests. In Jessica
 Brown \& Mikkel Gerken (Eds.), \emph{Knowledge ascriptions} (75--103).
 Oxford University Press.
-
-\bibitem[\citeproctext]{ref-Weatherson2015}
-Weatherson, Brian. (2015). Memory, belief and time. \emph{Canadian
-Journal of Philosophy}, \emph{45}(5-6), 692--715.
-doi:\href{https://doi.org/10.1080/00455091.2015.1125250}{10.1080/00455091.2015.1125250}
 
 \bibitem[\citeproctext]{ref-Weatherson2016}
 Weatherson, Brian. (2016a). Games, beliefs and credences.
