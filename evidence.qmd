@@ -2,42 +2,39 @@
 
 ## A Puzzle About Evidence {#sec-evpuzzle}
 
-Think back to the red-blue game from back in @sec-redblue, and consider a variant on it with the following two characteristics.[^evidence-1]
-
-[^evidence-1]: The first five sections of this chapter are based on my [-@Weatherson2018-WEAIEA-2].
-
--   The red sentence is that two plus two equals four.
--   The blue sentence is something that, if known, would be part of the agent's evidence.
-
-I'm going to argue that there are cases where the only rational play is Red-True, but the blue sentence is something that, in normal circumstances, would be  part of the subject's evidence. And I'll argue that this is a problem for the theory I have described so far. It is not a problem that shows that anything I've said so far is untrue. But it does suggest that what I've said so far is incomplete, and in a key respect unexplanatory.
-
-I have tried so far to argue that belief, rational belief, and knowledge are all interest-relative. And I have tried to tell a story about when they are interest-relative. In the case of knowledge, the story is reasonably simple. One loses knowledge that *p* when the situation changes in such a way that one is no longer entitled to take *p* as given in deliberation. But what does it mean to say that one is entitled to take something as given? I haven't given anything like a full theory of this, but the suggestion has been to interpret this on broadly evidentialist lines. For example, one is not entitled to take *p* as given if the optimal choice, given one's evidence, is different unconditionally to what it is conditional on *p*.
-
-That story doesn't explain when practical considerations might affect what evidence one has. Indeed, it can't explain anything about evidence, since it takes evidence as a given. So if the arguments for the interest-relativity of knowledge can be repurposed to show that evidence too is interest-relative, we have a problem. Since I think they can be repurposed in just this way, my project has a problem. The aim of this chapter is to set out just what the problem is, and to suggest a solution to it. I'll start by arguing that evidence is interest-relative, then come back to what the problem is, and how I'll aim to solve it.
-
-The main example I'll work through is the example of Parveen from @sec-orthodoxevidence. Recall that she's in a restaurant and notices an old friend, Rahul, across the restaurant. The conditions for detecting people aren't perfect, and she's surprised Rahul is here. But still we'd ordinarily say it is part of her evidence that Rahul is in this restaurant. She doesn't infer this from other facts, and she would not be called on to defend it if she relies on it in ordinary circumstances. She then plays the red-blue game, with these sentences.
+In @sec-orthodoxevidence, I argued that evidence can be interest-relative. The key example involved someone I called Parveen. Recall that she's in a restaurant and notices an old friend, Rahul, across the restaurant. The conditions for detecting people aren't perfect, and she's surprised Rahul is here. Still, we'd ordinarily say it is part of her evidence that Rahul is in this restaurant. She doesn't infer this from other facts, and she would not be called on to defend it if she relies on it in ordinary circumstances. She then plays the Red-Blue game, with these sentences.
 
 -   The red sentence is *Two plus two equals four*.
 -   The blue sentence is *Rahul is in this restaurant*.
 
-And the intuitions that raise problems for my view are:
+The key premises for the argument that evidence is interest-relative are:
 
 -   The unique rational play for Parveen is Red-True; and
--   If evidence is interest-invariant, then the evidential probability that Rahul is in the restaurant is the same as the evidential probability that two plus two is four.
+-   If evidence is interest-invariant, it is rational for Parveen to play Blue-True.
 
-Now these intuitions are not inconsistent if evidence is interest-relative. And the point of this chapter will be to investigate, and ultimately endorse, this possibility. But I haven't told you a story about how evidence can be interest-relative. I haven't even started such a story. All the stories I've told you so far about interest-relativity have presupposed that the relevant evidence can be identified, and then we ask what the evidence warrants as circumstances change. That model is by its nature incapable of saying anything about when interests, or practical situations, affect evidence. The model isn't wrong - but it is in a crucial respect incomplete. On the one hand, all models are incomplete. On the other hand, it would be odd to have the model's explanatory ambitions stop somewhere between Anisa's case and Parveen's. That's the kind of explanatory failure that makes one wonder whether you've got the original cases right.
+That argument shows that evidence is interest-relative. But it raises, without answering, two big questions:
 
-There are two ways out of this problem that I don't want to take, but are notable enough that I want to set them aside explicitly.
+1. When do interests matter for evidence?
+2. When do interests matter for knowledge?
 
-One is to say that propositions like *Rahul is in this restaurant* are never part of Parveen's evidence. Perhaps her evidence just consists of things like *I am being appeared to Rahul-like*. Such an approach is problematic for two reasons. The first is that it is subject to all the usual objections to psychological theories of evidence [@Williamson2007]. The second is that we can re-run the argument with the blue sentence being some claim about Parveen's psychological state, and still get the result that the only rational play is Red-True. A retreat to a psychological conception of evidence will only help with this problem if agents are infallible judges of their own psychological states, and that is not in general true [@Schwitzgebel2008].
+I used to think that there was an easy answer to the second question. A change in interest causes one to lose knowledge that *p* iff one becomes interested in a question which, given one's evidence, is rationally answered differently depending on whether or not one answers the question conditional on *p*. This answer is true as far as it goes, but it isn't particularly explanatory unless one holds fixed the evidence between the earlier and later set of interests. And that is just what I said should not be held fixed.
 
-Another option is to deny that any explanation is needed here. Perhaps pragmatic effects, like the particular sentences that are chosen for this instance of the red-blue game, mean that Parveen's evidence no longer includes facts about Rahul, and this is a basic epistemic fact without explanation. Now we shouldn't assume that everything relevant to epistemology will have an epistemic explanation. Facts about the way that proteins work in the brain do not have explanations within epistemology, although they are vitally important for there even being a subject matter of epistemology. So in principle there could be facts around here that ground epistemic explanations without having explanations within epistemology. But in practice things look less rosy. Without an explanation of why Parveen loses evidence, we don't have a theory that makes predictions about how interests affect knowledge. And we don't have a satisfying explanation of why playing Blue-True is irrational for Parveen. And we are forced, as already noted, to draw an implausible distinction between Anisa and Parveen.
-
-We shouldn't be content with simply saying Parveen loses evidence when playing the red-blue game. We should say why this is so. The aim of the rest of this chapter is to tell a story that meets this explanatory desideratum.
+The aim of this chapter is to answer both questions simultaneously.
 
 ## A Simple, but Incomplete, Solution {#sec-simplesolution}
 
-Let's take a step back and look at the puzzle more abstractly. We have a person who has some option *o*, and it really matters whether or not the expected value of *o*, i.e., *v*(*o*), is at least *x*. (I am assuming that Parveen is in the business of maximising expected utility here; I don't think the considerations from @sec-ties that tell against expected utility maximisation in some situations are relevant.) It is uncontroversial that her evidence includes some background *K*, and controversial whether it includes some contested proposition *p*. It is also uncontroversial that *v*(*o* \| *p*) ≥ *x*, and we're assuming that for any proposition *q* that is in her evidence, *v*(*o* \| *q*) = *v*(*o*). That is, we're assuming the relevant values are conditional on evidence. We can capture that last assumption with one big assumption that probably isn't true, but is a harmless idealisation for the purposes of this chapter. Say there is a prior value function *v*^-^, with a similar metaphysical status to the mythical, mystical prior probability function. Then for any choice *c*, *v*(*c*) = *v*^-^(*c* \| *E*), where *E* is the evidence Parveen has.
+To keep things relatively simple, I'll assume in this chapter that Parveen is an expected utility maximiser. More carefully, I'll assume that the reasons covered in @sec-ties about why expected utility theory is only an approximation to the correct theory of rational choice are not relevant. From here on, we'll assume we're in a situation where expected utility theory is close enough to the true theory of rational choice.
+
+At a very high level of abstraction, we can think about the problem facing Parveen (or anyone else whose evidence might be interest-sensitive), as follows. They have some option *o*, and given their interests it matters whether the expected value of *o* is above or below *x*. I'll write *v*(•) for the function from options to their expected value, so the question here is whether or not *v*(*o*) us at least *x*.
+
+There is some background *K* that is uncontroversially in Parveen's evidence. There is some further proposition *p* which might or might not be in her evidence; that's what the change of interests calls into question. It is uncontroversial that her evidence includes some background *K*, and controversial whether it includes some contested proposition *p*. For any *q* in *K*, *v*(*o* \| *q*) = *v*(*o*). That is, expected values are
+
+
+
+
+
+
+we're assuming the relevant values are conditional on evidence. We can capture that last assumption with one big assumption that probably isn't true, but is a harmless idealisation for the purposes of this chapter. Say there is a prior value function *v*^-^, with a similar metaphysical status to the mythical, mystical prior probability function. Then for any choice *c*, *v*(*c*) = *v*^-^(*c* \| *E*), where *E* is the evidence Parveen has.
 
 Now I can offer a simple, but incomplete, solution. Let *p* be the proposition that she might or might not know, and the question of whether *v*(*o*) ≥ *x* be the only salient question to which *p* is relevant. Then she knows *p* only if \[*v*^-^(*o*\|*K*) + *v*^-^(*o*\|*K* ∧ *p*)\]/2 ≥ *x*. That is, we work out the value of *o* with and without the evidence *p*, and if the average is greater than *x*, good enough!
 
