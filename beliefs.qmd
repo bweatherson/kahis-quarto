@@ -2,7 +2,7 @@
 
 ## Beliefs and Interests {#sec-beliefsinterests}
 
-One core premise of this book is that someone knows something iff they properly take it to be settled. Taking something to be settled is what we might call believing it. Or, at least, it's a philosophically significant precisification of the notion of belief. Since belief and settling will play such an important role in the rest of this book, I'm going to discuss them here before we turn to knowledge.
+One core premise of this book is that someone knows something only if they properly take it to be settled. Taking something to be settled is what we might call believing it. Or, at least, it's a philosophically significant precisification of the notion of belief. Since belief and settling will play such an important role in the rest of this book, I'm going to discuss them here before we turn to knowledge.
 
 The theory in this chapter owes a lot to proposals by Dorit Ganson [-@Ganson2008; -@Ganson2019]. Like her, I'm going to develop a theory where we first say what it is to have a belief in normal cases, then include an exception clause for what happens in special cases, such as high-stakes or long-odds cases. The details will differ in some respects, but the underlying architecture will be the same.
 
@@ -50,7 +50,7 @@ So it looks like belief is interest-relative, and that's for deep reasons about 
 
 Things get complicated when we stop focussing on what normal (or normal-ish) people do, and think about less common reactions. So consider a person, call them Stubbie, who uses the same maps and models for every task. They use the Melways for hiking, they make macro-economic forecasts using simple supply-demand models, they take ordinary knowledge for granted in high stakes and long odds cases, and so on. And they do this even though they know full well that there are excellent reasons to be more flexible. What should we say about Stubbie?
 
-I think we should say that Stubbie is irrationally stubborn, and part of his irrationality consists in steering by the same map, in holding onto the same beliefs, in situations where this is uncalled for. Stubbie really believes that a simple supply-demand model is predictive even in complicated cases. He's wrong, and his evidence shows that he is wrong, but our theory of belief had better allow for some false, irrational beliefs.
+I think we should say that Stubbie is irrationally stubborn, and part of his irrationality consists in steering by the same map, in holding onto the same beliefs, in situations where this is uncalled for. Stubbie acts as if simple supply-demand models are predictive in complicated situation, and as if the Melways has all the information a hiker needs. Neither of these things are true, and Stubbie should know they aren't, but our theory of belief had better allow for some irrational practices that could only be rationalised by false assumptions.
 
 Stubbie's example shows that while one's beliefs should be interest-relative, they need not be. One should steer by a map suitable to the circumstances. If one stubbornly steers by the same map come what may, the fact that it would be advisable to steer by different maps at different times does not affect what one believes. Stubbie really is steering himself by the Melways when hiking, and he really believes the simple economic model he uses.
 
@@ -89,7 +89,7 @@ There is a theoretical analog to this psychological point. Many game theorists, 
 
 Sully's reasoning isn't just dominance reasoning. It's dominance reasoning that relies on a contingent assumption, namely that the Red Sox won the World Series in 2004. When Sully reasons that A can't do better than B, he's not drawing any kind of logical or metaphysical point. It's logically and metaphysically possible that the Red Sox lost in 2004. For that matter, and this is a point @Ganson2019 stresses, it's logically and metaphysically possible that the payouts for A and B are other than what Sully thinks they are.
 
-And thought he might not make it explicit, at some level Sully surely knows this. If pushed, he'd endorse the conditional "If I've misremembered when the curse-busting World Series win was, and the Red Sox didn't win in 2004, then bet A might do better than bet B". So while he is disposed to use dominance reasoning in deciding whether to take A or B, this disposition rests on taking some facts about the world for granted.
+And though he might not make it explicit, at some level Sully surely knows this. If pushed, he'd endorse the conditional "If I've misremembered when the curse-busting World Series win was, and the Red Sox didn't win in 2004, then bet A might do better than bet B". So while he is disposed to use dominance reasoning in deciding whether to take A or B, this disposition rests on taking some facts about the world for granted.
 
 Recall the disjunctive way that Sully reasoned. Either the Red Sox will win this year or they won't. Either way, I won't do better taking bet A, but I might do better taking bet B. So I'll take bet B. This reasoning - not just the reasons Sully has but his reasoning - can be appropriately represented by the kind of decision table that is familiar from decision theory or game theory.
 

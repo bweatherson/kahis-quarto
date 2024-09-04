@@ -96,7 +96,7 @@ Here is the standard way Hotelling's model is introduced in textbooks.[^knowledg
 
 [^knowledge-6]: This particular example isn't in Hotelling, but it is in so many textbooks that I haven't been able to find out where it was first introduced. It differs from his examples in that the parties do not have the capacity to compete on price.
 
-This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. @tbl-hotelling shows w many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we're in, the choice of the second truck determines which column of the table we're in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck.
+This puzzle can be solved using just the idea that strictly dominated strategies can be iteratively deleted. @tbl-hotelling shows how many sales each truck will make for each choice of location. The choice of the first truck determines which row of the table we're in, the choice of the second truck determines which column of the table we're in, and the resulting cell lists first the sales of the first truck, then the sales of the second truck. (So we'll call the first truck Row, and the second truck Column.)
 
 :::{.content-visible when-format="pdf"}
 \clearpage
@@ -176,7 +176,7 @@ The same considerations show that CAE, the view that Certainty Allows Exclusion,
 
 Perhaps one can exclude those propositions whose falsity is sufficiently high that treating them as definitely false doesn't make a difference to the decision one makes. Call this view PAE, for sufficiently high Probability Allows Exclusion.
 
-The first thing to note is that if this is to be plausible, the notion of sufficiency here must be interest-relative. It's often fine to ignore propositions that have a one in 500 chance of being true. When planning what to do a fine sunny day with a clear weather forecast, I simply ignore the chance that there will be a passing shower, even though that still has a 1 in 500 chance. On the other hand, it's absurd to ignore one in 500 chances when deciding what insurance to buy. About one house in 500 has a fire in a given year; that's not a reason to skip fire insurance for the year.
+The first thing to note is that if this is to be plausible, the notion of sufficiency here must be interest-relative. It's often fine to ignore propositions that have a one in 500 chance of being true. When planning what to do a fine sunny day with a clear weather forecast, I simply ignore the chance that there will be a passing shower, even though that still has a 1 in 500 chance. On the other hand, it's absurd to ignore one in 500 chances when deciding what insurance to buy. About one house in 500 has a fire in a given year; that's not a conclusive reason to skip fire insurance for the year.
 
 Second, as stated this view has the odd consequence that decision makers can ignore situations that actually obtain. This doesn't seem very plausible. At least, it would be very odd to have a textbook representation of a decision problem where the actual world wasn't in one of the columns. So probably the best way to interpret PAE is as saying that falsehoods can be excluded iff they have sufficiently high probability.
 
@@ -234,7 +234,7 @@ When one says that it is good to use what one knows in reasoning, there are two 
 
 The justification for the immunity claim is quite straightforward. It's incoherent to say of someone that they know that *p*, but they shouldn't have used *p* in reasoning because it might be false. That's Moore-paradoxical, if not outright contradictory. If it is incoherent to say *A, and X shouldn't have done B because C*, then *A* is a defence to the criticism of *X* that she shouldn't have done *B* because *C*. So knowing that *p* is a defence to the criticism that one shouldn't have used *p* in reasoning because it might be false.
 
-Can we say something stronger? Can we say that knowing that *p* immunises the reasoner from all criticisms? Surely not; using irrelevant facts in inquiry is a legitimate criticism, even if the facts are known. Is there a true claim that's a bit more qualified, but still stronger than the immunity claim that I make?
+Can we say something stronger? Can we say that knowing that *p* immunises the reasoner from all criticisms? Surely not; using irrelevant facts in inquiry is a legitimate criticism, even if the facts are known [@Ichikawa2012a]. Is there a true claim that's a bit more qualified, but still stronger than the immunity claim that I make?
 
 One possibility would be to say that reasoning that starts with what is known is immune from all criticisms except those on a specified list. What might be on the list? I've already mentioned one thing - using irrelevant facts. Another thing might be that the reasoning itself is irrelevant to what one should be doing. If there is a drowning child in front of me, and I start idly musing about what the smallest prime greater than a million might be, I can be criticised for that reasoning. That criticism can be sustained even if my mathematical reasoning is impeccable, and I get the correct answer.^[As it turns out, that's 1,000,003.]
 
@@ -321,7 +321,7 @@ Multiple Premise Closure
 
 Hawthorne endorses the first of these, but has reservations about the second for reasons related to the preface paradox. I'm similarly going to endorse the first and have reservations about the second. But my reasons don't have anything to do with the preface paradox. I argued in "Can We Do Without Pragmatic Encroachment" [@Weatherson2005-WEACWD] that concerns about the preface paradox are over-rated, and I think those arguments still hold up. But I have a slightly different qualification than Hawthorne does to Multiple Premise Closure, and I will discuss that more in @sec-andintro.
 
-It is not trivial to prove that my version of IRT satisfies these closure conditions. One reason for this is that I have not stated a sufficient condition for knowledge. all that I have said is that knowledge is incompatible with a certain kind of caution. So in principle I cannot show that if some conditions obtain then someone knows something. What I can show is that introducing new conditions linking knowledge with relevant questions does not introduce new violations of the closure conditions.
+It is not trivial to prove that my version of IRT satisfies these closure conditions. One reason for this is that I have not stated a sufficient condition for knowledge. All that I have said is that knowledge is incompatible with a certain kind of caution. So in principle I cannot show that if some conditions obtain then someone knows something. What I can show is that introducing new conditions linking knowledge with relevant questions does not introduce new violations of the closure conditions.
 
 ### Single Premise Closure {#sec-andelim}
 

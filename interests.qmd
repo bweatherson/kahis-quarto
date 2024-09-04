@@ -93,7 +93,7 @@ The second point of clarification is that what I've really done here is classify
 The cases I'll quantify over have the following structure. Our hero, called Hero, is given strong evidence for some truth *p*, and they believe it on the basis of that evidence. There are no defeaters, the belief is caused by the truth of the proposition in the right way, and in general all the conditions for knowledge that people worried about in the traditional (i.e., late twentieth century) epistemological literature are met. Then they are offered a choice, where one of the options will have an optimal outcome if *p*, but will not be the best choice according to normal theories of decision unless the probability of *p* is incredibly close to one. While Hero's evidence is strong, it isn't maximally strong. Despite this, Hero takes the risky option, using the fact that *p* as a key part of their reasoning. Now consider the following three questions.
 
 1.  In cases with this form, does the theory say that when Hero first forms the belief that *p*, they know that *p*? If the answer is that this is *generally* the case, then restrict attention to those cases where they do know that *p*, and move to question 2. Otherwise, the theory is sceptical.
-2.  In the cases that remain, is Hero rational in taking the option that is optimal iff *p*. If the answer is yes in *every* case, the theory is epistemicist. Otherwise, restrict attention to cases where this choice is irrational, and move to question 3.
+2.  In the cases that remain, is Hero rational in taking the option that is optimal iff *p*? If the answer is yes in *every* case, the theory is epistemicist. Otherwise, restrict attention to cases where this choice is irrational, and move to question 3.
 3.  In *any* of the cases that remain, does the fact that Hero was offered the choice destroy their knowledge that *p*? If yes, the theory is pragmatic. If no, the theory is orthodox.
 
 So I'm taking epistemicism to be a very strong theory - it says that knowledge always suffices for action that is optimal given what's known, and that offers of bets never constitute a loss of knowledge. The epistemicist can allow that the offer of a bet may cause a person to 'lose their nerve', and hence their belief that *p*, and hence their knowledge that *p*. Still, if they remain confident in *p*, they retain knowledge that *p*.
@@ -159,7 +159,7 @@ Rather than thinking about these merely possible languages, let's return to Engl
 > Chamari: Because it might lose.\
 > You: You mean the Battle of Agincourt might not have been fought in 1415.\
 > Chamari: Yes.\
-> You: Hang on, you just say it was fought in 1415, on October 25 to be precise.\
+> You: Hang on, you just said it was fought in 1415, on October 25 to be precise.\
 > Chamari: That's true, I did say that.\
 > You: Were you wrong to have said it?\
 > Chamari: Probably not; it was probably right that I said it.\
@@ -236,7 +236,7 @@ So the orthodox theorist has a challenge. If they say that it is part of Parveen
 
 This can be generalised. Take any proposition such that if the red sentence was that two plus two is four and that proposition was the content of the blue sentence, then it would be irrational to play Blue-True. Any orthodox explanation of the Red-Blue game entails that this proposition is no part of your evidence - whether you are playing the game or not. Once we strip all these propositions out of your evidence, you don't have enough evidence to rationally believe, or even rationally make probable, very much at all.
 
-Descartes, via a very different route, walked into a version of this problem. His answer was to (implicitly) take us to be infallible observers of our own minds, and (explicitly) offer a theistic explanation for how we can know about the external world given just this psychologistic evidence. Nowadays, most people think that's wrong on both counts: we can be rationally uncertain about even our own minds, and there is no good path from purely psychological evidence to knowledge of the external world. The orthodox theorist ends up in a state worse than Cartesian scepticism.
+Descartes, via a very different route, walked into a version of this problem. His answer was to (implicitly) take us to be infallible observers of our own minds, and (explicitly) offer a theistic explanation for how we can know about the external world given just this psychologistic evidence. Nowadays, most people think that's wrong on both counts: we can be rationally uncertain about even our own minds, and there is no good path from purely psychological evidence to knowledge of the external world. If we side with the moderns on these questions, i.e., that we do not have infallible access to our own minds, and that there is no theistic proof of the external world, Descartes's position is intolerably sceptical. The orthodox position ends up being just as badly off.
 
 ## Odds and Stakes {#sec-oddsandstakes}
 
