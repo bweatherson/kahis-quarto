@@ -16,7 +16,7 @@ The argument here will be in two parts. First, I'll focus on practical inquiries
 
 A practical inquiry can often be represented by the kind of decision table that we use in decision theory courses.[^knowledge-1] @tbl-walkbus, for instance, is a table for the problem faced by a person, call him Ragnar, choosing how to get to work.
 
-[^knowledge-1]: This section and the next are loosely based on my [-@Weatherson2012 §1.1].
+[^knowledge-1]: This section and the next are loosely based on my [-@Weatherson2012{} §1.1].
 
 |      |      |     |
 |-----:|:----:|:---:|

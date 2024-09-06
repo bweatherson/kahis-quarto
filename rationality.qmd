@@ -88,7 +88,7 @@ Assume (something the Lockean may not wish to acknowledge) that to say something
 
 Some people might be nervous about resting too much weight on infinitary examples like the coin sequence. So I'll show how the same puzzle arises in a simple, and finite, game.[^rationality-3] The game itself is a nice illustration of how a number of distinct solution concepts in game theory come apart. (Indeed, the use I'll make of it isn't a million miles from the use that Kohlberg and Mertens [-@KohlbergMertens1986] make of it.) To set the problem up, I need to say a few words about how I think of game theory. This won't be at all original - most of what I say is taken from important works by Robert Stalnaker [-@Stalnaker1994; -@Stalnaker1996; -@Stalnaker1998; -@Stalnaker1999]. But the underlying philosophical points are important, and it is easy to get confused about them.[^rationality-4] So I'll set the basic points slowly, and then circle back to the puzzle for the Lockeans.[^rationality-5]
 
-[^rationality-3]: This section is based on material from my [-@Weatherson2016 §1].
+[^rationality-3]: This section is based on material from my [-@Weatherson2016{} §1].
 
 [^rationality-4]: At least, I used to get these points all wrong, and that's got to be evidence they are easy to get confused about, right?
 

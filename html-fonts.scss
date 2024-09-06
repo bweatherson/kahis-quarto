@@ -28,18 +28,14 @@ table th, td, tr {
 }
 
 dt {
-  float: left;
-  width: 50px;
+  float: none;
+  width: 500px;
   text-align: left;
   font-weight: bold;
 }
 
 dl {
   margin: 0.5em 0.5em 0.5em 1em;
-}
-
-dd {
-  margin: 0 0 0 50px;
 }
 
 /*caption {
