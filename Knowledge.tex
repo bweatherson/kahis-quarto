@@ -179,7 +179,8 @@ marginparsep=0in]{geometry}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -1702,7 +1703,7 @@ say when it was fought.\footnote{The objection I'm making here is really
   describe in Section~\ref{sec-neutrality-contextualism}, for instance,
   can agree with IRT about what's wrong with Chamari's utterances. For
   more on this kind of view, see Ichikawa
-  (\citeproc{ref-Ichikawa2017}{2017})\{\} §1.9.}
+  (\citeproc{ref-Ichikawa2017}{2017} §1.9).}
 
 The most obvious reason to reject this line of reasoning is that it is
 implausible that meta-linguistic norms like this exist. Imagine we were
@@ -3228,6 +3229,7 @@ means, compare these two little exchanges.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumii{\alph{enumii}.}
