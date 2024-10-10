@@ -112,7 +112,7 @@ Another option is to say that they are the factors that are truth-connected, or 
 
 On the face of it, that's at least as truth-connected as the relatively uncontroversial requirement that knowledge be based on evidence. It just says knowledge requires strong evidence. Now, of course, it also says just how strong the evidence must be depends on what their inquiries are. Is that problematic? It might be if you think that every aspect of a requirement on knowledge is truth-relevant.
 
-That last claim really can't be right. Or, at least, it can't be right unless you believe the JTB theory of knowledge. If the JTB theory is false, then any premise one might use in a Wright-style argument against IRT is bound to hav counterexamples. Recall the particular way Wright argued against IRT
+That last claim really can't be right. Or, at least, it can't be right unless you believe the JTB theory of knowledge. If the JTB theory is false, then any premise one might use in a Wright-style argument against IRT is bound to have counterexamples. Recall the particular way Wright argued against IRT
 
 > X didn't (have enough evidence to) know P at t but does at t\* and has exactly the same body of P-relevant evidence at t\* as at t. [@Wright2018 368]
 
