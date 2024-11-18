@@ -1,0 +1,12 @@
+Corrections November 18, 2024
+
+This looks great. I just found 5 hopefully last things to fix. (There are two changes in pg 236.)
+
+Pg 88 - One of the '1's isn't subscripted.
+Pg 235 - One of the 'R's is superscripted. It should be subscript, and italicised.
+Pg 236 - The two "½" charachters should be superscripted. (Or should be more clearly superscripts if they already are.)
+Pg 265 - In the Holliday and Mandlekern bibliography entry, the 831-907 should not be in brackets. That's the page number, not the issue number, and for journal articles we've been putting them after a comma after the volume and issue number. It's a bit confusing, because I gather it doesn't have an issue number - at least there isn't one listed at https://link.springer.com/article/10.1007/s10992-024-09746-7#citeas.
+
+That's all I think!
+
+Brian
