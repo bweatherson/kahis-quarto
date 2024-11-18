@@ -77,15 +77,17 @@ marginparsep=0in]{geometry}
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 % definitions for citeproc citations
@@ -191,9 +193,6 @@ marginparsep=0in]{geometry}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -727,7 +726,7 @@ contemporary philosophers, takes the same approach. Jane Friedman
 \citeproc{ref-Friedman2019b}{2019a}, \citeproc{ref-Friedman2020}{2020},
 \citeproc{ref-Friedman2024}{2024b}) has developed a detailed account of
 what inquiry is and how it relates to epistemology. Elise Woodard
-(\citeproc{ref-Woodard2021}{forthcoming}) and Arienne Falbo
+(\citeproc{ref-Woodard2021}{2024}) and Arienne Falbo
 (\citeproc{ref-Falbo2021}{2021}) have some persuasive criticisms of
 particular details of Friedman's views, but enough of the picture
 survives, and indeed is developed by both Woodard and Falbo, to be
@@ -1082,8 +1081,8 @@ novel parts of the book; very little of these three chapters draws on
 previously published work. Indeed, some of the key arguments build on
 work that was unpublished at least when I started work on this book.
 Chapter~\ref{sec-knowledge} draws heavily on work by Elise Woodard
-(\citeproc{ref-Woodard2021}{forthcoming}) and Chapter~\ref{sec-changes}
-draws heavily the doctoral dissertation of Nilanjan Das
+(\citeproc{ref-Woodard2021}{2024}) and Chapter~\ref{sec-changes} draws
+heavily the doctoral dissertation of Nilanjan Das
 (\citeproc{ref-DasThesis}{2016}).
 
 In Chapter~\ref{sec-inquiry} I discuss the role that the concept of
@@ -3336,8 +3335,8 @@ exclusively focussed on just one of the nine sentences I just described:
 the one combining a knowledge verb with a `how to' question. I suspect
 this is a mistake; what to say about `know how' reports is going to have
 a lot in common with what to say about `wondering when' reports. (Here
-I'm agreeing with Stanley -Stanley (\citeproc{ref-Stanley2011}{2011}),
-though I'm about to disagree with him on a related point.)
+I'm agreeing with Stanley (\citeproc{ref-Stanley2011}{2011}), though I'm
+about to disagree with him on a related point.)
 
 There is a puzzle about why, in English, we cannot use these questions
 to complete sentences like
@@ -5743,7 +5742,7 @@ longer than that, one is doing it wrong.
 
 This looks like a pretty strong argument for a conclusion that a number
 of people have reached via different routes.\footnote{These quotes were
-  compiled by Elise Woodard (\citeproc{ref-Woodard2021}{forthcoming}).}.
+  compiled by Elise Woodard (\citeproc{ref-Woodard2021}{2024}).}.
 
 \begin{quote}
 If one knows the answer to some question at some time then one ought not
@@ -6070,13 +6069,13 @@ can't be a problem!
 
 One reason for thinking that some of these cases will work is that there
 is a fairly general recipe for constructing the cases. It's due to Elise
-Woodard (\citeproc{ref-Woodard2021}{forthcoming}) and (independently)
-Arienne Falbo (\citeproc{ref-Falbo2021}{2021}). Start with the following
-two assumptions. First, inquiry is not just about collecting knowledge,
-but generally about improving one's epistemic position.\footnote{When I
-  say inquiry is about improving one's epistemic position, I don't mean
-  that that's how inquirers represent what they are doing to themselves.
-  That would be to over-intellectualise things. Rather, inquiry is about
+Woodard (\citeproc{ref-Woodard2021}{2024}) and (independently) Arienne
+Falbo (\citeproc{ref-Falbo2021}{2021}). Start with the following two
+assumptions. First, inquiry is not just about collecting knowledge, but
+generally about improving one's epistemic position.\footnote{When I say
+  inquiry is about improving one's epistemic position, I don't mean that
+  that's how inquirers represent what they are doing to themselves. That
+  would be to over-intellectualise things. Rather, inquiry is about
   doing things that are, as a matter of fact, things that improve one's
   epistemic position. One can be improving one's epistemic position even
   if one self-represents one's actions in a more mundane way, e.g., as
@@ -11239,9 +11238,9 @@ knowledge is sensitive to should not be surprising.
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
 \bibitem[\citeproctext]{ref-Adamson2015}
-Adamson, Peter. (2015). \emph{Philosophy in the hellenistic and roman
-worlds: A history of philosophy without any gaps, volume 2} (Oxford).
-Oxford University Press.
+Adamson, Peter. (2015). \emph{Philosophy in the {H}ellenistic and
+{R}oman worlds: {A} history of philosophy without any gaps, volume 2}
+(Oxford). Oxford University Press.
 
 \bibitem[\citeproctext]{ref-Adamson2019}
 Adamson, Peter. (2019). \emph{Medieval philosophy: A history of
@@ -11268,7 +11267,7 @@ Armour-Garb, B. (2011). Contextualism without pragmatic encroachment.
 doi:\href{https://doi.org/10.1093/analys/anr083}{10.1093/analys/anr083}
 
 \bibitem[\citeproctext]{ref-Aumann1999}
-Aumann, Robert J. (1999). Interactive epistemology i: knowledge.
+Aumann, Robert J. (1999). Interactive epistemology {I}: knowledge.
 \emph{International Journal of Game Theory}, \emph{28}(3), 263--300.
 doi:\href{https://doi.org/10.1007/s001820050111}{10.1007/s001820050111}
 
@@ -11352,14 +11351,14 @@ Christensen, David. (2005). \emph{Putting logic in its place}. Oxford
 University Press.
 
 \bibitem[\citeproctext]{ref-Christensen2007}
-Christensen, David. (2007). Does murphy's law apply in epistemology?
+Christensen, David. (2007). Does {M}urphy's law apply in epistemology?
 Self-doubt and rational ideals. \emph{Oxford Studies in Epistemology},
 \emph{2}, 3--31.
 
 \bibitem[\citeproctext]{ref-Christensen2011}
 Christensen, David. (2011). Disagreement, question-begging and epistemic
 self-criticism. \emph{Philosophers' Imprint}, \emph{11}(6), 1--22.
-Retrieved from \url{http://hdl.handle.net/2027/spo.3521354.0011.006}
+doi:\href{https://doi.org/2027/spo.3521354.0011.006}{2027/spo.3521354.0011.006}
 
 \bibitem[\citeproctext]{ref-Christensen2019}
 Christensen, David. (2019). Formulating independence. In Mattias Skipper
@@ -11367,7 +11366,7 @@ Christensen, David. (2019). Formulating independence. In Mattias Skipper
 essays} (13--34). Oxford University Press.
 
 \bibitem[\citeproctext]{ref-Clark2012}
-Clark, Christopher. (2012). \emph{The sleepwalkers: How europe went to
+Clark, Christopher. (2012). \emph{The sleepwalkers: How {E}urope went to
 war in 1914}. Harper Collins.
 
 \bibitem[\citeproctext]{ref-Cohen2002}
@@ -11408,8 +11407,8 @@ doi:\href{https://doi.org/10.2307/3182618}{10.2307/3182618}
 \bibitem[\citeproctext]{ref-DiabEtAl2008}
 Diab, Dalia L., Michael A. Gillespie, and Scott Highhouse. (2008). Are
 maximizers really unhappy? The measurement of maximizing tendency.
-\emph{Judgment and Decision Making}, \emph{3}(5), 364--370. Retrieved
-from \url{http://journal.sjdm.org/8320/jdm8320.pdf}
+\emph{Judgment and Decision Making}, \emph{3}(5), 364--370.
+doi:\href{https://doi.org/10.1017/S1930297500000383}{10.1017/S1930297500000383}
 
 \bibitem[\citeproctext]{ref-Dogramaci2015}
 Dogramaci, Sinan. (2015). Forget and forgive: A practical approach to
@@ -11426,8 +11425,8 @@ pragmatic encroachment. \emph{Philosophical Studies}, \emph{172},
 doi:\href{https://doi.org/10.1007/s11098-015-0461-x}{10.1007/s11098-015-0461-x}
 
 \bibitem[\citeproctext]{ref-Egan2008}
-Egan, Andy. (2008). {Seeing and Believing: Perception, Belief Formation
-and the Divided Mind}. \emph{Philosophical Studies}, \emph{140}(1),
+Egan, Andy. (2008). Seeing and believing: Perception, belief formation
+and the divided mind. \emph{Philosophical Studies}, \emph{140}(1),
 47--63.
 doi:\href{https://doi.org/10.1007/s11098-008-9225-1}{10.1007/s11098-008-9225-1}
 
@@ -11492,7 +11491,7 @@ doi:\href{https://doi.org/10.1007/s11098-007-9133-9}{10.1007/s11098-007-9133-9}
 \bibitem[\citeproctext]{ref-Ganson2019}
 Ganson, Dorit. (2019). Great expectations: Belief and the case for
 pragmatic encroachment. In Brian Kim \& Matthew McGrath (Eds.),
-\emph{Pragmatic encroachment in epistemology}. Routledge.
+\emph{Pragmatic encroachment in epistemology} (10--34). Routledge.
 
 \bibitem[\citeproctext]{ref-Gao2023}
 Gao, Jie. (2023). Should credence be sensitive to practical factors? A
@@ -11509,7 +11508,7 @@ doi:\href{https://doi.org/10.1007/s11098-005-7779-8}{10.1007/s11098-005-7779-8}
 \bibitem[\citeproctext]{ref-Gettier1963}
 Gettier, Edmund L. (1963). Is justified true belief knowledge?
 \emph{Analysis}, \emph{23}(6), 121--123.
-doi:\href{https://doi.org/10.2307/3326922}{10.2307/3326922}
+doi:\href{https://doi.org/10.1093/analys/23.6.121}{10.1093/analys/23.6.121}
 
 \bibitem[\citeproctext]{ref-GigerenzerSelton2001}
 Gigerenzer, Gerd, and Reinhard Selten. (2001). \emph{Bounded
@@ -11580,7 +11579,7 @@ doi:\href{https://doi.org/10.1086/648610}{10.1086/648610}
 Holliday, Wesley H., and Matthew Mandelkern. (2024). The orthologic of
 epistemic modals. \emph{Journal of Philosophical Logic},
 \emph{53}(831-907).
-doi:\href{https://doi.org/s10992-024-09746-7}{s10992-024-09746-7}
+doi:\href{https://doi.org/10.1007/s10992-024-09746-7}{10.1007/s10992-024-09746-7}
 
 \bibitem[\citeproctext]{ref-Hotelling1929}
 Hotelling, Harold. (1929). Stability in competition. \emph{The Economic
@@ -11629,7 +11628,7 @@ Joyce, James M. (1999). \emph{The foundations of causal decision
 theory}. Cambridge University Press.
 
 \bibitem[\citeproctext]{ref-Keynes1936Foxwell}
-Keynes, John Maynard. (1936). Herbert somerton foxwell. \emph{The
+Keynes, John Maynard. (1936). {Herbert Somerton Foxwell}. \emph{The
 Economic Journal}, \emph{46}(184), 589--619.
 doi:\href{https://doi.org/10.2307/2224674}{10.2307/2224674}
 
@@ -11806,8 +11805,8 @@ Nagel, Jennifer. (2010). Epistemic anxiety and adaptive invariantism.
 doi:\href{https://doi.org/10.1111/j.1520-8583.2010.00198.x}{10.1111/j.1520-8583.2010.00198.x}
 
 \bibitem[\citeproctext]{ref-Nagel2013-Williamson}
-Nagel, Jennifer. (2013). Motivating williamson's model gettier cases.
-\emph{Inquiry}, \emph{56}(1), 54--62.
+Nagel, Jennifer. (2013). Motivating {W}illiamson's model {G}ettier
+cases. \emph{Inquiry}, \emph{56}(1), 54--62.
 doi:\href{https://doi.org/10.1080/0020174X.2013.775014}{10.1080/0020174X.2013.775014}
 
 \bibitem[\citeproctext]{ref-Nagel2014}
@@ -11865,12 +11864,12 @@ epistemic ideals and illusions}. Oxford University Press.
 
 \bibitem[\citeproctext]{ref-Pingle2006}
 Pingle, Mark. (2006). Deliberation cost as a foundation for behavioral
-economics. In Morris Altman (Ed.), \emph{In handbook of contemporary
+economics. In Morris Altman (Ed.), \emph{Handbook of contemporary
 behavioral economics: Foundations and developments} (340--355).
 Routledge.
 
 \bibitem[\citeproctext]{ref-Pryor2004}
-Pryor, James. (2004). What's wrong with moore's argument?
+Pryor, James. (2004). What's wrong with {M}oore's argument?
 \emph{Philosophical Issues}, \emph{14}(1), 349--378.
 doi:\href{https://doi.org/10.1111/j.1533-6077.2004.00034.x}{10.1111/j.1533-6077.2004.00034.x}
 
@@ -11976,7 +11975,7 @@ the American Philosophical Association}, \emph{75}(2), 31--41.
 doi:\href{https://doi.org/10.2307/3218711}{10.2307/3218711}
 
 \bibitem[\citeproctext]{ref-Sosa1999}
-Sosa, Ernest. (1999). How to defeat opposition to moore.
+Sosa, Ernest. (1999). How to defeat opposition to {Moore}.
 \emph{Philosophical Perspectives}, \emph{13}, 141--153.
 doi:\href{https://doi.org/10.1111/0029-4624.33.s13.7}{10.1111/0029-4624.33.s13.7}
 
@@ -12074,7 +12073,7 @@ Weatherson, Brian. (2016a). Games, beliefs and credences.
 doi:\href{https://doi.org/10.1111/phpr.12088}{10.1111/phpr.12088}
 
 \bibitem[\citeproctext]{ref-Weatherson2016-WEARTE}
-Weatherson, Brian. (2016b). Reply to eaton and pickavance.
+Weatherson, Brian. (2016b). Reply to {Eaton and Pickavance}.
 \emph{Philosophical Studies}, \emph{173}(12), 3231--3233.
 
 \bibitem[\citeproctext]{ref-Weatherson2017-WEAII}
@@ -12110,9 +12109,9 @@ Perspectives}, \emph{19}, 445--459.
 doi:\href{https://doi.org/10.1111/j.1520-8583.2005.00069.x}{10.1111/j.1520-8583.2005.00069.x}
 
 \bibitem[\citeproctext]{ref-Williams1976}
-Williams, Peter. (1976). Indeterminate probabilities. In M. Przelecki,
-K. Szaniawski, \& R. Wojcicki (Eds.), \emph{Formal methods in the
-methodology of the empriccal sciences} (229--246). Reidel.
+Williams, Bernard. (1976). Persons, character and morality. In Amélie
+Oksenberg Rorty (Ed.), \emph{The identities of persons} (197--216).
+University of California Press.
 
 \bibitem[\citeproctext]{ref-Williamson1994}
 Williamson, Timothy. (1994). \emph{{Vagueness}}. Routledge.
@@ -12130,7 +12129,7 @@ doi:\href{https://doi.org/10.1111/j.0031-8094.2005.00396.x}{10.1111/j.0031-8094.
 \bibitem[\citeproctext]{ref-Williamson2007}
 Williamson, Timothy. (2007). How probable is an infinite sequence of
 heads? \emph{Analysis}, \emph{67}(295), 173--180.
-doi:\href{https://doi.org/10.1111/j.1467-8284.2007.00671.x}{10.1111/j.1467-8284.2007.00671.x}
+doi:\href{https://doi.org/10.1093/analys/67.3.173}{10.1093/analys/67.3.173}
 
 \bibitem[\citeproctext]{ref-WilliamsonLofoten}
 Williamson, Timothy. (2013). Gettier cases in epistemic logic.
@@ -12147,13 +12146,13 @@ Wittgenstein, Ludwig. (1953). \emph{Philosophical investigations}.
 Macmillan.
 
 \bibitem[\citeproctext]{ref-Woodard2021}
-Woodard, Elise. (forthcoming). Why double-check. \emph{Episteme}.
-Forthcoming.
+Woodard, Elise. (2024). Why double-check. \emph{Episteme}, \emph{21},
+664--667.
 doi:\href{https://doi.org/10.1017/epi.2022.22}{10.1017/epi.2022.22}
 
 \bibitem[\citeproctext]{ref-Wright2002}
-Wright, Crispin. (2002). (Anti-)sceptics simple and subtle: G.e. Moore
-and john McDowell. \emph{Philosophy and Phenomenological Research},
+Wright, Crispin. (2002). (Anti-)sceptics simple and subtle: {G.E. Moore
+and John McDowell}. \emph{Philosophy and Phenomenological Research},
 \emph{65}(2), 330--348.
 doi:\href{https://doi.org/10.1111/j.1933-1592.2002.tb00205.x}{10.1111/j.1933-1592.2002.tb00205.x}
 
